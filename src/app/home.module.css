@@ -35,7 +35,19 @@
     left: 50%;
     transform: translate(-50%, -50%);
     color: #F8C983;
-    font-size: 2em;
+    font-size: 3em;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    white-space: nowrap;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #000000;
+    color: #F8C983;
+    text-align: center;
+    padding: 10px 0;
 }
