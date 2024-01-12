@@ -6,28 +6,37 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Link href="/page1">
-        <Image
-          src="/pictures/1.png"
-          alt="Viet80s Restaurant"
-          width={600}
-          height={300}
-        />
+        <div className={styles.imageContainer}>
+          <Image
+            src="/pictures/1.png"
+            alt="Viet80s Restaurant"
+            layout="fill"
+            objectFit="cover"
+          />
+          <p className={styles.imageText}>VIET80S RESTAURANT</p>
+        </div>
       </Link>
       <Link href="/page2">
-        <Image
-          src="/pictures/2.png"
-          alt="Viet80s Street Food"
-          width={600}
-          height={300}
-        />
+        <div className={styles.imageContainer}>
+          <Image
+            src="/pictures/2.png"
+            alt="Viet80s Street Food"
+            layout="fill"
+            objectFit="cover"
+          />
+          <p className={styles.imageText}>VIET80S STREET FOOD</p>
+        </div>
       </Link>
       <Link href="/page3">
-        <Image
-          src="/pictures/3.png"
-          alt="Viet80s Coffee"
-          width={600}
-          height={300}
-        />
+        <div className={styles.imageContainer}>
+          <Image
+            src="/pictures/3.png"
+            alt="Viet80s Coffee"
+            layout="fill"
+            objectFit="cover"
+          />
+          <p className={styles.imageText}>VIET80S COFFEE</p>
+        </div>
       </Link>
     </div>
   );
