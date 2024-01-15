@@ -10,7 +10,7 @@ export default function Home() {
           <Image
             src="/pictures/2.png"
             alt="Viet80s Street Food"
-            fill="responsive"
+            fill
             style={{ objectFit: "cover" }}
             priority={false}
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -23,7 +23,7 @@ export default function Home() {
           <Image
             src="/pictures/1.png"
             alt="Viet80s Restaurant"
-            fill="responsive"
+            fill
             style={{ objectFit: "cover" }}
             priority={false}
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -36,7 +36,7 @@ export default function Home() {
           <Image
             src="/pictures/3.png"
             alt="Viet80s Coffee"
-            fill="responsive"
+            fill
             style={{ objectFit: "cover" }}
             priority={false}
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
