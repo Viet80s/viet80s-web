@@ -5,14 +5,16 @@ import styles from "@/app/localHome.module.css";
 import { slide as Menu } from "react-burger-menu";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
+import NavBar from "@/components/NavBar";
+import Sidebar from "@/components/SideBar";
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <>
-      <div>
-        <nav className={styles.navbar}>
+      <div className="sticky top-0 z-50 flex flex-col items-center justify-center w-full bg-black">
+        <Link href="/" className="mb-5 mt-5">
           <Image
             src="/pictures/logo.png"
             alt="Viet80s Logo"
@@ -20,43 +22,8 @@ export default function Home() {
             height={200}
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
-          {isOpen ? (
-            <Menu
-              isOpen={isOpen}
-              onStateChange={({ isOpen }) => setIsOpen(isOpen)}
-            >
-              <Link href="/about-us">
-                <Button onClick={() => setIsOpen(false)}>About Us</Button>
-              </Link>
-              <Link href="https://www.viet80sonline.co.uk/">
-                <Button onClick={() => setIsOpen(false)}>
-                  Click & Collect
-                </Button>
-              </Link>
-              <Link href="https://www.viet80sonline.co.uk/s/appointments">
-                <Button onClick={() => setIsOpen(false)}>Book a Table</Button>
-              </Link>
-              <Link href="/contact-us">
-                <Button onClick={() => setIsOpen(false)}>Contact Us</Button>
-              </Link>
-            </Menu>
-          ) : (
-            <div className={styles.navLinks}>
-              <Link href="/about-us">
-                <Button>About Us</Button>
-              </Link>
-              <Link href="https://www.viet80sonline.co.uk/">
-                <Button>Click & Collect</Button>
-              </Link>
-              <Link href="https://www.viet80sonline.co.uk/s/appointments">
-                <Button>Book a Table</Button>
-              </Link>
-              <Link href="/contact-us">
-                <Button>Contact Us</Button>
-              </Link>
-            </div>
-          )}
-        </nav>
+        </Link>
+        <Sidebar />
       </div>
       <div>
         <h1>Hello</h1>
