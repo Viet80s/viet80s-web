@@ -5,7 +5,6 @@ import styles from "@/app/localHome.module.css";
 import { slide as Menu } from "react-burger-menu";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import NavBar from "@/components/NavBar";
 import Sidebar from "@/components/SideBar";
 
 export default function Home() {
