@@ -1,6 +1,8 @@
 import styles from "@/app/hamburger.module.css";
 
-export default function Hamburger({ isOpen }) {
+type Props = { isOpen: boolean };
+
+export default function Hamburger({ isOpen }: Props) {
   document.body.style.setProperty(
     "--burger-transform1",
     isOpen ? "rotate(45deg)" : "rotate(0)"
