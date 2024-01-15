@@ -50,7 +50,7 @@ const Sidebar = () => {
     },
   };
   return (
-    <Menu isOpen={false} left styles={styles}>
+    <Menu isOpen={false} styles={styles}>
       <a id="about" className="menu-item" href="/about-us">
         About Us <Star className="ml-2" />
       </a>
