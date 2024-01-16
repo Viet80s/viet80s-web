@@ -1,6 +1,8 @@
 import React from "react";
-import { slide as Menu } from "react-burger-menu";
+import { scaleRotate as Menu } from "react-burger-menu";
 import { CalendarCheck, ShoppingBag, Star, Mails } from "lucide-react";
+import styles1 from "@/app/localHome.module.css";
+import { useState, useEffect } from "react";
 
 const Sidebar = () => {
   var styles = {
@@ -50,26 +52,27 @@ const Sidebar = () => {
     },
   };
   return (
-    <Menu isOpen={false} right styles={styles}>
+    <Menu styles={styles}>
       <a id="about" className="menu-item" href="/about-us">
-        About Us <Star className="ml-2" />
+        <Star className="mr-2" />
+        About Us
       </a>
       <a
         id="onlineShopping"
         className="menu-item"
         href="https://www.viet80sonline.co.uk/"
       >
-        Click & Collect <ShoppingBag className="ml-2" />
+        <ShoppingBag className="mr-2" /> Click & Collect
       </a>
       <a
         id="booking"
         className="menu-item"
         href="https://www.viet80sonline.co.uk/s/appointments"
       >
-        Book a Table <CalendarCheck className="ml-2" />
+        <CalendarCheck className="mr-2" /> Book a Table
       </a>
       <a id="contact" className="menu-item" href="/contact">
-        Contact Us <Mails className="ml-2" />
+        <Mails className="mr-2" /> Contact Us
       </a>
     </Menu>
   );
