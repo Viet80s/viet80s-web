@@ -1,8 +1,5 @@
-import React from "react";
-import { scaleRotate as Menu } from "react-burger-menu";
+import { stack as Menu } from "react-burger-menu";
 import { CalendarCheck, ShoppingBag, Star, Mails } from "lucide-react";
-import styles1 from "@/app/localHome.module.css";
-import { useState, useEffect } from "react";
 
 const Sidebar = () => {
   var styles = {
