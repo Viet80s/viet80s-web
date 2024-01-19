@@ -4,7 +4,7 @@ import { useMediaQuery } from "react-responsive";
 import { Underline } from "lucide-react";
 
 const DetailsFooter = () => {
-  const divStyle = {
+  const divStyle: React.CSSProperties = {
     backgroundImage: 'url("/pictures/lua1.png")',
     backgroundSize: "cover",
     backgroundPosition: "center",
@@ -17,7 +17,7 @@ const DetailsFooter = () => {
     alignItems: "center",
   };
 
-  const overlayStyle = {
+  const overlayStyle: React.CSSProperties = {
     content: '""',
     position: "absolute",
     top: 0,
