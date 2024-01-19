@@ -62,10 +62,13 @@ const DetailsFooter = () => {
         <p style={{ textDecoration: "underline" }}>Useful links</p>
         <ul>
           <li>
-            <Link href="#">Link 1</Link>
+            <Link href="/privacy-policy">Privacy Policy</Link>
           </li>
           <li>
-            <Link href="#">Link 2</Link>
+            <Link href="/street-food">Viet80s Street Food</Link>
+          </li>
+          <li>
+            <Link href="/Coffee">Viet80s Coffee</Link>
           </li>
           {/* Add more links as needed */}
         </ul>
