@@ -1,5 +1,12 @@
 import { stack as Menu } from "react-burger-menu";
-import { CalendarCheck, ShoppingBag, Star, Mails } from "lucide-react";
+import {
+  CalendarCheck,
+  ShoppingBag,
+  Star,
+  Mails,
+  NotebookPen,
+  Merge,
+} from "lucide-react";
 
 const Sidebar = () => {
   var styles = {
@@ -7,8 +14,8 @@ const Sidebar = () => {
       position: "fixed",
       width: "36px",
       height: "30px",
-      left: "36px",
-      top: "36px",
+      left: "50px",
+      top: "50px",
     },
     bmBurgerBars: {
       background: "#F8C983",
@@ -54,12 +61,8 @@ const Sidebar = () => {
         <Star className="mr-2" />
         About Us
       </a>
-      <a
-        id="onlineShopping"
-        className="menu-item"
-        href="https://www.viet80sonline.co.uk/"
-      >
-        <ShoppingBag className="mr-2" /> Click & Collect
+      <a id="menus" className="menu-item" href="/menus">
+        <ShoppingBag className="mr-2" /> Menu / Click & Collect
       </a>
       <a
         id="booking"
@@ -70,6 +73,12 @@ const Sidebar = () => {
       </a>
       <a id="contact" className="menu-item" href="/contact">
         <Mails className="mr-2" /> Contact Us
+      </a>
+      <a id="blog" className="menu-item" href="/blogs">
+        <NotebookPen className="mr-2" /> Viet80s Blogs
+      </a>
+      <a id="join" className="menu-item" href="/join-us">
+        <Merge className="mr-2" /> Join Us
       </a>
     </Menu>
   );

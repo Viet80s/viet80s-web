@@ -1,3 +1,6 @@
+
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -75,32 +78,20 @@
   }
 }
 
-.yellow-border-paragraph {
-  border: 6px double #F8C983;
-  padding: 15px;
-  margin: 20px 20px 20px 20px;
-  border-radius: 10px;
-}
-
-.yellow-border-paragraph p {
-  color: #F8C983;
-  font-weight: bold;
-  font-family: Arial, sans-serif;
-  text-align: center;
-  font-size: x-large;
-}
-
-@media(max-width: 767px){
-  .yellow-border-paragraph p{
-      background: "#F8C983";
-      font-size:medium;
-  }
-}
-
 .footer {
   width: 100%;
   background-color: #000000;
   color: #F8C983;
   text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding: 10px 0;
+}
+
+.footerDetails {
+  width: 100%;
+  background-color: #000000;
+  color: #F8C983;
+  text-align: center;
+  justify-items: center;
   padding: 10px 0;
 }
