@@ -52,7 +52,7 @@ export default function Home() {
         </div>
       </div>
       <DetailsFooter />
-      <Footer className={styles.footer} />
+      <Footer />
     </>
   );
 }
