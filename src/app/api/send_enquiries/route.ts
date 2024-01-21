@@ -15,6 +15,7 @@ export const POST = async (req: Request) => {
       from: 'Customer Enquiry <contact@viet80s.co.uk>',
       to: ['info@viet80s.co.uk'],
       subject: subject,
+      text:"",
       react: EmailTemplate({ name: name, email: email, phoneNumber: phoneNumber, subject: subject, message: message }),
     });
 
