@@ -23,7 +23,7 @@ const ContactForm = () => {
   const [message, setMessage] = useState("");
 
   const mutation = useMutation(
-    (newEmail: EmailDataData) =>
+    (newEmail: EmailData) =>
       fetch("/api/send_enquiries", {
         method: "POST",
         headers: {
