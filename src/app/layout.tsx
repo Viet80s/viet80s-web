@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Baumans } from "next/font/google";
 import "./globals.css";
+import { Toaster } from "react-hot-toast";
+import Providers from "@/components/Providers";
 
 const baumans = Baumans({ subsets: ["latin"], weight: ["400"] });
 
@@ -16,8 +18,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={baumans.className}>
-      <body>{children}</body>
-    </html>
+    <Providers>
+      <html lang="en" className={baumans.className}>
+        <body>{children}</body>
+        <Toaster />
+      </html>
+    </Providers>
   );
 }

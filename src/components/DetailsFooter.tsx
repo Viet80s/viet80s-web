@@ -1,7 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useMediaQuery } from "react-responsive";
-import { Underline } from "lucide-react";
 
 const DetailsFooter = () => {
   const divStyle: React.CSSProperties = {
@@ -68,7 +67,7 @@ const DetailsFooter = () => {
             <Link href="/street-food">Viet80s Street Food</Link>
           </li>
           <li>
-            <Link href="/Coffee">Viet80s Coffee</Link>
+            <Link href="/coffee">Viet80s Coffee</Link>
           </li>
           {/* Add more links as needed */}
         </ul>
