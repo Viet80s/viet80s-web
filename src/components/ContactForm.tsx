@@ -18,7 +18,7 @@ const ContactForm = () => {
   // Set states
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  const [phoneNumber, setPhoneNum] = useState<number | null>(null);
+  const [phoneNumber, setPhoneNum] = useState("");
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
 
@@ -53,14 +53,14 @@ const ContactForm = () => {
       mutation.mutate({
         name: name,
         email: email,
-        phoneNumber: phoneNumber || 0,
+        phoneNumber: phoneNumber,
         subject: subject,
         message: message,
       });
       // Clear the form
       setName("");
       setEmail("");
-      setPhoneNum(null);
+      setPhoneNum("");
       setSubject("");
       setMessage("");
     }
@@ -146,7 +146,7 @@ const ContactForm = () => {
               <td>
                 <input
                   type="text"
-                  value={phoneNumber || ""}
+                  value={phoneNumber}
                   onChange={(e) => setPhoneNum(e.target.value)}
                   style={{
                     width: "100%",
