@@ -2,8 +2,7 @@ import { useState } from "react";
 import { useMutation, useQueryClient } from "react-query";
 import toast from "react-hot-toast";
 import { Button } from "@/components/ui/button";
-import { PlusCircle, Send } from "lucide-react";
-import axios from "axios";
+import { Send } from "lucide-react";
 
 interface EmailData {
   name: string;
