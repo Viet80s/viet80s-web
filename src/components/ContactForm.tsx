@@ -8,7 +8,7 @@ import axios from "axios";
 interface EmailData {
   name: string;
   email: string;
-  phoneNumber: number;
+  phoneNumber: string;
   subject: string;
   message: string;
 }
