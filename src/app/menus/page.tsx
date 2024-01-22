@@ -65,7 +65,7 @@ export default function Home() {
             </div>
           </Link>
         </div>
-        <div className={("bg-black", styles1.paragraph)}>
+        <div className={styles1.paragraph}>
           <p>
             <strong className="underline">Notice:</strong> We are no longer
             providing the “Click & Collect” service for Viet80s Street Food and
