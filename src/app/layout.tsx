@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Baumans } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "react-hot-toast";
+import { Analytics } from "@vercel/analytics/react";
 import Providers from "@/components/Providers";
 
 const baumans = Baumans({ subsets: ["latin"], weight: ["400"] });
@@ -20,7 +21,10 @@ export default function RootLayout({
   return (
     <Providers>
       <html lang="en" className={baumans.className}>
-        <body>{children}</body>
+        <body>
+          {children}
+          <Analytics />
+        </body>
         <Toaster />
       </html>
     </Providers>
