@@ -3,6 +3,7 @@ import { useMutation, useQueryClient } from "react-query";
 import toast from "react-hot-toast";
 import { Button } from "@/components/ui/button";
 import { Send } from "lucide-react";
+import { useMediaQuery } from "react-responsive";
 
 interface EmailData {
   name: string;
@@ -13,6 +14,10 @@ interface EmailData {
 }
 const ContactForm = () => {
   // Set query client
+  const isMobile = useMediaQuery({ maxWidth: 768 });
+  const fontSize = isMobile ? "large" : "x-large";
+  const fieldSize = isMobile ? "250px" : "400px";
+
   const queryClient = useQueryClient();
   // Set states
   const [name, setName] = useState("");
@@ -72,7 +77,7 @@ const ContactForm = () => {
         style={{
           textAlign: "center",
           color: "#F8C983",
-          fontSize: "x-large",
+          fontSize: fontSize,
           zIndex: 1,
         }}
       >
@@ -86,7 +91,7 @@ const ContactForm = () => {
                 style={{
                   textAlign: "left",
                   color: "#F8C983",
-                  fontSize: "x-large",
+                  fontSize: fontSize,
                   zIndex: 1,
                 }}
               >
@@ -98,7 +103,7 @@ const ContactForm = () => {
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   style={{
-                    width: "300px",
+                    width: fieldSize,
                     padding: "4px",
                     borderRadius: "10px",
                   }}
@@ -111,7 +116,7 @@ const ContactForm = () => {
                 style={{
                   textAlign: "left",
                   color: "#F8C983",
-                  fontSize: "x-large",
+                  fontSize: fontSize,
                   zIndex: 1,
                 }}
               >
@@ -136,7 +141,7 @@ const ContactForm = () => {
                 style={{
                   textAlign: "left",
                   color: "#F8C983",
-                  fontSize: "x-large",
+                  fontSize: fontSize,
                   zIndex: 1,
                 }}
               >
@@ -161,7 +166,7 @@ const ContactForm = () => {
                 style={{
                   textAlign: "left",
                   color: "#F8C983",
-                  fontSize: "x-large",
+                  fontSize: fontSize,
                   zIndex: 1,
                 }}
               >
@@ -186,7 +191,7 @@ const ContactForm = () => {
                 style={{
                   textAlign: "left",
                   color: "#F8C983",
-                  fontSize: "x-large",
+                  fontSize: fontSize,
                   zIndex: 1,
                 }}
               >

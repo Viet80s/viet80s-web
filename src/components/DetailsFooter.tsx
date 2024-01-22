@@ -32,7 +32,7 @@ const DetailsFooter = () => {
   const textColorStyle = {
     color: "#F8C983",
   };
-  const logoSize = isMobile ? 100 : 150;
+  const logoSize = isMobile ? 75 : 150;
 
   return (
     <div className="bg-black" style={divStyle}>
@@ -40,7 +40,7 @@ const DetailsFooter = () => {
 
       <Link
         href="/"
-        className={!isMobile ? "mt-16 mb-10 z-10 mx-40" : "mb-2 z-10"}
+        className={!isMobile ? "mt-16 mb-10 z-10 mx-40" : "mb-2 z-10 ml-3"}
       >
         <Image
           src="/pictures/logo.png"

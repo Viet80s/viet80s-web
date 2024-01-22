@@ -2,7 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    height: 100vh; /* Full height */
+    height: 78vh; 
 }
 
 .container a {
@@ -15,12 +15,6 @@
     width: 100%; /* Full width */
     height: 80%; /* Full height */
     object-fit: cover; /* Maintain aspect ratio while scaling */
-}
-
-@media (max-width: 600px) {
-    .container {
-        flex-direction: column;
-    }
 }
 
 .imageContainer {
@@ -39,3 +33,14 @@
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     white-space: nowrap;
 }
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .imageText {
+        font-size: 2em;
+    }
+}
+
+
