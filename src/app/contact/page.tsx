@@ -4,7 +4,6 @@ import Footer from "@/components/Footer";
 import DetailsFooter from "@/components/DetailsFooter";
 import ContactForm from "@/components/ContactForm";
 import NavBar from "@/components/NavBar";
-import Map from "@/components/Map";
 import Link from "next/link";
 import Image from "next/image";
 
