@@ -87,7 +87,7 @@ export default function Home() {
             )
           </p>
         </div>
-        <div className={("bg-black", styles1.paragraph)}>
+        <div className={styles1.paragraph}>
           <p>
             For our <strong className="underline">Allergen guides</strong>{" "}
             please check here:{" "}
