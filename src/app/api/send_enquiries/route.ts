@@ -4,7 +4,7 @@ import { Resend } from 'resend';
 export const runtime = 'edge';
 export const dynamic = 'force-dynamic';
 
-const resend = new Resend("re_NGhDUVnj_LK9bQR9dxCjQmwJEYzdHmena");
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 export const POST = async (req: Request) => {
     try {

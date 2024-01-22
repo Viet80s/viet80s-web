@@ -54,7 +54,9 @@ const DetailsFooter = () => {
       {/* Center Column - Useful Links */}
       <div
         className={
-          !isMobile ? "text-white mx-40 z-10 text-xl" : "text-white z-10 "
+          !isMobile
+            ? "text-white mx-40 z-10 text-xl"
+            : "text-white z-10 text-sm"
         }
         style={textColorStyle}
       >
@@ -76,7 +78,9 @@ const DetailsFooter = () => {
       {/* Right Column - Opening Hours and Address */}
       <div
         className={
-          !isMobile ? "text-white mx-40 z-10 text-xl" : "text-white z-10"
+          !isMobile
+            ? "text-white mx-40 z-10 text-xl"
+            : "text-white mx-5 z-10 text-sm"
         }
         style={textColorStyle}
       >

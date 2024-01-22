@@ -1,8 +1,12 @@
 import Link from "next/link";
 import Image from "next/image";
 import Sidebar from "@/components/SideBar";
+import { useMediaQuery } from "react-responsive";
 
 const NavBar = () => {
+  const isMobile = useMediaQuery({ maxWidth: 768 });
+  const fontSize = isMobile ? "large" : "x-large";
+
   return (
     <>
       <Sidebar />
@@ -16,7 +20,7 @@ const NavBar = () => {
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
         </Link>
-        <p style={{ color: "#F8C983", fontSize: "x-large", zIndex: 1 }}>
+        <p style={{ color: "#F8C983", fontSize: fontSize, zIndex: 1 }}>
           A Culinary Journey to Vietnamese Soul
         </p>
       </div>

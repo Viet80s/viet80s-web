@@ -62,7 +62,7 @@ const Sidebar = () => {
         About Us
       </a>
       <a id="menus" className="menu-item" href="/menus">
-        <ShoppingBag className="mr-2" /> Menu / Click & Collect
+        <ShoppingBag className="mr-2" /> Menus / Click & Collect
       </a>
       <a
         id="booking"

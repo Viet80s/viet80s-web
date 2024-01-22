@@ -66,7 +66,7 @@ const ContactForm = () => {
   };
   // Return the form component
   return (
-    <div className="flex flex-col items-center justify-center w-screen text-center bg-black">
+    <div className="flex flex-col items-center justify-center w-screen max-w-full text-center bg-black">
       <h1
         className="mb-3 mt-5 text-xl font-semibold"
         style={{
@@ -76,7 +76,7 @@ const ContactForm = () => {
           zIndex: 1,
         }}
       >
-        Wanna contact us? Do it here{" "}
+        Wanna contact us? Please do it here{" "}
       </h1>
       <form onSubmit={handleSubmit}>
         <table className="items-center">
@@ -87,11 +87,10 @@ const ContactForm = () => {
                   textAlign: "left",
                   color: "#F8C983",
                   fontSize: "x-large",
-                  marginRight: "50px",
                   zIndex: 1,
                 }}
               >
-                <label>First Name:</label>
+                <label>Name:</label>
               </td>
               <td>
                 <input
@@ -99,8 +98,9 @@ const ContactForm = () => {
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   style={{
-                    width: "100%",
-                    padding: "8px",
+                    width: "300px",
+                    padding: "4px",
+                    borderRadius: "10px",
                   }}
                   required
                 />
@@ -124,7 +124,8 @@ const ContactForm = () => {
                   onChange={(e) => setEmail(e.target.value)}
                   style={{
                     width: "100%",
-                    padding: "8px",
+                    padding: "4px",
+                    borderRadius: "10px",
                   }}
                   required
                 />
@@ -137,7 +138,6 @@ const ContactForm = () => {
                   color: "#F8C983",
                   fontSize: "x-large",
                   zIndex: 1,
-                  margin: "50px",
                 }}
               >
                 <label>Phone:</label>
@@ -149,7 +149,8 @@ const ContactForm = () => {
                   onChange={(e) => setPhoneNum(e.target.value)}
                   style={{
                     width: "100%",
-                    padding: "8px",
+                    padding: "4px",
+                    borderRadius: "10px",
                   }}
                   required
                 />
@@ -173,7 +174,8 @@ const ContactForm = () => {
                   onChange={(e) => setSubject(e.target.value)}
                   style={{
                     width: "100%",
-                    padding: "8px",
+                    padding: "4px",
+                    borderRadius: "10px",
                   }}
                   required
                 />
@@ -186,7 +188,6 @@ const ContactForm = () => {
                   color: "#F8C983",
                   fontSize: "x-large",
                   zIndex: 1,
-                  marginRight: "50px",
                 }}
               >
                 <label>Message:</label>
@@ -198,7 +199,8 @@ const ContactForm = () => {
                   style={{
                     width: "100%",
                     minHeight: "200px",
-                    padding: "8px",
+                    padding: "4px",
+                    borderRadius: "10px",
                   }}
                   required
                 />
