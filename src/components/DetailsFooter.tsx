@@ -67,12 +67,6 @@ const DetailsFooter = ({ location }: Props) => {
           <li>
             <Link href="/mobile-app">Mobile App</Link>
           </li>
-          <li>
-            <Link href="/privacy-policy">Privacy Policy</Link>
-          </li>
-          <li>
-            <Link href="/T&Cs">Terms and Condition</Link>
-          </li>
 
           {location === "restaurant" && (
             <>
@@ -104,6 +98,9 @@ const DetailsFooter = ({ location }: Props) => {
               </li>
             </>
           )}
+          <li>
+            <Link href="/policy-terms">Policy and Terms</Link>
+          </li>
         </ul>
       </div>
 
