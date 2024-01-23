@@ -8,7 +8,7 @@ export default function Terms() {
         }}
       />
       <div data-custom-class="body">
-        <div align="center" style={{ textAlign: "left" }}>
+        <div style={{ textAlign: "left" }}>
           <div
             className="MsoNormal"
             data-custom-class="title"
@@ -52,7 +52,7 @@ export default function Terms() {
             </strong>
           </div>
         </div>
-        <div align="center" style={{ textAlign: "left" }}>
+        <div style={{ textAlign: "left" }}>
           <div
             className="MsoNormal"
             id="agreement"
@@ -61,10 +61,10 @@ export default function Terms() {
             <a name="_6aa3gkhykvst" />
           </div>
         </div>
-        <div align="center" style={{ lineHeight: 1 }}>
+        <div style={{ lineHeight: 1 }}>
           <br />
         </div>
-        <div align="center" style={{ textAlign: "left" }}>
+        <div style={{ textAlign: "left" }}>
           <div
             className="MsoNormal"
             data-custom-class="body_text"
@@ -220,10 +220,10 @@ export default function Terms() {
             <bdt className="statement-end-if-in-editor" />
           </div>
         </div>
-        <div align="center" style={{ lineHeight: 1 }}>
+        <div style={{ lineHeight: 1 }}>
           <br />
         </div>
-        <div align="center" style={{ textAlign: "left" }}>
+        <div style={{ textAlign: "left" }}>
           <div
             className="MsoNormal"
             data-custom-class="body_text"
@@ -412,10 +412,10 @@ export default function Terms() {
             </span>
           </div>
         </div>
-        <div align="center" style={{ lineHeight: 1 }}>
+        <div style={{ lineHeight: 1 }}>
           <br />
         </div>
-        <div align="center" style={{ textAlign: "left" }}>
+        <div style={{ textAlign: "left" }}>
           <div
             className="MsoNormal"
             data-custom-class="body_text"
@@ -879,7 +879,7 @@ export default function Terms() {
             </a>
           </div>
         </div>
-        <div align="center" style={{ textAlign: "left" }}>
+        <div style={{ textAlign: "left" }}>
           <div
             className="MsoNormal"
             data-custom-class="heading_1"
@@ -929,7 +929,6 @@ export default function Terms() {
           </div>
         </div>
         <div
-          align="center"
           data-custom-class="heading_1"
           style={{ textAlign: "left", lineHeight: "1.5" }}
         >
@@ -939,10 +938,10 @@ export default function Terms() {
             </span>
           </strong>
         </div>
-        <div align="center" style={{ lineHeight: "1.5" }}>
+        <div style={{ lineHeight: "1.5" }}>
           <br />
         </div>
-        <div align="center" style={{ textAlign: "left" }}>
+        <div style={{ textAlign: "left" }}>
           <div
             className="MsoNormal"
             data-custom-class="heading_2"
@@ -1165,10 +1164,10 @@ export default function Terms() {
             </span>
           </div>
         </div>
-        <div align="center" style={{ lineHeight: "1.5" }}>
+        <div style={{ lineHeight: "1.5" }}>
           <br />
         </div>
-        <div align="center" style={{ textAlign: "left" }}>
+        <div style={{ textAlign: "left" }}>
           <div
             className="MsoNormal"
             data-custom-class="body_text"
@@ -1542,7 +1541,7 @@ export default function Terms() {
             <br />
           </div>
         </div>
-        <div align="center" style={{ textAlign: "left" }}>
+        <div style={{ textAlign: "left" }}>
           <div
             className="MsoNormal"
             data-custom-class="heading_1"
@@ -1595,10 +1594,10 @@ export default function Terms() {
             </strong>
           </div>
         </div>
-        <div align="center" style={{ lineHeight: "1.5" }}>
+        <div style={{ lineHeight: "1.5" }}>
           <br />
         </div>
-        <div align="center" style={{ textAlign: "left" }}>
+        <div style={{ textAlign: "left" }}>
           <div
             className="MsoNormal"
             data-custom-class="body_text"
@@ -1729,10 +1728,10 @@ export default function Terms() {
             </bdt>
           </div>
         </div>
-        <div align="center" style={{ lineHeight: "1.5" }}>
+        <div style={{ lineHeight: "1.5" }}>
           <br />
         </div>
-        <div align="center" style={{ textAlign: "left" }}>
+        <div style={{ textAlign: "left" }}>
           <div
             className="MsoNormal"
             style={{ textAlign: "justify", lineHeight: "115%" }}
@@ -1884,7 +1883,7 @@ export default function Terms() {
             </div>
           </div>
         </div>
-        <div align="center" style={{ textAlign: "left" }}>
+        <div style={{ textAlign: "left" }}>
           <div
             className="MsoNormal"
             data-custom-class="heading_1"
@@ -1937,10 +1936,10 @@ export default function Terms() {
             </strong>
           </div>
         </div>
-        <div align="center" style={{ lineHeight: "1.5" }}>
+        <div style={{ lineHeight: "1.5" }}>
           <br />
         </div>
-        <div align="center" style={{ textAlign: "left" }}>
+        <div style={{ textAlign: "left" }}>
           <div
             className="MsoNormal"
             data-custom-class="body_text"
@@ -2076,10 +2075,10 @@ export default function Terms() {
             </span>
           </div>
         </div>
-        <div align="center" style={{ lineHeight: "1.5" }}>
+        <div style={{ lineHeight: "1.5" }}>
           <br />
         </div>
-        <div align="center" style={{ textAlign: "left" }}>
+        <div style={{ textAlign: "left" }}>
           <div
             className="MsoNormal"
             data-custom-class="body_text"
@@ -2127,10 +2126,10 @@ export default function Terms() {
             </span>
           </div>
         </div>
-        <div align="center" style={{ lineHeight: "1.5" }}>
+        <div style={{ lineHeight: "1.5" }}>
           <br />
         </div>
-        <div align="center" style={{ textAlign: "left" }}>
+        <div style={{ textAlign: "left" }}>
           <div
             className="MsoNormal"
             data-custom-class="body_text"
@@ -4627,7 +4626,7 @@ export default function Terms() {
             </bdt>
           </div>
         </div>
-        <div align="center" style={{ textAlign: "left" }}>
+        <div style={{ textAlign: "left" }}>
           <div className="MsoNormal" style={{ lineHeight: "1.5" }}>
             <br />
           </div>
