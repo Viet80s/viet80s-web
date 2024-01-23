@@ -2,14 +2,16 @@ import Link from "next/link";
 import Image from "next/image";
 import { useMediaQuery } from "react-responsive";
 
-const DetailsFooter = () => {
+type Props = { location: string };
+
+const DetailsFooter = ({ location }: Props) => {
   const divStyle: React.CSSProperties = {
     backgroundImage: 'url("/pictures/lua1.png")',
     backgroundSize: "cover",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
     position: "relative",
-    padding: "20px", // Adjust the padding as needed
+    padding: "20px",
     display: "flex",
     flexDirection: "row",
     justifyContent: "space-between",
@@ -63,15 +65,45 @@ const DetailsFooter = () => {
         <p style={{ textDecoration: "underline" }}>Useful links</p>
         <ul>
           <li>
+            <Link href="/mobile-app">Mobile App</Link>
+          </li>
+          <li>
             <Link href="/privacy-policy">Privacy Policy</Link>
           </li>
           <li>
-            <Link href="/street-food">Viet80s Street Food</Link>
+            <Link href="/T&Cs">Terms and Condition</Link>
           </li>
-          <li>
-            <Link href="/coffee">Viet80s Coffee</Link>
-          </li>
-          {/* Add more links as needed */}
+
+          {location === "restaurant" && (
+            <>
+              <li>
+                <Link href="/street-food">Viet80s Street Food</Link>
+              </li>
+              <li>
+                <Link href="/coffee">Viet80s Coffee</Link>
+              </li>
+            </>
+          )}
+          {location === "street-food" && (
+            <>
+              <li>
+                <Link href="/restaurant">Viet80s Restaurant</Link>
+              </li>
+              <li>
+                <Link href="/coffee">Viet80s Coffee</Link>
+              </li>
+            </>
+          )}
+          {location === "coffee" && (
+            <>
+              <li>
+                <Link href="/street-food">Viet80s Street Food</Link>
+              </li>
+              <li>
+                <Link href="/restaurant">Viet80s Restaurant</Link>
+              </li>
+            </>
+          )}
         </ul>
       </div>
 
@@ -85,9 +117,31 @@ const DetailsFooter = () => {
         style={textColorStyle}
       >
         <p style={{ textDecoration: "underline" }}>Opening Hours</p>
-        <p>Viet80s Restaurant:</p>
-        <p>Mondays - Sundays</p>
-        <p>11:30 AM - 10:30 PM</p>
+        {location === "restaurant" && (
+          <>
+            <p>Viet80s Restaurant:</p>
+            <p>Mondays - Sundays</p>
+            <p>11:30 AM - 10:30 PM</p>
+          </>
+        )}
+        {location === "street-food" && (
+          <>
+            <p>Viet80s Street Food:</p>
+            <p>Mondays - Fridays</p>
+            <p>8:30 AM - 6:00 PM</p>
+            <p>Saturdays - Sundays</p>
+            <p>9:00 AM - 6:00 PM</p>
+          </>
+        )}
+        {location === "coffee" && (
+          <>
+            <p>Viet80s Coffee:</p>
+            <p>Mondays - Fridays</p>
+            <p>8:30 AM - 6:00 PM</p>
+            <p>Saturdays - Sundays</p>
+            <p>9:00 AM - 6:00 PM</p>
+          </>
+        )}
       </div>
     </div>
   );

@@ -23,6 +23,7 @@
     height: 100%;
 }
 
+
 .imageText {
     position: absolute;
     top: 50%;
@@ -34,13 +35,32 @@
     white-space: nowrap;
 }
 
-@media (max-width: 768px) {
+
+.imageWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    background-color: black;
+    text-align: center; 
+  }
+  
+.imageContainer {
+    display: inline-block;
+    width: 80%; 
+    height: auto;
+  }
+
+  @media (max-width: 768px) {
     .container {
         flex-direction: column;
     }
     .imageText {
         font-size: 2em;
     }
+    .imageWrapper {
+        flex-direction: column;
+      }
 }
 
 
