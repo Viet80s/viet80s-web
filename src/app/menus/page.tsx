@@ -111,7 +111,7 @@ export default function Home() {
           </p>
         </div>
       </div>
-      <DetailsFooter />
+      <DetailsFooter location="restaurant" />
       <Footer />
     </>
   );
