@@ -58,7 +58,7 @@ export default function Terms() {
             id="agreement"
             style={{ lineHeight: "1.5" }}
           >
-            <a name="_6aa3gkhykvst" />
+            <a />
           </div>
         </div>
         <div style={{ lineHeight: 1 }}>
