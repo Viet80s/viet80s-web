@@ -14,13 +14,13 @@ export default function Terms() {
             data-custom-class="title"
             style={{ lineHeight: "1.5" }}
           >
-            <bdt className="block-component">
+            <p className="block-component">
               <span style={{ fontSize: 19 }} />
-            </bdt>
-            <bdt className="question">
+            </p>
+            <p className="question">
               <strong>TERMS AND CONDITIONS</strong>
-            </bdt>
-            <bdt className="statement-end-if-in-editor" />
+            </p>
+            <p className="statement-end-if-in-editor" />
           </div>
           <div className="MsoNormal" style={{ lineHeight: "1.5" }}>
             <br />
@@ -31,9 +31,9 @@ export default function Terms() {
             style={{ lineHeight: "1.5" }}
           >
             <strong>Last updated</strong>{" "}
-            <bdt className="question">
+            <p className="question">
               <strong>July 01, 2023</strong>
-            </bdt>
+            </p>
           </div>
           <div className="MsoNormal" style={{ lineHeight: "1.1" }}>
             <br />
@@ -81,20 +81,20 @@ export default function Terms() {
               }}
             >
               We are{" "}
-              <bdt
+              <p
                 className="block-container question question-in-editor"
                 data-id="9d459c4e-c548-e5cb-7729-a118548965d2"
                 data-type="question"
               >
                 Viet80&apos;s Ltd
-              </bdt>
-              <bdt className="block-component" /> (
-              <bdt className="block-component" />
+              </p>
+              <p className="block-component" /> (
+              <p className="block-component" />
               &apos;<strong>Company</strong>&apos;, &apos;
               <strong>we</strong>&apos;, &apos;<strong>us</strong>&apos;, or
               &apos;
               <strong>our</strong>&apos;
-              <bdt className="else-block" />)
+              <p className="else-block" />)
               <span
                 style={{
                   fontSize: "11.0pt",
@@ -125,9 +125,9 @@ export default function Terms() {
                       msoThemetint: 166,
                     }}
                   >
-                    <bdt className="question">
-                      <bdt className="block-component" />
-                    </bdt>
+                    <p className="question">
+                      <p className="block-component" />
+                    </p>
                     <span
                       style={{
                         fontSize: "11.0pt",
@@ -138,10 +138,10 @@ export default function Terms() {
                         msoThemetint: 166,
                       }}
                     >
-                      <bdt className="block-component" />
+                      <p className="block-component" />
                     </span>
                     , a company registered in
-                    <bdt className="block-component" />
+                    <p className="block-component" />
                     <span style={{ fontSize: 15 }}>
                       <span data-custom-class="body_text">
                         <span style={{ fontSize: 15 }}>
@@ -154,7 +154,7 @@ export default function Terms() {
                                       <span
                                         style={{ color: "rgb(89, 89, 89)" }}
                                       >
-                                        <bdt className="block-component" />
+                                        <p className="block-component" />
                                       </span>
                                     </span>
                                   </span>
@@ -165,27 +165,27 @@ export default function Terms() {
                         </span>
                       </span>
                     </span>{" "}
-                    the <bdt className="question">United Kingdom</bdt>
-                    <bdt className="block-component" />
+                    the <p className="question">United Kingdom</p>
+                    <p className="block-component" />
                   </span>
                 </span>
-                <bdt className="block-component" />
+                <p className="block-component" />
               </span>
             </span>{" "}
-            at <bdt className="question">57-59 Friar Lane</bdt>
-            <bdt className="block-component" />,{" "}
-            <bdt className="question">Nottingham</bdt>
+            at <p className="question">57-59 Friar Lane</p>
+            <p className="block-component" />,{" "}
+            <p className="question">Nottingham</p>
             <span style={{ fontSize: 15 }}>
               <span data-custom-class="body_text">
                 <span style={{ fontSize: 15 }}>
                   <span data-custom-class="body_text">
                     <span style={{ color: "rgb(89, 89, 89)" }}>
-                      <bdt className="block-component" />,{" "}
-                      <bdt className="question">Nottinghamshire</bdt>
-                      <bdt className="statement-end-if-in-editor" />
-                      <bdt className="block-component" />{" "}
-                      <bdt className="question">NG1 6DH</bdt>
-                      <bdt className="statement-end-if-in-editor" />
+                      <p className="block-component" />,{" "}
+                      <p className="question">Nottinghamshire</p>
+                      <p className="statement-end-if-in-editor" />
+                      <p className="block-component" />{" "}
+                      <p className="question">NG1 6DH</p>
+                      <p className="statement-end-if-in-editor" />
                     </span>
                   </span>
                 </span>
@@ -211,13 +211,13 @@ export default function Terms() {
                   msoThemetint: 166,
                 }}
               >
-                <bdt className="else-block" />
+                <p className="else-block" />
               </span>
             </span>
-            <bdt className="statement-end-if-in-editor">.</bdt>
-            <bdt className="block-component" /> Our VAT number is{" "}
-            <bdt className="question">355246985.</bdt>
-            <bdt className="statement-end-if-in-editor" />
+            <p className="statement-end-if-in-editor">.</p>
+            <p className="block-component" /> Our VAT number is{" "}
+            <p className="question">355246985.</p>
+            <p className="statement-end-if-in-editor" />
           </div>
         </div>
         <div style={{ lineHeight: 1 }}>
@@ -239,25 +239,24 @@ export default function Terms() {
                 msoThemetint: 166,
               }}
             >
-              We operate <bdt className="block-component" />
-              <bdt className="block-component" />
-              the mobile application <bdt className="question">
+              We operate <p className="block-component" />
+              <p className="block-component" />
+              the mobile application <p className="question">
                 Viet80s
-              </bdt>{" "}
-              (the <bdt className="block-component" />
+              </p> (the <p className="block-component" />
               &apos;<strong>App</strong>&apos;
-              <bdt className="else-block" />)
-              <bdt className="statement-end-if-in-editor" />, as well as any
-              other related products and services that refer or link to these
-              legal terms (the <bdt className="block-component" />
+              <p className="else-block" />)
+              <p className="statement-end-if-in-editor" />, as well as any other
+              related products and services that refer or link to these legal
+              terms (the <p className="block-component" />
               &apos;
               <strong>Legal Terms</strong>&apos;
-              <bdt className="else-block" />) (collectively, the{" "}
-              <bdt className="block-component" />
+              <p className="else-block" />) (collectively, the{" "}
+              <p className="block-component" />
               &apos;<strong>Services</strong>&apos;
-              <bdt className="else-block" />
+              <p className="else-block" />
               ).
-              <bdt className="block-component" />
+              <p className="block-component" />
             </span>
           </div>
           <div className="MsoNormal" style={{ lineHeight: 1 }}>
@@ -278,23 +277,23 @@ export default function Terms() {
                 msoThemetint: 166,
               }}
             >
-              You can contact us by <bdt className="block-component" />
-              phone at <bdt className="question">0115 958 6868</bdt>, email at{" "}
-              <bdt className="question">info@viet80s.co.uk</bdt>
-              <bdt className="block-component" />,
-              <bdt className="statement-end-if-in-editor" /> or by mail to{" "}
-              <bdt className="question">57-59 Friar Lane</bdt>
-              <bdt className="block-component" />,{" "}
-              <bdt className="question">Nottingham</bdt>
-              <bdt className="block-component" />,{" "}
-              <bdt className="question">Nottinghamshire</bdt>
-              <bdt className="statement-end-if-in-editor" />
-              <bdt className="block-component" />{" "}
-              <bdt className="question">NG1 6DH</bdt>
-              <bdt className="statement-end-if-in-editor" />
-              <bdt className="block-component">,&nbsp;</bdt>
-              <bdt className="question">United Kingdom</bdt>
-              <bdt className="else-block" />.
+              You can contact us by <p className="block-component" />
+              phone at <p className="question">0115 958 6868</p>, email at{" "}
+              <p className="question">info@viet80s.co.uk</p>
+              <p className="block-component" />,
+              <p className="statement-end-if-in-editor" /> or by mail to{" "}
+              <p className="question">57-59 Friar Lane</p>
+              <p className="block-component" />,{" "}
+              <p className="question">Nottingham</p>
+              <p className="block-component" />,{" "}
+              <p className="question">Nottinghamshire</p>
+              <p className="statement-end-if-in-editor" />
+              <p className="block-component" />{" "}
+              <p className="question">NG1 6DH</p>
+              <p className="statement-end-if-in-editor" />
+              <p className="block-component">,&nbsp;</p>
+              <p className="question">United Kingdom</p>
+              <p className="else-block" />.
             </span>
           </div>
           <div className="MsoNormal" style={{ lineHeight: 1 }}>
@@ -317,18 +316,18 @@ export default function Terms() {
             >
               These Legal Terms constitute a legally binding agreement made
               between you, whether personally or on behalf of an entity (
-              <bdt className="block-component" />
+              <p className="block-component" />
               &apos;<strong>y</strong>
               <strong>ou</strong>&apos;
-              <bdt className="else-block" />
-              ), and <bdt className="question">Viet80&apos;s Ltd</bdt>,
-              concerning your access to and use of the Services. You agree that
-              by accessing the Services, you have read, understood, and agreed
-              to be bound by all of these Legal Terms. IF YOU DO NOT AGREE WITH
-              ALL OF THESE LEGAL TERMS, THEN YOU ARE EXPRESSLY PROHIBITED FROM
-              USING THE SERVICES AND YOU MUST DISCONTINUE USE IMMEDIATELY.
-              <bdt className="block-component" />
-              <bdt className="block-component" />
+              <p className="else-block" />
+              ), and <p className="question">Viet80&apos;s Ltd</p>, concerning
+              your access to and use of the Services. You agree that by
+              accessing the Services, you have read, understood, and agreed to
+              be bound by all of these Legal Terms. IF YOU DO NOT AGREE WITH ALL
+              OF THESE LEGAL TERMS, THEN YOU ARE EXPRESSLY PROHIBITED FROM USING
+              THE SERVICES AND YOU MUST DISCONTINUE USE IMMEDIATELY.
+              <p className="block-component" />
+              <p className="block-component" />
             </span>
           </div>
           <div className="MsoNormal" style={{ lineHeight: 1 }}>
@@ -351,34 +350,34 @@ export default function Terms() {
             >
               We will provide you with prior notice of any scheduled changes to
               the Services you are using. Changes to Legal Terms will become
-              effective <bdt className="question">seven (7)</bdt> days after the
+              effective <p className="question">seven (7)</p> days after the
               notice is given
-              <bdt className="block-component" />, except if the changes apply
-              to <bdt className="forloop-component" />
-              <bdt className="block-component" />
-              <bdt className="question">new functionality</bdt>
-              <bdt className="block-component" />
-              <bdt className="forloop-component" />
-              <bdt className="block-component" />,{" "}
-              <bdt className="question">security updates</bdt>
-              <bdt className="else-block" />
-              <bdt className="forloop-component" />
-              <bdt className="block-component" />,{" "}
-              <bdt className="question">bug fixes</bdt>
-              <bdt className="else-block" />
-              <bdt className="forloop-component" />
-              <bdt className="block-component" />, and{" "}
-              <bdt className="question">a court order</bdt>
-              <bdt className="statement-end-if-in-editor" />
-              <bdt className="forloop-component" />, in which case the changes
+              <p className="block-component" />, except if the changes apply to{" "}
+              <p className="forloop-component" />
+              <p className="block-component" />
+              <p className="question">new functionality</p>
+              <p className="block-component" />
+              <p className="forloop-component" />
+              <p className="block-component" />,{" "}
+              <p className="question">security updates</p>
+              <p className="else-block" />
+              <p className="forloop-component" />
+              <p className="block-component" />,{" "}
+              <p className="question">bug fixes</p>
+              <p className="else-block" />
+              <p className="forloop-component" />
+              <p className="block-component" />, and{" "}
+              <p className="question">a court order</p>
+              <p className="statement-end-if-in-editor" />
+              <p className="forloop-component" />, in which case the changes
               will be effective immediately
-              <bdt className="statement-end-if-in-editor" />. By continuing to
-              use the Services after the effective date of any changes, you
-              agree to be bound by the modified terms. If you disagree with such
-              changes, you may terminate Services as per the section{" "}
-              <bdt className="block-component" />
+              <p className="statement-end-if-in-editor" />. By continuing to use
+              the Services after the effective date of any changes, you agree to
+              be bound by the modified terms. If you disagree with such changes,
+              you may terminate Services as per the section{" "}
+              <p className="block-component" />
               &apos;
-              <bdt className="else-block" />
+              <p className="else-block" />
             </span>
             <a data-custom-class="link" href="#terms">
               <span
@@ -404,11 +403,11 @@ export default function Terms() {
                 msoThemetint: 166,
               }}
             >
-              <bdt className="block-component" />
+              <p className="block-component" />
               &apos;.
-              <bdt className="else-block" />
-              <bdt className="else-block" />
-              <bdt className="statement-end-if-in-editor" />
+              <p className="else-block" />
+              <p className="else-block" />
+              <p className="statement-end-if-in-editor" />
             </span>
           </div>
         </div>
@@ -421,13 +420,13 @@ export default function Terms() {
             data-custom-class="body_text"
             style={{ lineHeight: "1.5" }}
           >
-            <bdt
+            <p
               className="block-container if"
               data-type="if"
               id="a2595956-7028-dbe5-123e-d3d3a93ed076"
             >
-              <bdt data-type="conditional-block">
-                <bdt data-type="body">
+              <p data-type="conditional-block">
+                <p data-type="body">
                   <span
                     style={{
                       fontSize: "11.0pt",
@@ -438,17 +437,17 @@ export default function Terms() {
                       msoThemetint: 166,
                     }}
                   >
-                    <bdt className="block-component" />
+                    <p className="block-component" />
                     The Services are intended for users who are at least 18
                     years old. Persons under the age of 18 are not permitted to
                     use or register for the Services.
                   </span>
-                </bdt>
-              </bdt>
-              <bdt data-type="conditional-block">
-                <bdt className="block-component" />
-              </bdt>
-            </bdt>
+                </p>
+              </p>
+              <p data-type="conditional-block">
+                <p className="block-component" />
+              </p>
+            </p>
           </div>
           <div className="MsoNormal" style={{ lineHeight: 1 }}>
             <br />
@@ -506,7 +505,7 @@ export default function Terms() {
           <div className="MsoNormal" style={{ lineHeight: "1.5" }}>
             <span style={{ fontSize: 15 }}>
               <span data-custom-class="body_text">
-                <bdt className="block-component" />
+                <p className="block-component" />
               </span>
             </span>
             <a data-custom-class="link" href="#userreg">
@@ -516,7 +515,7 @@ export default function Terms() {
             </a>
             <span style={{ fontSize: 15 }}>
               <span data-custom-class="body_text">
-                <bdt className="statement-end-if-in-editor" />
+                <p className="statement-end-if-in-editor" />
               </span>
             </span>{" "}
             <a data-custom-class="link" href="#products" />
@@ -525,9 +524,9 @@ export default function Terms() {
             <a data-custom-class="link" href="#products">
               <span style={{ fontSize: 15 }}>
                 <span data-custom-class="body_text">
-                  <bdt className="block-component" />
-                  <bdt className="block-component" />
-                  <bdt className="statement-end-if-in-editor" />
+                  <p className="block-component" />
+                  <p className="block-component" />
+                  <p className="statement-end-if-in-editor" />
                 </span>
               </span>
             </a>{" "}
@@ -537,9 +536,9 @@ export default function Terms() {
             <a data-custom-class="link" href="#purchases">
               <span style={{ fontSize: 15 }}>
                 <span data-custom-class="body_text">
-                  <bdt className="block-component" />
+                  <p className="block-component" />
                   5. PURCHASES AND PAYMENT
-                  <bdt className="statement-end-if-in-editor" />
+                  <p className="statement-end-if-in-editor" />
                 </span>
               </span>
             </a>
@@ -547,28 +546,28 @@ export default function Terms() {
           <div className="MsoNormal" style={{ lineHeight: "1.5" }}>
             <span style={{ fontSize: 15 }}>
               <span data-custom-class="body_text">
-                <bdt className="block-component" />
-                <bdt className="block-component" />
+                <p className="block-component" />
+                <p className="block-component" />
               </span>
             </span>
             <a data-custom-class="link" href="#returnno">
               <span style={{ fontSize: 15 }}>
                 <span data-custom-class="body_text">
-                  6. <bdt className="block-component" /> POLICY
+                  6. <p className="block-component" /> POLICY
                 </span>
               </span>
             </a>
             <span style={{ fontSize: 15 }}>
               <span data-custom-class="body_text">
-                <bdt className="statement-end-if-in-editor" />
-                <bdt className="statement-end-if-in-editor" />
+                <p className="statement-end-if-in-editor" />
+                <p className="statement-end-if-in-editor" />
               </span>
             </span>
           </div>
           <div className="MsoNormal" style={{ lineHeight: "1.5" }}>
             <span style={{ fontSize: 15 }}>
               <span data-custom-class="body_text">
-                <bdt className="block-component" />
+                <p className="block-component" />
               </span>
             </span>{" "}
             <a data-custom-class="link" href="#software" />{" "}
@@ -578,7 +577,7 @@ export default function Terms() {
             <a data-custom-class="link" href="#software">
               <span style={{ fontSize: 15 }}>
                 <span data-custom-class="body_text">
-                  <bdt className="block-component" />
+                  <p className="block-component" />
                 </span>
               </span>
             </a>{" "}
@@ -608,9 +607,9 @@ export default function Terms() {
             <a data-custom-class="link" href="#license">
               <span style={{ fontSize: 15 }}>
                 <span data-custom-class="body_text">
-                  9. CONTRIBUTION <bdt className="block-component" />
+                  9. CONTRIBUTION <p className="block-component" />
                   LICENCE
-                  <bdt className="else-block" />
+                  <p className="else-block" />
                 </span>
               </span>
             </a>{" "}
@@ -620,9 +619,9 @@ export default function Terms() {
             <a data-custom-class="link" href="#reviews">
               <span style={{ fontSize: 15 }}>
                 <span data-custom-class="body_text">
-                  <bdt className="block-component" />
+                  <p className="block-component" />
                   10. GUIDELINES FOR REVIEWS
-                  <bdt className="statement-end-if-in-editor" />
+                  <p className="statement-end-if-in-editor" />
                 </span>
               </span>
             </a>{" "}
@@ -632,11 +631,11 @@ export default function Terms() {
             <a data-custom-class="link" href="#mobile">
               <span style={{ fontSize: 15 }}>
                 <span data-custom-class="body_text">
-                  <bdt className="block-component" />
-                  11. MOBILE APPLICATION <bdt className="block-component" />
+                  <p className="block-component" />
+                  11. MOBILE APPLICATION <p className="block-component" />
                   LICENCE
-                  <bdt className="else-block" />
-                  <bdt className="statement-end-if-in-editor" />
+                  <p className="else-block" />
+                  <p className="statement-end-if-in-editor" />
                 </span>
               </span>
             </a>{" "}
@@ -646,7 +645,7 @@ export default function Terms() {
             <a data-custom-class="link" href="#socialmedia">
               <span style={{ fontSize: 15 }}>
                 <span data-custom-class="body_text">
-                  <bdt className="block-component" />
+                  <p className="block-component" />
                 </span>
               </span>
             </a>{" "}
@@ -656,7 +655,7 @@ export default function Terms() {
             <a data-custom-class="link" href="#thirdparty">
               <span style={{ fontSize: 15 }}>
                 <span data-custom-class="body_text">
-                  <bdt className="block-component" />
+                  <p className="block-component" />
                 </span>
               </span>
             </a>{" "}
@@ -666,7 +665,7 @@ export default function Terms() {
             <a data-custom-class="link" href="#advertisers">
               <span style={{ fontSize: 15 }}>
                 <span data-custom-class="body_text">
-                  <bdt className="block-component" />
+                  <p className="block-component" />
                 </span>
               </span>
             </a>{" "}
@@ -686,7 +685,7 @@ export default function Terms() {
             <a data-custom-class="link" href="#ppyes">
               <span style={{ fontSize: 15 }}>
                 <span data-custom-class="body_text">
-                  <bdt className="block-component" />
+                  <p className="block-component" />
                 </span>
               </span>
             </a>{" "}
@@ -696,7 +695,7 @@ export default function Terms() {
             <a data-custom-class="link" href="#ppno">
               <span style={{ fontSize: 15 }}>
                 <span data-custom-class="body_text">
-                  <bdt className="block-component" />
+                  <p className="block-component" />
                 </span>
               </span>
             </a>{" "}
@@ -706,7 +705,7 @@ export default function Terms() {
             <a data-custom-class="link" href="#dmca">
               <span style={{ fontSize: 15 }}>
                 <span data-custom-class="body_text">
-                  <bdt className="block-component" />
+                  <p className="block-component" />
                 </span>
               </span>
             </a>
@@ -714,8 +713,8 @@ export default function Terms() {
           <div className="MsoNormal" style={{ lineHeight: "1.5" }}>
             <span style={{ fontSize: 15 }}>
               <span data-custom-class="body_text">
-                <bdt className="block-component" />
-                <bdt className="block-component" />
+                <p className="block-component" />
+                <p className="block-component" />
               </span>
             </span>
             <a data-custom-class="link" href="#copyrightno">
@@ -727,8 +726,8 @@ export default function Terms() {
             </a>
             <span style={{ fontSize: 15 }}>
               <span data-custom-class="body_text">
-                <bdt className="statement-end-if-in-editor" />
-                <bdt className="statement-end-if-in-editor" />
+                <p className="statement-end-if-in-editor" />
+                <p className="statement-end-if-in-editor" />
               </span>
             </span>{" "}
             <a data-custom-class="link" href="#terms" />
@@ -827,7 +826,7 @@ export default function Terms() {
             <a data-custom-class="link" href="#california">
               <span style={{ fontSize: 15 }}>
                 <span data-custom-class="body_text">
-                  <bdt className="block-component" />
+                  <p className="block-component" />
                 </span>
               </span>
             </a>{" "}
@@ -842,34 +841,34 @@ export default function Terms() {
             <a data-custom-class="link" href="#contact" />
           </div>
           <div className="MsoNormal" style={{ lineHeight: "1.5" }}>
-            <bdt className="block-component" />
+            <p className="block-component" />
           </div>
           <div className="MsoNormal" style={{ lineHeight: "1.5" }}>
-            <bdt className="block-component" />
+            <p className="block-component" />
           </div>
           <div className="MsoNormal" style={{ lineHeight: "1.5" }}>
-            <bdt className="block-component" />
+            <p className="block-component" />
           </div>
           <div className="MsoNormal" style={{ lineHeight: "1.5" }}>
-            <bdt className="block-component" />
+            <p className="block-component" />
           </div>
           <div className="MsoNormal" style={{ lineHeight: "1.5" }}>
-            <bdt className="block-component" />
+            <p className="block-component" />
           </div>
           <div className="MsoNormal" style={{ lineHeight: "1.5" }}>
-            <bdt className="block-component" />
+            <p className="block-component" />
           </div>
           <div className="MsoNormal" style={{ lineHeight: "1.5" }}>
-            <bdt className="block-component" />
+            <p className="block-component" />
           </div>
           <div className="MsoNormal" style={{ lineHeight: "1.5" }}>
-            <bdt className="block-component" />
+            <p className="block-component" />
           </div>
           <div className="MsoNormal" style={{ lineHeight: "1.5" }}>
-            <bdt className="block-component" />
+            <p className="block-component" />
           </div>
           <div className="MsoNormal" style={{ lineHeight: "1.5" }}>
-            <bdt className="block-component" />
+            <p className="block-component" />
           </div>
           <div className="MsoNormal" style={{ lineHeight: "1.5" }}>
             <a data-custom-class="link" href="#contact">
@@ -921,7 +920,7 @@ export default function Terms() {
               other locations do so on their own initiative and are solely
               responsible for compliance with local laws, if and to the extent
               local laws are applicable.
-              <bdt className="block-component" />
+              <p className="block-component" />
             </span>
           </div>
           <div className="MsoNormal" style={{ lineHeight: "1.5" }}>
@@ -971,13 +970,13 @@ export default function Terms() {
               rights in our Services, including all source code, databases,
               functionality, software, website designs, audio, video, text,
               photographs, and graphics in the Services (collectively, the{" "}
-              <bdt className="block-component" />
+              <p className="block-component" />
               &apos;Content&apos;
-              <bdt className="else-block" />
+              <p className="else-block" />
               ), as well as the trademarks, service marks, and logos contained
-              therein (the <bdt className="block-component" />
+              therein (the <p className="block-component" />
               &apos;Marks&apos;
-              <bdt className="else-block" />
+              <p className="else-block" />
               ).
             </span>
           </div>
@@ -1024,12 +1023,12 @@ export default function Terms() {
               }}
             >
               The Content and Marks are provided in or through the Services{" "}
-              <bdt className="block-component" />
+              <p className="block-component" />
               &apos;AS IS&apos;
-              <bdt className="else-block" /> for your{" "}
-              <bdt className="block-component" />
+              <p className="else-block" /> for your{" "}
+              <p className="block-component" />
               personal, non-commercial use
-              <bdt className="block-component" /> only.
+              <p className="block-component" /> only.
             </span>
           </div>
           <div className="MsoNormal" style={{ lineHeight: "1.5" }}>
@@ -1052,21 +1051,21 @@ export default function Terms() {
           >
             <span style={{ fontSize: 15 }}>
               Subject to your compliance with these Legal Terms, including the{" "}
-              <bdt className="block-component" />
+              <p className="block-component" />
               &apos;
-              <bdt className="else-block" />
+              <p className="else-block" />
             </span>
             <a data-custom-class="link" href="#prohibited">
               <span style={{ fontSize: 15 }}>PROHIBITED ACTIVITIES</span>
             </a>
             <span style={{ fontSize: 15 }}>
-              <bdt className="block-component" />
+              <p className="block-component" />
               &apos;
-              <bdt className="else-block" /> section below, we grant you a
+              <p className="else-block" /> section below, we grant you a
               non-exclusive, non-transferable, revocable{" "}
-              <bdt className="block-component" />
+              <p className="block-component" />
               licence
-              <bdt className="else-block" /> to:
+              <p className="else-block" /> to:
             </span>
           </div>
           <ul>
@@ -1103,9 +1102,9 @@ export default function Terms() {
                 msoThemetint: 166,
               }}
             >
-              solely for your <bdt className="block-component" />
+              solely for your <p className="block-component" />
               personal, non-commercial use
-              <bdt className="block-component" />.
+              <p className="block-component" />.
             </span>
           </div>
           <div className="MsoNormal" style={{ lineHeight: "1.5" }}>
@@ -1155,9 +1154,9 @@ export default function Terms() {
               If you wish to make any use of the Services, Content, or Marks
               other than as set out in this section or elsewhere in our Legal
               Terms, please address your request to:{" "}
-              <bdt className="question">info@viet80s.co.uk</bdt>. If we ever
-              grant you the permission to post, reproduce, or publicly display
-              any part of our Services or Content, you must identify us as the
+              <p className="question">info@viet80s.co.uk</p>. If we ever grant
+              you the permission to post, reproduce, or publicly display any
+              part of our Services or Content, you must identify us as the
               owners or licensors of the Services, Content, or Marks and ensure
               that any copyright or proprietary notice appears or is visible on
               posting, reproducing, or displaying our Content.
@@ -1230,11 +1229,11 @@ export default function Terms() {
             >
               <strong>
                 Your submissions
-                <bdt className="block-component" /> and contributions
+                <p className="block-component" /> and contributions
               </strong>
-              <bdt className="statement-end-if-in-editor">
+              <p className="statement-end-if-in-editor">
                 <strong />
-              </bdt>
+              </p>
             </span>
           </div>
           <div className="MsoNormal" style={{ lineHeight: "1.5" }}>
@@ -1247,16 +1246,16 @@ export default function Terms() {
           >
             <span style={{ fontSize: 15 }}>
               Please review this section and the{" "}
-              <bdt className="block-component" />
+              <p className="block-component" />
               &apos;
-              <bdt className="else-block" />
+              <p className="else-block" />
               <a data-custom-class="link" href="#prohibited">
                 PROHIBITED ACTIVITIES
               </a>
-              <bdt className="block-component" />
+              <p className="block-component" />
               &apos;
-              <bdt className="else-block" /> section carefully prior to using
-              our Services to understand the (a) rights you give us and (b)
+              <p className="else-block" /> section carefully prior to using our
+              Services to understand the (a) rights you give us and (b)
               obligations you have when you post or upload any content through
               the Services.
             </span>
@@ -1272,15 +1271,15 @@ export default function Terms() {
             <span style={{ fontSize: 15 }}>
               <strong>Submissions:</strong> By directly sending us any question,
               comment, suggestion, idea, feedback, or other information about
-              the Services (<bdt className="block-component" />
+              the Services (<p className="block-component" />
               &apos;Submissions&apos;
-              <bdt className="else-block" />
+              <p className="else-block" />
               ), you agree to assign to us all intellectual property rights in
               such Submission. You agree that we shall own this Submission and
               be entitled to its unrestricted use and dissemination for any
               lawful purpose, commercial or otherwise, without acknowledgment or
               compensation to you.
-              <bdt className="block-component" />
+              <p className="block-component" />
             </span>
           </div>
           <div className="MsoNormal" style={{ lineHeight: "1.5" }}>
@@ -1300,9 +1299,9 @@ export default function Terms() {
               including but not limited to text, writings, video, audio,
               photographs, music, graphics, comments, reviews, rating
               suggestions, personal information, or other material (
-              <bdt className="block-component" />
+              <p className="block-component" />
               &apos;Contributions&apos;
-              <bdt className="else-block" />
+              <p className="else-block" />
               ). Any Submission that is publicly posted shall also be treated as
               a Contribution.
             </span>
@@ -1318,7 +1317,7 @@ export default function Terms() {
             <span style={{ fontSize: 15 }}>
               You understand that Contributions may be viewable by other users
               of the Services
-              <bdt className="block-component" />.
+              <p className="block-component" />.
             </span>
           </div>
           <div className="MsoNormal" style={{ lineHeight: "1.5" }}>
@@ -1332,28 +1331,28 @@ export default function Terms() {
             <span style={{ fontSize: 15 }}>
               <strong>
                 When you post Contributions, you grant us a{" "}
-                <bdt className="block-component" />
+                <p className="block-component" />
                 licence
-                <bdt className="else-block" /> (including use of your name,
+                <p className="else-block" /> (including use of your name,
                 trademarks, and logos):&nbsp;
               </strong>
               By posting any Contributions, you grant us an unrestricted,
               unlimited, irrevocable, perpetual, non-exclusive, transferable,
               royalty-free, fully-paid, worldwide right, and{" "}
-              <bdt className="block-component" />
+              <p className="block-component" />
               licence
-              <bdt className="else-block" /> to: use, copy, reproduce,
-              distribute, sell, resell, publish, broadcast, retitle, store,
-              publicly perform, publicly display, reformat, translate, excerpt
-              (in whole or in part), and exploit your Contributions (including,
-              without limitation, your image, name, and voice) for any purpose,
+              <p className="else-block" /> to: use, copy, reproduce, distribute,
+              sell, resell, publish, broadcast, retitle, store, publicly
+              perform, publicly display, reformat, translate, excerpt (in whole
+              or in part), and exploit your Contributions (including, without
+              limitation, your image, name, and voice) for any purpose,
               commercial, advertising, or otherwise, to prepare derivative works
               of, or incorporate into other works, your Contributions, and to{" "}
-              <bdt className="block-component" />
+              <p className="block-component" />
               sublicence the licences
-              <bdt className="else-block" /> granted in this section. Our use
-              and distribution may occur in any media formats and through any
-              media channels.
+              <p className="else-block" /> granted in this section. Our use and
+              distribution may occur in any media formats and through any media
+              channels.
             </span>
           </div>
           <div className="MsoNormal" style={{ lineHeight: "1.5" }}>
@@ -1365,13 +1364,13 @@ export default function Terms() {
             style={{ lineHeight: "1.5" }}
           >
             <span style={{ fontSize: 15 }}>
-              This <bdt className="block-component" />
+              This <p className="block-component" />
               licence
-              <bdt className="else-block" /> includes our use of your name,
+              <p className="else-block" /> includes our use of your name,
               company name, and franchise name, as applicable, and any of the
               trademarks, service marks, trade names, logos, and personal and
               commercial images you provide.
-              <bdt className="statement-end-if-in-editor" />
+              <p className="statement-end-if-in-editor" />
             </span>
           </div>
           <div className="MsoNormal" style={{ lineHeight: "1.5" }}>
@@ -1385,13 +1384,13 @@ export default function Terms() {
             <span style={{ fontSize: 15 }}>
               <strong>You are responsible for what you post or upload:</strong>{" "}
               By sending us Submissions
-              <bdt className="block-component" /> and/or posting Contributions
-              <bdt className="statement-end-if-in-editor" /> through any part of
+              <p className="block-component" /> and/or posting Contributions
+              <p className="statement-end-if-in-editor" /> through any part of
               the Services
-              <bdt className="block-component" /> or making Contributions
+              <p className="block-component" /> or making Contributions
               accessible through the Services by linking your account through
               the Services to any of your social networking accounts,
-              <bdt className="statement-end-if-in-editor" /> you:
+              <p className="statement-end-if-in-editor" /> you:
             </span>
           </div>
           <ul>
@@ -1402,20 +1401,20 @@ export default function Terms() {
             >
               <span style={{ fontSize: 15 }}>
                 confirm that you have read and agree with our{" "}
-                <bdt className="block-component" />
+                <p className="block-component" />
                 &apos;
-                <bdt className="else-block" />
+                <p className="else-block" />
               </span>
               <a data-custom-class="link" href="#prohibited">
                 <span style={{ fontSize: 15 }}>PROHIBITED ACTIVITIES</span>
               </a>
               <span style={{ fontSize: 15 }}>
-                <bdt className="block-component" />
+                <p className="block-component" />
                 &apos;
-                <bdt className="else-block" /> and will not post, send, publish,
+                <p className="else-block" /> and will not post, send, publish,
                 upload, or transmit through the Services any Submission
-                <bdt className="block-component" /> nor post any Contribution
-                <bdt className="statement-end-if-in-editor" /> that is illegal,
+                <p className="block-component" /> nor post any Contribution
+                <p className="statement-end-if-in-editor" /> that is illegal,
                 harassing, hateful, harmful, defamatory, obscene, bullying,
                 abusive, discriminatory, threatening to any person or group,
                 sexually explicit, false, inaccurate, deceitful, or misleading;
@@ -1429,8 +1428,8 @@ export default function Terms() {
               <span style={{ fontSize: 15 }}>
                 to the extent permissible by applicable law, waive any and all
                 moral rights to any such Submission
-                <bdt className="block-component" /> and/or Contribution
-                <bdt className="statement-end-if-in-editor" />;
+                <p className="block-component" /> and/or Contribution
+                <p className="statement-end-if-in-editor" />;
               </span>
             </li>
             <li
@@ -1440,18 +1439,18 @@ export default function Terms() {
             >
               <span style={{ fontSize: 15 }}>
                 warrant that any such Submission
-                <bdt className="block-component" /> and/or Contributions
-                <bdt className="statement-end-if-in-editor" /> are original to
-                you or that you have the necessary rights and{" "}
-                <bdt className="block-component" />
+                <p className="block-component" /> and/or Contributions
+                <p className="statement-end-if-in-editor" /> are original to you
+                or that you have the necessary rights and{" "}
+                <p className="block-component" />
                 licences
-                <bdt className="else-block" /> to submit such Submissions
-                <bdt className="block-component" /> and/or Contributions
-                <bdt className="statement-end-if-in-editor" /> and that you have
+                <p className="else-block" /> to submit such Submissions
+                <p className="block-component" /> and/or Contributions
+                <p className="statement-end-if-in-editor" /> and that you have
                 full authority to grant us the above-mentioned rights in
                 relation to your Submissions
-                <bdt className="block-component" /> and/or Contributions
-                <bdt className="statement-end-if-in-editor" />; and
+                <p className="block-component" /> and/or Contributions
+                <p className="statement-end-if-in-editor" />; and
               </span>
             </li>
             <li
@@ -1461,8 +1460,8 @@ export default function Terms() {
             >
               <span style={{ fontSize: 15 }}>
                 warrant and represent that your Submissions
-                <bdt className="block-component" /> and/or Contributions
-                <bdt className="statement-end-if-in-editor" /> do not constitute
+                <p className="block-component" /> and/or Contributions
+                <p className="statement-end-if-in-editor" /> do not constitute
                 confidential information.
               </span>
             </li>
@@ -1473,12 +1472,12 @@ export default function Terms() {
             style={{ lineHeight: "1.5" }}
           >
             You are solely responsible for your Submissions
-            <bdt className="block-component" /> and/or Contributions{" "}
-            <bdt className="statement-end-if-in-editor" /> and you expressly
-            agree to reimburse us for any and all losses that we may suffer
-            because of your breach of (a) this section, (b) any third party’s
-            intellectual property rights, or (c) applicable law.
-            <bdt className="block-component" />
+            <p className="block-component" /> and/or Contributions{" "}
+            <p className="statement-end-if-in-editor" /> and you expressly agree
+            to reimburse us for any and all losses that we may suffer because of
+            your breach of (a) this section, (b) any third party’s intellectual
+            property rights, or (c) applicable law.
+            <p className="block-component" />
           </div>
           <div className="MsoNormal" style={{ lineHeight: "1.5" }}>
             <br />
@@ -1495,8 +1494,8 @@ export default function Terms() {
             or in breach of these Legal Terms. If we remove or edit any such
             Contributions, we may also suspend or disable your account and
             report you to the authorities.
-            <bdt className="statement-end-if-in-editor" />
-            <bdt className="block-component" />
+            <p className="statement-end-if-in-editor" />
+            <p className="block-component" />
           </div>
           <div className="MsoNormal" style={{ lineHeight: "1.5" }}>
             <br />
@@ -1519,23 +1518,23 @@ export default function Terms() {
             We respect the intellectual property rights of others. If you
             believe that any material available on or through the Services
             infringes upon any copyright you own or control, please immediately
-            refer to the <bdt className="block-component" />
+            refer to the <p className="block-component" />
             &apos;
-            <bdt className="else-block" />
+            <p className="else-block" />
             <a data-custom-class="link" href="#dmca">
-              <bdt className="block-component" />
+              <p className="block-component" />
             </a>
-            <bdt className="block-component" />
+            <p className="block-component" />
             <a data-custom-class="link" href="#copyrightno">
-              <bdt className="block-component" />
+              <p className="block-component" />
               COPYRIGHT INFRINGEMENTS
-              <bdt className="statement-end-if-in-editor" />
+              <p className="statement-end-if-in-editor" />
             </a>
-            <bdt className="statement-end-if-in-editor" />
-            <bdt className="block-component" />
+            <p className="statement-end-if-in-editor" />
+            <p className="block-component" />
             &apos;
-            <bdt className="else-block" /> section below.
-            <bdt className="statement-end-if-in-editor" />
+            <p className="else-block" /> section below.
+            <p className="statement-end-if-in-editor" />
           </div>
           <div className="MsoNormal" style={{ lineHeight: "1.5" }}>
             <br />
@@ -1615,18 +1614,18 @@ export default function Terms() {
             >
               By using the Services, you represent and warrant that:
             </span>
-            <bdt
+            <p
               className="block-container if"
               data-type="if"
               id="d2d82ca8-275f-3f86-8149-8a5ef8054af6"
             >
-              <bdt data-type="conditional-block">
-                <bdt
+              <p data-type="conditional-block">
+                <p
                   className="block-component"
                   data-record-question-key="user_account_option"
                   data-type="statement"
                 />{" "}
-                <bdt data-type="body">
+                <p data-type="body">
                   <span style={{ color: "rgb(89, 89, 89)", fontSize: "11pt" }}>
                     (
                   </span>
@@ -1648,11 +1647,11 @@ export default function Terms() {
                     ) you will maintain the accuracy of such information and
                     promptly update such registration information as necessary;
                   </span>
-                </bdt>
-              </bdt>
-              <bdt className="statement-end-if-in-editor" data-type="close" />
+                </p>
+              </p>
+              <p className="statement-end-if-in-editor" data-type="close" />
               &nbsp;
-            </bdt>
+            </p>
             <span style={{ color: "rgb(89, 89, 89)", fontSize: "11pt" }}>
               (
             </span>
@@ -1663,19 +1662,19 @@ export default function Terms() {
               ) you have the legal capacity and you agree to comply with these
               Legal Terms;
             </span>
-            <bdt
+            <p
               className="block-container if"
               data-type="if"
               id="8d4c883b-bc2c-f0b4-da3e-6d0ee51aca13"
             >
-              <bdt data-type="conditional-block">
-                <bdt
+              <p data-type="conditional-block">
+                <p
                   className="block-component"
                   data-record-question-key="user_u13_option"
                   data-type="statement"
                 />
                 &nbsp;
-              </bdt>
+              </p>
               <span style={{ color: "rgb(89, 89, 89)", fontSize: "11pt" }}>
                 (
               </span>
@@ -1684,20 +1683,20 @@ export default function Terms() {
               </span>
               <span style={{ color: "rgb(89, 89, 89)", fontSize: "11pt" }}>
                 ) you are not a minor in the jurisdiction in which you reside
-                <bdt
+                <p
                   className="block-container if"
                   data-type="if"
                   id="76948fab-ec9e-266a-bb91-948929c050c9"
                 >
-                  <bdt data-type="conditional-block">
-                    <bdt
+                  <p data-type="conditional-block">
+                    <p
                       className="block-component"
                       data-record-question-key="user_o18_option"
                       data-type="statement"
                     />
-                  </bdt>
+                  </p>
                   ; (
-                </bdt>
+                </p>
               </span>
               <span style={{ color: "rgb(89, 89, 89)", fontSize: "14.6667px" }}>
                 5
@@ -1711,9 +1710,9 @@ export default function Terms() {
               </span>
               <span style={{ color: "rgb(89, 89, 89)", fontSize: "11pt" }}>
                 ) you will not use the Services for any illegal or{" "}
-                <bdt className="block-component" />
+                <p className="block-component" />
                 unauthorised
-                <bdt className="else-block" /> purpose; and (
+                <p className="else-block" /> purpose; and (
               </span>
               <span style={{ color: "rgb(89, 89, 89)", fontSize: "14.6667px" }}>
                 7
@@ -1725,7 +1724,7 @@ export default function Terms() {
               <span
                 style={{ color: "rgb(89, 89, 89)", fontSize: "14.6667px" }}
               />
-            </bdt>
+            </p>
           </div>
         </div>
         <div style={{ lineHeight: "1.5" }}>
@@ -1759,7 +1758,7 @@ export default function Terms() {
                 className="MsoNormal"
                 style={{ lineHeight: "1.1", textAlign: "left" }}
               >
-                <bdt className="block-component" />
+                <p className="block-component" />
               </div>
               <div
                 className="MsoNormal"
@@ -1769,8 +1768,8 @@ export default function Terms() {
               </div>
             </div>
             <div className="MsoNormal" style={{ lineHeight: 1 }}>
-              <bdt data-type="conditional-block">
-                <bdt data-type="body">
+              <p data-type="conditional-block">
+                <p data-type="body">
                   <div
                     className="MsoNormal"
                     data-custom-class="heading_1"
@@ -1815,8 +1814,8 @@ export default function Terms() {
                       </span>
                     </strong>
                   </div>
-                </bdt>
-              </bdt>
+                </p>
+              </p>
             </div>
             <div
               className="MsoNormal"
@@ -1825,8 +1824,8 @@ export default function Terms() {
               <br />
             </div>
             <div className="MsoNormal" style={{ lineHeight: 1 }}>
-              <bdt data-type="conditional-block">
-                <bdt data-type="body">
+              <p data-type="conditional-block">
+                <p data-type="body">
                   <div
                     className="MsoNormal"
                     data-custom-class="body_text"
@@ -1846,34 +1845,34 @@ export default function Terms() {
                       you select if we determine, in our sole discretion, that
                       such username is inappropriate, obscene, or otherwise
                       objectionable.
-                      <bdt
+                      <p
                         className="statement-end-if-in-editor"
                         data-type="close"
                       />
                     </span>
                   </div>
-                </bdt>
-              </bdt>
+                </p>
+              </p>
             </div>
             <div
               className="MsoNormal"
               style={{ lineHeight: "1.5", textAlign: "left" }}
             >
-              <bdt className="block-component">
+              <p className="block-component">
                 <span style={{ fontSize: 15 }} />
-              </bdt>
+              </p>
               <span style={{ fontSize: 15 }}>
-                <bdt className="block-component" />
-                <bdt className="statement-end-if-in-editor" />
+                <p className="block-component" />
+                <p className="statement-end-if-in-editor" />
               </span>
             </div>
             <div
               className="MsoNormal"
               style={{ lineHeight: "1.5", textAlign: "left" }}
             >
-              <bdt className="block-component">
+              <p className="block-component">
                 <span style={{ fontSize: 15 }} />
-              </bdt>
+              </p>
             </div>
             <div
               className="MsoNormal"
@@ -1984,8 +1983,8 @@ export default function Terms() {
                 msoThemetint: 166,
               }}
             >
-              <bdt className="forloop-component" />- &nbsp;
-              <bdt className="question">Visa</bdt>
+              <p className="forloop-component" />- &nbsp;
+              <p className="question">Visa</p>
             </span>
           </div>
           <div
@@ -2003,8 +2002,8 @@ export default function Terms() {
                 msoThemetint: 166,
               }}
             >
-              <bdt className="forloop-component" />- &nbsp;
-              <bdt className="question">Mastercard</bdt>
+              <p className="forloop-component" />- &nbsp;
+              <p className="question">Mastercard</p>
             </span>
           </div>
           <div
@@ -2022,7 +2021,7 @@ export default function Terms() {
                 msoThemetint: 166,
               }}
             >
-              <bdt className="forloop-component" />
+              <p className="forloop-component" />
             </span>
           </div>
           <div className="MsoNormal" style={{ lineHeight: 1 }}>
@@ -2071,7 +2070,7 @@ export default function Terms() {
                 color: "rgb(89, 89, 89)",
               }}
             >
-              in <bdt className="question">Pounds</bdt>.
+              in <p className="question">Pounds</p>.
             </span>
           </div>
         </div>
@@ -2096,31 +2095,31 @@ export default function Terms() {
             >
               You agree to pay all charges at the prices then in effect for your
               purchases and any applicable shipping fees, and you{" "}
-              <bdt className="block-component" />
+              <p className="block-component" />
               authorise
-              <bdt className="else-block" /> us to charge your chosen payment
+              <p className="else-block" /> us to charge your chosen payment
               provider for any such amounts upon placing your order.{" "}
-              <bdt
+              <p
                 className="block-container if"
                 data-type="if"
                 id="9c0216a1-d094-fd73-a062-9615dc795ffc"
               >
-                <bdt data-type="conditional-block">
-                  <bdt
+                <p data-type="conditional-block">
+                  <p
                     className="block-component"
                     data-record-question-key="recurring_charge_option"
                     data-type="statement"
                   />
-                  <bdt data-type="body">
+                  <p data-type="body">
                     If your order is subject to recurring charges, then you
                     consent to our charging your payment method on a recurring
                     basis without requiring your prior approval for each
                     recurring charge, until such time as you cancel the
                     applicable order.&nbsp;
-                  </bdt>
-                </bdt>
-                <bdt className="statement-end-if-in-editor" data-type="close" />
-              </bdt>
+                  </p>
+                </p>
+                <p className="statement-end-if-in-editor" data-type="close" />
+              </p>
               We reserve the right to correct any errors or mistakes in pricing,
               even if we have already requested or received payment.
             </span>
@@ -2152,9 +2151,9 @@ export default function Terms() {
               customer account, the same payment method, and/or orders that use
               the same billing or shipping address. We reserve the right to
               limit or prohibit orders that, in our sole{" "}
-              <bdt className="block-component" />
+              <p className="block-component" />
               judgement
-              <bdt className="else-block" />, appear to be placed by dealers,
+              <p className="else-block" />, appear to be placed by dealers,
               resellers, or distributors.
             </span>
             <span
@@ -2164,25 +2163,25 @@ export default function Terms() {
                 color: "rgb(89, 89, 89)",
               }}
             >
-              <bdt
+              <p
                 data-type="conditional-block"
                 style={{ color: "rgb(10, 54, 90)", textAlign: "left" }}
               >
-                <bdt
+                <p
                   className="block-component"
                   data-record-question-key="return_option"
                   data-type="statement"
                   style={{ fontSize: 15 }}
                 />
-              </bdt>
+              </p>
             </span>
           </div>
           <div className="MsoNormal" style={{ lineHeight: "1.5" }}>
-            <bdt className="block-component">
+            <p className="block-component">
               <span style={{ fontSize: 15 }} />
-            </bdt>
+            </p>
             <span style={{ fontSize: 15 }}>
-              <bdt className="block-component" />
+              <p className="block-component" />
             </span>
           </div>
           <div className="MsoNormal" style={{ lineHeight: "1.5" }}>
@@ -2196,7 +2195,7 @@ export default function Terms() {
           >
             <strong>
               <span style={{ fontSize: 19 }}>
-                6. <bdt className="block-component" /> POLICY
+                6. <p className="block-component" /> POLICY
               </span>
             </strong>
           </div>
@@ -2210,17 +2209,17 @@ export default function Terms() {
           >
             <span style={{ fontSize: 15 }}>
               All sales are final and no refund will be issued.
-              <bdt className="statement-end-if-in-editor" />
-              <bdt className="statement-end-if-in-editor" />
+              <p className="statement-end-if-in-editor" />
+              <p className="statement-end-if-in-editor" />
             </span>
           </div>
           <div className="MsoNormal" style={{ lineHeight: "1.5" }}>
-            <bdt className="block-component">
+            <p className="block-component">
               <span style={{ fontSize: 15 }} />
-            </bdt>
+            </p>
           </div>
           <div className="MsoNormal" style={{ lineHeight: "1.5" }}>
-            <bdt className="block-component" />
+            <p className="block-component" />
           </div>
           <div
             className="MsoNormal"
@@ -2233,19 +2232,19 @@ export default function Terms() {
                 color: "rgb(89, 89, 89)",
               }}
             >
-              <bdt
+              <p
                 data-type="conditional-block"
                 style={{ color: "rgb(10, 54, 90)", textAlign: "left" }}
               >
-                <bdt data-type="body">
+                <p data-type="body">
                   <div
                     className="MsoNormal"
                     style={{ fontSize: 15, lineHeight: "1.5" }}
                   >
                     <br />
                   </div>
-                </bdt>
-              </bdt>
+                </p>
+              </p>
             </span>
             <div
               className="MsoNormal"
@@ -2314,10 +2313,10 @@ export default function Terms() {
                 You may not access or use the Services for any purpose other
                 than that for which we make the Services available. The Services
                 may not be used in connection with any commercial{" "}
-                <bdt className="block-component" />
+                <p className="block-component" />
                 endeavours
-                <bdt className="else-block" /> except those that are
-                specifically endorsed or approved by us.
+                <p className="else-block" /> except those that are specifically
+                endorsed or approved by us.
               </span>
             </div>
           </div>
@@ -2877,10 +2876,10 @@ export default function Terms() {
                                 color: "rgb(89, 89, 89)",
                               }}
                             >
-                              Engage in <bdt className="block-component" />
+                              Engage in <p className="block-component" />
                               unauthorised
-                              <bdt className="else-block" /> framing of or
-                              linking to the Services.
+                              <p className="else-block" /> framing of or linking
+                              to the Services.
                             </span>
                           </span>
                         </span>
@@ -3243,15 +3242,15 @@ export default function Terms() {
                               active information collection or transmission
                               mechanism, including without limitation, clear
                               graphics interchange formats (
-                              <bdt className="block-component" />
+                              <p className="block-component" />
                               &apos;gifs&apos;
-                              <bdt className="else-block" />
+                              <p className="else-block" />
                               ), 1×1 pixels, web bugs, cookies, or other similar
                               devices (sometimes referred to as{" "}
-                              <bdt className="block-component" />
+                              <p className="block-component" />
                               &apos;spyware&apos; or &apos;passive collection
                               mechanisms&apos; or &apos;pcms&apos;
-                              <bdt className="else-block" />
+                              <p className="else-block" />
                               ).
                             </span>
                           </span>
@@ -3683,9 +3682,9 @@ export default function Terms() {
                               including without limitation, any spider, robot,
                               cheat utility, scraper, or offline reader that
                               accesses the Services, or use or launch any{" "}
-                              <bdt className="block-component" />
+                              <p className="block-component" />
                               unauthorised
-                              <bdt className="else-block" /> script or other
+                              <p className="else-block" /> script or other
                               software.
                             </span>
                           </span>
@@ -3825,17 +3824,16 @@ export default function Terms() {
                                 color: "rgb(89, 89, 89)",
                               }}
                             >
-                              Make any <bdt className="block-component" />
+                              Make any <p className="block-component" />
                               unauthorised
-                              <bdt className="else-block" /> use of the
-                              Services, including collecting usernames and/or
-                              email addresses of users by electronic or other
-                              means for the purpose of sending unsolicited
-                              email, or creating user accounts by automated
-                              means or under false{" "}
-                              <bdt className="block-component" />
+                              <p className="else-block" /> use of the Services,
+                              including collecting usernames and/or email
+                              addresses of users by electronic or other means
+                              for the purpose of sending unsolicited email, or
+                              creating user accounts by automated means or under
+                              false <p className="block-component" />
                               pretences
-                              <bdt className="else-block" />.
+                              <p className="else-block" />.
                             </span>
                           </span>
                         </span>
@@ -3907,9 +3905,9 @@ export default function Terms() {
                               Use the Services as part of any effort to compete
                               with us or otherwise use the Services and/or the
                               Content for any revenue-generating{" "}
-                              <bdt className="block-component" />
+                              <p className="block-component" />
                               endeavour
-                              <bdt className="else-block" /> or commercial
+                              <p className="else-block" /> or commercial
                               enterprise.
                             </span>
                             <span
@@ -3936,7 +3934,7 @@ export default function Terms() {
                                 textDecorationColor: "initial",
                               }}
                             >
-                              <bdt className="forloop-component" />
+                              <p className="forloop-component" />
                             </span>
                           </span>
                         </span>
@@ -3955,10 +3953,10 @@ export default function Terms() {
                         color: "rgb(89, 89, 89)",
                       }}
                     >
-                      <bdt className="question">
+                      <p className="question">
                         Sell or otherwise transfer your profile.
-                      </bdt>
-                      <bdt className="forloop-component" />
+                      </p>
+                      <p className="forloop-component" />
                     </span>
                   </li>
                   <li
@@ -3973,11 +3971,11 @@ export default function Terms() {
                         color: "rgb(89, 89, 89)",
                       }}
                     >
-                      <bdt className="question">
+                      <p className="question">
                         Use the Services to advertise or offer to sell goods and
                         services.
-                      </bdt>
-                      <bdt className="forloop-component" />
+                      </p>
+                      <p className="forloop-component" />
                     </span>
                   </li>
                   <li
@@ -3992,10 +3990,10 @@ export default function Terms() {
                         color: "rgb(89, 89, 89)",
                       }}
                     >
-                      <bdt className="question">
+                      <p className="question">
                         Allow other people to use user&apos;s account
-                      </bdt>
-                      <bdt className="forloop-component" />
+                      </p>
+                      <p className="forloop-component" />
                     </span>
                   </li>
                   <li
@@ -4010,10 +4008,10 @@ export default function Terms() {
                         color: "rgb(89, 89, 89)",
                       }}
                     >
-                      <bdt className="question">
+                      <p className="question">
                         Use the account in more than one devices
-                      </bdt>
-                      <bdt className="forloop-component" />
+                      </p>
+                      <p className="forloop-component" />
                     </span>
                   </li>
                   <li
@@ -4028,10 +4026,10 @@ export default function Terms() {
                         color: "rgb(89, 89, 89)",
                       }}
                     >
-                      <bdt className="question">
+                      <p className="question">
                         Use the app to earn profit improperly for the user
-                      </bdt>
-                      <bdt className="forloop-component" />
+                      </p>
+                      <p className="forloop-component" />
                     </span>
                   </li>
                 </ul>
@@ -4045,13 +4043,13 @@ export default function Terms() {
             </div>
             <div className="MsoNormal" style={{ lineHeight: "17.25px" }}>
               <div className="MsoNormal" style={{ lineHeight: 1 }}>
-                <bdt
+                <p
                   className="block-container if"
                   data-type="if"
                   style={{ textAlign: "left" }}
                 >
-                  <bdt data-type="conditional-block">
-                    <bdt data-type="body">
+                  <p data-type="conditional-block">
+                    <p data-type="body">
                       <div
                         className="MsoNormal"
                         data-custom-class="heading_1"
@@ -4097,9 +4095,9 @@ export default function Terms() {
                           </span>
                         </strong>
                       </div>
-                    </bdt>
-                  </bdt>
-                </bdt>
+                    </p>
+                  </p>
+                </p>
               </div>
               <div
                 className="MsoNormal"
@@ -4108,13 +4106,13 @@ export default function Terms() {
                 <br />
               </div>
               <div className="MsoNormal" style={{ lineHeight: 1 }}>
-                <bdt
+                <p
                   className="block-container if"
                   data-type="if"
                   style={{ textAlign: "left" }}
                 >
-                  <bdt data-type="conditional-block">
-                    <bdt data-type="body">
+                  <p data-type="conditional-block">
+                    <p data-type="body">
                       <div
                         className="MsoNormal"
                         data-custom-class="body_text"
@@ -4127,20 +4125,20 @@ export default function Terms() {
                             color: "rgb(89, 89, 89)",
                           }}
                         >
-                          <bdt
+                          <p
                             className="block-container if"
                             data-type="if"
                             id="24327c5d-a34f-f7e7-88f1-65a2f788484f"
                             style={{ textAlign: "left" }}
                           >
-                            <bdt data-type="conditional-block">
-                              <bdt
+                            <p data-type="conditional-block">
+                              <p
                                 className="block-component"
                                 data-record-question-key="user_post_content_option"
                                 data-type="statement"
                               />
-                            </bdt>
-                          </bdt>
+                            </p>
+                          </p>
                           The Services may invite you to chat, contribute to, or
                           participate in blogs, message boards, online forums,
                           and other functionality, and may provide you with the
@@ -4150,23 +4148,23 @@ export default function Terms() {
                           including but not limited to text, writings, video,
                           audio, photographs, graphics, comments, suggestions,
                           or personal information or other material
-                          (collectively, <bdt className="block-component" />
+                          (collectively, <p className="block-component" />
                           &apos;Contributions&apos;
-                          <bdt className="else-block" />
+                          <p className="else-block" />
                           ). Contributions may be viewable by other users of the
                           Services and through third-party websites. As such,
                           any Contributions you transmit may be treated as
                           non-confidential and non-proprietary. When you create
                           or make available any Contributions, you thereby
                           represent and warrant that:
-                          <bdt className="else-block">
-                            <bdt className="block-component" />
-                          </bdt>
+                          <p className="else-block">
+                            <p className="block-component" />
+                          </p>
                         </span>
                       </div>
-                    </bdt>
-                  </bdt>
-                </bdt>
+                    </p>
+                  </p>
+                </p>
               </div>
             </div>
           </div>
@@ -4190,13 +4188,13 @@ export default function Terms() {
                 <span style={{ fontSize: 14 }}>
                   <span data-custom-class="body_text">
                     You are the creator and owner of or have the necessary{" "}
-                    <bdt className="block-component" />
+                    <p className="block-component" />
                     licences
-                    <bdt className="else-block" />, rights, consents, releases,
+                    <p className="else-block" />, rights, consents, releases,
                     and permissions to use and to{" "}
-                    <bdt className="block-component" />
+                    <p className="block-component" />
                     authorise
-                    <bdt className="else-block" /> us, the Services, and other
+                    <p className="else-block" /> us, the Services, and other
                     users of the Services to use your Contributions in any
                     manner contemplated by the Services and these Legal Terms.
                   </span>
@@ -4231,9 +4229,9 @@ export default function Terms() {
                 <span style={{ fontSize: 14 }}>
                   <span data-custom-class="body_text">
                     Your Contributions are not unsolicited or{" "}
-                    <bdt className="block-component" />
+                    <p className="block-component" />
                     unauthorised
-                    <bdt className="else-block" /> advertising, promotional
+                    <p className="else-block" /> advertising, promotional
                     materials, pyramid schemes, chain letters, spam, mass
                     mailings, or other forms of solicitation.
                   </span>
@@ -4246,9 +4244,9 @@ export default function Terms() {
                   <span data-custom-class="body_text">
                     Your Contributions are not obscene, lewd, lascivious,
                     filthy, violent, harassing,{" "}
-                    <bdt className="block-component" />
+                    <p className="block-component" />
                     libellous
-                    <bdt className="else-block" />, slanderous, or otherwise
+                    <p className="else-block" />, slanderous, or otherwise
                     objectionable (as determined by us).
                   </span>
                 </span>
@@ -4334,13 +4332,13 @@ export default function Terms() {
             className="MsoNormal"
             style={{ textAlign: "justify", lineHeight: "1.5" }}
           >
-            <bdt
+            <p
               className="block-container if"
               data-type="if"
               style={{ textAlign: "left" }}
             >
-              <bdt data-type="conditional-block">
-                <bdt data-type="body">
+              <p data-type="conditional-block">
+                <p data-type="body">
                   <div
                     className="MsoNormal"
                     data-custom-class="body_text"
@@ -4359,9 +4357,9 @@ export default function Terms() {
                       the Services.
                     </span>
                   </div>
-                </bdt>
-              </bdt>
-            </bdt>
+                </p>
+              </p>
+            </p>
           </div>
           <div className="MsoNormal" style={{ lineHeight: "1.5" }}>
             <br />
@@ -4370,13 +4368,13 @@ export default function Terms() {
             className="MsoNormal"
             style={{ textAlign: "justify", lineHeight: 1 }}
           >
-            <bdt
+            <p
               className="block-container if"
               data-type="if"
               style={{ textAlign: "left" }}
             >
-              <bdt data-type="conditional-block">
-                <bdt data-type="body">
+              <p data-type="conditional-block">
+                <p data-type="body">
                   <div
                     className="MsoNormal"
                     data-custom-class="heading_1"
@@ -4413,41 +4411,41 @@ export default function Terms() {
                           </span>
                           &nbsp;
                         </strong>
-                        CONTRIBUTION <bdt className="block-component" />
+                        CONTRIBUTION <p className="block-component" />
                         LICENCE
-                        <bdt className="else-block" />
+                        <p className="else-block" />
                       </span>
                     </strong>
                   </div>
-                </bdt>
-              </bdt>
-            </bdt>
+                </p>
+              </p>
+            </p>
           </div>
           <div className="MsoNormal" style={{ lineHeight: "1.5" }}>
             <br />
           </div>
           <div className="MsoNormal" style={{ lineHeight: 1 }}>
-            <bdt
+            <p
               className="block-container if"
               data-type="if"
               id="a088ddfb-d8c1-9e58-6f21-958c3f4f0709"
               style={{ textAlign: "left" }}
             >
-              <bdt data-type="conditional-block">
-                <bdt
+              <p data-type="conditional-block">
+                <p
                   className="block-component"
                   data-record-question-key="user_post_content_option"
                   data-type="statement"
                 />
-              </bdt>
-            </bdt>
-            <bdt
+              </p>
+            </p>
+            <p
               className="block-container if"
               data-type="if"
               style={{ textAlign: "left" }}
             >
-              <bdt data-type="conditional-block">
-                <bdt data-type="body">
+              <p data-type="conditional-block">
+                <p data-type="body">
                   <div
                     className="MsoNormal"
                     data-custom-class="body_text"
@@ -4461,25 +4459,25 @@ export default function Terms() {
                       }}
                     >
                       By posting your Contributions to any part of the Services
-                      <bdt
+                      <p
                         className="block-container if"
                         data-type="if"
                         id="19652acc-9a2a-5ffe-6189-9474402fa6cc"
                       >
-                        <bdt data-type="conditional-block">
-                          <bdt
+                        <p data-type="conditional-block">
+                          <p
                             className="block-component"
                             data-record-question-key="socialnetwork_link_option"
                             data-type="statement"
                           />
-                        </bdt>
+                        </p>
                         , you automatically grant, and you represent and warrant
                         that you have the right to grant, to us an unrestricted,
                         unlimited, irrevocable, perpetual, non-exclusive,
                         transferable, royalty-free, fully-paid, worldwide right,
-                        and <bdt className="block-component" />
+                        and <p className="block-component" />
                         licence
-                        <bdt className="else-block" /> to host, use, copy,
+                        <p className="else-block" /> to host, use, copy,
                         reproduce, disclose, sell, resell, publish, broadcast,
                         retitle, archive, store, cache, publicly perform,
                         publicly display, reformat, translate, transmit, excerpt
@@ -4488,17 +4486,17 @@ export default function Terms() {
                         for any purpose, commercial, advertising, or otherwise,
                         and to prepare derivative works of, or incorporate into
                         other works, such Contributions, and grant and{" "}
-                        <bdt className="block-component" />
+                        <p className="block-component" />
                         authorise sublicences
-                        <bdt className="else-block" /> of the foregoing. The use
+                        <p className="else-block" /> of the foregoing. The use
                         and distribution may occur in any media formats and
                         through any media channels.
-                      </bdt>
+                      </p>
                     </span>
                   </div>
-                </bdt>
-              </bdt>
-            </bdt>
+                </p>
+              </p>
+            </p>
           </div>
           <div className="MsoNormal" style={{ lineHeight: "1.5" }}>
             <br />
@@ -4507,13 +4505,13 @@ export default function Terms() {
             className="MsoNormal"
             style={{ textAlign: "justify", lineHeight: 1 }}
           >
-            <bdt
+            <p
               className="block-container if"
               data-type="if"
               style={{ textAlign: "left" }}
             >
-              <bdt data-type="conditional-block">
-                <bdt data-type="body">
+              <p data-type="conditional-block">
+                <p data-type="body">
                   <div
                     className="MsoNormal"
                     data-custom-class="body_text"
@@ -4526,9 +4524,9 @@ export default function Terms() {
                         color: "rgb(89, 89, 89)",
                       }}
                     >
-                      This <bdt className="block-component" />
+                      This <p className="block-component" />
                       licence
-                      <bdt className="else-block" /> will apply to any form,
+                      <p className="else-block" /> will apply to any form,
                       media, or technology now known or hereafter developed, and
                       includes our use of your name, company name, and franchise
                       name, as applicable, and any of the trademarks, service
@@ -4538,9 +4536,9 @@ export default function Terms() {
                       otherwise been asserted in your Contributions.
                     </span>
                   </div>
-                </bdt>
-              </bdt>
-            </bdt>
+                </p>
+              </p>
+            </p>
           </div>
           <div className="MsoNormal" style={{ lineHeight: "1.5" }}>
             <br />
@@ -4549,13 +4547,13 @@ export default function Terms() {
             className="MsoNormal"
             style={{ textAlign: "justify", lineHeight: 1 }}
           >
-            <bdt
+            <p
               className="block-container if"
               data-type="if"
               style={{ textAlign: "left" }}
             >
-              <bdt data-type="conditional-block">
-                <bdt data-type="body">
+              <p data-type="conditional-block">
+                <p data-type="body">
                   <div
                     className="MsoNormal"
                     data-custom-class="body_text"
@@ -4580,9 +4578,9 @@ export default function Terms() {
                       action against us regarding your Contributions.
                     </span>
                   </div>
-                </bdt>
-              </bdt>
-            </bdt>
+                </p>
+              </p>
+            </p>
           </div>
           <div className="MsoNormal" style={{ lineHeight: "1.5" }}>
             <br />
@@ -4591,13 +4589,13 @@ export default function Terms() {
             className="MsoNormal"
             style={{ textAlign: "justify", lineHeight: 1 }}
           >
-            <bdt
+            <p
               className="block-container if"
               data-type="if"
               style={{ textAlign: "left" }}
             >
-              <bdt data-type="conditional-block">
-                <bdt data-type="body">
+              <p data-type="conditional-block">
+                <p data-type="body">
                   <div
                     className="MsoNormal"
                     data-custom-class="body_text"
@@ -4612,18 +4610,18 @@ export default function Terms() {
                     >
                       We have the right, in our sole and absolute discretion,
                       (1) to edit, redact, or otherwise change any
-                      Contributions; (2) to <bdt className="block-component" />
+                      Contributions; (2) to <p className="block-component" />
                       re-categorise
-                      <bdt className="else-block" /> any Contributions to place
+                      <p className="else-block" /> any Contributions to place
                       them in more appropriate locations on the Services; and
                       (3) to pre-screen or delete any Contributions at any time
                       and for any reason, without notice. We have no obligation
                       to monitor your Contributions.
                     </span>
                   </div>
-                </bdt>
-              </bdt>
-            </bdt>
+                </p>
+              </p>
+            </p>
           </div>
         </div>
         <div style={{ textAlign: "left" }}>
@@ -4631,13 +4629,13 @@ export default function Terms() {
             <br />
           </div>
           <div className="MsoNormal" style={{ lineHeight: "1.5" }}>
-            <bdt
+            <p
               className="block-container if"
               data-type="if"
               style={{ textAlign: "left" }}
             >
-              <bdt data-type="conditional-block">
-                <bdt data-type="body">
+              <p data-type="conditional-block">
+                <p data-type="body">
                   <span
                     style={{
                       fontSize: "11pt",
@@ -4645,30 +4643,30 @@ export default function Terms() {
                       color: "rgb(89, 89, 89)",
                     }}
                   >
-                    <bdt className="else-block" />
+                    <p className="else-block" />
                   </span>
-                </bdt>
-              </bdt>
-            </bdt>
+                </p>
+              </p>
+            </p>
           </div>
           <div
             className="MsoNormal"
             data-custom-class="body_text"
             style={{ lineHeight: "1.5" }}
           >
-            <bdt
+            <p
               className="block-container if"
               data-type="if"
               style={{ textAlign: "left" }}
             >
-              <bdt data-type="conditional-block">
-                <bdt
+              <p data-type="conditional-block">
+                <p
                   className="block-component"
                   data-record-question-key="review_option"
                   data-type="statement"
                 />
-              </bdt>
-            </bdt>
+              </p>
+            </p>
           </div>
           <div
             className="MsoNormal"
@@ -4730,11 +4728,10 @@ export default function Terms() {
               should not be affiliated with competitors if posting negative
               reviews; (6) you should not make any conclusions as to the
               legality of conduct; (7) you may not post any false or misleading
-              statements; and (8) you may not{" "}
-              <bdt className="block-component" />
+              statements; and (8) you may not <p className="block-component" />
               organise
-              <bdt className="else-block" /> a campaign encouraging others to
-              post reviews, whether positive or negative.
+              <p className="else-block" /> a campaign encouraging others to post
+              reviews, whether positive or negative.
             </span>
           </div>
           <div className="MsoNormal" style={{ lineHeight: "1.5" }}>
@@ -4769,9 +4766,9 @@ export default function Terms() {
                 any review. By posting a review, you hereby grant to us a
                 perpetual, non-exclusive, worldwide, royalty-free, fully paid,
                 assignable, and sublicensable right and{" "}
-                <bdt className="block-component" />
+                <p className="block-component" />
                 licence
-                <bdt className="else-block" /> to reproduce, modify, translate,
+                <p className="else-block" /> to reproduce, modify, translate,
                 transmit by any means, display, perform, and/or distribute all
                 content relating to review.
               </span>
@@ -4802,34 +4799,34 @@ export default function Terms() {
                     color: "rgb(89, 89, 89)",
                   }}
                 >
-                  <bdt
+                  <p
                     className="block-container if"
                     data-type="if"
                     style={{ textAlign: "left" }}
                   >
-                    <bdt
+                    <p
                       className="statement-end-if-in-editor"
                       data-type="close"
                     />
-                  </bdt>
+                  </p>
                 </span>
               </span>
             </span>
           </div>
           <div className="MsoNormal" style={{ lineHeight: "1.5" }}>
-            <bdt
+            <p
               className="block-container if"
               data-type="if"
               style={{ textAlign: "left" }}
             >
-              <bdt data-type="conditional-block">
-                <bdt
+              <p data-type="conditional-block">
+                <p
                   className="block-component"
                   data-record-question-key="mobile_app_option"
                   data-type="statement"
                 />
-              </bdt>
-            </bdt>
+              </p>
+            </p>
           </div>
           <div
             className="MsoNormal"
@@ -4861,9 +4858,9 @@ export default function Terms() {
                   </span>
                 </strong>
               </span>{" "}
-              MOBILE APPLICATION <bdt className="block-component" />
+              MOBILE APPLICATION <p className="block-component" />
               LICENCE
-              <bdt className="else-block" />
+              <p className="else-block" />
             </strong>
           </div>
           <div className="MsoNormal" style={{ lineHeight: "1.5" }}>
@@ -4875,9 +4872,9 @@ export default function Terms() {
             style={{ lineHeight: "1.5" }}
           >
             <strong>
-              Use <bdt className="block-component" />
+              Use <p className="block-component" />
               Licence
-              <bdt className="else-block" />
+              <p className="else-block" />
             </strong>
           </div>
           <div className="MsoNormal" style={{ lineHeight: "1.5" }}>
@@ -4900,9 +4897,9 @@ export default function Terms() {
               install and use the App on wireless electronic devices owned or
               controlled by you, and to access and use the App on such devices
               strictly in accordance with the terms and conditions of this
-              mobile application <bdt className="block-component" />
+              mobile application <p className="block-component" />
               licence
-              <bdt className="else-block" /> contained in these Legal Terms. You
+              <p className="else-block" /> contained in these Legal Terms. You
               shall not: (1) except as permitted by applicable law, decompile,
               reverse engineer, disassemble, attempt to derive the source code
               of, or decrypt the App; (2) make any modification, adaptation,
@@ -4912,9 +4909,9 @@ export default function Terms() {
               or obscure any proprietary notice (including any notice of
               copyright or trademark) posted by us or the licensors of the App;
               (5) use the App for any revenue-generating{" "}
-              <bdt className="block-component" />
+              <p className="block-component" />
               endeavour
-              <bdt className="else-block" />, commercial enterprise, or other
+              <p className="else-block" />, commercial enterprise, or other
               purpose for which it is not designed or intended; (6) make the App
               available over a network or other environment permitting access or
               use by multiple devices or users at the same time; (7) use the App
@@ -4963,56 +4960,56 @@ export default function Terms() {
             >
               The following terms apply when you use the App obtained from
               either the Apple Store or Google Play (each an{" "}
-              <bdt className="block-component" />
+              <p className="block-component" />
               &apos;App Distributor&apos;
-              <bdt className="else-block" />) to access the Services: (1) the{" "}
-              <bdt className="block-component" />
+              <p className="else-block" />) to access the Services: (1) the{" "}
+              <p className="block-component" />
               licence
-              <bdt className="else-block" /> granted to you for our App is
-              limited to a non-transferable <bdt className="block-component" />
+              <p className="else-block" /> granted to you for our App is limited
+              to a non-transferable <p className="block-component" />
               licence
-              <bdt className="else-block" /> to use the application on a device
-              that <bdt className="block-component" />
+              <p className="else-block" /> to use the application on a device
+              that <p className="block-component" />
               utilises
-              <bdt className="else-block" /> the Apple iOS or Android operating
+              <p className="else-block" /> the Apple iOS or Android operating
               systems, as applicable, and in accordance with the usage rules set
               forth in the applicable App Distributor’s terms of service; (2) we
               are responsible for providing any maintenance and support services
               with respect to the App as specified in the terms and conditions
-              of this mobile application <bdt className="block-component" />
+              of this mobile application <p className="block-component" />
               licence
-              <bdt className="else-block" /> contained in these Legal Terms or
-              as otherwise required under applicable law, and you acknowledge
-              that each App Distributor has no obligation whatsoever to furnish
-              any maintenance and support services with respect to the App; (3)
-              in the event of any failure of the App to conform to any
-              applicable warranty, you may notify the applicable App
-              Distributor, and the App Distributor, in accordance with its terms
-              and policies, may refund the purchase price, if any, paid for the
-              App, and to the maximum extent permitted by applicable law, the
-              App Distributor will have no other warranty obligation whatsoever
-              with respect to the App; (4) you represent and warrant that (i)
-              you are not located in a country that is subject to a US
-              government embargo, or that has been designated by the US
-              government as a <bdt className="block-component" />
+              <p className="else-block" /> contained in these Legal Terms or as
+              otherwise required under applicable law, and you acknowledge that
+              each App Distributor has no obligation whatsoever to furnish any
+              maintenance and support services with respect to the App; (3) in
+              the event of any failure of the App to conform to any applicable
+              warranty, you may notify the applicable App Distributor, and the
+              App Distributor, in accordance with its terms and policies, may
+              refund the purchase price, if any, paid for the App, and to the
+              maximum extent permitted by applicable law, the App Distributor
+              will have no other warranty obligation whatsoever with respect to
+              the App; (4) you represent and warrant that (i) you are not
+              located in a country that is subject to a US government embargo,
+              or that has been designated by the US government as a{" "}
+              <p className="block-component" />
               &apos;terrorist supporting&apos;
-              <bdt className="else-block" /> country and (ii) you are not listed
+              <p className="else-block" /> country and (ii) you are not listed
               on any US government list of prohibited or restricted parties; (5)
               you must comply with applicable third-party terms of agreement
               when using the App, e.g.
-              <bdt className="block-component" /> if you have a VoIP
-              application, then you must not be in violation of their wireless
-              data service agreement when using the App; and (6) you acknowledge
-              and agree that the App Distributors are third-party beneficiaries
-              of the terms and conditions in this mobile application{" "}
-              <bdt className="block-component" />
+              <p className="block-component" /> if you have a VoIP application,
+              then you must not be in violation of their wireless data service
+              agreement when using the App; and (6) you acknowledge and agree
+              that the App Distributors are third-party beneficiaries of the
+              terms and conditions in this mobile application{" "}
+              <p className="block-component" />
               licence
-              <bdt className="else-block" /> contained in these Legal Terms, and
+              <p className="else-block" /> contained in these Legal Terms, and
               that each App Distributor will have the right (and will be deemed
               to have accepted the right) to enforce the terms and conditions in
-              this mobile application <bdt className="block-component" />
+              this mobile application <p className="block-component" />
               licence
-              <bdt className="else-block" /> contained in these Legal Terms
+              <p className="else-block" /> contained in these Legal Terms
               against you as a third-party beneficiary thereof.
             </span>
           </div>
@@ -5041,65 +5038,65 @@ export default function Terms() {
                     color: "rgb(89, 89, 89)",
                   }}
                 >
-                  <bdt
+                  <p
                     className="block-container if"
                     data-type="if"
                     style={{ textAlign: "left" }}
                   >
-                    <bdt
+                    <p
                       className="statement-end-if-in-editor"
                       data-type="close"
                     />
-                  </bdt>
+                  </p>
                 </span>
               </span>
             </span>
           </div>
           <div className="MsoNormal" style={{ lineHeight: "1.5" }}>
-            <bdt
+            <p
               className="block-container if"
               data-type="if"
               style={{ textAlign: "left" }}
             >
-              <bdt data-type="conditional-block">
-                <bdt
+              <p data-type="conditional-block">
+                <p
                   className="block-component"
                   data-record-question-key="socialnetwork_link_option"
                   data-type="statement"
                 />
-              </bdt>
-            </bdt>
+              </p>
+            </p>
           </div>
         </div>
         <div className="MsoNormal" style={{ lineHeight: "1.5" }}>
-          <bdt
+          <p
             className="block-container if"
             data-type="if"
             style={{ textAlign: "left" }}
           >
-            <bdt data-type="conditional-block">
-              <bdt
+            <p data-type="conditional-block">
+              <p
                 className="block-component"
                 data-record-question-key="3rd_party_option"
                 data-type="statement"
               />
-            </bdt>
-          </bdt>
+            </p>
+          </p>
         </div>
         <div className="MsoNormal" style={{ lineHeight: "1.5" }}>
-          <bdt
+          <p
             className="block-container if"
             data-type="if"
             style={{ textAlign: "left" }}
           >
-            <bdt data-type="conditional-block">
-              <bdt
+            <p data-type="conditional-block">
+              <p
                 className="block-component"
                 data-record-question-key="advertiser_option"
                 data-type="statement"
               />
-            </bdt>
-          </bdt>
+            </p>
+          </p>
         </div>
         <div
           className="MsoNormal"
@@ -5165,53 +5162,53 @@ export default function Terms() {
           <br />
         </div>
         <div className="MsoNormal" style={{ lineHeight: "1.5" }}>
-          <bdt
+          <p
             className="block-container if"
             data-type="if"
             style={{ textAlign: "left" }}
           >
-            <bdt data-type="conditional-block">
-              <bdt
+            <p data-type="conditional-block">
+              <p
                 className="block-component"
                 data-record-question-key="privacy_policy_option"
                 data-type="statement"
               />
-            </bdt>
-            <bdt className="block-container if" data-type="if">
-              <bdt data-type="conditional-block">
-                <bdt
+            </p>
+            <p className="block-container if" data-type="if">
+              <p data-type="conditional-block">
+                <p
                   className="block-component"
                   data-record-question-key="privacy_policy_followup"
                   data-type="statement"
                   style={{ fontSize: "14.6667px" }}
                 />
-              </bdt>
-            </bdt>
-          </bdt>
+              </p>
+            </p>
+          </p>
         </div>
         <div className="MsoNormal" style={{ lineHeight: "1.5" }}>
-          <bdt
+          <p
             className="block-container if"
             data-type="if"
             style={{ textAlign: "left" }}
           >
-            <bdt data-type="conditional-block">
-              <bdt
+            <p data-type="conditional-block">
+              <p
                 className="block-component"
                 data-record-question-key="copyright_agent_option"
                 data-type="statement"
               >
-                <bdt className="block-component" />
-              </bdt>
-            </bdt>
-          </bdt>
+                <p className="block-component" />
+              </p>
+            </p>
+          </p>
         </div>
         <div
           className="MsoNormal"
           style={{ lineHeight: "1.5", textAlign: "left" }}
         >
-          <bdt className="block-component" />
-          <bdt className="block-component" />
+          <p className="block-component" />
+          <p className="block-component" />
         </div>
         <div
           className="MsoNormal"
@@ -5273,9 +5270,9 @@ export default function Terms() {
             believe that any material available on or through the Services
             infringes upon any copyright you own or control, please immediately
             notify us using the contact information provided below (a{" "}
-            <bdt className="block-component" />
+            <p className="block-component" />
             &apos;Notification&apos;
-            <bdt className="else-block" />
+            <p className="else-block" />
             ). A copy of your Notification will be sent to the person who posted
             or stored the material addressed in the Notification. Please be
             advised that pursuant to applicable law you may be held liable for
@@ -5295,8 +5292,8 @@ export default function Terms() {
           className="MsoNormal"
           style={{ lineHeight: "1.5", textAlign: "left" }}
         >
-          <bdt className="statement-end-if-in-editor" />
-          <bdt className="statement-end-if-in-editor" />
+          <p className="statement-end-if-in-editor" />
+          <p className="statement-end-if-in-editor" />
         </div>
         <div
           className="MsoNormal"
@@ -5363,21 +5360,21 @@ export default function Terms() {
             ANY REPRESENTATION, WARRANTY, OR COVENANT CONTAINED IN THESE LEGAL
             TERMS OR OF ANY APPLICABLE LAW OR REGULATION. WE MAY TERMINATE YOUR
             USE OR PARTICIPATION IN THE SERVICES OR DELETE{" "}
-            <bdt
+            <p
               className="block-container if"
               data-type="if"
               id="a6e121c2-36b4-5066-bf9f-a0a33512e768"
             >
-              <bdt data-type="conditional-block">
-                <bdt
+              <p data-type="conditional-block">
+                <p
                   className="block-component"
                   data-record-question-key="user_account_option"
                   data-type="statement"
                 />
-                <bdt data-type="body">YOUR ACCOUNT AND&nbsp;</bdt>
-              </bdt>
-              <bdt className="statement-end-if-in-editor" data-type="close" />
-            </bdt>
+                <p data-type="body">YOUR ACCOUNT AND&nbsp;</p>
+              </p>
+              <p className="statement-end-if-in-editor" data-type="close" />
+            </p>
             ANY CONTENT OR INFORMATION THAT YOU POSTED AT ANY TIME, WITHOUT
             WARNING, IN OUR SOLE DISCRETION.
           </span>
@@ -5475,10 +5472,10 @@ export default function Terms() {
             the Services at any time or for any reason at our sole discretion
             without notice. However, we have no obligation to update any
             information on our Services.
-            <bdt className="block-component" /> We also reserve the right to
+            <p className="block-component" /> We also reserve the right to
             modify or discontinue all or part of the Services without notice at
             any time.
-            <bdt className="statement-end-if-in-editor" /> We will not be liable
+            <p className="statement-end-if-in-editor" /> We will not be liable
             to you or any third party for any modification, price change,
             suspension, or discontinuance of the Services.
           </span>
@@ -5576,7 +5573,7 @@ export default function Terms() {
               color: "rgb(89, 89, 89)",
             }}
           >
-            <bdt className="block-component" />
+            <p className="block-component" />
           </span>
         </div>
         <div
@@ -5593,27 +5590,27 @@ export default function Terms() {
           >
             These Legal Terms are governed by and interpreted following the laws
             of{" "}
-            <bdt className="block-component">
-              the <bdt className="question">United Kingdom</bdt>
-              <bdt className="else-block" />
-            </bdt>
+            <p className="block-component">
+              the <p className="question">United Kingdom</p>
+              <p className="else-block" />
+            </p>
           </span>
           , and the use of the United Nations Convention of Contracts for the
           International Sales of Goods is expressly excluded. If your habitual
           residence is in the EU, and you are a consumer, you additionally
           possess the protection provided to you by obligatory provisions of the
           law in your country to residence.{" "}
-          <bdt className="question">Viet80&apos;s Ltd</bdt> and yourself both
-          agree to submit to the non-exclusive jurisdiction of the courts of{" "}
-          <bdt className="question">Nottinghamshire</bdt>, which means that you
-          may make a claim to defend your consumer protection rights in regards
-          to these Legal Terms in{" "}
-          <bdt className="block-component">
-            the <bdt className="question">United Kingdom</bdt>
-            <bdt className="else-block" />, or in the EU country in which you
+          <p className="question">Viet80&apos;s Ltd</p> and yourself both agree
+          to submit to the non-exclusive jurisdiction of the courts of{" "}
+          <p className="question">Nottinghamshire</p>, which means that you may
+          make a claim to defend your consumer protection rights in regards to
+          these Legal Terms in{" "}
+          <p className="block-component">
+            the <p className="question">United Kingdom</p>
+            <p className="else-block" />, or in the EU country in which you
             reside.
-            <bdt className="else-block" />
-          </bdt>
+            <p className="else-block" />
+          </p>
         </div>
         <div
           className="MsoNormal"
@@ -5669,13 +5666,13 @@ export default function Terms() {
           className="MsoNormal"
           style={{ lineHeight: "1.5", textAlign: "left" }}
         >
-          <bdt className="block-component" />
+          <p className="block-component" />
         </div>
         <div
           className="MsoNormal"
           style={{ lineHeight: "1.5", textAlign: "left" }}
         >
-          <bdt className="block-component" />
+          <p className="block-component" />
         </div>
         <div
           className="MsoNormal"
@@ -5695,9 +5692,9 @@ export default function Terms() {
           data-custom-class="body_text"
           style={{ lineHeight: "1.5", textAlign: "left" }}
         >
-          <bdt className="block-component">
+          <p className="block-component">
             <span style={{ fontSize: 15 }} />
-          </bdt>
+          </p>
         </div>
         <div
           className="MsoNormal"
@@ -5711,16 +5708,15 @@ export default function Terms() {
           Arbitration having its seat in Strasbourg, and which are in force at
           the time the application for arbitration is filed, and of which
           adoption of this clause constitutes acceptance. The seat of
-          arbitration shall be <bdt className="block-component" />
-          <bdt className="question">Nottingham</bdt>,{" "}
-          <bdt className="block-component" />
-          <bdt className="question">United Kingdom</bdt>
-          <bdt className="else-block" />. The language of the proceedings shall
-          be <bdt className="question">English</bdt>. Applicable rules of
-          substantive law shall be the law of{" "}
-          <bdt className="block-component" />
-          the <bdt className="question">United Kingdom</bdt>
-          <bdt className="else-block" />.<bdt className="else-block" />
+          arbitration shall be <p className="block-component" />
+          <p className="question">Nottingham</p>,{" "}
+          <p className="block-component" />
+          <p className="question">United Kingdom</p>
+          <p className="else-block" />. The language of the proceedings shall be{" "}
+          <p className="question">English</p>. Applicable rules of substantive
+          law shall be the law of <p className="block-component" />
+          the <p className="question">United Kingdom</p>
+          <p className="else-block" />.<p className="else-block" />
         </div>
         <div
           className="MsoNormal"
@@ -5750,10 +5746,10 @@ export default function Terms() {
           between the Parties individually. To the full extent permitted by law,
           (a) no arbitration shall be joined with any other proceeding; (b)
           there is no right or authority for any Dispute to be arbitrated on a
-          class-action basis or to <bdt className="block-component" />
+          class-action basis or to <p className="block-component" />
           utilise
-          <bdt className="else-block" /> class action procedures; and (c) there
-          is no right or authority for any Dispute to be brought in a purported
+          <p className="else-block" /> class action procedures; and (c) there is
+          no right or authority for any Dispute to be brought in a purported
           representative capacity on behalf of the general public or any other
           persons.
         </div>
@@ -5768,9 +5764,9 @@ export default function Terms() {
           data-custom-class="heading_2"
           style={{ lineHeight: "1.5", textAlign: "left" }}
         >
-          <bdt className="block-component" />
+          <p className="block-component" />
           <strong>Exceptions to Arbitration</strong>
-          <bdt className="else-block" />
+          <p className="else-block" />
         </div>
         <div
           className="MsoNormal"
@@ -5783,30 +5779,30 @@ export default function Terms() {
           data-custom-class="body_text"
           style={{ lineHeight: "1.5", textAlign: "left" }}
         >
-          <bdt className="block-component" />
+          <p className="block-component" />
           The Parties agree that the following Disputes are not subject to the
           above provisions concerning binding arbitration: (a) any Disputes
           seeking to enforce or protect, or concerning the validity of, any of
           the intellectual property rights of a Party; (b) any Dispute related
           to, or arising from, allegations of theft, piracy, invasion of
-          privacy, or <bdt className="block-component" />
+          privacy, or <p className="block-component" />
           unauthorised
-          <bdt className="else-block" /> use; and (c) any claim for injunctive
+          <p className="else-block" /> use; and (c) any claim for injunctive
           relief. If this provision is found to be illegal or unenforceable,
           then neither Party will elect to arbitrate any Dispute falling within
           that portion of this provision found to be illegal or unenforceable
           and such Dispute shall be decided by a court of competent jurisdiction
           within the courts listed for jurisdiction above, and the Parties agree
           to submit to the personal jurisdiction of that court.
-          <bdt className="else-block" />
+          <p className="else-block" />
         </div>
         <div
           className="MsoNormal"
           style={{ lineHeight: "1.5", textAlign: "left" }}
         >
-          <bdt className="statement-end-if-in-editor">
-            <bdt className="statement-end-if-in-editor" />
-          </bdt>
+          <p className="statement-end-if-in-editor">
+            <p className="statement-end-if-in-editor" />
+          </p>
         </div>
         <div
           className="MsoNormal"
@@ -5944,29 +5940,27 @@ export default function Terms() {
             (1) ERRORS, MISTAKES, OR INACCURACIES OF CONTENT AND MATERIALS, (2)
             PERSONAL INJURY OR PROPERTY DAMAGE, OF ANY NATURE WHATSOEVER,
             RESULTING FROM YOUR ACCESS TO AND USE OF THE SERVICES, (3) ANY{" "}
-            <bdt className="block-component" />
+            <p className="block-component" />
             UNAUTHORISED
-            <bdt className="else-block" /> ACCESS TO OR USE OF OUR SECURE
-            SERVERS AND/OR ANY AND ALL PERSONAL INFORMATION AND/OR FINANCIAL
-            INFORMATION STORED THEREIN, (4) ANY INTERRUPTION OR CESSATION OF
-            TRANSMISSION TO OR FROM THE SERVICES, (5) ANY BUGS, VIRUSES, TROJAN
-            HORSES, OR THE LIKE WHICH MAY BE TRANSMITTED TO OR THROUGH THE
-            SERVICES BY ANY THIRD PARTY, AND/OR (6) ANY ERRORS OR OMISSIONS IN
-            ANY CONTENT AND MATERIALS OR FOR ANY LOSS OR DAMAGE OF ANY KIND
-            INCURRED AS A RESULT OF THE USE OF ANY CONTENT POSTED, TRANSMITTED,
-            OR OTHERWISE MADE AVAILABLE VIA THE SERVICES. WE DO NOT WARRANT,
-            ENDORSE, GUARANTEE, OR ASSUME RESPONSIBILITY FOR ANY PRODUCT OR
-            SERVICE ADVERTISED OR OFFERED BY A THIRD PARTY THROUGH THE SERVICES,
-            ANY HYPERLINKED WEBSITE, OR ANY WEBSITE OR MOBILE APPLICATION
-            FEATURED IN ANY BANNER OR OTHER ADVERTISING, AND WE WILL NOT BE A
-            PARTY TO OR IN ANY WAY BE RESPONSIBLE FOR MONITORING ANY TRANSACTION
-            BETWEEN YOU AND ANY THIRD-PARTY PROVIDERS OF PRODUCTS OR SERVICES.
-            AS WITH THE PURCHASE OF A PRODUCT OR SERVICE THROUGH ANY MEDIUM OR
-            IN ANY ENVIRONMENT, YOU SHOULD USE YOUR BEST{" "}
-            <bdt className="block-component" />
+            <p className="else-block" /> ACCESS TO OR USE OF OUR SECURE SERVERS
+            AND/OR ANY AND ALL PERSONAL INFORMATION AND/OR FINANCIAL INFORMATION
+            STORED THEREIN, (4) ANY INTERRUPTION OR CESSATION OF TRANSMISSION TO
+            OR FROM THE SERVICES, (5) ANY BUGS, VIRUSES, TROJAN HORSES, OR THE
+            LIKE WHICH MAY BE TRANSMITTED TO OR THROUGH THE SERVICES BY ANY
+            THIRD PARTY, AND/OR (6) ANY ERRORS OR OMISSIONS IN ANY CONTENT AND
+            MATERIALS OR FOR ANY LOSS OR DAMAGE OF ANY KIND INCURRED AS A RESULT
+            OF THE USE OF ANY CONTENT POSTED, TRANSMITTED, OR OTHERWISE MADE
+            AVAILABLE VIA THE SERVICES. WE DO NOT WARRANT, ENDORSE, GUARANTEE,
+            OR ASSUME RESPONSIBILITY FOR ANY PRODUCT OR SERVICE ADVERTISED OR
+            OFFERED BY A THIRD PARTY THROUGH THE SERVICES, ANY HYPERLINKED
+            WEBSITE, OR ANY WEBSITE OR MOBILE APPLICATION FEATURED IN ANY BANNER
+            OR OTHER ADVERTISING, AND WE WILL NOT BE A PARTY TO OR IN ANY WAY BE
+            RESPONSIBLE FOR MONITORING ANY TRANSACTION BETWEEN YOU AND ANY
+            THIRD-PARTY PROVIDERS OF PRODUCTS OR SERVICES. AS WITH THE PURCHASE
+            OF A PRODUCT OR SERVICE THROUGH ANY MEDIUM OR IN ANY ENVIRONMENT,
+            YOU SHOULD USE YOUR BEST <p className="block-component" />
             JUDGEMENT
-            <bdt className="else-block" /> AND EXERCISE CAUTION WHERE
-            APPROPRIATE.
+            <p className="else-block" /> AND EXERCISE CAUTION WHERE APPROPRIATE.
           </span>
         </div>
         <div
@@ -6043,49 +6037,49 @@ export default function Terms() {
               OTHER DAMAGES ARISING FROM YOUR USE OF THE SERVICES, EVEN IF WE
               HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
             </span>{" "}
-            <bdt
+            <p
               className="block-container if"
               data-type="if"
               id="3c3071ce-c603-4812-b8ca-ac40b91b9943"
             >
               <span data-custom-class="body_text">
-                <bdt data-type="conditional-block">
-                  <bdt
+                <p data-type="conditional-block">
+                  <p
                     className="block-component"
                     data-record-question-key="limitations_liability_option"
                     data-type="statement"
                   />
-                  <bdt data-type="body">
+                  <p data-type="body">
                     NOTWITHSTANDING ANYTHING TO THE CONTRARY CONTAINED HEREIN,
                     OUR LIABILITY TO YOU FOR ANY CAUSE WHATSOEVER AND REGARDLESS
                     OF THE FORM OF THE ACTION, WILL AT ALL TIMES BE LIMITED TO{" "}
-                    <bdt
+                    <p
                       className="block-container if"
                       data-type="if"
                       id="73189d93-ed3a-d597-3efc-15956fa8e04e"
                     >
-                      <bdt data-type="conditional-block">
-                        <bdt
+                      <p data-type="conditional-block">
+                        <p
                           className="block-component"
                           data-record-question-key="limitations_liability_option"
                           data-type="statement"
                         />
-                        <bdt data-type="body">
+                        <p data-type="body">
                           THE AMOUNT PAID, IF ANY, BY YOU TO US
-                          <bdt
+                          <p
                             className="block-container if"
                             data-type="if"
                             id="19e172cb-4ccf-1904-7c06-4251800ba748"
                           >
-                            <bdt data-type="conditional-block">
-                              <bdt
+                            <p data-type="conditional-block">
+                              <p
                                 className="block-component"
                                 data-record-question-key="limilation_liability_time_option"
                                 data-type="statement"
                               >
                                 &nbsp;
-                              </bdt>
-                              <bdt data-type="body">
+                              </p>
+                              <p data-type="body">
                                 <span
                                   style={{
                                     fontSize: "11pt",
@@ -6094,39 +6088,39 @@ export default function Terms() {
                                   }}
                                 >
                                   DURING THE{" "}
-                                  <bdt
+                                  <p
                                     className="block-container question question-in-editor"
                                     data-id="5dd68d46-ed6f-61c7-cd66-6b3f424b6bdd"
                                     data-type="question"
                                   >
                                     six (6)
-                                  </bdt>{" "}
+                                  </p>{" "}
                                   mONTH PERIOD PRIOR TO ANY CAUSE OF ACTION
                                   ARISING
                                 </span>
-                              </bdt>
-                            </bdt>
-                            <bdt
+                              </p>
+                            </p>
+                            <p
                               className="statement-end-if-in-editor"
                               data-type="close"
                             />
-                          </bdt>
-                        </bdt>
-                      </bdt>
-                      <bdt data-type="conditional-block">
-                        <bdt
+                          </p>
+                        </p>
+                      </p>
+                      <p data-type="conditional-block">
+                        <p
                           className="block-component"
                           data-record-question-key="limitations_liability_option"
                           data-type="statement"
                         >
                           .
-                        </bdt>
-                      </bdt>
-                    </bdt>
-                  </bdt>
-                </bdt>
+                        </p>
+                      </p>
+                    </p>
+                  </p>
+                </p>
               </span>
-            </bdt>
+            </p>
             &nbsp;
           </span>
           <span data-custom-class="body_text">
@@ -6136,9 +6130,9 @@ export default function Terms() {
             ABOVE DISCLAIMERS OR LIMITATIONS MAY NOT APPLY TO YOU, AND YOU MAY
             HAVE ADDITIONAL RIGHTS.
           </span>
-          <bdt className="statement-end-if-in-editor" data-type="close">
+          <p className="statement-end-if-in-editor" data-type="close">
             <span data-custom-class="body_text" />
-          </bdt>
+          </p>
         </div>
         <div
           className="MsoNormal"
@@ -6212,21 +6206,21 @@ export default function Terms() {
             agents, partners, and employees, from and against any loss, damage,
             liability, claim, or demand, including reasonable attorneys’ fees
             and expenses, made by any third party due to or arising out of:{" "}
-            <bdt
+            <p
               className="block-container if"
               data-type="if"
               id="475fffa5-05ca-def8-ac88-f426b238903c"
             >
-              <bdt data-type="conditional-block">
-                <bdt
+              <p data-type="conditional-block">
+                <p
                   className="block-component"
                   data-record-question-key="user_post_content_option"
                   data-type="statement"
                 />
-                <bdt data-type="body">(1) your Contributions;&nbsp;</bdt>
-              </bdt>
-              <bdt className="statement-end-if-in-editor" data-type="close" />
-            </bdt>
+                <p data-type="body">(1) your Contributions;&nbsp;</p>
+              </p>
+              <p className="statement-end-if-in-editor" data-type="close" />
+            </p>
             (<span style={{ fontSize: "14.6667px" }}>2</span>) use of the
             Services; (<span style={{ fontSize: "14.6667px" }}>3</span>) breach
             of these Legal Terms; (
@@ -6239,16 +6233,15 @@ export default function Terms() {
             act toward any other user of the Services with whom you connected
             via the Services. Notwithstanding the foregoing, we reserve the
             right, at your expense, to assume the exclusive{" "}
-            <bdt className="block-component" />
+            <p className="block-component" />
             defence
-            <bdt className="else-block" /> and control of any matter for which
-            you are required to indemnify us, and you agree to cooperate, at
-            your expense, with our <bdt className="block-component" />
+            <p className="else-block" /> and control of any matter for which you
+            are required to indemnify us, and you agree to cooperate, at your
+            expense, with our <p className="block-component" />
             defence
-            <bdt className="else-block" /> of such claims. We will use
-            reasonable efforts to notify you of any such claim, action, or
-            proceeding which is subject to this indemnification upon becoming
-            aware of it.
+            <p className="else-block" /> of such claims. We will use reasonable
+            efforts to notify you of any such claim, action, or proceeding which
+            is subject to this indemnification upon becoming aware of it.
           </span>
         </div>
         <div
@@ -6422,7 +6415,7 @@ export default function Terms() {
           className="MsoNormal"
           style={{ lineHeight: "1.5", textAlign: "left" }}
         >
-          <bdt className="block-component" />
+          <p className="block-component" />
         </div>
         <div
           className="MsoNormal"
@@ -6503,9 +6496,9 @@ export default function Terms() {
             result of these Legal Terms or use of the Services. You agree that
             these Legal Terms will not be construed against us by virtue of
             having drafted them. You hereby waive any and all{" "}
-            <bdt className="block-component" />
+            <p className="block-component" />
             defences
-            <bdt className="else-block" /> you may have based on the electronic
+            <p className="else-block" /> you may have based on the electronic
             form of these Legal Terms and the lack of signing by the parties
             hereto to execute these Legal Terms.
           </span>
@@ -6514,9 +6507,9 @@ export default function Terms() {
           className="MsoNormal"
           style={{ lineHeight: "1.5", textAlign: "left" }}
         >
-          <bdt className="block-component">
+          <p className="block-component">
             <span style={{ fontSize: 15 }} />
-          </bdt>
+          </p>
         </div>
         <div
           className="MsoNormal"
@@ -6603,11 +6596,11 @@ export default function Terms() {
         >
           <span style={{ fontSize: 15 }}>
             <span style={{ color: "rgb(89, 89, 89)" }}>
-              <bdt className="question">
+              <p className="question">
                 <strong>Viet80&apos;s Ltd</strong>
-              </bdt>
+              </p>
               <strong>
-                <bdt className="block-component" />
+                <p className="block-component" />
               </strong>
             </span>
           </span>
@@ -6625,11 +6618,11 @@ export default function Terms() {
                 color: "rgb(89, 89, 89)",
               }}
             >
-              <bdt className="question">
+              <p className="question">
                 <strong>
-                  <bdt className="question">57-59 Friar Lane</bdt>
+                  <p className="question">57-59 Friar Lane</p>
                 </strong>
-              </bdt>
+              </p>
               <span
                 style={{
                   lineHeight: "115%",
@@ -6637,9 +6630,9 @@ export default function Terms() {
                   color: "rgb(89, 89, 89)",
                 }}
               >
-                <bdt className="statement-end-if-in-editor" />
+                <p className="statement-end-if-in-editor" />
               </span>
-              <bdt className="block-component" />
+              <p className="block-component" />
             </span>
           </span>
         </div>
@@ -6651,20 +6644,20 @@ export default function Terms() {
           <span style={{ fontSize: 15 }}>
             <strong>
               <span style={{ color: "rgb(89, 89, 89)" }}>
-                <bdt className="question">Nottingham</bdt>
-                <bdt className="block-component" />,{" "}
-                <bdt className="question">Nottinghamshire</bdt>
-                <bdt className="statement-end-if-in-editor" />
-                <bdt className="block-component" />{" "}
-                <bdt className="question">NG1 6DH</bdt>
-                <bdt className="statement-end-if-in-editor" />
+                <p className="question">Nottingham</p>
+                <p className="block-component" />,{" "}
+                <p className="question">Nottinghamshire</p>
+                <p className="statement-end-if-in-editor" />
+                <p className="block-component" />{" "}
+                <p className="question">NG1 6DH</p>
+                <p className="statement-end-if-in-editor" />
               </span>
             </strong>
             <strong>
               <span style={{ color: "rgb(89, 89, 89)" }}>
-                <bdt className="block-component" />
+                <p className="block-component" />
               </span>
-              <bdt className="block-component">
+              <p className="block-component">
                 <span
                   style={{
                     fontSize: "11.0pt",
@@ -6697,7 +6690,7 @@ export default function Terms() {
                                       <span
                                         style={{ color: "rgb(89, 89, 89)" }}
                                       >
-                                        <bdt className="block-component" />
+                                        <p className="block-component" />
                                       </span>
                                     </span>
                                   </span>
@@ -6710,7 +6703,7 @@ export default function Terms() {
                     </span>
                   </span>
                 </span>
-              </bdt>
+              </p>
             </strong>
           </span>
         </div>
@@ -6722,8 +6715,8 @@ export default function Terms() {
           <span style={{ color: "rgb(89, 89, 89)" }}>
             <strong>
               <span style={{ fontSize: 15 }}>
-                <bdt className="statement-end-if-in-editor">
-                  <bdt className="block-component">
+                <p className="statement-end-if-in-editor">
+                  <p className="block-component">
                     <span
                       style={{
                         fontSize: "11.0pt",
@@ -6744,18 +6737,18 @@ export default function Terms() {
                           msoThemetint: 166,
                         }}
                       >
-                        <bdt className="question">United Kingdom</bdt>
-                        <bdt className="block-component" />
+                        <p className="question">United Kingdom</p>
+                        <p className="block-component" />
                       </span>
                     </span>
-                  </bdt>
-                </bdt>
+                  </p>
+                </p>
               </span>
             </strong>
           </span>
-          <bdt className="statement-end-if-in-editor">
+          <p className="statement-end-if-in-editor">
             <strong />
-          </bdt>
+          </p>
         </div>
         <div
           className="MsoNormal"
@@ -6774,9 +6767,9 @@ export default function Terms() {
               }}
             >
               <strong>
-                <bdt className="block-component" />
-                Phone: <bdt className="question">0115 958 6868</bdt>
-                <bdt className="statement-end-if-in-editor" />
+                <p className="block-component" />
+                Phone: <p className="question">0115 958 6868</p>
+                <p className="statement-end-if-in-editor" />
               </strong>
             </span>
           </strong>
@@ -6798,7 +6791,7 @@ export default function Terms() {
               }}
             >
               <strong>
-                <bdt className="block-component" />
+                <p className="block-component" />
               </strong>
             </span>
           </strong>
@@ -6820,7 +6813,7 @@ export default function Terms() {
               }}
             >
               <strong>
-                <bdt className="question">info@viet80s.co.uk</bdt>
+                <p className="question">info@viet80s.co.uk</p>
               </strong>
             </span>
           </strong>
