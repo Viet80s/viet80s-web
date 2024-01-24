@@ -73,7 +73,7 @@ const ContactForm = () => {
   return (
     <div className="flex flex-col items-center justify-center w-screen max-w-full text-center bg-black">
       <h1
-        className="mb-3 mt-5 text-xl font-semibold"
+        className="mt-5 font-semibold"
         style={{
           textAlign: "center",
           color: "#F8C983",
@@ -83,6 +83,17 @@ const ContactForm = () => {
       >
         Wanna contact us? Please do it here{" "}
       </h1>
+      <h2
+        className="mb-3 text-xl font-light"
+        style={{
+          textAlign: "center",
+          color: "#F8C983",
+          fontSize: fontSize,
+          zIndex: 1,
+        }}
+      >
+        Alternatively, you can call us on 0115 958 6868{" "}
+      </h2>
       <form onSubmit={handleSubmit}>
         <table className="items-center">
           <tbody>

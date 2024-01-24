@@ -27,7 +27,7 @@ export default function Home() {
           </Link>
         )}
       </div>
-      <DetailsFooter location="coffee" />
+      <DetailsFooter location="restaurant" />
       <Footer />
     </>
   );

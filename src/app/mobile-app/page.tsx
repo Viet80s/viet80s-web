@@ -8,6 +8,8 @@ import Link from "next/link";
 import Image from "next/image";
 import styles from "@/app/menu.module.css";
 import stylesPara from "@/app/localHome.module.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGift } from "@fortawesome/free-solid-svg-icons";
 
 export default function Home() {
   const isMobile = useMediaQuery({ maxWidth: 768 });
@@ -19,7 +21,7 @@ export default function Home() {
         <div className={stylesPara.paragraphApp}>
           <p>
             Download Viet80s app today to collect points and receive exclusive
-            rewards!
+            rewards! <FontAwesomeIcon icon={faGift} beat />
           </p>
         </div>
         <div className={styles.imageWrapper}>

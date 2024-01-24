@@ -13,8 +13,8 @@ export default class AutoPlayMobile extends Component {
       slidesToShow: 1,
       slidesToScroll: 1,
       autoplay: true,
-      autoplaySpeed: 1500,
-      cssEase: "linear",
+      autoplaySpeed: 3000,
+      fade: true,
       pauseOnHover: false,
     };
     return (

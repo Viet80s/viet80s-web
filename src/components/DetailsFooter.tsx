@@ -65,41 +65,41 @@ const DetailsFooter = ({ location }: Props) => {
         <p style={{ textDecoration: "underline" }}>Useful links</p>
         <ul>
           <li>
-            <Link href="/mobile-app">Mobile App</Link>
+            <Link href="/mobile-app">- Mobile App</Link>
           </li>
 
           {location === "restaurant" && (
             <>
               <li>
-                <Link href="/street-food">Viet80s Street Food</Link>
+                <Link href="/street-food">- Viet80s Street Food</Link>
               </li>
               <li>
-                <Link href="/coffee">Viet80s Coffee</Link>
+                <Link href="/coffee">- Viet80s Coffee</Link>
               </li>
             </>
           )}
           {location === "street-food" && (
             <>
               <li>
-                <Link href="/restaurant">Viet80s Restaurant</Link>
+                <Link href="/restaurant">- Viet80s Restaurant</Link>
               </li>
               <li>
-                <Link href="/coffee">Viet80s Coffee</Link>
+                <Link href="/coffee">- Viet80s Coffee</Link>
               </li>
             </>
           )}
           {location === "coffee" && (
             <>
               <li>
-                <Link href="/street-food">Viet80s Street Food</Link>
+                <Link href="/street-food">- Viet80s Street Food</Link>
               </li>
               <li>
-                <Link href="/restaurant">Viet80s Restaurant</Link>
+                <Link href="/restaurant">- Viet80s Restaurant</Link>
               </li>
             </>
           )}
           <li>
-            <Link href="/terms-and-policies">Policy and Terms</Link>
+            <Link href="/terms-and-policies">- Policy and Terms</Link>
           </li>
         </ul>
       </div>

@@ -7,6 +7,7 @@ import Footer from "@/components/Footer";
 import styles from "@/app/localHome.module.css";
 import DetailsFooter from "@/components/DetailsFooter";
 import NavBar from "@/components/NavBar";
+import FoodGalleryResto from "@/components/FoodGalleryResto";
 
 export default function Home() {
   const isMobile = useMediaQuery({ maxWidth: 768 });
@@ -14,7 +15,7 @@ export default function Home() {
   return (
     <>
       <NavBar />
-      <div className={"w-full bg-black"}>
+      <div className={"bg-black"}>
         <div>{isMobile ? <AutoPlayMobile /> : <AutoPlayLaptop />}</div>
         <div className={styles.paragraph}>
           <p>
@@ -29,6 +30,10 @@ export default function Home() {
             real feeling of Vietnam with authentic Pho and the flavours of
             Vietnamese traditional recipes today.
           </p>
+        </div>
+
+        <div className="mr-10 ml-10 mt-10 bg-black">
+          <FoodGalleryResto />
         </div>
       </div>
       <DetailsFooter location="restaurant" />
