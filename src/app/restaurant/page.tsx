@@ -1,8 +1,8 @@
 "use client";
 
 import { useMediaQuery } from "react-responsive";
-import AutoPlayMobile from "@/components/CarouselMobile";
-import AutoPlayLaptop from "@/components/CarouselLaptop";
+import AutoPlayMobile from "@/components/AutoPlayMobile";
+import AutoPlayLaptop from "@/components/AutoPlayLaptop";
 import Footer from "@/components/Footer";
 import styles from "@/app/localHome.module.css";
 import DetailsFooter from "@/components/DetailsFooter";
@@ -16,7 +16,13 @@ export default function Home() {
     <>
       <NavBar />
       <div className={"bg-black"}>
-        <div>{isMobile ? <AutoPlayMobile /> : <AutoPlayLaptop />}</div>
+        <div>
+          {isMobile ? (
+            <AutoPlayMobile location="restaurant" />
+          ) : (
+            <AutoPlayLaptop location="restaurant" />
+          )}
+        </div>
         <div className={styles.paragraph}>
           <p>
             Welcome to Viet80s, a proud representation of Vietnam’s rich

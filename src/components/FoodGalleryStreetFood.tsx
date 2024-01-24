@@ -8,7 +8,7 @@ import { useMediaQuery } from "react-responsive";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHandshake, faHeart } from "@fortawesome/free-regular-svg-icons";
 
-const FoodGalleryResto = () => {
+const FoodGalleryStreetFood = () => {
   const isMobile = useMediaQuery({ maxWidth: 768 });
   const imageSize = isMobile ? 200 : 250;
   const numberSlide = isMobile ? 2 : 3;
@@ -170,7 +170,7 @@ const FoodGalleryResto = () => {
             className="text-center"
             style={{ color: "#F8C983", fontSize: fontSize }}
           >
-            Fried tofu with Viet80s recipe
+            Fried tofu ưith Viet80s recipe
           </p>
         </div>
       </Slider>
@@ -178,4 +178,4 @@ const FoodGalleryResto = () => {
   );
 };
 
-export default FoodGalleryResto;
+export default FoodGalleryStreetFood;
