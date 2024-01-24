@@ -99,7 +99,7 @@ const DetailsFooter = ({ location }: Props) => {
             </>
           )}
           <li>
-            <Link href="/policy-terms">Policy and Terms</Link>
+            <Link href="/terms-and-policies">Policy and Terms</Link>
           </li>
         </ul>
       </div>

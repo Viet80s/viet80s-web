@@ -95,3 +95,9 @@
   justify-items: center;
   padding: 10px 0;
 }
+
+@media (max-width: 768px) {
+  .footer {
+      font-size: small;
+  }
+}

@@ -6,6 +6,7 @@ import {
   Mails,
   NotebookPen,
   Merge,
+  Smartphone,
 } from "lucide-react";
 
 const Sidebar = () => {
@@ -73,6 +74,9 @@ const Sidebar = () => {
       </a>
       <a id="contact" className="menu-item" href="/contact">
         <Mails className="mr-2" /> Contact Us
+      </a>
+      <a id="mobile-app" className="menu-item" href="/mobile-app">
+        <Smartphone className="mr-2" /> Viet80s Mobile App
       </a>
       <a id="blog" className="menu-item" href="/blogs">
         <NotebookPen className="mr-2" /> Viet80s Blogs

@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <>
       <NavBar />
-      <div className="bg-black">
+      <div className="max-h-screen bg-black">
         <div className={styles1.paragraphApp}>
           <p>
             We are happy to have you as our new team member. Please follow this{" "}
@@ -33,7 +33,7 @@ export default function Home() {
                 alt="App Store"
                 priority={false}
                 width={600}
-                height={700}
+                height={900}
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
             </div>

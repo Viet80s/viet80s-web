@@ -24,7 +24,7 @@ export default function Home() {
         </div>
         <div className={styles.imageWrapper}>
           <Link href="https://apps.apple.com/gb/app/viet80s/id6450309686">
-            <div className={styles.imageContainer}>
+            <div className={styles.imageContainerApp}>
               <Image
                 src="/pictures/AppStore.png"
                 alt="App Store"
@@ -36,7 +36,7 @@ export default function Home() {
             </div>
           </Link>
           <Link href="https://play.google.com/store/apps/details?id=com.mycompany.viet80sapp">
-            <div className={styles.imageContainer}>
+            <div className={styles.imageContainerApp}>
               <Image
                 src="/pictures/GGPlay.png"
                 alt="Google Play"
