@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <>
       <NavBar />
-      <div className="max-h-screen bg-black">
+      <div className="min-h-screen bg-black">
         <div className={styles1.paragraphApp}>
           <p>
             We are happy to have you as our new team member. Please follow this{" "}
