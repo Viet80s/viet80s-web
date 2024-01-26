@@ -48,15 +48,13 @@ const DetailsFooter = ({ location }: Props) => {
       <div style={overlayStyle}></div>
       <div className={!isMobile ? "mt-2 mb-2 z-10 mx-40" : "mb-2 z-10 ml-3"}>
         <div>
-          <Link href="/">
-            <Image
-              src="/pictures/logo.png"
-              alt="Viet80s Logo"
-              width={logoSize}
-              height={logoSize}
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-            />
-          </Link>
+          <Image
+            src="/pictures/logo.png"
+            alt="Viet80s Logo"
+            width={logoSize}
+            height={logoSize}
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          />
         </div>
         <div
           className="flex justify-between"
