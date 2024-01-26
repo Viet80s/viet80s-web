@@ -68,7 +68,7 @@ export default function Home() {
               src="/video/viet80s.mov"
               width={videoWidth}
               height={videoHeight}
-              controls="controls"
+              controls
               autoPlay
               loop
               muted
