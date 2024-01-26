@@ -4,8 +4,10 @@ import "./globals.css";
 import { Toaster } from "react-hot-toast";
 import { Analytics } from "@vercel/analytics/react";
 import Providers from "@/components/Providers";
+import localFont from "next/font/local";
 
 const baumans = Baumans({ subsets: ["latin"], weight: ["400"] });
+const myFont = localFont({ src: "./BESSON.ttf" });
 
 export const metadata: Metadata = {
   title: "Authentic Vietnamese Food in Nottingham | Viet80s",
