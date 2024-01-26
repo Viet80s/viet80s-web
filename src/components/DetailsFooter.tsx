@@ -46,7 +46,7 @@ const DetailsFooter = ({ location }: Props) => {
   return (
     <div className="bg-black" style={divStyle}>
       <div style={overlayStyle}></div>
-      <div className={!isMobile ? "mt-2 mb-2 z-10 mx-40" : "mb-2 z-10 ml-3"}>
+      <div className={!isMobile ? "mt-2 mb-2 z-10 mx-40" : "mb-2 z-10"}>
         <div>
           <Image
             src="/pictures/logo.png"
