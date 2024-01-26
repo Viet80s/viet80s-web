@@ -78,8 +78,8 @@ const Sidebar = () => {
       <a id="mobile-app" className="menu-item" href="/mobile-app">
         <Smartphone className="mr-2" /> Viet80s Mobile App
       </a>
-      <a id="blog" className="menu-item" href="/blogs">
-        <NotebookPen className="mr-2" /> Viet80s Blogs
+      <a id="blog" className="menu-item" href="/blog">
+        <NotebookPen className="mr-2" /> Viet80s Blog
       </a>
       <a id="join" className="menu-item" href="/join-us">
         <Merge className="mr-2" /> Join Us

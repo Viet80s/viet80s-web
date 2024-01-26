@@ -46,8 +46,8 @@ export default function Home() {
                 aroma.
               </p>
               <p>
-                Also, providing excellent service and a warm and welcoming
-                atmosphere that makes our guests feel at home is our continuing
+                Also, providing excellent service and a warm, welcoming
+                atmosphere that makes everyone feel at home is our continuing
                 commitment for you.
               </p>
             </div>
