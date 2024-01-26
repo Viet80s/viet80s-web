@@ -1,6 +1,12 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useMediaQuery } from "react-responsive";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFacebook,
+  faInstagram,
+  faYoutube,
+} from "@fortawesome/free-brands-svg-icons";
 
 type Props = { location: string };
 
@@ -35,23 +41,49 @@ const DetailsFooter = ({ location }: Props) => {
     color: "#F8C983",
   };
   const logoSize = isMobile ? 75 : 150;
+  const iconSize = isMobile ? "small" : "x-large";
 
   return (
     <div className="bg-black" style={divStyle}>
       <div style={overlayStyle}></div>
-
-      <Link
-        href="/"
-        className={!isMobile ? "mt-16 mb-10 z-10 mx-40" : "mb-2 z-10 ml-3"}
+      <div
+        className={
+          ("flex-col z-10 justify-center",
+          !isMobile ? "mt-2 mb-2 z-10 mx-40" : "mb-2 z-10 ml-3")
+        }
       >
-        <Image
-          src="/pictures/logo.png"
-          alt="Viet80s Logo"
-          width={logoSize}
-          height={logoSize}
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-        />
-      </Link>
+        <div>
+          <Link href="/">
+            <Image
+              src="/pictures/logo.png"
+              alt="Viet80s Logo"
+              width={logoSize}
+              height={logoSize}
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            />
+          </Link>
+        </div>
+        <div
+          className="flex justify-between"
+          style={{ color: "#F8C983", fontSize: iconSize }}
+        >
+          <Link href="https://www.facebook.com/Viet80s.Nott" className="mx-1">
+            <FontAwesomeIcon icon={faFacebook} />
+          </Link>
+          <Link
+            href="https://www.instagram.com/viet80s.nottingham/"
+            className="mx-1"
+          >
+            <FontAwesomeIcon icon={faInstagram} />
+          </Link>
+          <Link
+            href="https://www.youtube.com/@viet80soficialuk"
+            className="mx-1"
+          >
+            <FontAwesomeIcon icon={faYoutube} />
+          </Link>
+        </div>
+      </div>
 
       {/* Center Column - Useful Links */}
       <div
