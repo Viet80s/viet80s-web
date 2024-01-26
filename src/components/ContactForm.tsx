@@ -81,10 +81,10 @@ const ContactForm = () => {
           zIndex: 1,
         }}
       >
-        Wanna contact us? Please do it here{" "}
+        Wanna send us a message? Please do it here{" "}
       </h1>
       <h2
-        className="mb-3 text-xl font-light"
+        className="font-light"
         style={{
           textAlign: "center",
           color: "#F8C983",
@@ -93,6 +93,17 @@ const ContactForm = () => {
         }}
       >
         Alternatively, you can call us on 0115 958 6868{" "}
+      </h2>
+      <h2
+        className="mb-3 font-light"
+        style={{
+          textAlign: "center",
+          color: "#F8C983",
+          fontSize: fontSize,
+          zIndex: 1,
+        }}
+      >
+        Or send email to info@viet80s.co.uk{" "}
       </h2>
       <form onSubmit={handleSubmit}>
         <table className="items-center">
