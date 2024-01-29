@@ -83,7 +83,7 @@ const DetailsFooter = ({ location }: Props) => {
         className={
           !isMobile
             ? "text-white mx-40 z-10 text-xl"
-            : "text-white z-10 text-sm"
+            : "text-white ml-5 z-10 text-sm"
         }
         style={textColorStyle}
       >

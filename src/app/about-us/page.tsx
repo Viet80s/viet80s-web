@@ -65,7 +65,7 @@ export default function Home() {
           </div>
           <div>
             <video
-              src="/video/viet80s.mov"
+              src="https://viet80s.s3.eu-west-2.amazonaws.com/Viet+80s+Promo+2.mov"
               width={videoWidth}
               height={videoHeight}
               controls

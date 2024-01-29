@@ -19,7 +19,7 @@ const FoodGalleryResto = () => {
     dots: false,
     infinite: true,
     slidesToShow: numberSlide,
-    slidesToScroll: numberSlide,
+    slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
     gap: "30px",
@@ -36,144 +36,145 @@ const FoodGalleryResto = () => {
           Have a look on our signatures <FontAwesomeIcon icon={faHeart} beat />
         </h3>
       </div>
-
-      <Slider {...settings}>
-        <div className="justify-center items-center">
-          <Image
-            src="/pictures/food/1.png"
-            alt="food 1"
-            width={imageSize}
-            height={imageSize}
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 70vw"
-          />
-          <p
-            className="text-center"
-            style={{ color: "#F8C983", fontSize: fontSize }}
-          >
-            Charcoal Grilled pork with Bún
-          </p>
-        </div>
-        <div>
-          <Image
-            src="/pictures/food/2.png"
-            alt="food 1"
-            width={imageSize}
-            height={imageSize}
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 70vw"
-          />
-          <p
-            className="text-center"
-            style={{ color: "#F8C983", fontSize: fontSize }}
-          >
-            Springs Rolls
-          </p>
-        </div>
-        <div>
-          <Image
-            src="/pictures/food/3.png"
-            alt="food 1"
-            width={imageSize}
-            height={imageSize}
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 70vw"
-          />
-          <p
-            className="text-center"
-            style={{ color: "#F8C983", fontSize: fontSize }}
-          >
-            House Special Fried Rice
-          </p>
-        </div>
-        <div>
-          <Image
-            src="/pictures/food/4.png"
-            alt="food 1"
-            width={imageSize}
-            height={imageSize}
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 70vw"
-          />
-          <p
-            className="text-center"
-            style={{ color: "#F8C983", fontSize: fontSize }}
-          >
-            Special Fried Chicken with Mắc khén seeds
-          </p>
-        </div>
-        <div>
-          <Image
-            src="/pictures/food/5.png"
-            alt="food 1"
-            width={imageSize}
-            height={imageSize}
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 70vw"
-          />
-          <p
-            className="text-center"
-            style={{ color: "#F8C983", fontSize: fontSize }}
-          >
-            Grilled Chicken with honey
-          </p>
-        </div>
-        <div>
-          <Image
-            src="/pictures/food/6.png"
-            alt="food 1"
-            width={imageSize}
-            height={imageSize}
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 70vw"
-          />
-          <p
-            className="text-center"
-            style={{ color: "#F8C983", fontSize: fontSize }}
-          >
-            Beef Shin Phở
-          </p>
-        </div>
-        <div>
-          <Image
-            src="/pictures/food/7.png"
-            alt="food 1"
-            width={imageSize}
-            height={imageSize}
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 70vw"
-          />
-          <p
-            className="text-center"
-            style={{ color: "#F8C983", fontSize: fontSize }}
-          >
-            Stir-fired noodles with prawn
-          </p>
-        </div>
-        <div>
-          <Image
-            src="/pictures/food/8.png"
-            alt="food 1"
-            width={imageSize}
-            height={imageSize}
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 70vw"
-          />
-          <p
-            className="text-center"
-            style={{ color: "#F8C983", fontSize: fontSize }}
-          >
-            Fermented pork rolls
-          </p>
-        </div>
-        <div>
-          <Image
-            src="/pictures/food/9.png"
-            alt="food 1"
-            width={imageSize}
-            height={imageSize}
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 70vw"
-          />
-          <p
-            className="text-center"
-            style={{ color: "#F8C983", fontSize: fontSize }}
-          >
-            Fried tofu with Viet80s recipe
-          </p>
-        </div>
-      </Slider>
+      <div className="mx-10">
+        <Slider {...settings}>
+          <div>
+            <Image
+              src="/pictures/food/1.png"
+              alt="food 1"
+              width={imageSize}
+              height={imageSize}
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 70vw"
+            />
+            <p
+              className="text-center"
+              style={{ color: "#F8C983", fontSize: fontSize }}
+            >
+              Bún thịt nướng/Charcoal Grilled pork with Bún
+            </p>
+          </div>
+          <div>
+            <Image
+              src="/pictures/food/2.png"
+              alt="food 1"
+              width={imageSize}
+              height={imageSize}
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 70vw"
+            />
+            <p
+              className="text-center"
+              style={{ color: "#F8C983", fontSize: fontSize }}
+            >
+              Chả nem chiên giòn/ Springs Rolls
+            </p>
+          </div>
+          <div>
+            <Image
+              src="/pictures/food/3.png"
+              alt="food 1"
+              width={imageSize}
+              height={imageSize}
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 70vw"
+            />
+            <p
+              className="text-center"
+              style={{ color: "#F8C983", fontSize: fontSize }}
+            >
+              Cơm chiên thập cẩm/ House Special Fried Rice
+            </p>
+          </div>
+          <div>
+            <Image
+              src="/pictures/food/4.png"
+              alt="food 1"
+              width={imageSize}
+              height={imageSize}
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 70vw"
+            />
+            <p
+              className="text-center"
+              style={{ color: "#F8C983", fontSize: fontSize }}
+            >
+              Gà chiên mắc khén/ Special Fried Chicken with Mắc khén seeds
+            </p>
+          </div>
+          <div>
+            <Image
+              src="/pictures/food/5.png"
+              alt="food 1"
+              width={imageSize}
+              height={imageSize}
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 70vw"
+            />
+            <p
+              className="text-center"
+              style={{ color: "#F8C983", fontSize: fontSize }}
+            >
+              Gà nướng mật ong/ Grilled Chicken with honey
+            </p>
+          </div>
+          <div>
+            <Image
+              src="/pictures/food/6.png"
+              alt="food 1"
+              width={imageSize}
+              height={imageSize}
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 70vw"
+            />
+            <p
+              className="text-center"
+              style={{ color: "#F8C983", fontSize: fontSize }}
+            >
+              Phở bò tái lõi/ Beef Shin Phở
+            </p>
+          </div>
+          <div>
+            <Image
+              src="/pictures/food/7.png"
+              alt="food 1"
+              width={imageSize}
+              height={imageSize}
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 70vw"
+            />
+            <p
+              className="text-center"
+              style={{ color: "#F8C983", fontSize: fontSize }}
+            >
+              Mì xào tôm/ Stir-fired noodles with prawn
+            </p>
+          </div>
+          <div>
+            <Image
+              src="/pictures/food/8.png"
+              alt="food 1"
+              width={imageSize}
+              height={imageSize}
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 70vw"
+            />
+            <p
+              className="text-center"
+              style={{ color: "#F8C983", fontSize: fontSize }}
+            >
+              Nem chua rán/ Fermented pork rolls
+            </p>
+          </div>
+          <div>
+            <Image
+              src="/pictures/food/9.png"
+              alt="food 1"
+              width={imageSize}
+              height={imageSize}
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 70vw"
+            />
+            <p
+              className="text-center"
+              style={{ color: "#F8C983", fontSize: fontSize }}
+            >
+              Đậu phụ chiên giòn/ Fried tofu with Viet80s recipe
+            </p>
+          </div>
+        </Slider>
+      </div>
     </div>
   );
 };
