@@ -21,7 +21,7 @@ export default function Home() {
           </div>
         </Link>
         <Link href="/street-food">
-          <div className={styles.imageContainer}>
+          <div className={styles.imageContainer1}>
             <Image
               src="/pictures/2.png"
               alt="Viet80s Street Food"
@@ -34,7 +34,7 @@ export default function Home() {
           </div>
         </Link>
         <Link href="/coffee">
-          <div className={styles.imageContainer}>
+          <div className={styles.imageContainer2}>
             <Image
               src="/pictures/3.png"
               alt="Viet80s Coffee"

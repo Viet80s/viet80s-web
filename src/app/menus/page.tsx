@@ -35,7 +35,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <div className={styles.imageContainer}>
+            <div className={styles.imageContainer1}>
               <Image
                 src="/pictures/2.png"
                 alt="Viet80s Street Food"
@@ -52,7 +52,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <div className={styles.imageContainer}>
+            <div className={styles.imageContainer2}>
               <Image
                 src="/pictures/3.png"
                 alt="Viet80s Coffee"
