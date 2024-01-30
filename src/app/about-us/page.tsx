@@ -50,6 +50,7 @@ export default function Home() {
                 atmosphere that makes everyone feel at home is our continuing
                 commitment for you.
               </p>
+              <p>Come and celebrate authentic Vietnamese food with us today!</p>
             </div>
             <div>
               {!isMobile && (
@@ -70,6 +71,7 @@ export default function Home() {
               height={videoHeight}
               controls
               autoPlay
+              playsInline
               loop
               muted
             />
