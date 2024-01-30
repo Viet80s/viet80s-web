@@ -44,7 +44,9 @@ export default function Home() {
         <div className="mr-10 ml-10 mt-10 bg-black">
           <FoodGalleryStreetFood />
         </div>
-        <ButtonList location="street-food" />
+        <div className="mr-10">
+          <ButtonList location="street-food" />
+        </div>
       </div>
       <DetailsFooter location="street-food" />
       <Footer />
