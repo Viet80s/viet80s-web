@@ -40,7 +40,7 @@ const FoodGalleryStreetFood = () => {
       <Slider {...settings}>
         <div className="justify-center items-center">
           <Image
-            src="/pictures/food/1.png"
+            src="/pictures/streetfood/1.png"
             alt="food 1"
             width={imageSize}
             height={imageSize}
@@ -50,12 +50,12 @@ const FoodGalleryStreetFood = () => {
             className="text-center"
             style={{ color: "#F8C983", fontSize: fontSize }}
           >
-            Charcoal Grilled pork with Bún
+            Bánh Mì Việt/ Traditional Banh Mi
           </p>
         </div>
         <div>
           <Image
-            src="/pictures/food/2.png"
+            src="/pictures/streetfood/2.png"
             alt="food 1"
             width={imageSize}
             height={imageSize}
@@ -65,12 +65,12 @@ const FoodGalleryStreetFood = () => {
             className="text-center"
             style={{ color: "#F8C983", fontSize: fontSize }}
           >
-            Springs Rolls
+            Bánh Giò Nóng/ Rice Pyramid Dumpling
           </p>
         </div>
         <div>
           <Image
-            src="/pictures/food/3.png"
+            src="/pictures/streetfood/3.png"
             alt="food 1"
             width={imageSize}
             height={imageSize}
@@ -80,12 +80,12 @@ const FoodGalleryStreetFood = () => {
             className="text-center"
             style={{ color: "#F8C983", fontSize: fontSize }}
           >
-            House Special Fried Rice
+            Bò sốt vang/ Bordelaise Beef served with Banh Mi
           </p>
         </div>
         <div>
           <Image
-            src="/pictures/food/4.png"
+            src="/pictures/streetfood/4.png"
             alt="food 1"
             width={imageSize}
             height={imageSize}
@@ -95,12 +95,12 @@ const FoodGalleryStreetFood = () => {
             className="text-center"
             style={{ color: "#F8C983", fontSize: fontSize }}
           >
-            Special Fried Chicken with Mắc khén seeds
+            Chả Ốc/ Apple Snail Meatballs
           </p>
         </div>
         <div>
           <Image
-            src="/pictures/food/5.png"
+            src="/pictures/streetfood/5.png"
             alt="food 1"
             width={imageSize}
             height={imageSize}
@@ -110,12 +110,12 @@ const FoodGalleryStreetFood = () => {
             className="text-center"
             style={{ color: "#F8C983", fontSize: fontSize }}
           >
-            Grilled Chicken with honey
+            Chả nem Miền Nam/ Southern Spring Rolls
           </p>
         </div>
         <div>
           <Image
-            src="/pictures/food/6.png"
+            src="/pictures/streetfood/6.png"
             alt="food 1"
             width={imageSize}
             height={imageSize}
@@ -125,12 +125,12 @@ const FoodGalleryStreetFood = () => {
             className="text-center"
             style={{ color: "#F8C983", fontSize: fontSize }}
           >
-            Beef Shin Phở
+            Gà chiên giòn/ Crispy Fried Chicken
           </p>
         </div>
         <div>
           <Image
-            src="/pictures/food/7.png"
+            src="/pictures/streetfood/7.png"
             alt="food 1"
             width={imageSize}
             height={imageSize}
@@ -140,12 +140,12 @@ const FoodGalleryStreetFood = () => {
             className="text-center"
             style={{ color: "#F8C983", fontSize: fontSize }}
           >
-            Stir-fired noodles with prawn
+            Sườn Nướng/ Grilled Pork Ribs
           </p>
         </div>
         <div>
           <Image
-            src="/pictures/food/8.png"
+            src="/pictures/streetfood/8.png"
             alt="food 1"
             width={imageSize}
             height={imageSize}
@@ -155,12 +155,12 @@ const FoodGalleryStreetFood = () => {
             className="text-center"
             style={{ color: "#F8C983", fontSize: fontSize }}
           >
-            Fermented pork rolls
+            Xôi mặn/ Sticky Rice with pork
           </p>
         </div>
         <div>
           <Image
-            src="/pictures/food/9.png"
+            src="/pictures/streetfood/9.png"
             alt="food 1"
             width={imageSize}
             height={imageSize}
@@ -170,7 +170,7 @@ const FoodGalleryStreetFood = () => {
             className="text-center"
             style={{ color: "#F8C983", fontSize: fontSize }}
           >
-            Fried tofu ưith Viet80s recipe
+            Giò đủ loại/ Vietnamese Hams and Sausages
           </p>
         </div>
       </Slider>
