@@ -22,6 +22,7 @@ const ButtonList = ({ location }: Props) => {
                   color: "red",
                   background: "#F8C983",
                   border: "double",
+                  fontSize: fontSize,
                 }}
               >
                 {" "}
@@ -43,6 +44,7 @@ const ButtonList = ({ location }: Props) => {
                   color: "red",
                   background: "#F8C983",
                   border: "double",
+                  fontSize: fontSize,
                 }}
               >
                 {" "}
@@ -64,6 +66,7 @@ const ButtonList = ({ location }: Props) => {
                   color: "red",
                   background: "#F8C983",
                   border: "double",
+                  fontSize: fontSize,
                 }}
               >
                 {" "}
@@ -81,6 +84,7 @@ const ButtonList = ({ location }: Props) => {
                   color: "red",
                   background: "#F8C983",
                   border: "double",
+                  fontSize: fontSize,
                 }}
               >
                 {" "}
