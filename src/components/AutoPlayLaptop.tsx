@@ -29,16 +29,16 @@ const AutoPlayLaptop = ({ location }: Props) => {
                 src="/pictures/4.png"
                 alt="Viet80s Logo"
                 width={1920}
-                height={400}
+                height={780}
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 70vw"
               />
             </div>
             <div>
               <Image
-                src="/pictures/5.jpg"
+                src="/pictures/resto.png"
                 alt="Viet80s Logo"
                 width={1920}
-                height={400}
+                height={780}
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 70vw"
               />
             </div>
@@ -50,7 +50,7 @@ const AutoPlayLaptop = ({ location }: Props) => {
           <Slider {...settings}>
             <div>
               <Image
-                src="/pictures/4.png"
+                src="/pictures/sf2.png"
                 alt="Viet80s Logo"
                 width={1920}
                 height={400}
@@ -59,7 +59,7 @@ const AutoPlayLaptop = ({ location }: Props) => {
             </div>
             <div>
               <Image
-                src="/pictures/5.jpg"
+                src="/pictures/sf1.png"
                 alt="Viet80s Logo"
                 width={1920}
                 height={400}
@@ -74,7 +74,7 @@ const AutoPlayLaptop = ({ location }: Props) => {
           <Slider {...settings}>
             <div>
               <Image
-                src="/pictures/4.png"
+                src="/pictures/cf1.png"
                 alt="Viet80s Logo"
                 width={1920}
                 height={400}
@@ -83,7 +83,7 @@ const AutoPlayLaptop = ({ location }: Props) => {
             </div>
             <div>
               <Image
-                src="/pictures/5.jpg"
+                src="/pictures/cf2.png"
                 alt="Viet80s Logo"
                 width={1920}
                 height={400}
