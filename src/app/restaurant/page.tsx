@@ -8,6 +8,7 @@ import styles from "@/app/localHome.module.css";
 import DetailsFooter from "@/components/DetailsFooter";
 import NavBar from "@/components/NavBar";
 import FoodGalleryResto from "@/components/FoodGalleryResto";
+import ButtonList from "@/components/ButtonList";
 
 export default function Home() {
   const isMobile = useMediaQuery({ maxWidth: 768 });
@@ -40,6 +41,9 @@ export default function Home() {
 
         <div className="mr-10 ml-10 mt-10 bg-black">
           <FoodGalleryResto />
+        </div>
+        <div className="mr-10">
+          <ButtonList location="restaurant" />
         </div>
       </div>
       <DetailsFooter location="restaurant" />

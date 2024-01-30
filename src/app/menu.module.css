@@ -68,6 +68,15 @@
     background-color: black;
     text-align: center; 
   }
+
+  .imageWrapperList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    background-color: black;
+    text-align: center; 
+  }
   
 .imageContainerApp {
     display: inline-block;
