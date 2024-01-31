@@ -8,38 +8,24 @@ import styles from "@/app/localHome.module.css";
 import DetailsFooter from "@/components/DetailsFooter";
 import NavBar from "@/components/NavBar";
 import FoodGalleryResto from "@/components/FoodGalleryResto";
+import Image from "next/image";
 
 export default function Home() {
   const isMobile = useMediaQuery({ maxWidth: 768 });
 
   return (
     <>
-      <NavBar />
       <div className={"bg-black"}>
-        <div>
-          {isMobile ? (
-            <AutoPlayMobile location="restaurant" />
-          ) : (
-            <AutoPlayLaptop location="restaurant" />
-          )}
-        </div>
+        <NavBar />
         <div className={styles.paragraph}>
-          <p>
-            Welcome to Viet80s, a proud representation of Vietnam’s rich
-            culinary culture and the ultimate Vietnamese dining experience in
-            the heart of Nottingham.
-          </p>
-
-          <p>
-            At Viet80s, we believe that food is not just about nourishment but
-            also about connecting people and cultures. Come and experience the
-            real feeling of Vietnam with authentic Pho and the flavours of
-            Vietnamese traditional recipes today.
-          </p>
-        </div>
-
-        <div className="mr-10 ml-10 mt-10 bg-black">
-          <FoodGalleryResto />
+          <p>This content is coming soon!</p>
+          <Image
+            src="/pictures/phoViet.png"
+            alt="Viet80s Logo"
+            width={1920}
+            height={500}
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          />
         </div>
       </div>
       <DetailsFooter location="restaurant" />

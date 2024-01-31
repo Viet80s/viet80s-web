@@ -38,10 +38,18 @@ export default function Home() {
             Vietnamese traditional recipes today.
           </p>
         </div>
+        {isMobile ? (
+          <div className="mx-10 mt-10 bg-black">
+            {" "}
+            <FoodGalleryResto />
+          </div>
+        ) : (
+          <div className="mx-40 mt-10 bg-black">
+            {" "}
+            <FoodGalleryResto />
+          </div>
+        )}
 
-        <div className="mr-10 ml-10 mt-10 bg-black">
-          <FoodGalleryResto />
-        </div>
         <div className="mr-10">
           <ButtonList location="restaurant" />
         </div>

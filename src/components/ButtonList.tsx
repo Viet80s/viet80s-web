@@ -19,9 +19,11 @@ const ButtonList = ({ location }: Props) => {
               <Button
                 style={{
                   textAlign: "center",
-                  color: "red",
-                  background: "#F8C983",
+                  color: "#F8C983",
+                  background: "black",
                   border: "double",
+                  borderWidth: "6px",
+                  padding: "20px",
                   fontSize: fontSize,
                 }}
               >
@@ -41,9 +43,11 @@ const ButtonList = ({ location }: Props) => {
               <Button
                 style={{
                   textAlign: "center",
-                  color: "red",
-                  background: "#F8C983",
+                  color: "#F8C983",
+                  background: "black",
                   border: "double",
+                  borderWidth: "6px",
+                  padding: "20px",
                   fontSize: fontSize,
                 }}
               >
@@ -63,9 +67,11 @@ const ButtonList = ({ location }: Props) => {
               <Button
                 style={{
                   textAlign: "center",
-                  color: "red",
-                  background: "#F8C983",
+                  color: "#F8C983",
+                  background: "black",
                   border: "double",
+                  borderWidth: "6px",
+                  padding: "20px",
                   fontSize: fontSize,
                 }}
               >
@@ -81,9 +87,11 @@ const ButtonList = ({ location }: Props) => {
               <Button
                 style={{
                   textAlign: "center",
-                  color: "red",
-                  background: "#F8C983",
+                  color: "#F8C983",
+                  background: "black",
                   border: "double",
+                  borderWidth: "6px",
+                  padding: "20px",
                   fontSize: fontSize,
                 }}
               >

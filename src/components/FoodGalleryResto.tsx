@@ -10,7 +10,7 @@ import { faHandshake, faHeart } from "@fortawesome/free-regular-svg-icons";
 
 const FoodGalleryResto = () => {
   const isMobile = useMediaQuery({ maxWidth: 768 });
-  const imageSize = isMobile ? 200 : 250;
+  const imageSize = isMobile ? 200 : 310;
   const numberSlide = isMobile ? 2 : 3;
   const fontSize = isMobile ? "small" : "large";
   const fontSizeTitle = isMobile ? "x-large" : "xx-large";
@@ -30,7 +30,7 @@ const FoodGalleryResto = () => {
     <div>
       <div>
         <h3
-          className="text-center"
+          className="text-center mb-5"
           style={{ color: "#F8C983", fontSize: fontSizeTitle }}
         >
           Have a look on our signatures <FontAwesomeIcon icon={faHeart} beat />

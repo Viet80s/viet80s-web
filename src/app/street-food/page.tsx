@@ -41,9 +41,17 @@ export default function Home() {
             time.
           </p>
         </div>
-        <div className="mr-10 ml-10 mt-10 bg-black">
-          <FoodGalleryStreetFood />
-        </div>
+        {isMobile ? (
+          <div className="mx-10 mt-10 bg-black">
+            {" "}
+            <FoodGalleryStreetFood />
+          </div>
+        ) : (
+          <div className="mx-40 mt-10 bg-black">
+            {" "}
+            <FoodGalleryStreetFood />
+          </div>
+        )}
         <div className="mr-10">
           <ButtonList location="street-food" />
         </div>

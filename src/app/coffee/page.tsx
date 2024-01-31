@@ -41,9 +41,17 @@ export default function Home() {
             worldwide.
           </p>
         </div>
-        <div className="mr-10 ml-10 mt-10 bg-black">
-          <FoodGalleryCoffee />
-        </div>
+        {isMobile ? (
+          <div className="mx-10 mt-10 bg-black">
+            {" "}
+            <FoodGalleryCoffee />
+          </div>
+        ) : (
+          <div className="mx-40 mt-10 bg-black">
+            {" "}
+            <FoodGalleryCoffee />
+          </div>
+        )}
         <div className="mr-10">
           <ButtonList location="coffee" />
         </div>
