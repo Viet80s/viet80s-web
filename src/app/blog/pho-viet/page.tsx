@@ -15,7 +15,7 @@ export default function Home() {
 
   return (
     <>
-      <div className={"bg-black"}>
+      <div className={"test bg-black"}>
         <NavBar />
         <div className={styles.paragraph}>
           <p>This content is coming soon!</p>
