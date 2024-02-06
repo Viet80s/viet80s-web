@@ -46,7 +46,7 @@ const DetailsFooter = ({ location }: Props) => {
   return (
     <div className="bg-black" style={divStyle}>
       <div style={overlayStyle}></div>
-      <div className={!isMobile ? "mt-2 mb-2 z-10 mx-40" : "mb-2 z-10"}>
+      <div className={!isMobile ? "mt-2 mb-2 z-10 mx-20" : "mb-2 z-10"}>
         <div>
           <Image
             src="/pictures/logo.png"
@@ -82,12 +82,12 @@ const DetailsFooter = ({ location }: Props) => {
       <div
         className={
           !isMobile
-            ? "text-white mx-40 z-10 text-xl"
+            ? "text-white mx-20 z-10 text-xl"
             : "text-white ml-5 z-10 text-sm"
         }
         style={textColorStyle}
       >
-        <p style={{ textDecoration: "underline" }}>Useful links</p>
+        <p style={{ fontWeight: "bolder" }}>Links</p>
         <ul>
           <li>
             <Link href="/mobile-app">- Mobile App</Link>
@@ -96,30 +96,30 @@ const DetailsFooter = ({ location }: Props) => {
           {location === "restaurant" && (
             <>
               <li>
-                <Link href="/street-food">- Viet80s Street Food</Link>
+                <Link href="/street-food">- Street Food</Link>
               </li>
               <li>
-                <Link href="/coffee">- Viet80s Coffee</Link>
+                <Link href="/coffee">- Coffee</Link>
               </li>
             </>
           )}
           {location === "street-food" && (
             <>
               <li>
-                <Link href="/restaurant">- Viet80s Restaurant</Link>
+                <Link href="/restaurant">- Restaurant</Link>
               </li>
               <li>
-                <Link href="/coffee">- Viet80s Coffee</Link>
+                <Link href="/coffee">- Coffee</Link>
               </li>
             </>
           )}
           {location === "coffee" && (
             <>
               <li>
-                <Link href="/street-food">- Viet80s Street Food</Link>
+                <Link href="/street-food">- Street Food</Link>
               </li>
               <li>
-                <Link href="/restaurant">- Viet80s Restaurant</Link>
+                <Link href="/restaurant">- Restaurant</Link>
               </li>
             </>
           )}
@@ -133,22 +133,22 @@ const DetailsFooter = ({ location }: Props) => {
       <div
         className={
           !isMobile
-            ? "text-white mx-40 z-10 text-xl"
+            ? "text-white mx-20 z-10 text-xl"
             : "text-white mx-5 z-10 text-sm"
         }
         style={textColorStyle}
       >
-        <p style={{ textDecoration: "underline" }}>Opening Hours</p>
+        <p style={{ fontWeight: "bolder" }}>Opening Hours</p>
         {location === "restaurant" && (
           <>
-            <p>Viet80s Restaurant:</p>
+            <p style={{ textDecoration: "underline" }}>Restaurant</p>
             <p>Mondays - Sundays</p>
             <p>11:30 AM - 10:30 PM</p>
           </>
         )}
         {location === "street-food" && (
           <>
-            <p>Viet80s Street Food:</p>
+            <p style={{ textDecoration: "underline" }}>Street Food</p>
             <p>Mondays - Fridays</p>
             <p>8:30 AM - 6:00 PM</p>
             <p>Saturdays - Sundays</p>
@@ -157,7 +157,7 @@ const DetailsFooter = ({ location }: Props) => {
         )}
         {location === "coffee" && (
           <>
-            <p>Viet80s Coffee:</p>
+            <p style={{ textDecoration: "underline" }}>Coffee</p>
             <p>Mondays - Fridays</p>
             <p>8:30 AM - 6:00 PM</p>
             <p>Saturdays - Sundays</p>
