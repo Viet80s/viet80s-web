@@ -71,7 +71,7 @@ const ContactForm = () => {
   };
   // Return the form component
   return (
-    <div className="flex flex-col items-center justify-center w-screen max-w-full text-center bg-black">
+    <div className="flex flex-col items-center justify-center w-screen max-w-full text-center bg-black mx-10">
       <h1
         className="mt-5 font-semibold"
         style={{

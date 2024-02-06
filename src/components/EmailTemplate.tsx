@@ -25,9 +25,9 @@ export const EmailTemplate: React.FC<Readonly<EmailTemplateProps>> = ({
         <p>contacting you with the message below:</p>
       </p>
     </p>
-    <h3>Subject:</h3>
+    <h4 style={{ textDecoration: "underline" }}>Subject:</h4>
     <p> {subject}</p>
-    <h3>Enquiry Content:</h3>
+    <h4 style={{ textDecoration: "underline" }}>Enquiry Content:</h4>
     <p>{message}</p>
   </div>
 );
