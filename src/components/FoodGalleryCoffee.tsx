@@ -95,7 +95,7 @@ const FoodGalleryCoffee = () => {
             className="text-center"
             style={{ color: "#F8C983", fontSize: fontSize }}
           >
-            Cà phê muối/ Salt Coffee
+            Trà Đào/ Peach Tea
           </p>
         </div>
         <div>

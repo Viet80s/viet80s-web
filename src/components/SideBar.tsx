@@ -7,6 +7,8 @@ import {
   NotebookPen,
   Merge,
   Smartphone,
+  Home,
+  Gem,
 } from "lucide-react";
 
 const Sidebar = () => {
@@ -58,9 +60,13 @@ const Sidebar = () => {
   };
   return (
     <Menu styles={styles}>
-      <a id="about" className="menu-item" href="/about-us">
-        <Star className="mr-2" />
-        About Us
+      <a id="about" className="menu-item" href="/">
+        <Home className="mr-2" />
+        Home
+      </a>
+      <a id="about" className="menu-item" href="/specials">
+        <Gem className="mr-2" />
+        Special Offers
       </a>
       <a id="menus" className="menu-item" href="/menus">
         <ShoppingBag className="mr-2" /> Menus / Click & Collect
@@ -71,6 +77,10 @@ const Sidebar = () => {
         href="https://www.viet80sonline.co.uk/s/appointments"
       >
         <CalendarCheck className="mr-2" /> Book a Table
+      </a>
+      <a id="about" className="menu-item" href="/about-us">
+        <Star className="mr-2" />
+        About Us
       </a>
       <a id="contact" className="menu-item" href="/contact">
         <Mails className="mr-2" /> Contact Us
