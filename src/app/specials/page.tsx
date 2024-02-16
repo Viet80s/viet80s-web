@@ -26,13 +26,6 @@ export default function Home() {
             height={500}
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
-          <Image
-            src="/pictures/promo1.png"
-            alt="Viet80s Logo"
-            width={1920}
-            height={500}
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-          />
         </div>
       </div>
       <DetailsFooter location="restaurant" />
