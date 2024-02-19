@@ -8,6 +8,8 @@ import Link from "next/link";
 import Image from "next/image";
 import styles from "@/app/menu.module.css";
 import styles1 from "@/app/localHome.module.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faStar } from "@fortawesome/free-solid-svg-icons";
 
 export default function Home() {
   const isMobile = useMediaQuery({ maxWidth: 768 });
@@ -15,7 +17,23 @@ export default function Home() {
   return (
     <>
       <NavBar />
+
       <div className="bg-black">
+        <Link
+          href="/docs/specialMenu.jpg"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div
+            className={"flex items-center justify-center " + styles.specialText}
+          >
+            <FontAwesomeIcon icon={faStar} beat />
+            <h1 className="mx-5 my-5">
+              Specialty Menu <u>here</u>
+            </h1>{" "}
+            <FontAwesomeIcon icon={faStar} beat />
+          </div>
+        </Link>
         <div className={styles.container}>
           <Link href="https://www.viet80sonline.co.uk/">
             <div className={styles.imageContainer}>
