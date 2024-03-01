@@ -17,7 +17,7 @@ export default function Home() {
               priority={false}
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />
-            <p className={styles.imageText}>RESTAURANT</p>
+            <p className={styles.imageText}>RESTAURANT123</p>
           </div>
         </Link>
         <Link href="/street-food">
