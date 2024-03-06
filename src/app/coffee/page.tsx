@@ -24,6 +24,9 @@ export default function Home() {
             <AutoPlayLaptop location="coffee" />
           )}
         </div>
+        <div className="mr-10">
+          <ButtonList location="coffee" />
+        </div>
         <div className={styles.paragraph}>
           <p>
             Welcome to Viet80s Coffee, where the heart of Vietnam’s coffee

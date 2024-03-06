@@ -12,15 +12,15 @@ import Image from "next/image";
 
 export default function Home() {
   const isMobile = useMediaQuery({ maxWidth: 768 });
-
+  const link = isMobile ? "/pictures/promote1.png" : "/pictures/promote2.png";
   return (
     <>
       <div className={"bg-black"}>
         <NavBar />
         <div className={styles.paragraph}>
-          <p>Happy Lunar New Year 2024! Check out our special offers below</p>
+          <p>Happy Women&apos;s month! Check out our special offers below</p>
           <Image
-            src="/pictures/promo.png"
+            src={link}
             alt="Viet80s Logo"
             width={1920}
             height={500}

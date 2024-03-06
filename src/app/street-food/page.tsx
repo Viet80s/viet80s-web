@@ -24,6 +24,9 @@ export default function Home() {
             <AutoPlayLaptop location="street-food" />
           )}
         </div>
+        <div className="mr-10">
+          <ButtonList location="street-food" />
+        </div>
         <div className={styles.paragraph}>
           <p>
             Welcome to Viet80s Street Food, your passport to the vibrant and

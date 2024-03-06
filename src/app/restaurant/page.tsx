@@ -24,6 +24,9 @@ export default function Home() {
             <AutoPlayLaptop location="restaurant" />
           )}
         </div>
+        <div className="mr-10">
+          <ButtonList location="restaurant" />
+        </div>
         <div className={styles.paragraph}>
           <p>
             Welcome to Viet80s, a proud representation of Vietnam’s rich
