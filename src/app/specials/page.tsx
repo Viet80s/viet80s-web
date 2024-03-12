@@ -19,7 +19,15 @@ export default function Home() {
         <NavBar />
         <div className={styles.paragraph}>
           <p>Happy Women&apos;s month! Special offers are coming.</p>
-         
+          <div>
+              <Image
+                src="/pictures/legals.jpg"
+                alt="Viet80s Logo"
+                width={1920}
+                height={780}
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 70vw"
+              />
+            </div>
         </div>
       </div>
       <DetailsFooter location="restaurant" />
