@@ -24,7 +24,15 @@ const AutoPlayLaptop = ({ location }: Props) => {
       {location === "restaurant" && (
         <>
           <Slider {...settings}>
-           
+            <div>
+              <Image
+                src="/pictures/picture_womendaylt.jpeg"
+                alt="Viet80s Logo"
+                width={1920}
+                height={780}
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 70vw"
+              />
+            </div>
             <div>
               <Image
                 src="/pictures/4.png"
