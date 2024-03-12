@@ -49,15 +49,7 @@ const AutoPlayLaptop = ({ location }: Props) => {
       {location === "street-food" && (
         <>
           <Slider {...settings}>
-            <div>
-              <Image
-                src="/pictures/promote2.png"
-                alt="Viet80s promote"
-                width={1920}
-                height={780}
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 70vw"
-              />
-            </div>
+            
 
             <div>
               <Image
@@ -83,16 +75,7 @@ const AutoPlayLaptop = ({ location }: Props) => {
       {location === "coffee" && (
         <>
           <Slider {...settings}>
-            <div>
-              <Image
-                src="/pictures/promote2.png"
-                alt="Viet80s promote"
-                width={1920}
-                height={780}
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 70vw"
-              />
-            </div>
-
+           
             <div>
               <Image
                 src="/pictures/cf1.png"
