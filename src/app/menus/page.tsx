@@ -20,7 +20,7 @@ export default function Home() {
 
       <div className="bg-black">
         <Link
-          href="/docs/specialMenu.jpg"
+          href="/docs/Viet80s-Birthday-menu.pdf"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -29,7 +29,7 @@ export default function Home() {
           >
             <FontAwesomeIcon icon={faStar} beat />
             <h1 className="mx-5 my-5">
-              Specialty Menu <u>here</u>
+              Birthday Menu <u>here</u>
             </h1>{" "}
             <FontAwesomeIcon icon={faStar} beat />
           </div>
