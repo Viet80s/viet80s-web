@@ -20,7 +20,7 @@ export default function Home() {
 
       <div className="bg-black">
         <Link
-          href="/docs/Viet80s-Birthday-menu.pdf"
+          href="/docs/birthday.png"
           target="_blank"
           rel="noopener noreferrer"
         >
