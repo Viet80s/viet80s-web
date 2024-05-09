@@ -18,7 +18,7 @@ export default function Home() {
       <div className={"bg-black"}>
         <NavBar />
         <div className={styles.paragraph}>
-          <p>Happy Women&apos;s month! Special offers are coming.</p>
+          <p>Summer has arrived! Summer Menu and Offers available in June!.</p>
           <div>
               <Image
                 src="/pictures/legals.jpg"
