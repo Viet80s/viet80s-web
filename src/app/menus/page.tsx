@@ -19,7 +19,7 @@ export default function Home() {
       <NavBar />
 
       <div className="bg-black">
-        <Link
+        {/* <Link
           href="/docs/birthday.png"
           target="_blank"
           rel="noopener noreferrer"
@@ -33,7 +33,7 @@ export default function Home() {
             </h1>{" "}
             <FontAwesomeIcon icon={faStar} beat />
           </div>
-        </Link>
+        </Link> */}
         <div className={styles.container}>
           <Link href="https://www.viet80sonline.co.uk/">
             <div className={styles.imageContainer}>

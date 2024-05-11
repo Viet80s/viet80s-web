@@ -12,7 +12,6 @@ import ButtonList from "@/components/ButtonList";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar, faImages } from "@fortawesome/free-regular-svg-icons";
 import Gallery from "@/components/Gallery";
-import { GalleryHorizontal } from "lucide-react";
 
 export default function Home() {
   const isMobile = useMediaQuery({ maxWidth: 768 });

@@ -20,14 +20,14 @@ export default function Home() {
         <div className={styles.paragraph}>
           <p>Summer has arrived! Summer Menu and Offers available in June!.</p>
           <div>
-              <Image
-                src="/pictures/legals.jpg"
-                alt="Viet80s Logo"
-                width={1920}
-                height={780}
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 70vw"
-              />
-            </div>
+            <Image
+              src="/pictures/gallery/15.png"
+              alt="Viet80s Logo"
+              width={1920}
+              height={780}
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 70vw"
+            />
+          </div>
         </div>
       </div>
       <DetailsFooter location="restaurant" />

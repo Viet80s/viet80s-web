@@ -9,9 +9,13 @@ import DetailsFooter from "@/components/DetailsFooter";
 import NavBar from "@/components/NavBar";
 import FoodGalleryCoffee from "@/components/FoodGalleryCoffee";
 import ButtonList from "@/components/ButtonList";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Gallery from "@/components/Gallery";
+import { faStar, faImages } from "@fortawesome/free-regular-svg-icons";
 
 export default function Home() {
   const isMobile = useMediaQuery({ maxWidth: 768 });
+  const fontSizeTitle = isMobile ? "x-large" : "xx-large";
 
   return (
     <>
@@ -57,6 +61,18 @@ export default function Home() {
         )}
         <div className="mr-10">
           <ButtonList location="coffee" />
+        </div>
+        <div>
+          <div className="flex justify-center">
+            <div
+              className="flex items-center text-center mt-5 gap-3"
+              style={{ color: "#F8C983", fontSize: fontSizeTitle }}
+            >
+              <h3>Viet80s Gallery</h3>
+              <FontAwesomeIcon icon={faImages} />
+            </div>
+          </div>
+          <Gallery />
         </div>
       </div>
       <DetailsFooter location="coffee" />
