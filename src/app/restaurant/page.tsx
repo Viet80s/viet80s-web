@@ -9,10 +9,14 @@ import DetailsFooter from "@/components/DetailsFooter";
 import NavBar from "@/components/NavBar";
 import FoodGalleryResto from "@/components/FoodGalleryResto";
 import ButtonList from "@/components/ButtonList";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faStar, faImages } from "@fortawesome/free-regular-svg-icons";
+import Gallery from "@/components/Gallery";
+import { GalleryHorizontal } from "lucide-react";
 
 export default function Home() {
   const isMobile = useMediaQuery({ maxWidth: 768 });
-
+  const fontSizeTitle = isMobile ? "x-large" : "xx-large";
   return (
     <>
       <NavBar />
@@ -55,6 +59,34 @@ export default function Home() {
 
         <div className="mr-10">
           <ButtonList location="restaurant" />
+        </div>
+        <div>
+          <div className="flex justify-center">
+            <div
+              className="flex items-center text-center mt-5 gap-3"
+              style={{ color: "#F8C983", fontSize: fontSizeTitle }}
+            >
+              <h3>Viet80s Gallery</h3>
+              <FontAwesomeIcon icon={faImages} />
+            </div>
+          </div>
+          <Gallery />
+        </div>
+        <div className="mt-10 bg-white">
+          <h3
+            className="text-center"
+            style={{ color: "#000000", fontSize: fontSizeTitle }}
+          >
+            Google Reviews about us <FontAwesomeIcon icon={faStar} beat />
+          </h3>
+          <iframe
+            src="https://widgets.sociablekit.com/google-reviews/iframe/25410916"
+            width="100%"
+            height="320"
+            frameborder="0"
+            style={{ backgroundColor: "#ffffff" }}
+            allowfullscreen
+          ></iframe>
         </div>
       </div>
       <DetailsFooter location="restaurant" />
