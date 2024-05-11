@@ -83,9 +83,7 @@ export default function Home() {
             src="https://widgets.sociablekit.com/google-reviews/iframe/25410916"
             width="100%"
             height="320"
-            frameborder="0"
             style={{ backgroundColor: "#ffffff" }}
-            allowfullscreen
           ></iframe>
         </div>
       </div>
