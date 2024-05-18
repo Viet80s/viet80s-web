@@ -12,6 +12,7 @@ import ButtonList from "@/components/ButtonList";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar, faImages } from "@fortawesome/free-regular-svg-icons";
 import Gallery from "@/components/Gallery";
+import { PopUp } from "@/components/PopUp";
 
 export default function Home() {
   const isMobile = useMediaQuery({ maxWidth: 768 });
@@ -20,6 +21,7 @@ export default function Home() {
     <>
       <NavBar />
       <div className={"bg-black"}>
+        <PopUp />
         <div>
           {isMobile ? (
             <AutoPlayMobile location="restaurant" />
@@ -36,7 +38,6 @@ export default function Home() {
             culinary culture and the ultimate Vietnamese dining experience in
             the heart of Nottingham.
           </p>
-
           <p>
             At Viet80s, we believe that food is not just about nourishment but
             also about connecting people and cultures. Come and experience the
@@ -70,20 +71,6 @@ export default function Home() {
             </div>
           </div>
           <Gallery />
-        </div>
-        <div className="mt-10 bg-white">
-          <h3
-            className="text-center"
-            style={{ color: "#000000", fontSize: fontSizeTitle }}
-          >
-            Google Reviews about us <FontAwesomeIcon icon={faStar} beat />
-          </h3>
-          <iframe
-            src="https://widgets.sociablekit.com/google-reviews/iframe/25410916"
-            width="100%"
-            height="320"
-            style={{ backgroundColor: "#ffffff" }}
-          ></iframe>
         </div>
       </div>
       <DetailsFooter location="restaurant" />

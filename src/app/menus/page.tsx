@@ -10,6 +10,7 @@ import styles from "@/app/menu.module.css";
 import styles1 from "@/app/localHome.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
+import { PopUp } from "@/components/PopUp";
 
 export default function Home() {
   const isMobile = useMediaQuery({ maxWidth: 768 });
@@ -19,6 +20,7 @@ export default function Home() {
       <NavBar />
 
       <div className="bg-black">
+        <PopUp />
         {/* <Link
           href="/docs/birthday.png"
           target="_blank"

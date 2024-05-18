@@ -12,6 +12,7 @@ import ButtonList from "@/components/ButtonList";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Gallery from "@/components/Gallery";
 import { faStar, faImages } from "@fortawesome/free-regular-svg-icons";
+import { PopUp } from "@/components/PopUp";
 
 export default function Home() {
   const isMobile = useMediaQuery({ maxWidth: 768 });
@@ -21,6 +22,7 @@ export default function Home() {
     <>
       <NavBar />
       <div className={"w-full bg-black"}>
+        <PopUp />
         <div>
           {isMobile ? (
             <AutoPlayMobile location="coffee" />
