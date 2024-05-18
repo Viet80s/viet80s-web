@@ -35,7 +35,7 @@ export function PopUp() {
           borderRadius: "10px",
           color: "black",
           backgroundImage: isMobile
-            ? "url('/pictures/pop-up.png')"
+            ? "url('/pictures/pop-up-mobile.png')"
             : "url('/pictures/pop-up-laptop.png')",
         }}
       >
