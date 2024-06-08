@@ -10,7 +10,7 @@ export function FatherDay() {
   const isMobile = useMediaQuery({ maxWidth: 768 });
   return (
     <Link href="/father-day">
-      <div className="relative flex h-screen">
+      <div className="flex">
         {isMobile ? (
           <Image
             src="/pictures/banner-web-phone.png"

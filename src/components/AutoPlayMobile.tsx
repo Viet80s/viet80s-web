@@ -25,6 +25,9 @@ const AutoPlayMobile = ({ location }: Props) => {
         <>
           <Slider {...settings}>
             <div>
+              <FatherDay />
+            </div>
+            <div>
               <Image
                 src="/pictures/1.png"
                 alt="Viet80s Logo"
@@ -33,9 +36,6 @@ const AutoPlayMobile = ({ location }: Props) => {
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
             </div>{" "}
-            <div>
-              <FatherDay />
-            </div>
           </Slider>
         </>
       )}
