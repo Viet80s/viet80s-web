@@ -11,7 +11,7 @@ export default function Home() {
     <>
       <div className="bg-black">
         <PopUp />
-        <FatherDay />
+
         <div className={styles.container}>
           <Link href="/restaurant">
             <div className={styles.imageContainer}>
@@ -53,7 +53,7 @@ export default function Home() {
             </div>
           </Link>
         </div>
-
+        <FatherDay />
         <Footer />
       </div>
     </>
