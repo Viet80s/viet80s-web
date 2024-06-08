@@ -12,13 +12,13 @@ export default function Father() {
     <>
       <div className="bg-black">
         <NavBar />
-        <div class="flex px-6 md:px-20 pt-10 gap-6 items-center justify-center overflow-hidden">
-          <div class="flex flex-col sm:px-10 px-5 gap-6 justify-between md:flex-row items-center max-w-8xl">
-            <div class="w-full md:w-1/2">
-              <h2 class="text-3xl lg:text-4xl text-center md:text-center text-primary leading-tight font-medium">
+        <div className="flex px-6 md:px-20 pt-10 gap-6 items-center justify-center overflow-hidden">
+          <div className="flex flex-col sm:px-10 px-5 gap-6 justify-between md:flex-row items-center max-w-8xl">
+            <div className="w-full md:w-1/2">
+              <h2 className="text-3xl lg:text-4xl text-center md:text-center text-primary leading-tight font-medium">
                 Celebrate Father&apos;s Day 2024 at Viet80s Restaurants
               </h2>
-              <h3 class="mt-6 md:mt-10 text-md lg:text-lg text-center md:text-center text-primary font-light tracking-wider leading-relaxed">
+              <h3 className="mt-6 md:mt-10 text-md lg:text-lg text-center md:text-center text-primary font-light tracking-wider leading-relaxed">
                 This Father&apos;s Day, create cherished moments with Dad over a
                 traditional Vietnamese lunch at Viet80s. On Sunday, June 16th,
                 treat the family to a feast featuring our beloved slow-cooked
@@ -31,7 +31,7 @@ export default function Father() {
                 &quot;DAD20&quot; for a 20% discount. Bring the family together
                 for a heartwarming meal that Dad will treasure!
               </h3>
-              <div class="mt-10 flex flex-row justify-center gap-3">
+              <div className="mt-10 flex flex-row justify-center gap-3">
                 <Link href="/menus">
                   <Button className="sm:text-lg text-md" size={"lg"}>
                     Our menus <BookOpenCheck className="ml-2" />
@@ -50,7 +50,7 @@ export default function Father() {
                 </Link>
               </div>
             </div>
-            <div class="w-full md:w-1/2 flex justify-center">
+            <div className="w-full md:w-1/2 flex justify-center">
               <Image
                 src="/pictures/father-promo.png"
                 alt="image"
