@@ -6,7 +6,7 @@ import Link from "next/link";
 import { Button } from "./ui/button";
 import { useMediaQuery } from "react-responsive";
 
-export function FatherDay({ disable }: { disable?: boolean }) {
+export function FatherDay() {
   const isMobile = useMediaQuery({ maxWidth: 768 });
   return (
     <Link href="/father-day">
@@ -15,15 +15,16 @@ export function FatherDay({ disable }: { disable?: boolean }) {
           <Image
             src="/pictures/banner-web-phone.png"
             alt="image"
-            width={1334}
-            height={1855}
+            width={640}
+            height={890}
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
         ) : (
           <Image
             src="/pictures/banner-web.png"
             alt="image"
-            width={4000}
-            height={1625}
+            width={1920}
+            height={780}
           />
         )}
 

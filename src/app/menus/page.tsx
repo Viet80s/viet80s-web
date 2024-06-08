@@ -21,7 +21,6 @@ export default function Home() {
       <NavBar />
 
       <div className="bg-black">
-        <PopUp />
         {/* <Link
           href="/docs/birthday.png"
           target="_blank"
@@ -38,7 +37,7 @@ export default function Home() {
           </div>
         </Link> */}
         <div>
-          <FatherDay disable={false} />
+          <FatherDay />
         </div>
         <div className={styles.container}>
           <Link href="https://www.viet80sonline.co.uk/">
