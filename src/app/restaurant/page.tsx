@@ -23,9 +23,6 @@ export default function Home() {
       <div className={"bg-black"}>
         <NavBar />
         <div>
-          <FatherDay disable={true} />
-        </div>
-        <div>
           {isMobile ? (
             <AutoPlayMobile location="restaurant" />
           ) : (

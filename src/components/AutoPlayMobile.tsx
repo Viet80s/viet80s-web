@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Link from "next/link";
 import Image from "next/image";
+import { FatherDay } from "./FatherDay";
 
 type Props = { location: string };
 
@@ -14,7 +15,7 @@ const AutoPlayMobile = ({ location }: Props) => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 3500,
     fade: true,
     pauseOnHover: false,
   };
@@ -23,7 +24,6 @@ const AutoPlayMobile = ({ location }: Props) => {
       {location === "restaurant" && (
         <>
           <Slider {...settings}>
-           
             <div>
               <Image
                 src="/pictures/1.png"
@@ -34,13 +34,7 @@ const AutoPlayMobile = ({ location }: Props) => {
               />
             </div>{" "}
             <div>
-              <Image
-                src="/pictures/1.png"
-                alt="Viet80s Logo"
-                width={1920}
-                height={500}
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-              />
+              <FatherDay />
             </div>
           </Slider>
         </>
@@ -48,7 +42,9 @@ const AutoPlayMobile = ({ location }: Props) => {
       {location === "street-food" && (
         <>
           <Slider {...settings}>
-  
+            <div>
+              <FatherDay />
+            </div>
             <div>
               <Image
                 src="/pictures/2.png"
@@ -73,7 +69,9 @@ const AutoPlayMobile = ({ location }: Props) => {
       {location === "coffee" && (
         <>
           <Slider {...settings}>
-           
+            <div>
+              <FatherDay />
+            </div>
             <div>
               <Image
                 src="/pictures/3.png"

@@ -35,8 +35,8 @@ export function PopUp() {
           borderRadius: "10px",
           color: "black",
           backgroundImage: isMobile
-            ? "url('/pictures/pop-up-mobile.png')"
-            : "url('/pictures/pop-up-laptop.png')",
+            ? "url('/pictures/father-pop-up-mobile.png')"
+            : "url('/pictures/father-pop-up.png')",
         }}
       >
         <DialogFooter>

@@ -25,9 +25,6 @@ export default function Home() {
 
       <div className={"w-full bg-black"}>
         <div>
-          <FatherDay disable={true} />
-        </div>
-        <div>
           {isMobile ? (
             <AutoPlayMobile location="coffee" />
           ) : (

@@ -4,18 +4,30 @@ import { faGift } from "@fortawesome/free-solid-svg-icons";
 import { ArrowBigDownDash } from "lucide-react";
 import Link from "next/link";
 import { Button } from "./ui/button";
+import { useMediaQuery } from "react-responsive";
 
 export function FatherDay({ disable }: { disable?: boolean }) {
+  const isMobile = useMediaQuery({ maxWidth: 768 });
   return (
-    <div className="relative flex h-screen">
-      <Image
-        src="/pictures/1.png"
-        alt="image"
-        className="h-full w-full object-cover object-center"
-        width={500}
-        height={500}
-      />
-      <div className="absolute top-1/2 left-10 max-w-full md:left-20">
+    <Link href="/father-day">
+      <div className="relative flex h-screen">
+        {isMobile ? (
+          <Image
+            src="/pictures/banner-web-phone.png"
+            alt="image"
+            width={1334}
+            height={1855}
+          />
+        ) : (
+          <Image
+            src="/pictures/banner-web.png"
+            alt="image"
+            width={4000}
+            height={1625}
+          />
+        )}
+
+        {/* <div className="absolute top-1/2 left-10 max-w-full md:left-20">
         <div className=" text-white md:text-5xl py-4">Transparent </div>
         <div className="bg-primary text-7xl font-bold text-black mix-blend-screen px-10 py-5 ">
           Text Example
@@ -38,7 +50,8 @@ export function FatherDay({ disable }: { disable?: boolean }) {
             </p>
           </div>
         )}
+      </div> */}
       </div>
-    </div>
+    </Link>
   );
 }
