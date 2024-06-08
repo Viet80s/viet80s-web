@@ -13,15 +13,18 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar, faImages } from "@fortawesome/free-regular-svg-icons";
 import Gallery from "@/components/Gallery";
 import { PopUp } from "@/components/PopUp";
+import { FatherDay } from "@/components/FatherDay";
 
 export default function Home() {
   const isMobile = useMediaQuery({ maxWidth: 768 });
   const fontSizeTitle = isMobile ? "x-large" : "xx-large";
   return (
     <>
-      <NavBar />
       <div className={"bg-black"}>
-        <PopUp />
+        <NavBar />
+        <div>
+          <FatherDay disable={true} />
+        </div>
         <div>
           {isMobile ? (
             <AutoPlayMobile location="restaurant" />

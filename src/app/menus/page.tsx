@@ -11,6 +11,7 @@ import styles1 from "@/app/localHome.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 import { PopUp } from "@/components/PopUp";
+import { FatherDay } from "@/components/FatherDay";
 
 export default function Home() {
   const isMobile = useMediaQuery({ maxWidth: 768 });
@@ -36,6 +37,9 @@ export default function Home() {
             <FontAwesomeIcon icon={faStar} beat />
           </div>
         </Link> */}
+        <div>
+          <FatherDay disable={false} />
+        </div>
         <div className={styles.container}>
           <Link href="https://www.viet80sonline.co.uk/">
             <div className={styles.imageContainer}>
