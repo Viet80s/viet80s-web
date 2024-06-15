@@ -36,9 +36,9 @@ export default function Home() {
             <FontAwesomeIcon icon={faStar} beat />
           </div>
         </Link> */}
-        <div>
+        {/* <div>
           <FatherDay />
-        </div>
+        </div> */}
         <div className={styles.container}>
           <Link href="https://www.viet80sonline.co.uk/">
             <div className={styles.imageContainer}>

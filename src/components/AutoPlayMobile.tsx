@@ -24,9 +24,9 @@ const AutoPlayMobile = ({ location }: Props) => {
       {location === "restaurant" && (
         <>
           <Slider {...settings}>
-            <div>
+            {/* <div>
               <FatherDay />
-            </div>
+            </div> */}
             <div>
               <Image
                 src="/pictures/1.png"
@@ -42,9 +42,9 @@ const AutoPlayMobile = ({ location }: Props) => {
       {location === "street-food" && (
         <>
           <Slider {...settings}>
-            <div>
+            {/* <div>
               <FatherDay />
-            </div>
+            </div> */}
             <div>
               <Image
                 src="/pictures/2.png"
@@ -69,9 +69,9 @@ const AutoPlayMobile = ({ location }: Props) => {
       {location === "coffee" && (
         <>
           <Slider {...settings}>
-            <div>
+            {/* <div>
               <FatherDay />
-            </div>
+            </div> */}
             <div>
               <Image
                 src="/pictures/3.png"
