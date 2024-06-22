@@ -9,6 +9,7 @@ import {
   Smartphone,
   Home,
   Gem,
+  Ticket,
 } from "lucide-react";
 
 const Sidebar = () => {
@@ -63,6 +64,14 @@ const Sidebar = () => {
       <a id="about" className="menu-item" href="/">
         <Home className="mr-2" />
         Home
+      </a>
+      <a
+        id="about"
+        className="menu-item"
+        href="https://squareup.com/gift/MLCDF6VTMC9PX/order"
+      >
+        <Ticket className="mr-2" />
+        E-Vouchers
       </a>
       <a id="about" className="menu-item" href="/specials">
         <Gem className="mr-2" />
