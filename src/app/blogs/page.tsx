@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
-import { client } from "@/client";
+import { getPostList } from "@/utils/getPostList";
 
 export interface Post {
   _id: string;
@@ -10,27 +10,12 @@ export interface Post {
   _createdAt: string;
 }
 
-export async function getContent() {
-  const CONTENT_QUERY = `*[_type == "post"] {
-      ...,
-      author->,
-      mainImage {
-        ...,
-        asset->
-      },
-      categories[]->,
-      body
-    }`;
-  const content = await client.fetch(CONTENT_QUERY);
-  return content;
-}
-
 const Index = () => {
   const [posts, setPosts] = useState<Post[]>([]);
 
   useEffect(() => {
     const fetchPosts = async () => {
-      const content = await getContent();
+      const content = await getPostList();
       setPosts(content);
     };
     fetchPosts();
