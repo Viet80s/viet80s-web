@@ -1,13 +1,28 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
-import { getContent } from "../api/posts/route";
+import { client } from "@/client";
 
 export interface Post {
   _id: string;
   title: string;
   slug: { current: string };
   _createdAt: string;
+}
+
+export async function getContent() {
+  const CONTENT_QUERY = `*[_type == "post"] {
+      ...,
+      author->,
+      mainImage {
+        ...,
+        asset->
+      },
+      categories[]->,
+      body
+    }`;
+  const content = await client.fetch(CONTENT_QUERY);
+  return content;
 }
 
 const Index = () => {
