@@ -32,7 +32,7 @@ const Post = ({ params: { slug } }: PostProps) => {
     authorImage,
     body = [],
   } = post ?? {}; // Destructure the post object
-
+  console.log(post);
   const ptComponents = {
     types: {
       image: ({ value }: { value: { asset: { _ref: string } } }) => {

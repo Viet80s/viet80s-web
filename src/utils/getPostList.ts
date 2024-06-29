@@ -1,16 +1,15 @@
 import { client } from "@/client";
 
 export async function getPostList() {
-    const CONTENT_QUERY = `*[_type == "post"] {
-        ...,
-        author->,
-        mainImage {
-          ...,
-          asset->
-        },
-        categories[]->,
-        body
-      }`;
-    const content = await client.fetch(CONTENT_QUERY);
-    return content;
-  }
+  const CONTENT_QUERY = `*[_type == "post"] {
+    ...,
+    author->,
+    categories[]->,
+    "postImage": body[(_type == "image")][0] {
+      ...,
+      asset->
+    }
+  }`;
+  const content = await client.fetch(CONTENT_QUERY);
+  return content;
+}
