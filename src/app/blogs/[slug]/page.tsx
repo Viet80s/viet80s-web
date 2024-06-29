@@ -6,6 +6,8 @@ import { PortableText } from "@portabletext/react";
 import Image from "next/image";
 import { urlFor } from "@/client";
 
+export const runtime = "edge";
+
 interface PostProps {
   params: {
     slug: string;
