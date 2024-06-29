@@ -2,16 +2,10 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { getPostList } from "@/utils/getPostList";
-
-export interface Post {
-  _id: string;
-  title: string;
-  slug: { current: string };
-  _createdAt: string;
-}
+import { Posts } from "@/lib/types/posts";
 
 const Index = () => {
-  const [posts, setPosts] = useState<Post[]>([]);
+  const [posts, setPosts] = useState<Posts[]>([]);
 
   useEffect(() => {
     const fetchPosts = async () => {
@@ -30,7 +24,7 @@ const Index = () => {
             slug &&
             slug.current && (
               <li key={_id}>
-                <Link href={`/post/${slug.current}`}>{title}</Link> (
+                <Link href={`/blogs/${slug.current}`}>{title}</Link> (
                 {new Date(_createdAt).toDateString()})
               </li>
             )
