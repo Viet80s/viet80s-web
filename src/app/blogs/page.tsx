@@ -8,6 +8,8 @@ import DetailsFooter from "@/components/DetailsFooter";
 import Footer from "@/components/Footer";
 import Image from "next/image";
 import { urlFor } from "@/client";
+import { columns } from "./columns";
+import { DataTable } from "./data-table";
 
 const Index = () => {
   const [posts, setPosts] = useState<Posts[]>([]);
@@ -59,6 +61,10 @@ const Index = () => {
                     </div>
                   )
               )}
+          </div>
+
+          <div className="container mx-auto py-10">
+            <DataTable columns={columns} data={posts} />
           </div>
         </div>
         <DetailsFooter location="street-food" />

@@ -8,7 +8,7 @@ export async function getPostList() {
     "postImage": body[(_type == "image")][0] {
       ...,
       asset->
-    }
+    }, body
   }`;
   const content = await client.fetch(CONTENT_QUERY);
   return content;
