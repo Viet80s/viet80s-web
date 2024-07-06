@@ -15,6 +15,26 @@ import { useRouter } from "next/router";
 import { useSearchParams } from "next/navigation";
 
 const Index = () => {
+  return (
+    <>
+      <div className="bg-black">
+        <NavBar />
+        <div className="text-primary">
+          <div className="flex flex-col justify-center items-center text-lg sm:text-2xl mt-7 mb-7">
+            <h1>Welcome to Viet80s blog!</h1>
+          </div>
+          <Suspense fallback={<div>Loading...</div>}>
+            <BlogContent />
+          </Suspense>
+        </div>
+        <DetailsFooter location="street-food" />
+        <Footer />
+      </div>
+    </>
+  );
+};
+
+const BlogContent = () => {
   const [posts, setPosts] = useState<Posts[]>([]);
   const [categories, setCategories] = useState<Categories[]>([]);
   const isMobile = useMediaQuery({ maxWidth: 768 });
@@ -42,65 +62,48 @@ const Index = () => {
     }
   }, [searchParams]);
   console.log(filter);
+
   return (
     <>
-      <div className="bg-black">
-        <NavBar />
-        <div className="text-primary">
-          <div className="flex flex-col justify-center items-center text-lg sm:text-2xl mt-7 mb-7">
-            <h1>Welcome to Viet80s blog!</h1>
-          </div>
-          {/* category section */}
-          <div className="sm:grid sm:grid-cols-3 sm:gap-4 flex flex-col justify-center items-center px-10">
-            {categories.length > 0 &&
-              categories.map(({ description, title, _id }) => (
-                <Link href={`/blogs/?category=${title}`} key={_id}>
-                  <div
-                    key={_id}
-                    className="flex justify-center items-center h-full"
-                  >
-                    <div className="relative flex justify-center items-center">
-                      <div className="absolute z-10 w-full text-center flex-col p-2 text-lg sm:text-2xl text-primary">
-                        <div className="sm:text-4xl text-2xl">{title}</div>
-                        <div className="opacity-85 sm:text-lg text-md">
-                          {description}
-                        </div>
-                      </div>
-                      <Image
-                        src={`/pictures/categories/${title}.jpeg`}
-                        width={550}
-                        height={550}
-                        alt={`post picture`}
-                        priority={true}
-                        className="opacity-65 hover:opacity-100 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105 cursor-pointer"
-                      />
+      {/* category section */}
+      <div className="sm:grid sm:grid-cols-3 sm:gap-4 flex flex-col justify-center items-center px-10">
+        {categories.length > 0 &&
+          categories.map(({ description, title, _id }) => (
+            <Link href={`/blogs/?category=${title}`} key={_id}>
+              <div className="flex justify-center items-center h-full">
+                <div className="relative flex justify-center items-center">
+                  <div className="absolute z-10 w-full text-center flex-col p-2 text-lg sm:text-2xl text-primary">
+                    <div className="sm:text-4xl text-2xl">{title}</div>
+                    <div className="opacity-85 sm:text-lg text-md">
+                      {description}
                     </div>
                   </div>
-                </Link>
-              ))}
-          </div>
-          <Suspense fallback={<div className="text-primary">Loading...</div>}>
-            {filter && (
-              <>
-                <div className="justify-center text-center px-10 my-5">
-                  <h2>
-                    You are seeing the posts in category {filter}. If you can
-                    see anything, refresh the filter{" "}
-                    <a href="/blogs/" style={{ textDecoration: "underline" }}>
-                      here
-                    </a>{" "}
-                  </h2>
+                  <Image
+                    src={`/pictures/categories/${title}.jpeg`}
+                    width={550}
+                    height={550}
+                    alt={`post picture`}
+                    priority={true}
+                    className="opacity-65 hover:opacity-100 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105 cursor-pointer"
+                  />
                 </div>
-              </>
-            )}
-
-            <div className="container mx-auto">
-              <DataTable columns={columns} data={posts} />
-            </div>
-          </Suspense>
+              </div>
+            </Link>
+          ))}
+      </div>
+      {filter && (
+        <div className="justify-center text-center px-10 my-5">
+          <h2>
+            You are seeing the posts in category {filter}. If you cannot see
+            anything, refresh the filter{" "}
+            <a href="/blogs/" style={{ textDecoration: "underline" }}>
+              here
+            </a>{" "}
+          </h2>
         </div>
-        <DetailsFooter location="street-food" />
-        <Footer />
+      )}
+      <div className="container mx-auto">
+        <DataTable columns={columns} data={posts} />
       </div>
     </>
   );
