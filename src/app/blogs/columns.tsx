@@ -43,7 +43,7 @@ export const columns: ColumnDef<Posts>[] = [
           {/* Limit the maximum width */}
           <h1 className="sm:text-2xl text-lg">{title}</h1>
           <div className="sm:text-lg text-md opacity-80 sm:my-5 my-1 overflow-hidden">
-            <p className="line-clamp-3">
+            <div className="line-clamp-3">
               {" "}
               {/* Limit to 3 lines */}
               <PortableText
@@ -55,7 +55,7 @@ export const columns: ColumnDef<Posts>[] = [
                   },
                 }}
               />
-            </p>
+            </div>
           </div>
           <h3 className="sm:text-sm text-xs opacity-75">
             Posted in: {categoriesTitle}

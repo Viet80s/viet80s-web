@@ -62,10 +62,14 @@ const Post = ({ params: { slug } }: PostProps) => {
     <div className="bg-black">
       <NavBar />
       <div className="text-primary">
-        <div className="flex flex-col justify-center items-center text-lg sm:text-2xl mt-7 mb-7">
-          <h1>Welcome to Viet80s blog!</h1>
+        <div className="flex flex-col justify-center items-center text-xl sm:text-4xl mt-7 mb-3">
+          <h1>{title}</h1>
         </div>
-        <h1>{title}</h1>
+        <div className="px-10 mb-5">
+          <PortableText value={body} components={ptComponents} />
+        </div>
+      </div>
+      <div className="flex text-primary justify-center items-center text-center gap-4">
         {categoriesTitle && (
           <ul>
             Posted in
@@ -74,6 +78,7 @@ const Post = ({ params: { slug } }: PostProps) => {
             ))}
           </ul>
         )}
+        By: {"  "}
         {authorImage && (
           <div>
             <Image
@@ -85,8 +90,8 @@ const Post = ({ params: { slug } }: PostProps) => {
               priority={true}
             />
           </div>
-        )}
-        <PortableText value={body} components={ptComponents} />
+        )}{" "}
+        {authorName}
       </div>
       <DetailsFooter location="street-food" />
       <Footer />

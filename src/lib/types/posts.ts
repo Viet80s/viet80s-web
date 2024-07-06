@@ -13,3 +13,9 @@ export interface Posts {
   isMobile: boolean;
   previewText: string;
 }
+
+export interface Categories {
+  _id: string;
+  title: string;
+  description: string;
+}
