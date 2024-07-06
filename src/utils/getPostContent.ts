@@ -4,7 +4,8 @@ export async function getPostContent(slug: string) {
   const CONTENT_QUERY = `*[_type == "post" && slug.current == $slug][0] {
   title,
   "authorName": author->name,
-  "categories": categories[]->title,
+  "categoriesTitle": categories[]->title,
+  "categoriesDescription": categories[]->description,
   "authorImage": author->image,
   body
 }`;

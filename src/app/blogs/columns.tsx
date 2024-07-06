@@ -10,57 +10,64 @@ import { PortableText } from "@portabletext/react";
 
 export const columns: ColumnDef<Posts>[] = [
   {
-    accessorKey: "status",
+    accessorKey: "postImage",
     header: "",
-    size: 27000,
     cell: ({ row }) => {
-      const { postImage, slug } = row.original;
+      const { postImage, slug, isMobile } = row.original;
       return (
-        <div style={{ display: "flex", justifyContent: "flex-end" }}>
+        <div className="flex justify-end">
           {" "}
-          {/* Flex container */}
           <Link href={`/blogs/${slug.current}`}>
-            <div style={{ width: "fit-content", margin: "right" }}>
-              <Image
-                loader={({ width }) => urlFor(postImage).width(width).url()}
-                src={urlFor(postImage).width(550).url()}
-                width="0"
-                height="0"
-                sizes="70vw"
-                style={{ width: "70%", height: "auto" }}
-                alt={`post picture`}
-                priority={true}
-                layout="intrinsic"
-              />
-            </div>
+            <Image
+              loader={({ width }) => urlFor(postImage).width(width).url()}
+              src={urlFor(postImage).width(550).url()}
+              width={isMobile ? 800 : 400}
+              height={isMobile ? 800 : 400}
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              alt={`post picture`}
+              priority={true}
+            />
           </Link>
         </div>
       );
     },
   },
   {
-    accessorKey: "email",
+    accessorKey: "details",
     header: "",
     cell: ({ row }) => {
-      const { title, body, slug } = row.original;
+      const { title, body, slug, categoriesTitle } = row.original;
       return (
-        <>
-          <h1 className="text-2xl">{title}</h1>
-          <div className="text-lg opacity-80 my-5">
-            <PortableText
-              value={body}
-              components={{
-                types: {
-                  // Provide an empty component for "image" type blocks
-                  image: () => null,
-                },
-              }}
-            />
+        <div className="max-w-[600px]">
+          {" "}
+          {/* Limit the maximum width */}
+          <h1 className="sm:text-2xl text-lg">{title}</h1>
+          <div className="sm:text-lg text-md opacity-80 sm:my-5 my-1 overflow-hidden">
+            <p className="line-clamp-3">
+              {" "}
+              {/* Limit to 3 lines */}
+              <PortableText
+                value={body}
+                components={{
+                  types: {
+                    // Provide an empty component for "image" type blocks
+                    image: () => null,
+                  },
+                }}
+              />
+            </p>
           </div>
-          <Link href={`/blogs/${slug.current}`}>
-            <Button>Continue reading ...</Button>
-          </Link>
-        </>
+          <h3 className="sm:text-sm text-xs opacity-75">
+            Posted in: {categoriesTitle}
+          </h3>
+          <div>
+            <Link href={`/blogs/${slug.current}`}>
+              <Button className="sm:text-lg text-sm sm:h-10 h-6 mt-2">
+                Read more
+              </Button>
+            </Link>
+          </div>
+        </div>
       );
     },
   },

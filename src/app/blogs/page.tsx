@@ -10,18 +10,25 @@ import Image from "next/image";
 import { urlFor } from "@/client";
 import { columns } from "./columns";
 import { DataTable } from "./data-table";
+import { useMediaQuery } from "react-responsive";
 
 const Index = () => {
   const [posts, setPosts] = useState<Posts[]>([]);
+  const isMobile = useMediaQuery({ maxWidth: 768 });
 
   useEffect(() => {
     const fetchPosts = async () => {
       const content = await getPostList();
-      setPosts(content);
+      const updatedContent = content.map((post: Posts) => ({
+        ...post,
+        isMobile: isMobile ? true : post.isMobile,
+      }));
+      setPosts(updatedContent);
     };
     fetchPosts();
-  }, []);
+  }, [isMobile]);
   console.log(posts);
+
   return (
     <>
       <div className="bg-black">

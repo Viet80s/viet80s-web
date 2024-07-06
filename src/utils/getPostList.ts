@@ -4,7 +4,8 @@ export async function getPostList() {
   const CONTENT_QUERY = `*[_type == "post"] {
     ...,
     author->,
-    categories[]->,
+    "categoriesTitle": categories[]->title,
+    "categoriesDescription": categories[]->description,
     "postImage": body[(_type == "image")][0] {
       ...,
       asset->

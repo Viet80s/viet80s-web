@@ -28,11 +28,11 @@ const Post = ({ params: { slug } }: PostProps) => {
   const {
     title = "Missing title",
     authorName = "Missing name",
-    categories,
+    categoriesDescription,
+    categoriesTitle,
     authorImage,
     body = [],
   } = post ?? {}; // Destructure the post object
-  console.log(post);
   const ptComponents = {
     types: {
       image: ({ value }: { value: { asset: { _ref: string } } }) => {
@@ -58,10 +58,10 @@ const Post = ({ params: { slug } }: PostProps) => {
   return (
     <div>
       <h1>{title}</h1>
-      {categories && (
+      {categoriesTitle && (
         <ul>
           Posted in
-          {categories.map((category) => (
+          {categoriesTitle.map((category) => (
             <li key={category}>{category}</li>
           ))}
         </ul>
