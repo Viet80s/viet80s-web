@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { Suspense, useEffect, useState } from "react";
 import Link from "next/link";
 import { getPostList } from "@/utils/getPostList";
 import { Categories, Posts } from "@/lib/types/posts";
@@ -79,23 +79,25 @@ const Index = () => {
                 </Link>
               ))}
           </div>
-          {filter && (
-            <>
-              <div className="justify-center text-center px-10 my-5">
-                <h2>
-                  You are seeing the posts in category {filter}. If you can see
-                  anything, refresh the filter{" "}
-                  <a href="/blogs/" style={{ textDecoration: "underline" }}>
-                    here
-                  </a>{" "}
-                </h2>
-              </div>
-            </>
-          )}
+          <Suspense fallback={<div className="text-primary">Loading...</div>}>
+            {filter && (
+              <>
+                <div className="justify-center text-center px-10 my-5">
+                  <h2>
+                    You are seeing the posts in category {filter}. If you can
+                    see anything, refresh the filter{" "}
+                    <a href="/blogs/" style={{ textDecoration: "underline" }}>
+                      here
+                    </a>{" "}
+                  </h2>
+                </div>
+              </>
+            )}
 
-          <div className="container mx-auto">
-            <DataTable columns={columns} data={posts} />
-          </div>
+            <div className="container mx-auto">
+              <DataTable columns={columns} data={posts} />
+            </div>
+          </Suspense>
         </div>
         <DetailsFooter location="street-food" />
         <Footer />
