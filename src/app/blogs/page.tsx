@@ -11,7 +11,6 @@ import { columns } from "./columns";
 import { DataTable } from "./data-table";
 import { useMediaQuery } from "react-responsive";
 import { getCategoriesList } from "@/utils/getCategoriesList";
-import { useRouter } from "next/router";
 import { useSearchParams } from "next/navigation";
 
 const Index = () => {
@@ -61,7 +60,6 @@ const BlogContent = () => {
       setFilter(category || null);
     }
   }, [searchParams]);
-  console.log(filter);
 
   return (
     <>
@@ -84,14 +82,14 @@ const BlogContent = () => {
                     height={550}
                     alt={`post picture`}
                     priority={true}
-                    className="opacity-65 hover:opacity-100 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105 cursor-pointer"
+                    className="opacity-55 hover:opacity-80 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105 cursor-pointer"
                   />
                 </div>
               </div>
             </Link>
           ))}
       </div>
-      {filter && (
+      {/* {filter && (
         <div className="justify-center text-center px-10 my-5">
           <h2>
             You are seeing the posts in category {filter}. If you cannot see
@@ -104,7 +102,7 @@ const BlogContent = () => {
       )}
       <div className="container mx-auto">
         <DataTable columns={columns} data={posts} />
-      </div>
+      </div> */}
     </>
   );
 };

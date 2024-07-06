@@ -85,9 +85,9 @@ export function DataTable<TData, TValue>({
               <TableRow>
                 <TableCell
                   colSpan={columns.length}
-                  className="h-24 text-center"
+                  className="h-24 text-center text-xl"
                 >
-                  No results.
+                  No posts yet.
                 </TableCell>
               </TableRow>
             )}
