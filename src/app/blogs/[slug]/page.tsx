@@ -5,6 +5,9 @@ import { getPostContent } from "@/utils/getPostContent";
 import { PortableText } from "@portabletext/react";
 import Image from "next/image";
 import { urlFor } from "@/client";
+import NavBar from "@/components/NavBar";
+import DetailsFooter from "@/components/DetailsFooter";
+import Footer from "@/components/Footer";
 
 export const runtime = "edge";
 
@@ -56,29 +59,37 @@ const Post = ({ params: { slug } }: PostProps) => {
   };
 
   return (
-    <div>
-      <h1>{title}</h1>
-      {categoriesTitle && (
-        <ul>
-          Posted in
-          {categoriesTitle.map((category) => (
-            <li key={category}>{category}</li>
-          ))}
-        </ul>
-      )}
-      {authorImage && (
-        <div>
-          <Image
-            loader={({ width }) => urlFor(authorImage).width(width).url()}
-            src={urlFor(authorImage).width(50).url()}
-            width={50}
-            height={50}
-            alt={`${name}'s picture`}
-            priority={true}
-          />
+    <div className="bg-black">
+      <NavBar />
+      <div className="text-primary">
+        <div className="flex flex-col justify-center items-center text-lg sm:text-2xl mt-7 mb-7">
+          <h1>Welcome to Viet80s blog!</h1>
         </div>
-      )}
-      <PortableText value={body} components={ptComponents} />
+        <h1>{title}</h1>
+        {categoriesTitle && (
+          <ul>
+            Posted in
+            {categoriesTitle.map((category) => (
+              <li key={category}>{category}</li>
+            ))}
+          </ul>
+        )}
+        {authorImage && (
+          <div>
+            <Image
+              loader={({ width }) => urlFor(authorImage).width(width).url()}
+              src={urlFor(authorImage).width(50).url()}
+              width={50}
+              height={50}
+              alt={`picture`}
+              priority={true}
+            />
+          </div>
+        )}
+        <PortableText value={body} components={ptComponents} />
+      </div>
+      <DetailsFooter location="street-food" />
+      <Footer />
     </div>
   );
 };
