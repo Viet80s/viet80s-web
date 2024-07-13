@@ -7,20 +7,31 @@ import NavBar from "@/components/NavBar";
 import DetailsFooter from "@/components/DetailsFooter";
 import Footer from "@/components/Footer";
 import Image from "next/image";
+
 import { useMediaQuery } from "react-responsive";
 import { getCategoriesList } from "@/utils/getCategoriesList";
+import { useSearchParams } from "next/navigation";
+import { DataTable } from "./data-table";
+import { columns } from "./columns";
 
-const Index = () => {
+interface CategoryProps {
+  params: {
+    category: string;
+  };
+}
+
+interface BlogContentProps {
+  category: string;
+}
+
+const Index = ({ params: { category } }: CategoryProps) => {
   return (
     <>
       <div className="bg-black">
         <NavBar />
         <div className="text-primary">
-          <div className="flex flex-col justify-center items-center text-lg sm:text-2xl mt-7 mb-7">
-            <h1>Welcome to Viet80s blog!</h1>
-          </div>
           <Suspense fallback={<div>Loading...</div>}>
-            <BlogContent />
+            <BlogContent category={category} />
           </Suspense>
         </div>
         <DetailsFooter location="street-food" />
@@ -30,25 +41,32 @@ const Index = () => {
   );
 };
 
-const BlogContent = () => {
-  const [categories, setCategories] = useState<Categories[]>([]);
+const BlogContent = ({ category }: BlogContentProps) => {
+  const [posts, setPosts] = useState<Posts[]>([]);
+
   const isMobile = useMediaQuery({ maxWidth: 768 });
+  const [filter, setFilter] = useState<string | null>(null);
+  const searchParams = useSearchParams();
 
   useEffect(() => {
-    const fetchCategories = async () => {
-      const category = await getCategoriesList();
-      setCategories(category);
+    const fetchPosts = async () => {
+      const content = await getPostList(category);
+      const updatedContent = content.map((post: Posts) => ({
+        ...post,
+        isMobile: isMobile ? true : post.isMobile,
+      }));
+      setPosts(updatedContent);
     };
-    fetchCategories();
-  }, [isMobile]);
+    fetchPosts();
+  }, [isMobile, category]);
 
   return (
     <>
-      {/* category section */}
+      {/* category section
       <div className="sm:grid sm:grid-cols-3 sm:gap-4 flex flex-col justify-center items-center px-10">
         {categories.length > 0 &&
           categories.map(({ description, title, _id }) => (
-            <Link href={`/blogs/${title}`} key={_id}>
+            <Link href={`/blogs/?category=${title}`} key={_id}>
               <div className="flex justify-center items-center h-full">
                 <div className="relative flex justify-center items-center">
                   <div className="absolute z-10 w-full text-center flex-col p-2 text-lg sm:text-2xl text-primary">
@@ -69,6 +87,10 @@ const BlogContent = () => {
               </div>
             </Link>
           ))}
+      </div> */}
+
+      <div className="container mx-auto">
+        <DataTable columns={columns} data={posts} />
       </div>
     </>
   );

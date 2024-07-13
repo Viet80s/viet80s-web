@@ -57,9 +57,9 @@ export const columns: ColumnDef<Posts>[] = [
               />
             </div>
           </div>
-          <h3 className="sm:text-sm text-xs opacity-75">
+          {/* <h3 className="sm:text-sm text-xs opacity-75">
             Posted in: {categoriesTitle}
-          </h3>
+          </h3> */}
           <div>
             <Link href={`/blogs/${slug.current}`}>
               <Button className="sm:text-lg text-sm sm:h-10 h-6 mt-2">
