@@ -19,6 +19,8 @@ import {
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 
+export const runtime = "edge";
+
 interface CategoryProps {
   params: {
     category: string;
