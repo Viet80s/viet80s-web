@@ -7,12 +7,10 @@ import NavBar from "@/components/NavBar";
 import DetailsFooter from "@/components/DetailsFooter";
 import Footer from "@/components/Footer";
 import Image from "next/image";
-
 import { useMediaQuery } from "react-responsive";
-import { getCategoriesList } from "@/utils/getCategoriesList";
-import { useSearchParams } from "next/navigation";
 import { DataTable } from "./data-table";
 import { columns } from "./columns";
+import { getCategory } from "@/utils/getCategory";
 
 interface CategoryProps {
   params: {
@@ -43,51 +41,48 @@ const Index = ({ params: { category } }: CategoryProps) => {
 
 const BlogContent = ({ category }: BlogContentProps) => {
   const [posts, setPosts] = useState<Posts[]>([]);
-
+  const [categoryData, setCategoryData] = useState<Categories>();
   const isMobile = useMediaQuery({ maxWidth: 768 });
-  const [filter, setFilter] = useState<string | null>(null);
-  const searchParams = useSearchParams();
 
   useEffect(() => {
     const fetchPosts = async () => {
       const content = await getPostList(category);
+      const categoryData = await getCategory(category);
       const updatedContent = content.map((post: Posts) => ({
         ...post,
         isMobile: isMobile ? true : post.isMobile,
       }));
       setPosts(updatedContent);
+      setCategoryData(categoryData);
     };
     fetchPosts();
   }, [isMobile, category]);
 
+  const { categoriesTitle, categoriesDescription } = categoryData ?? {};
   return (
     <>
-      {/* category section
-      <div className="sm:grid sm:grid-cols-3 sm:gap-4 flex flex-col justify-center items-center px-10">
-        {categories.length > 0 &&
-          categories.map(({ description, title, _id }) => (
-            <Link href={`/blogs/?category=${title}`} key={_id}>
-              <div className="flex justify-center items-center h-full">
-                <div className="relative flex justify-center items-center">
-                  <div className="absolute z-10 w-full text-center flex-col p-2 text-lg sm:text-2xl text-primary">
-                    <div className="sm:text-4xl text-2xl">{title}</div>
-                    <div className="opacity-85 sm:text-lg text-md">
-                      {description}
-                    </div>
-                  </div>
-                  <Image
-                    src={`/pictures/categories/${title}.jpeg`}
-                    width={550}
-                    height={550}
-                    alt={`post picture`}
-                    priority={true}
-                    className="opacity-55 hover:opacity-80 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105 cursor-pointer"
-                  />
+      <div className="justify-center items-center px-10 mt-5 w-full bg-black">
+        <Link href={`/blogs/${categoriesTitle}/`} key={categoriesTitle}>
+          <div className="flex justify-center items-center h-full">
+            <div className="relative flex justify-center items-center">
+              <div className="absolute z-10 w-full text-center flex-col p-2 text-lg sm:text-2xl text-primary">
+                <div className="sm:text-4xl text-2xl">{categoriesTitle}</div>
+                <div className="opacity-85 sm:text-lg text-md">
+                  {categoriesDescription}
                 </div>
               </div>
-            </Link>
-          ))}
-      </div> */}
+              <Image
+                src={`/pictures/categories/${categoriesTitle}.jpeg`}
+                width={600}
+                height={550}
+                alt={`${categoriesTitle}'s picture`}
+                priority={true}
+                className="opacity-55 hover:opacity-80 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105 cursor-pointer"
+              />
+            </div>
+          </div>
+        </Link>
+      </div>
 
       <div className="container mx-auto">
         <DataTable columns={columns} data={posts} />

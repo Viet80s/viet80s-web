@@ -48,7 +48,7 @@ const Post = ({ params: { slug } }: PostProps) => {
             src={urlFor(value).width(50).url()}
             width="0"
             height="0"
-            sizes="100vw"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             style={{ width: "100%", height: "auto" }}
             alt={`${authorName}'s picture`}
             priority={true}
@@ -70,15 +70,15 @@ const Post = ({ params: { slug } }: PostProps) => {
         </div>
       </div>
       <div className="flex text-primary justify-center items-center text-center gap-4">
-        {categoriesTitle && (
+        {/* {categoriesTitle && (
           <ul>
             Posted in
             {categoriesTitle.map((category) => (
               <li key={category}>{category}</li>
             ))}
           </ul>
-        )}
-        By: {"  "}
+        )} */}
+        Written By: {"  "}
         {authorImage && (
           <div>
             <Image

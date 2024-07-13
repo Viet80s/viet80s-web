@@ -13,11 +13,11 @@ export const columns: ColumnDef<Posts>[] = [
     accessorKey: "postImage",
     header: "",
     cell: ({ row }) => {
-      const { postImage, slug, isMobile } = row.original;
+      const { postImage, slug, isMobile, categoriesTitle } = row.original;
       return (
         <div className="flex justify-end">
           {" "}
-          <Link href={`/blogs/${slug.current}`}>
+          <Link href={`/blogs/${categoriesTitle}/${slug.current}`}>
             <Image
               loader={({ width }) => urlFor(postImage).width(width).url()}
               src={urlFor(postImage).width(550).url()}
@@ -61,7 +61,7 @@ export const columns: ColumnDef<Posts>[] = [
             Posted in: {categoriesTitle}
           </h3> */}
           <div>
-            <Link href={`/blogs/${slug.current}`}>
+            <Link href={`/blogs/${categoriesTitle}/${slug.current}`}>
               <Button className="sm:text-lg text-sm sm:h-10 h-6 mt-2">
                 Read more
               </Button>
