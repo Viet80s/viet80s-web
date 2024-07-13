@@ -20,8 +20,8 @@ export default function Home() {
   const fontSizeTitle = isMobile ? "x-large" : "xx-large";
   return (
     <>
+      <NavBar />
       <div className={"bg-black"}>
-        <NavBar />
         <div>
           {isMobile ? (
             <AutoPlayMobile location="restaurant" />
