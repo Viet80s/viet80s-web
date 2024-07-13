@@ -1,13 +1,11 @@
 import type { Metadata } from "next";
-import { Baumans } from "next/font/google";
+import { EB_Garamond } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "react-hot-toast";
 import { Analytics } from "@vercel/analytics/react";
 import Providers from "@/components/Providers";
-import localFont from "next/font/local";
 
-const baumans = Baumans({ subsets: ["latin"], weight: ["400"] });
-const myFont = localFont({ src: "./Normal.otf" });
+const garamond = EB_Garamond({ subsets: ["latin"], weight: ["400"] });
 
 export const metadata: Metadata = {
   title: "Authentic Vietnamese Food in Nottingham | Viet80s",
@@ -22,8 +20,8 @@ export default function RootLayout({
 }) {
   return (
     <Providers>
-      <html lang="en" className={myFont.className}>
-        <body>
+      <html lang="en" className={garamond.className}>
+        <body className="bg-[url('/pictures/background.jpeg')]">
           {children}
           <Analytics />
         </body>

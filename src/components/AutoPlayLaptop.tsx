@@ -33,7 +33,7 @@ const AutoPlayLaptop = ({ location }: Props) => {
                 src="/pictures/4.png"
                 alt="Viet80s Logo"
                 width={1920}
-                height={780}
+                height={750}
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 70vw"
               />
             </div>
@@ -42,7 +42,7 @@ const AutoPlayLaptop = ({ location }: Props) => {
                 src="/pictures/resto.png"
                 alt="Viet80s Logo"
                 width={1920}
-                height={780}
+                height={750}
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 70vw"
               />
             </div>

@@ -21,7 +21,7 @@ export default function Home() {
   return (
     <>
       <NavBar />
-      <div className={"bg-black"}>
+      <div>
         <div>
           {isMobile ? (
             <AutoPlayMobile location="restaurant" />
@@ -46,12 +46,12 @@ export default function Home() {
           </p>
         </div>
         {isMobile ? (
-          <div className="mx-10 mt-10 bg-black">
+          <div className="mx-10 mt-10">
             {" "}
             <FoodGalleryResto />
           </div>
         ) : (
-          <div className="mx-40 mt-10 bg-black">
+          <div className="mx-40 mt-10">
             {" "}
             <FoodGalleryResto />
           </div>
@@ -63,8 +63,8 @@ export default function Home() {
         <div>
           <div className="flex justify-center">
             <div
-              className="flex items-center text-center mt-5 gap-3"
-              style={{ color: "#F8C983", fontSize: fontSizeTitle }}
+              className="flex items-center text-center mt-5 gap-3 text-xanh"
+              style={{ fontSize: fontSizeTitle }}
             >
               <h3>Viet80s Gallery</h3>
               <FontAwesomeIcon icon={faImages} />

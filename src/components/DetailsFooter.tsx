@@ -12,7 +12,6 @@ type Props = { location: string };
 
 const DetailsFooter = ({ location }: Props) => {
   const divStyle: React.CSSProperties = {
-    backgroundImage: 'url("/pictures/lua1.png")',
     backgroundSize: "cover",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
@@ -31,7 +30,6 @@ const DetailsFooter = ({ location }: Props) => {
     right: 0,
     bottom: 0,
     left: 0,
-    backgroundColor: "rgba(0, 0, 0, 0.5)",
     width: "100%",
     height: "100%",
   };
@@ -44,7 +42,7 @@ const DetailsFooter = ({ location }: Props) => {
   const iconSize = isMobile ? "small" : "x-large";
 
   return (
-    <div className="bg-black" style={divStyle}>
+    <div style={divStyle}>
       <div style={overlayStyle}></div>
       <div className={!isMobile ? "mt-2 mb-2 z-10 mx-20" : "mb-2 z-10"}>
         <div>
@@ -57,8 +55,8 @@ const DetailsFooter = ({ location }: Props) => {
           />
         </div>
         <div
-          className="flex justify-between"
-          style={{ color: "#F8C983", fontSize: iconSize }}
+          className="flex justify-between text-xanh"
+          style={{ fontSize: iconSize }}
         >
           <Link href="https://www.facebook.com/Viet80s.Nott" className="mx-1">
             <FontAwesomeIcon icon={faFacebook} />
@@ -82,10 +80,9 @@ const DetailsFooter = ({ location }: Props) => {
       <div
         className={
           !isMobile
-            ? "text-white mx-20 z-10 text-xl"
-            : "text-white ml-5 z-10 text-sm"
+            ? "text-xanh mx-20 z-10 text-xl"
+            : "text-xanh ml-5 z-10 text-sm"
         }
-        style={textColorStyle}
       >
         <p style={{ fontWeight: "bolder" }}>Links</p>
         <ul>
@@ -133,10 +130,9 @@ const DetailsFooter = ({ location }: Props) => {
       <div
         className={
           !isMobile
-            ? "text-white mx-20 z-10 text-xl"
-            : "text-white mx-5 z-10 text-sm"
+            ? "text-xanh mx-20 z-10 text-xl"
+            : "text-xanh mx-5 z-10 text-sm"
         }
-        style={textColorStyle}
       >
         <p style={{ fontWeight: "bolder" }}>Opening Hours</p>
         {location === "restaurant" && (

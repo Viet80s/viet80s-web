@@ -4,15 +4,15 @@ import Image from "next/image";
 
 export const NavDesktop = () => {
   return (
-    <div className="hidden lg:flex lg:items-center sticky top-0 z-50 backdrop-blur justify-between px-9 py-7 bg-primary">
+    <div className="hidden lg:flex lg:items-center sticky top-0 z-50 backdrop-blur justify-between px-9 py-2 bg-primary">
       <div>
         <Link href="/">
           <Image
             src="/pictures/logo.png"
             priority
             alt="Viet80s Logo"
-            width={120}
-            height={120}
+            width={80}
+            height={80}
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
         </Link>

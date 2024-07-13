@@ -12,15 +12,13 @@ const ButtonList = ({ location }: Props) => {
 
   return (
     <>
-      <div className={"mt-5 " + styles.imageWrapperList}>
+      <div className={"mt-5 px-5 " + styles.imageWrapperList}>
         {location === "restaurant" && (
           <Link href="https://www.viet80sonline.co.uk/">
             <div className={styles.imageContainerApp}>
               <Button
                 style={{
                   textAlign: "center",
-                  color: "#F8C983",
-                  background: "black",
                   border: "double",
                   borderWidth: "6px",
                   padding: "20px",
@@ -43,8 +41,6 @@ const ButtonList = ({ location }: Props) => {
               <Button
                 style={{
                   textAlign: "center",
-                  color: "#F8C983",
-                  background: "black",
                   border: "double",
                   borderWidth: "6px",
                   padding: "20px",
@@ -67,8 +63,6 @@ const ButtonList = ({ location }: Props) => {
               <Button
                 style={{
                   textAlign: "center",
-                  color: "#F8C983",
-                  background: "black",
                   border: "double",
                   borderWidth: "6px",
                   padding: "20px",
@@ -87,8 +81,6 @@ const ButtonList = ({ location }: Props) => {
               <Button
                 style={{
                   textAlign: "center",
-                  color: "#F8C983",
-                  background: "black",
                   border: "double",
                   borderWidth: "6px",
                   padding: "20px",

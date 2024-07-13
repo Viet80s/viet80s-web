@@ -30,8 +30,8 @@ const FoodGalleryResto = () => {
     <div>
       <div>
         <h3
-          className="text-center mb-5"
-          style={{ color: "#F8C983", fontSize: fontSizeTitle }}
+          className="text-center mb-5 text-xanh"
+          style={{ fontSize: fontSizeTitle }}
         >
           Have a look on our signatures <FontAwesomeIcon icon={faHeart} beat />
         </h3>
@@ -46,10 +46,7 @@ const FoodGalleryResto = () => {
               height={imageSize}
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 70vw"
             />
-            <p
-              className="text-center"
-              style={{ color: "#F8C983", fontSize: fontSize }}
-            >
+            <p className="text-center" style={{ fontSize: fontSize }}>
               Bún thịt nướng/Charcoal Grilled pork with Bún
             </p>
           </div>
@@ -61,10 +58,7 @@ const FoodGalleryResto = () => {
               height={imageSize}
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 70vw"
             />
-            <p
-              className="text-center"
-              style={{ color: "#F8C983", fontSize: fontSize }}
-            >
+            <p className="text-center" style={{ fontSize: fontSize }}>
               Chả nem chiên giòn/ Springs Rolls
             </p>
           </div>
@@ -76,10 +70,7 @@ const FoodGalleryResto = () => {
               height={imageSize}
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 70vw"
             />
-            <p
-              className="text-center"
-              style={{ color: "#F8C983", fontSize: fontSize }}
-            >
+            <p className="text-center" style={{ fontSize: fontSize }}>
               Cơm chiên thập cẩm/ House Special Fried Rice
             </p>
           </div>
@@ -91,10 +82,7 @@ const FoodGalleryResto = () => {
               height={imageSize}
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 70vw"
             />
-            <p
-              className="text-center"
-              style={{ color: "#F8C983", fontSize: fontSize }}
-            >
+            <p className="text-center" style={{ fontSize: fontSize }}>
               Gà chiên mắc khén/ Special Fried Chicken with Mắc khén seeds
             </p>
           </div>
@@ -106,10 +94,7 @@ const FoodGalleryResto = () => {
               height={imageSize}
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 70vw"
             />
-            <p
-              className="text-center"
-              style={{ color: "#F8C983", fontSize: fontSize }}
-            >
+            <p className="text-center" style={{ fontSize: fontSize }}>
               Gà nướng mật ong/ Grilled Chicken with honey
             </p>
           </div>
@@ -121,10 +106,7 @@ const FoodGalleryResto = () => {
               height={imageSize}
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 70vw"
             />
-            <p
-              className="text-center"
-              style={{ color: "#F8C983", fontSize: fontSize }}
-            >
+            <p className="text-center" style={{ fontSize: fontSize }}>
               Phở bò tái lõi/ Beef Shin Phở
             </p>
           </div>
@@ -136,10 +118,7 @@ const FoodGalleryResto = () => {
               height={imageSize}
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 70vw"
             />
-            <p
-              className="text-center"
-              style={{ color: "#F8C983", fontSize: fontSize }}
-            >
+            <p className="text-center" style={{ fontSize: fontSize }}>
               Mì xào tôm/ Stir-fired noodles with prawn
             </p>
           </div>
@@ -151,10 +130,7 @@ const FoodGalleryResto = () => {
               height={imageSize}
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 70vw"
             />
-            <p
-              className="text-center"
-              style={{ color: "#F8C983", fontSize: fontSize }}
-            >
+            <p className="text-center" style={{ fontSize: fontSize }}>
               Nem chua rán/ Fermented pork rolls
             </p>
           </div>
@@ -166,10 +142,7 @@ const FoodGalleryResto = () => {
               height={imageSize}
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 70vw"
             />
-            <p
-              className="text-center"
-              style={{ color: "#F8C983", fontSize: fontSize }}
-            >
+            <p className="text-center" style={{ fontSize: fontSize }}>
               Đậu phụ chiên giòn/ Fried tofu with Viet80s recipe
             </p>
           </div>
