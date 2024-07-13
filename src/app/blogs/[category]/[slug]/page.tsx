@@ -8,16 +8,25 @@ import { urlFor } from "@/client";
 import NavBar from "@/components/NavBar";
 import DetailsFooter from "@/components/DetailsFooter";
 import Footer from "@/components/Footer";
+import {
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbList,
+  BreadcrumbPage,
+  BreadcrumbSeparator,
+} from "@/components/ui/breadcrumb";
 
 // export const runtime = "edge";
 
 interface PostProps {
   params: {
     slug: string;
+    category: string;
   };
 }
 
-const Post = ({ params: { slug } }: PostProps) => {
+const Post = ({ params: { slug, category } }: PostProps) => {
   const [post, setPost] = useState<Posts>();
 
   useEffect(() => {
@@ -59,8 +68,32 @@ const Post = ({ params: { slug } }: PostProps) => {
   return (
     <div className="bg-black">
       <NavBar />
+      <div className="mt-5 sm:my-4 sm:ml-[100px] ml-10">
+        {" "}
+        <Breadcrumb>
+          <BreadcrumbList>
+            <BreadcrumbItem>
+              <BreadcrumbLink href="/">Home</BreadcrumbLink>
+            </BreadcrumbItem>
+            <BreadcrumbSeparator />
+            <BreadcrumbItem>
+              <BreadcrumbLink href="/blogs">Blog</BreadcrumbLink>
+            </BreadcrumbItem>
+            <BreadcrumbSeparator />
+            <BreadcrumbItem>
+              <BreadcrumbLink href={`/blogs/${category}`}>
+                {category}
+              </BreadcrumbLink>
+            </BreadcrumbItem>
+            <BreadcrumbSeparator />
+            <BreadcrumbItem>
+              <BreadcrumbPage>{title}</BreadcrumbPage>
+            </BreadcrumbItem>
+          </BreadcrumbList>
+        </Breadcrumb>
+      </div>
       <div className="text-primary sm:px-[300px] px-0">
-        <div className="flex flex-col justify-center items-center text-2xl sm:text-4xl mt-7 mb-3">
+        <div className="flex flex-col justify-center items-center text-2xl sm:text-4xl mt-3 mb-3">
           <h1>{title}</h1>
         </div>
         <div className="px-10 sm:text-lg text-md mb-5">

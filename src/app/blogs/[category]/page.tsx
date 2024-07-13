@@ -11,6 +11,13 @@ import { useMediaQuery } from "react-responsive";
 import { DataTable } from "./data-table";
 import { columns } from "./columns";
 import { getCategory } from "@/utils/getCategory";
+import {
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbList,
+  BreadcrumbSeparator,
+} from "@/components/ui/breadcrumb";
 
 interface CategoryProps {
   params: {
@@ -64,6 +71,26 @@ const BlogContent = ({ category }: BlogContentProps) => {
   return (
     <>
       <div className="justify-center items-center px-10 mt-5 w-full bg-black">
+        <div className="my-3 sm:my-4 sm:ml-[100px] ml-0">
+          {" "}
+          <Breadcrumb>
+            <BreadcrumbList>
+              <BreadcrumbItem>
+                <BreadcrumbLink href="/">Home</BreadcrumbLink>
+              </BreadcrumbItem>
+              <BreadcrumbSeparator />
+              <BreadcrumbItem>
+                <BreadcrumbLink href="/blogs">Blog</BreadcrumbLink>
+              </BreadcrumbItem>
+              <BreadcrumbSeparator />
+              <BreadcrumbItem>
+                <BreadcrumbLink href={`/blogs/${categoriesTitle}`}>
+                  {categoriesTitle}
+                </BreadcrumbLink>
+              </BreadcrumbItem>
+            </BreadcrumbList>
+          </Breadcrumb>
+        </div>
         <Link href={`/blogs/${categoriesTitle}/`}>
           <div className="flex justify-center items-center h-full">
             <div className="relative flex justify-center items-center">
@@ -73,14 +100,16 @@ const BlogContent = ({ category }: BlogContentProps) => {
                   {categoriesDescription}
                 </div>
               </div>
-              <Image
-                src={`/pictures/categories/${categoriesTitle}.jpeg`}
-                width={600}
-                height={550}
-                alt={`${categoriesTitle}'s picture`}
-                priority={true}
-                className="opacity-55 hover:opacity-80 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105 cursor-pointer"
-              />
+              {categoriesTitle && (
+                <Image
+                  src={`/pictures/categories/${categoriesTitle}.jpeg`}
+                  width={600}
+                  height={550}
+                  alt={`${categoriesTitle}'s picture`}
+                  priority={true}
+                  className="opacity-55 hover:opacity-80 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105 cursor-pointer"
+                />
+              )}
             </div>
           </div>
         </Link>
