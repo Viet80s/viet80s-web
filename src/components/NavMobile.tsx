@@ -29,7 +29,7 @@ export const NavMobile = () => {
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
                 transition={{ duration: 0.2 }}
-                className="mt-5 fixed left-0 shadow-4xl right-0 top-[3.5rem] p-5 pt-5 bg-primary-foreground border-b border-b-white/20"
+                className="mt-6 fixed left-0 shadow-4xl right-0 top-[3.5rem] p-5 pt-5 bg-[#507247] border-b border-b-white/20"
               >
                 <ul className="grid gap-2">
                   {routes.map((route, idx) => {
@@ -51,7 +51,7 @@ export const NavMobile = () => {
                         <a
                           onClick={() => setOpen((prev) => !prev)}
                           className={
-                            "flex items-center justify-between w-full p-5 rounded-xl bg-primary"
+                            "flex items-center justify-between w-full p-2 rounded-xl bg-primary"
                           }
                           href={route.href}
                         >

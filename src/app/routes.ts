@@ -12,16 +12,6 @@ export const routes = [
     // Icon: IoFileTrayStacked,
   },
   {
-    title: "E-Vouchers",
-    href: "https://squareup.com/gift/MLCDF6VTMC9PX/order",
-    // Icon: IoIosPricetags,
-  },
-  {
-    title: "Special Offers",
-    href: "/specials",
-    // Icon: BiNews,
-  },
-  {
     title: "Reservation",
     href: "https://www.viet80sonline.co.uk/s/appointments",
     // Icon: MdConnectWithoutContact,
@@ -37,13 +27,8 @@ export const routes = [
     // Icon: MdConnectWithoutContact,
   },
   {
-    title: "Mobile App",
+    title: "Rewards",
     href: "/mobile-app",
-    // Icon: MdConnectWithoutContact,
-  },
-  {
-    title: "Blog",
-    href: "/blog",
     // Icon: MdConnectWithoutContact,
   },
   {

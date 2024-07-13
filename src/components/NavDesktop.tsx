@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export const NavDesktop = () => {
   return (
-    <div className="hidden lg:flex lg:items-center sticky top-0 z-50 backdrop-blur justify-between px-9 py-7 bg-[#507247]">
+    <div className="hidden lg:flex lg:items-center sticky top-0 z-50 backdrop-blur justify-between px-9 py-7 bg-primary">
       <div>
         <Link href="/">
           <Image
@@ -26,7 +26,7 @@ export const NavDesktop = () => {
               <li key={title}>
                 <a
                   href={href}
-                  className="flex items-center gap-1 text-primary opacity-85 hover:opacity-100 transition-all"
+                  className="flex items-center gap-1 text-xanh font-extrabold opacity-85 hover:text-primary-foreground hover:opacity-100 transition-all"
                 >
                   {title}
                 </a>

@@ -7,7 +7,7 @@ import Providers from "@/components/Providers";
 import localFont from "next/font/local";
 
 const baumans = Baumans({ subsets: ["latin"], weight: ["400"] });
-const myFont = localFont({ src: "./BESSON.ttf" });
+const myFont = localFont({ src: "./Normal.otf" });
 
 export const metadata: Metadata = {
   title: "Authentic Vietnamese Food in Nottingham | Viet80s",
@@ -22,7 +22,7 @@ export default function RootLayout({
 }) {
   return (
     <Providers>
-      <html lang="en" className={baumans.className}>
+      <html lang="en" className={myFont.className}>
         <body>
           {children}
           <Analytics />

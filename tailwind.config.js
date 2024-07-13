@@ -31,6 +31,10 @@ module.exports = {
           DEFAULT: "#BA3026",
           foreground: "#F8C983",
         },
+        xanh:{
+          DEFAULT: "#385930",
+          foreground: "#F8C983",
+        },
         destructive: {
           DEFAULT: "hsl(var(--destructive))",
           foreground: "hsl(var(--destructive-foreground))",
