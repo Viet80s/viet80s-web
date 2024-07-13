@@ -51,6 +51,7 @@ const BlogContent = ({ category }: BlogContentProps) => {
       const updatedContent = content.map((post: Posts) => ({
         ...post,
         isMobile: isMobile ? true : post.isMobile,
+        categoriesTitle: post.categoriesTitle[0],
       }));
       setPosts(updatedContent);
       setCategoryData(categoryData);
@@ -59,10 +60,11 @@ const BlogContent = ({ category }: BlogContentProps) => {
   }, [isMobile, category]);
 
   const { categoriesTitle, categoriesDescription } = categoryData ?? {};
+
   return (
     <>
       <div className="justify-center items-center px-10 mt-5 w-full bg-black">
-        <Link href={`/blogs/${categoriesTitle}/`} key={categoriesTitle}>
+        <Link href={`/blogs/${categoriesTitle}/`}>
           <div className="flex justify-center items-center h-full">
             <div className="relative flex justify-center items-center">
               <div className="absolute z-10 w-full text-center flex-col p-2 text-lg sm:text-2xl text-primary">

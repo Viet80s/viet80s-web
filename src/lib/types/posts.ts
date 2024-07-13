@@ -16,6 +16,6 @@ export interface Posts {
 
 export interface Categories {
   _id: string;
-  categoriesTitle: string;
-  categoriesDescription: string;
+  categoriesTitle: string[];
+  categoriesDescription: string[];
 }

@@ -9,7 +9,7 @@ import NavBar from "@/components/NavBar";
 import DetailsFooter from "@/components/DetailsFooter";
 import Footer from "@/components/Footer";
 
-export const runtime = "edge";
+// export const runtime = "edge";
 
 interface PostProps {
   params: {
@@ -31,8 +31,6 @@ const Post = ({ params: { slug } }: PostProps) => {
   const {
     title = "Missing title",
     authorName = "Missing name",
-    categoriesDescription,
-    categoriesTitle,
     authorImage,
     body = [],
   } = post ?? {}; // Destructure the post object
@@ -61,16 +59,15 @@ const Post = ({ params: { slug } }: PostProps) => {
   return (
     <div className="bg-black">
       <NavBar />
-      <div className="text-primary">
-        <div className="flex flex-col justify-center items-center text-xl sm:text-4xl mt-7 mb-3">
+      <div className="text-primary sm:px-[300px] px-0">
+        <div className="flex flex-col justify-center items-center text-2xl sm:text-4xl mt-7 mb-3">
           <h1>{title}</h1>
         </div>
-        <div className="px-10 mb-5">
+        <div className="px-10 sm:text-lg text-md mb-5">
           <PortableText value={body} components={ptComponents} />
         </div>
-      </div>
-      <div className="flex text-primary justify-center items-center text-center gap-4">
-        {/* {categoriesTitle && (
+        <div className="flex text-primary items-center text-right gap-4 px-10">
+          {/* {categoriesTitle && (
           <ul>
             Posted in
             {categoriesTitle.map((category) => (
@@ -78,25 +75,27 @@ const Post = ({ params: { slug } }: PostProps) => {
             ))}
           </ul>
         )} */}
-        Written By: {"  "}
-        {authorImage && (
-          <div>
-            <Image
-              loader={({ width }) => urlFor(authorImage).width(width).url()}
-              src={urlFor(authorImage).width(50).url()}
-              width={50}
-              height={50}
-              alt={`picture`}
-              priority={true}
-            />
-          </div>
-        )}{" "}
-        {authorName}
+          Written By: {"  "}
+          {authorImage && (
+            <div>
+              <Image
+                loader={({ width }) => urlFor(authorImage).width(width).url()}
+                src={urlFor(authorImage).width(50).url()}
+                width={50}
+                height={50}
+                alt={`picture`}
+                priority={true}
+              />
+            </div>
+          )}{" "}
+          {authorName}
+        </div>
       </div>
+
       <DetailsFooter location="street-food" />
       <Footer />
     </div>
   );
 };
 
-export default React.memo(Post);
+export default Post;

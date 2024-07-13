@@ -47,18 +47,20 @@ const BlogContent = () => {
       {/* category section */}
       <div className="sm:grid sm:grid-cols-3 sm:gap-4 flex flex-col justify-center items-center px-10">
         {categories.length > 0 &&
-          categories.map(({ description, title, _id }) => (
-            <Link href={`/blogs/${title}`} key={_id}>
+          categories.map(({ categoriesDescription, categoriesTitle, _id }) => (
+            <Link href={`/blogs/${categoriesTitle}`} key={_id}>
               <div className="flex justify-center items-center h-full">
                 <div className="relative flex justify-center items-center">
                   <div className="absolute z-10 w-full text-center flex-col p-2 text-lg sm:text-2xl text-primary">
-                    <div className="sm:text-4xl text-2xl">{title}</div>
+                    <div className="sm:text-4xl text-2xl">
+                      {categoriesTitle}
+                    </div>
                     <div className="opacity-85 sm:text-lg text-md">
-                      {description}
+                      {categoriesDescription}
                     </div>
                   </div>
                   <Image
-                    src={`/pictures/categories/${title}.jpeg`}
+                    src={`/pictures/categories/${categoriesTitle}.jpeg`}
                     width={550}
                     height={550}
                     alt={`post picture`}
