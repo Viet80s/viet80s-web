@@ -4,17 +4,13 @@ import { useMediaQuery } from "react-responsive";
 import AutoPlayMobile from "@/components/AutoPlayMobile";
 import AutoPlayLaptop from "@/components/AutoPlayLaptop";
 import Footer from "@/components/Footer";
-import styles from "@/app/localHome.module.css";
 import DetailsFooter from "@/components/DetailsFooter";
 import NavBar from "@/components/NavBar";
 import FoodGalleryResto from "@/components/FoodGalleryResto";
 import ButtonList from "@/components/ButtonList";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faStar, faImages } from "@fortawesome/free-regular-svg-icons";
-import Gallery from "@/components/Gallery";
-import { PopUp } from "@/components/PopUp";
-import { FatherDay } from "@/components/FatherDay";
 import Image from "next/image";
+import GalleryLaptop from "@/components/GalleryLaptop";
+import GalleryMobile from "@/components/GalleryMobile";
 
 export default function Home() {
   const isMobile = useMediaQuery({ maxWidth: 768 });
@@ -115,7 +111,8 @@ export default function Home() {
           <ButtonList location="restaurant" />
         </div>
         <div>
-          <Gallery />
+          {/* <GalleryLaptop /> */}
+          <GalleryMobile />
         </div>
         <div>
           <DetailsFooter location="restaurant" />

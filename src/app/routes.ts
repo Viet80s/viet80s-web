@@ -13,7 +13,7 @@ export const routes = [
   },
   {
     title: "Reservation",
-    href: "https://www.viet80sonline.co.uk/s/appointments",
+    href: "https://book.squareup.com/appointments/exxl3axffjaiyu/location/L8SDJBMG1NZDQ/services/D4BVADM33TXM7SFXI2YKDQFZ",
     // Icon: MdConnectWithoutContact,
   },
   {
