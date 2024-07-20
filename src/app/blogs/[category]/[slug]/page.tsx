@@ -66,7 +66,7 @@ const Post = ({ params: { slug, category } }: PostProps) => {
   };
 
   return (
-    <div className="bg-black">
+    <div className="bg-[url('/pictures/bg1.svg')] bg-center bg-cover">
       <NavBar />
       <div className="mt-5 sm:my-4 sm:ml-[100px] ml-10">
         {" "}
@@ -92,14 +92,14 @@ const Post = ({ params: { slug, category } }: PostProps) => {
           </BreadcrumbList>
         </Breadcrumb>
       </div>
-      <div className="text-primary sm:px-[300px] px-0">
+      <div className="sm:px-[300px] px-0">
         <div className="flex flex-col justify-center items-center text-2xl sm:text-4xl mt-3 mb-3">
           <h1>{title}</h1>
         </div>
         <div className="px-10 sm:text-lg text-md mb-5">
           <PortableText value={body} components={ptComponents} />
         </div>
-        <div className="flex text-primary items-center text-right gap-4 px-10">
+        <div className="flex items-center text-right gap-4 px-10">
           {/* {categoriesTitle && (
           <ul>
             Posted in

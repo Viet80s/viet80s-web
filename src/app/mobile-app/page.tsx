@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <>
       <NavBar />
-      <div className="w-full bg-black items-center justify-center">
+      <div className="bg-[url('/pictures/bg1.svg')] bg-center bg-cover">
         <div className={stylesPara.paragraphApp}>
           <p>
             Download Viet80s app today to collect points and receive exclusive
@@ -50,9 +50,12 @@ export default function Home() {
             </div>
           </Link>
         </div>
+        <div>
+          {" "}
+          <DetailsFooter location="restaurant" />
+          <Footer />
+        </div>
       </div>
-      <DetailsFooter location="restaurant" />
-      <Footer />
     </>
   );
 }

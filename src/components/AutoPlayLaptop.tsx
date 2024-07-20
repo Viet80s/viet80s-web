@@ -9,6 +9,28 @@ import { FatherDay } from "./FatherDay";
 type Props = { location: string };
 
 const AutoPlayLaptop = ({ location }: Props) => {
+  const images = [
+    {
+      original: "/pictures/homepage/banner1.png",
+      thumbnail: "/pictures/gallery/1.png",
+      // description: "This is a description",
+    },
+    {
+      original: "/pictures/homepage/banner2.png",
+      thumbnail: "/pictures/gallery/2.png",
+      // description: "This is a description",
+    },
+    {
+      original: "/pictures/homepage/banner3.png",
+      thumbnail: "/pictures/gallery/3.png",
+      // description: "This is a description",
+    },
+    {
+      original: "/pictures/homepage/banner4.png",
+      thumbnail: "/pictures/gallery/4.png",
+      // description: "This is a description",
+    },
+  ];
   const settings = {
     dots: false,
     infinite: true,
@@ -25,54 +47,16 @@ const AutoPlayLaptop = ({ location }: Props) => {
       {location === "restaurant" && (
         <>
           <Slider {...settings}>
-            {/* <div>
-              <FatherDay />
-            </div> */}
-            <div>
-              <Image
-                src="/pictures/4.png"
-                alt="Viet80s Logo"
-                width={1920}
-                height={780}
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 70vw"
-              />
-            </div>
-            <div>
-              <Image
-                src="/pictures/resto.png"
-                alt="Viet80s Logo"
-                width={1920}
-                height={780}
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 70vw"
-              />
-            </div>
-          </Slider>
-        </>
-      )}
-      {location === "street-food" && (
-        <>
-          <Slider {...settings}>
-            {/* <div>
-              <FatherDay />
-            </div> */}
-            <div>
-              <Image
-                src="/pictures/sf2.png"
-                alt="Viet80s Logo"
-                width={1920}
-                height={400}
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 70vw"
-              />
-            </div>
-            <div>
-              <Image
-                src="/pictures/sf1.png"
-                alt="Viet80s Logo"
-                width={1920}
-                height={400}
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 70vw"
-              />
-            </div>
+            {images.map((image, index) => (
+              <div key={index}>
+                <Image
+                  src={image.original}
+                  alt="Viet80s Logo"
+                  width={1920}
+                  height={750}
+                />
+              </div>
+            ))}
           </Slider>
         </>
       )}
@@ -84,7 +68,7 @@ const AutoPlayLaptop = ({ location }: Props) => {
             </div> */}
             <div>
               <Image
-                src="/pictures/cf1.png"
+                src="/pictures/homepage/banner5.png"
                 alt="Viet80s Logo"
                 width={1920}
                 height={400}
@@ -93,7 +77,7 @@ const AutoPlayLaptop = ({ location }: Props) => {
             </div>
             <div>
               <Image
-                src="/pictures/cf2.png"
+                src="/pictures/homepage/banner6.png"
                 alt="Viet80s Logo"
                 width={1920}
                 height={400}

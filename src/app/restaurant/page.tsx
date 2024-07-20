@@ -4,24 +4,21 @@ import { useMediaQuery } from "react-responsive";
 import AutoPlayMobile from "@/components/AutoPlayMobile";
 import AutoPlayLaptop from "@/components/AutoPlayLaptop";
 import Footer from "@/components/Footer";
-import styles from "@/app/localHome.module.css";
 import DetailsFooter from "@/components/DetailsFooter";
 import NavBar from "@/components/NavBar";
 import FoodGalleryResto from "@/components/FoodGalleryResto";
 import ButtonList from "@/components/ButtonList";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faStar, faImages } from "@fortawesome/free-regular-svg-icons";
-import Gallery from "@/components/Gallery";
-import { PopUp } from "@/components/PopUp";
-import { FatherDay } from "@/components/FatherDay";
+import Image from "next/image";
+import GalleryLaptop from "@/components/GalleryLaptop";
+import GalleryMobile from "@/components/GalleryMobile";
 
 export default function Home() {
   const isMobile = useMediaQuery({ maxWidth: 768 });
-  const fontSizeTitle = isMobile ? "x-large" : "xx-large";
   return (
     <>
       <NavBar />
-      <div className={"bg-black"}>
+
+      <div className="bg-[url('/pictures/bg2.svg')] bg-center bg-cover">
         <div>
           {isMobile ? (
             <AutoPlayMobile location="restaurant" />
@@ -29,52 +26,112 @@ export default function Home() {
             <AutoPlayLaptop location="restaurant" />
           )}
         </div>
-        <div className="mr-10">
+
+        <div>
           <ButtonList location="restaurant" />
         </div>
-        <div className={styles.paragraph}>
-          <p>
-            Welcome to Viet80s, a proud representation of Vietnam’s rich
-            culinary culture and the ultimate Vietnamese dining experience in
-            the heart of Nottingham.
-          </p>
-          <p>
-            At Viet80s, we believe that food is not just about nourishment but
-            also about connecting people and cultures. Come and experience the
-            real feeling of Vietnam with authentic Pho and the flavours of
-            Vietnamese traditional recipes today.
-          </p>
+        <div className="rounded-lg border-solid border-xanh border-4 text-center justify-center font-bold p-[10px] mx-[10px] text-md my-[10px] sm:p-[20px] sm:mx-[200px] sm:text-xl sm:my-[20px]">
+          <div className="sm:flex sm:flex-row sm:items-center sm:justify-center grid-cols-2 grid gap-4 sm:text-lg text-sm">
+            <div className="flex flex-col items-center justify-center text-center text-xanh">
+              <div>
+                {" "}
+                <Image
+                  src="/pictures/homepage/icon-01.svg"
+                  width="300"
+                  height="300"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  alt="USP 1"
+                  priority={true}
+                />
+              </div>
+              <div>
+                <h3>100% Vietnamese </h3>
+                <h3>from the Kitchen to the Table</h3>
+              </div>
+            </div>
+            <div className="flex flex-col items-center justify-center text-center text-xanh">
+              <div>
+                {" "}
+                <Image
+                  src="/pictures/homepage/icon-02.svg"
+                  width="300"
+                  height="300"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  alt="USP 2"
+                  priority={true}
+                />
+              </div>
+              <div>
+                <h3>Next to</h3>
+                <h3>Nottingham Castle</h3>
+              </div>
+            </div>
+            <div className="flex flex-col items-center justify-center text-center text-xanh">
+              <div>
+                {" "}
+                <Image
+                  src="/pictures/homepage/icon-03.svg"
+                  width="300"
+                  height="300"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  alt="USP 3"
+                  priority={true}
+                />
+              </div>
+              <div>
+                <h3>Open Everyday</h3>
+                <h3>11:30am - 10:30pm</h3>
+              </div>
+            </div>
+            <div className="flex flex-col items-center justify-center text-center text-xanh">
+              <div>
+                {" "}
+                <Image
+                  src="/pictures/homepage/icon-04.svg"
+                  width="300"
+                  height="300"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  alt="USP 4"
+                  priority={true}
+                />
+              </div>
+              <div>
+                <h3>Exceptional Service</h3>
+                <h3>like nowhere else</h3>
+              </div>
+            </div>
+            <div className="sm:hidden text-xanh font-bold">
+              <h3>Walk-in Available</h3>
+            </div>
+            <div className="sm:hidden text-xanh font-bold">
+              <h3>Booking Available</h3>
+            </div>
+          </div>
+          <div className="sm:flex sm:gap-[400px] sm:justify-center sm:items-center sm:mt-5 sm:text-xanh hidden">
+            <div>
+              <h3>Walk-in Available</h3>
+            </div>
+            <div>
+              <h3>Booking Available</h3>
+            </div>
+          </div>
         </div>
-        {isMobile ? (
-          <div className="mx-10 mt-10 bg-black">
-            {" "}
-            <FoodGalleryResto />
-          </div>
-        ) : (
-          <div className="mx-40 mt-10 bg-black">
-            {" "}
-            <FoodGalleryResto />
-          </div>
-        )}
-
-        <div className="mr-10">
+        <div>
+          {" "}
+          <FoodGalleryResto />
+        </div>
+        <div className="sm:mb-5">
           <ButtonList location="restaurant" />
         </div>
         <div>
-          <div className="flex justify-center">
-            <div
-              className="flex items-center text-center mt-5 gap-3"
-              style={{ color: "#F8C983", fontSize: fontSizeTitle }}
-            >
-              <h3>Viet80s Gallery</h3>
-              <FontAwesomeIcon icon={faImages} />
-            </div>
-          </div>
-          <Gallery />
+          {/* <GalleryLaptop /> */}
+          <GalleryMobile />
+        </div>
+        <div>
+          <DetailsFooter location="restaurant" />
+          <Footer />
         </div>
       </div>
-      <DetailsFooter location="restaurant" />
-      <Footer />
     </>
   );
 }

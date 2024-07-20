@@ -16,7 +16,7 @@ export default function Home() {
   const videoWidth = isMobile ? "1000" : "800";
   return (
     <>
-      <div className={"bg-black"}>
+      <div className="bg-[url('/pictures/bg1.svg')] bg-center bg-cover">
         <NavBar />
         <div
           className={styles.paragraph}
@@ -77,9 +77,9 @@ export default function Home() {
             />
           </div>
         </div>
+        <DetailsFooter location="restaurant" />
+        <Footer />
       </div>
-      <DetailsFooter location="restaurant" />
-      <Footer />
     </>
   );
 }

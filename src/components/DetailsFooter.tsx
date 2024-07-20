@@ -12,7 +12,6 @@ type Props = { location: string };
 
 const DetailsFooter = ({ location }: Props) => {
   const divStyle: React.CSSProperties = {
-    backgroundImage: 'url("/pictures/lua1.png")',
     backgroundSize: "cover",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
@@ -31,22 +30,17 @@ const DetailsFooter = ({ location }: Props) => {
     right: 0,
     bottom: 0,
     left: 0,
-    backgroundColor: "rgba(0, 0, 0, 0.5)",
     width: "100%",
     height: "100%",
   };
 
   const isMobile = useMediaQuery({ maxWidth: 768 });
-  const textColorStyle = {
-    color: "#F8C983",
-  };
   const logoSize = isMobile ? 75 : 150;
   const iconSize = isMobile ? "small" : "x-large";
 
   return (
-    <div className="bg-black" style={divStyle}>
-      <div style={overlayStyle}></div>
-      <div className={!isMobile ? "mt-2 mb-2 z-10 mx-20" : "mb-2 z-10"}>
+    <div style={divStyle}>
+      <div className={!isMobile ? "mt-2 mb-2 pb-2 z-10 mx-20" : "mb-2 z-10"}>
         <div>
           <Image
             src="/pictures/logo.png"
@@ -57,8 +51,8 @@ const DetailsFooter = ({ location }: Props) => {
           />
         </div>
         <div
-          className="flex justify-between"
-          style={{ color: "#F8C983", fontSize: iconSize }}
+          className="flex justify-between text-xanh"
+          style={{ fontSize: iconSize }}
         >
           <Link href="https://www.facebook.com/Viet80s.Nott" className="mx-1">
             <FontAwesomeIcon icon={faFacebook} />
@@ -82,10 +76,9 @@ const DetailsFooter = ({ location }: Props) => {
       <div
         className={
           !isMobile
-            ? "text-white mx-20 z-10 text-xl"
-            : "text-white ml-5 z-10 text-sm"
+            ? "text-xanh mx-20 z-10 text-xl"
+            : "text-xanh ml-5 z-10 text-sm"
         }
-        style={textColorStyle}
       >
         <p style={{ fontWeight: "bolder" }}>Links</p>
         <ul>
@@ -96,10 +89,7 @@ const DetailsFooter = ({ location }: Props) => {
           {location === "restaurant" && (
             <>
               <li>
-                <Link href="/street-food">- Street Food</Link>
-              </li>
-              <li>
-                <Link href="/coffee">- Coffee</Link>
+                <Link href="/coffee-street-food">- Street Food</Link>
               </li>
             </>
           )}
@@ -109,14 +99,14 @@ const DetailsFooter = ({ location }: Props) => {
                 <Link href="/restaurant">- Restaurant</Link>
               </li>
               <li>
-                <Link href="/coffee">- Coffee</Link>
+                <Link href="/coffee-street-food">- Coffee</Link>
               </li>
             </>
           )}
           {location === "coffee" && (
             <>
               <li>
-                <Link href="/street-food">- Street Food</Link>
+                <Link href="/coffee-street-food">- Street Food</Link>
               </li>
               <li>
                 <Link href="/restaurant">- Restaurant</Link>
@@ -133,10 +123,9 @@ const DetailsFooter = ({ location }: Props) => {
       <div
         className={
           !isMobile
-            ? "text-white mx-20 z-10 text-xl"
-            : "text-white mx-5 z-10 text-sm"
+            ? "text-xanh mx-20 z-10 text-xl"
+            : "text-xanh mx-5 z-10 text-sm"
         }
-        style={textColorStyle}
       >
         <p style={{ fontWeight: "bolder" }}>Opening Hours</p>
         {location === "restaurant" && (
@@ -146,18 +135,9 @@ const DetailsFooter = ({ location }: Props) => {
             <p>11:30 AM - 10:30 PM</p>
           </>
         )}
-        {location === "street-food" && (
-          <>
-            <p style={{ textDecoration: "underline" }}>Street Food</p>
-            <p>Mondays - Fridays</p>
-            <p>8:30 AM - 6:00 PM</p>
-            <p>Saturdays - Sundays</p>
-            <p>9:00 AM - 6:00 PM</p>
-          </>
-        )}
         {location === "coffee" && (
           <>
-            <p style={{ textDecoration: "underline" }}>Coffee</p>
+            <p style={{ textDecoration: "underline" }}>Coffee - Street food</p>
             <p>Mondays - Fridays</p>
             <p>8:30 AM - 6:00 PM</p>
             <p>Saturdays - Sundays</p>

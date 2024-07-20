@@ -1,29 +1,24 @@
 .paragraph {
-    border: 6px double #F8C983;
+    border: 6px double;
     padding: 20px;
     margin: 30px 30px 0px;
     border-radius: 10px;
-    background-color: #000000;
   }
 
   .paragraphApp {
     padding: 20px;
-    background-color: #000000;
-    color: #F8C983;
     text-align: center;
     font-size: x-large;
   }
 
   .paragraphPolicy {
-    border: 6px double #F8C983;
+    border: 6px double;
     padding: 20px;
     margin: 30px 30px 0px;
     border-radius: 10px;
-    background-color: #ffffff;
   }
   
   .paragraph p {
-    color: #F8C983;
     font-weight:normal;
     text-align: center;
     font-size: x-large;
@@ -31,7 +26,6 @@
   
   @media(max-width: 767px){
     .paragraph p{
-        background: "#F8C983";
         font-size:large;
     }
     .paragraphApp {

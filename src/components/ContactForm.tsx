@@ -71,12 +71,11 @@ const ContactForm = () => {
   };
   // Return the form component
   return (
-    <div className="flex flex-col items-center justify-center w-screen max-w-full text-center bg-black mx-10">
+    <div className="flex flex-col items-center justify-center w-screen max-w-full text-center mx-10">
       <h1
         className="mt-5 font-semibold"
         style={{
           textAlign: "center",
-          color: "#F8C983",
           fontSize: fontSize,
           zIndex: 1,
         }}
@@ -87,7 +86,6 @@ const ContactForm = () => {
         className="font-light"
         style={{
           textAlign: "center",
-          color: "#F8C983",
           fontSize: fontSize,
           zIndex: 1,
         }}
@@ -98,7 +96,6 @@ const ContactForm = () => {
         className="mb-3 font-light"
         style={{
           textAlign: "center",
-          color: "#F8C983",
           fontSize: fontSize,
           zIndex: 1,
         }}
@@ -112,7 +109,6 @@ const ContactForm = () => {
               <td
                 style={{
                   textAlign: "left",
-                  color: "#F8C983",
                   fontSize: fontSize,
                   zIndex: 1,
                 }}
@@ -128,6 +124,7 @@ const ContactForm = () => {
                     width: fieldSize,
                     padding: "4px",
                     borderRadius: "10px",
+                    border: "1px solid #ccc",
                   }}
                   required
                 />
@@ -137,7 +134,6 @@ const ContactForm = () => {
               <td
                 style={{
                   textAlign: "left",
-                  color: "#F8C983",
                   fontSize: fontSize,
                   zIndex: 1,
                 }}
@@ -153,6 +149,7 @@ const ContactForm = () => {
                     width: "100%",
                     padding: "4px",
                     borderRadius: "10px",
+                    border: "1px solid #ccc",
                   }}
                   required
                 />
@@ -162,7 +159,6 @@ const ContactForm = () => {
               <td
                 style={{
                   textAlign: "left",
-                  color: "#F8C983",
                   fontSize: fontSize,
                   zIndex: 1,
                 }}
@@ -178,6 +174,7 @@ const ContactForm = () => {
                     width: "100%",
                     padding: "4px",
                     borderRadius: "10px",
+                    border: "1px solid #ccc",
                   }}
                   required
                 />
@@ -187,7 +184,6 @@ const ContactForm = () => {
               <td
                 style={{
                   textAlign: "left",
-                  color: "#F8C983",
                   fontSize: fontSize,
                   zIndex: 1,
                 }}
@@ -203,6 +199,7 @@ const ContactForm = () => {
                     width: "100%",
                     padding: "4px",
                     borderRadius: "10px",
+                    border: "1px solid #ccc",
                   }}
                   required
                 />
@@ -212,7 +209,6 @@ const ContactForm = () => {
               <td
                 style={{
                   textAlign: "left",
-                  color: "#F8C983",
                   fontSize: fontSize,
                   zIndex: 1,
                 }}
@@ -228,6 +224,7 @@ const ContactForm = () => {
                     minHeight: "200px",
                     padding: "4px",
                     borderRadius: "10px",
+                    border: "1px solid #ccc",
                   }}
                   required
                 />
@@ -237,8 +234,7 @@ const ContactForm = () => {
               <td colSpan={2}>
                 <Button
                   type="submit"
-                  className="items-center text-center mt-3 mb-5 text-sm bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-2 px-4 rounded"
-                  style={{ backgroundColor: "#F8C983" }}
+                  className="items-center text-center mt-3 mb-5 text-sm font-bold py-2 px-4 rounded"
                 >
                   Send Enquiry
                   <Send className="ml-2" />

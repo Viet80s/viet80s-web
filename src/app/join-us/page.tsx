@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <>
       <NavBar />
-      <div className="max-h-screen bg-black">
+      <div className="bg-[url('/pictures/bg1.svg')] bg-center bg-cover">
         <div className={styles1.paragraphApp}>
           <p>
             We are happy to have you as our new team member. Please follow this{" "}
@@ -39,9 +39,12 @@ export default function Home() {
             </div>
           </Link>
         </div>
+        <div>
+          {" "}
+          <DetailsFooter location="restaurant" />
+          <Footer />
+        </div>
       </div>
-      <DetailsFooter location="restaurant" />
-      <Footer />
     </>
   );
 }

@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <>
       <NavBar />
-      <div className="bg-black">
+      <div className="bg-[url('/pictures/bg1.svg')] bg-center bg-cover">
         <div className={styles1.paragraphApp}>
           <p>
             Below are documents related to our Privacy Policy and Term and
@@ -58,9 +58,12 @@ export default function Home() {
             </div>
           </Link>
         </div>
+        <div>
+          {" "}
+          <DetailsFooter location="restaurant" />
+          <Footer />
+        </div>
       </div>
-      <DetailsFooter location="restaurant" />
-      <Footer />
     </>
   );
 }

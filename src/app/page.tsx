@@ -26,7 +26,7 @@ export default function Home() {
               <p className={styles.imageText}>RESTAURANT</p>
             </div>
           </Link>
-          <Link href="/street-food">
+          <Link href="/coffee-street-food">
             <div className={styles.imageContainer1}>
               <Image
                 src="/pictures/2.png"
@@ -36,24 +36,14 @@ export default function Home() {
                 priority={false}
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
-              <p className={styles.imageText}>STREET FOOD</p>
-            </div>
-          </Link>
-          <Link href="/coffee">
-            <div className={styles.imageContainer2}>
-              <Image
-                src="/pictures/3.png"
-                alt="Viet80s Coffee"
-                fill
-                style={{ objectFit: "cover" }}
-                priority={false}
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-              />
-              <p className={styles.imageText}>COFFEE</p>
+              <div className={styles.imageTextContainer}>
+                <p>COFFEE</p>
+                <p>&</p>
+                <p>STREET FOOD</p>
+              </div>
             </div>
           </Link>
         </div>
-
         <Footer />
       </div>
     </>
