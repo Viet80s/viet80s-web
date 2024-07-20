@@ -19,7 +19,7 @@ export default function Home() {
     <>
       <NavBar />
 
-      <div className="bg-[url('/pictures/bg1.svg')] bg-center bg-cover">
+      <div className="bg-[url('/pictures/bg2.svg')] bg-center bg-cover">
         <div>
           {isMobile ? (
             <AutoPlayMobile location="coffee" />
@@ -31,13 +31,13 @@ export default function Home() {
         <div>
           <ButtonList location="coffee" />
         </div>
-        <div className="rounded-lg border-solid border-xanh border-4 text-center justify-center font-bold p-[10px] mx-[10px] text-md my-[10px] sm:p-[20px] sm:mx-[200px] sm:text-xl sm:my-[20px]">
+        <div className="rounded-lg border-solid border-[#493717] border-4 text-center justify-center font-bold p-[10px] mx-[10px] text-md my-[10px] sm:p-[20px] sm:mx-[200px] sm:text-xl sm:my-[20px]">
           <div className="sm:flex sm:flex-row sm:items-center sm:justify-center grid-cols-2 grid gap-4 sm:text-lg text-sm">
             <div className="flex flex-col items-center justify-center text-center text-xanh">
               <div>
                 {" "}
                 <Image
-                  src="/pictures/homepage/icon-01.svg"
+                  src="/pictures/homepage/sf1.png"
                   width="300"
                   height="300"
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -46,15 +46,15 @@ export default function Home() {
                 />
               </div>
               <div>
-                <h3>100% Vietnamese </h3>
-                <h3>from the Kitchen to the Table</h3>
+                <h3>100% Coffee </h3>
+                <h3>from Vietnam</h3>
               </div>
             </div>
             <div className="flex flex-col items-center justify-center text-center text-xanh">
               <div>
                 {" "}
                 <Image
-                  src="/pictures/homepage/icon-02.svg"
+                  src="/pictures/homepage/sf2.png"
                   width="300"
                   height="300"
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -63,15 +63,14 @@ export default function Home() {
                 />
               </div>
               <div>
-                <h3>Next to</h3>
-                <h3>Nottingham Castle</h3>
+                <h3>Live Music</h3>
               </div>
             </div>
             <div className="flex flex-col items-center justify-center text-center text-xanh">
               <div>
                 {" "}
                 <Image
-                  src="/pictures/homepage/icon-03.svg"
+                  src="/pictures/homepage/sf3.png"
                   width="300"
                   height="300"
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -80,15 +79,15 @@ export default function Home() {
                 />
               </div>
               <div>
-                <h3>Open Everyday</h3>
-                <h3>11:30am - 10:30pm</h3>
+                <h3>#1 Breakfast</h3>
+                <h3>in the world</h3>
               </div>
             </div>
             <div className="flex flex-col items-center justify-center text-center text-xanh">
               <div>
                 {" "}
                 <Image
-                  src="/pictures/homepage/icon-04.svg"
+                  src="/pictures/homepage/sf4.png"
                   width="300"
                   height="300"
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -97,8 +96,8 @@ export default function Home() {
                 />
               </div>
               <div>
-                <h3>Exceptional Service</h3>
-                <h3>like nowhere else</h3>
+                <h3>Mon-Fri: 8:30-6:00</h3>
+                <h3>Sat & Sun: 9:00-6:00</h3>
               </div>
             </div>
           </div>

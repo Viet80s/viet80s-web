@@ -59,33 +59,6 @@ const AutoPlayMobile = ({ location }: Props) => {
           </Slider>
         </>
       )}
-      {location === "street-food" && (
-        <>
-          <Slider {...settings}>
-            {/* <div>
-              <FatherDay />
-            </div> */}
-            <div>
-              <Image
-                src="/pictures/2.png"
-                alt="Viet80s Logo"
-                width={1920}
-                height={500}
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-              />
-            </div>{" "}
-            <div>
-              <Image
-                src="/pictures/1.png"
-                alt="Viet80s Logo"
-                width={1920}
-                height={500}
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-              />
-            </div>
-          </Slider>
-        </>
-      )}
       {location === "coffee" && (
         <>
           <Slider {...settings}>
@@ -94,7 +67,7 @@ const AutoPlayMobile = ({ location }: Props) => {
             </div> */}
             <div>
               <Image
-                src="/pictures/3.png"
+                src="/pictures/homepage/mocf1.png"
                 alt="Viet80s Logo"
                 width={1920}
                 height={500}
@@ -103,7 +76,25 @@ const AutoPlayMobile = ({ location }: Props) => {
             </div>{" "}
             <div>
               <Image
-                src="/pictures/1.png"
+                src="/pictures/homepage/mocf2.png"
+                alt="Viet80s Logo"
+                width={1920}
+                height={500}
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              />
+            </div>
+            <div>
+              <Image
+                src="/pictures/homepage/mocf3.png"
+                alt="Viet80s Logo"
+                width={1920}
+                height={500}
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              />
+            </div>
+            <div>
+              <Image
+                src="/pictures/homepage/mocf4.png"
                 alt="Viet80s Logo"
                 width={1920}
                 height={500}

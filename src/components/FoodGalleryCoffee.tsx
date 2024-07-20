@@ -13,7 +13,6 @@ const FoodGalleryCoffee = () => {
   const imageSize = isMobile ? 200 : 310;
   const numberSlide = isMobile ? 2 : 3;
   const fontSize = isMobile ? "small" : "large";
-  const fontSizeTitle = isMobile ? "x-large" : "xx-large";
 
   const settings = {
     dots: false,
@@ -37,6 +36,18 @@ const FoodGalleryCoffee = () => {
         <Slider {...settings}>
           <div className="justify-center items-center">
             <Image
+              src="/pictures/streetfood/1.png"
+              alt="food 1"
+              width={imageSize}
+              height={imageSize}
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 70vw"
+            />
+            <p className="text-center" style={{ fontSize: fontSize }}>
+              Bánh Mì Việt/ Traditional Banh Mi
+            </p>
+          </div>
+          <div className="justify-center items-center">
+            <Image
               src="/pictures/coffee/1.png"
               alt="food 1"
               width={imageSize}
@@ -45,6 +56,18 @@ const FoodGalleryCoffee = () => {
             />
             <p className="text-center" style={{ fontSize: fontSize }}>
               Trà Chanh Dây/ Passionfruit Tea
+            </p>
+          </div>
+          <div>
+            <Image
+              src="/pictures/streetfood/8.png"
+              alt="food 1"
+              width={imageSize}
+              height={imageSize}
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 70vw"
+            />
+            <p className="text-center" style={{ fontSize: fontSize }}>
+              Xôi mặn/ Sticky Rice with pork
             </p>
           </div>
           <div>
@@ -73,6 +96,18 @@ const FoodGalleryCoffee = () => {
           </div>
           <div>
             <Image
+              src="/pictures/streetfood/7.png"
+              alt="food 1"
+              width={imageSize}
+              height={imageSize}
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 70vw"
+            />
+            <p className="text-center" style={{ fontSize: fontSize }}>
+              Sườn Nướng/ Grilled Pork Ribs
+            </p>
+          </div>
+          <div>
+            <Image
               src="/pictures/coffee/2a.png"
               alt="food 1"
               width={imageSize}
@@ -85,6 +120,18 @@ const FoodGalleryCoffee = () => {
           </div>
           <div>
             <Image
+              src="/pictures/streetfood/6.png"
+              alt="food 1"
+              width={imageSize}
+              height={imageSize}
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 70vw"
+            />
+            <p className="text-center" style={{ fontSize: fontSize }}>
+              Gà chiên giòn/ Crispy Fried Chicken
+            </p>
+          </div>
+          <div>
+            <Image
               src="/pictures/coffee/3.png"
               alt="food 1"
               width={imageSize}
@@ -93,6 +140,18 @@ const FoodGalleryCoffee = () => {
             />
             <p className="text-center" style={{ fontSize: fontSize }}>
               Bánh sữa chua/ Yogurt Cake
+            </p>
+          </div>
+          <div>
+            <Image
+              src="/pictures/streetfood/5.png"
+              alt="food 1"
+              width={imageSize}
+              height={imageSize}
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 70vw"
+            />
+            <p className="text-center" style={{ fontSize: fontSize }}>
+              Chả nem Miền Nam/ Southern Spring Rolls
             </p>
           </div>
           <div>

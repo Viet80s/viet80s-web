@@ -18,7 +18,7 @@ export default function Home() {
     <>
       <NavBar />
 
-      <div className="bg-[url('/pictures/bg1.svg')] bg-center bg-cover">
+      <div className="bg-[url('/pictures/bg2.svg')] bg-center bg-cover">
         <div>
           {isMobile ? (
             <AutoPlayMobile location="restaurant" />
@@ -99,6 +99,20 @@ export default function Home() {
                 <h3>Exceptional Service</h3>
                 <h3>like nowhere else</h3>
               </div>
+            </div>
+            <div className="sm:hidden text-xanh font-bold">
+              <h3>Walk-in Available</h3>
+            </div>
+            <div className="sm:hidden text-xanh font-bold">
+              <h3>Booking Available</h3>
+            </div>
+          </div>
+          <div className="sm:flex sm:gap-[400px] sm:justify-center sm:items-center sm:mt-5 sm:text-xanh hidden">
+            <div>
+              <h3>Walk-in Available</h3>
+            </div>
+            <div>
+              <h3>Booking Available</h3>
             </div>
           </div>
         </div>

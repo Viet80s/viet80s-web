@@ -60,33 +60,6 @@ const AutoPlayLaptop = ({ location }: Props) => {
           </Slider>
         </>
       )}
-      {location === "street-food" && (
-        <>
-          <Slider {...settings}>
-            {/* <div>
-              <FatherDay />
-            </div> */}
-            <div>
-              <Image
-                src="/pictures/sf2.png"
-                alt="Viet80s Logo"
-                width={1920}
-                height={400}
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 70vw"
-              />
-            </div>
-            <div>
-              <Image
-                src="/pictures/sf1.png"
-                alt="Viet80s Logo"
-                width={1920}
-                height={400}
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 70vw"
-              />
-            </div>
-          </Slider>
-        </>
-      )}
       {location === "coffee" && (
         <>
           <Slider {...settings}>
@@ -95,7 +68,7 @@ const AutoPlayLaptop = ({ location }: Props) => {
             </div> */}
             <div>
               <Image
-                src="/pictures/cf1.png"
+                src="/pictures/homepage/banner5.png"
                 alt="Viet80s Logo"
                 width={1920}
                 height={400}
@@ -104,7 +77,7 @@ const AutoPlayLaptop = ({ location }: Props) => {
             </div>
             <div>
               <Image
-                src="/pictures/cf2.png"
+                src="/pictures/homepage/banner6.png"
                 alt="Viet80s Logo"
                 width={1920}
                 height={400}
