@@ -30,14 +30,13 @@ const AutoPlayLaptop = ({ location }: Props) => {
             </div> */}
             <div>
               <Image
-                src="/pictures/4.png"
+                src="/pictures/homepage/bannerweb1.png"
                 alt="Viet80s Logo"
                 width={1920}
                 height={750}
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 70vw"
               />
             </div>
-            <div>
+            {/* <div>
               <Image
                 src="/pictures/resto.png"
                 alt="Viet80s Logo"
@@ -45,7 +44,7 @@ const AutoPlayLaptop = ({ location }: Props) => {
                 height={750}
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 70vw"
               />
-            </div>
+            </div> */}
           </Slider>
         </>
       )}

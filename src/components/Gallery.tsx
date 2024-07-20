@@ -78,12 +78,45 @@ const images = [
 export default class Gallery extends React.Component {
   render() {
     return (
-      <ImageGallery
-        items={images}
-        thumbnailPosition="bottom"
-        lazyLoad={true}
-        autoPlay={true}
-      />
+      <div>
+        <div className="bg-[url('/pictures/nen2.svg')] bg-primary bg-cover bg-center">
+          <h3 className="text-center bg-xanh text-primary sm:text-3xl text-xl font-bold sm:p-4 p-2">
+            Viet80s Gallery
+          </h3>
+          <div className=" m-6 items-center justify-center">
+            <iframe
+              width="350"
+              height="400"
+              src="https://www.youtube-nocookie.com/embed/3vmvJyzr2GQ?si=tn0XNYY4mk42Lkxz&amp;start=3"
+              title="Viet80s in a glance"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+            ></iframe>
+          </div>
+
+          {/* <div className="sm:hidden m-5">
+            <video
+              src="/video/video.mov"
+              controls
+              autoPlay
+              playsInline
+              loop
+              muted
+            />
+          </div> */}
+          <div className="sm:hidden mx-5 mt-5 pb-7">
+            <ImageGallery
+              items={images}
+              thumbnailPosition="left"
+              lazyLoad={true}
+              autoPlay={true}
+              showThumbnails={true}
+              showNav={false}
+              showFullscreenButton={false}
+            />
+          </div>
+        </div>
+      </div>
     );
   }
 }

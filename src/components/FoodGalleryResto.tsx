@@ -2,18 +2,14 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Link from "next/link";
 import Image from "next/image";
 import { useMediaQuery } from "react-responsive";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHandshake, faHeart } from "@fortawesome/free-regular-svg-icons";
 
 const FoodGalleryResto = () => {
   const isMobile = useMediaQuery({ maxWidth: 768 });
   const imageSize = isMobile ? 200 : 310;
   const numberSlide = isMobile ? 2 : 3;
   const fontSize = isMobile ? "small" : "large";
-  const fontSizeTitle = isMobile ? "x-large" : "xx-large";
 
   const settings = {
     dots: false,
@@ -27,16 +23,13 @@ const FoodGalleryResto = () => {
     pauseOnHover: false,
   };
   return (
-    <div>
+    <div className="mt-10">
       <div>
-        <h3
-          className="text-center mb-5 text-xanh"
-          style={{ fontSize: fontSizeTitle }}
-        >
-          Have a look on our signatures <FontAwesomeIcon icon={faHeart} beat />
+        <h3 className="text-center mb-5 bg-primary-foreground text-primary sm:text-3xl text-xl font-bold sm:p-4 p-2">
+          Our Signatures
         </h3>
       </div>
-      <div className="mx-10">
+      <div className="mx-10 sm:mx-60">
         <Slider {...settings}>
           <div>
             <Image

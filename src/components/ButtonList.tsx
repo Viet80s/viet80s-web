@@ -8,20 +8,21 @@ type Props = { location: string };
 
 const ButtonList = ({ location }: Props) => {
   const isMobile = useMediaQuery({ maxWidth: 768 });
-  const fontSize = isMobile ? "large" : "x-large";
+  const fontSize = isMobile ? "medium" : "x-large";
+  const paddingButton = isMobile ? "15px" : "20px";
 
   return (
     <>
-      <div className={"mt-5 px-5 " + styles.imageWrapperList}>
+      <div className="flex items-center text-center justify-center sm:gap-5 mt-5 sm:mb-0 mb-5 gap-3 sm:mx-0 sm-5">
         {location === "restaurant" && (
           <Link href="https://www.viet80sonline.co.uk/">
-            <div className={styles.imageContainerApp}>
+            <div>
               <Button
                 style={{
                   textAlign: "center",
                   border: "double",
                   borderWidth: "6px",
-                  padding: "20px",
+                  padding: paddingButton,
                   fontSize: fontSize,
                 }}
               >
@@ -37,13 +38,13 @@ const ButtonList = ({ location }: Props) => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <div className={styles.imageContainerApp}>
+            <div>
               <Button
                 style={{
                   textAlign: "center",
                   border: "double",
                   borderWidth: "6px",
-                  padding: "20px",
+                  padding: paddingButton,
                   fontSize: fontSize,
                 }}
               >
@@ -59,13 +60,13 @@ const ButtonList = ({ location }: Props) => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <div className={styles.imageContainerApp}>
+            <div>
               <Button
                 style={{
                   textAlign: "center",
                   border: "double",
                   borderWidth: "6px",
-                  padding: "20px",
+                  padding: paddingButton,
                   fontSize: fontSize,
                 }}
               >
@@ -77,13 +78,13 @@ const ButtonList = ({ location }: Props) => {
         )}
         {location === "restaurant" && (
           <Link href="https://www.viet80sonline.co.uk/s/appointments">
-            <div className={styles.imageContainerApp}>
+            <div>
               <Button
                 style={{
                   textAlign: "center",
                   border: "double",
                   borderWidth: "6px",
-                  padding: "20px",
+                  padding: paddingButton,
                   fontSize: fontSize,
                 }}
               >

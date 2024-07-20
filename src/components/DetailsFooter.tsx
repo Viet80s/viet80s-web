@@ -35,16 +35,12 @@ const DetailsFooter = ({ location }: Props) => {
   };
 
   const isMobile = useMediaQuery({ maxWidth: 768 });
-  const textColorStyle = {
-    color: "#F8C983",
-  };
   const logoSize = isMobile ? 75 : 150;
   const iconSize = isMobile ? "small" : "x-large";
 
   return (
     <div style={divStyle}>
-      <div style={overlayStyle}></div>
-      <div className={!isMobile ? "mt-2 mb-2 z-10 mx-20" : "mb-2 z-10"}>
+      <div className={!isMobile ? "mt-2 mb-2 pb-2 z-10 mx-20" : "mb-2 z-10"}>
         <div>
           <Image
             src="/pictures/logo.png"

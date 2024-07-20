@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <Providers>
       <html lang="en" className={garamond.className}>
-        <body className="bg-[url('/pictures/background.jpeg')]">
+        <body>
           {children}
           <Analytics />
         </body>
