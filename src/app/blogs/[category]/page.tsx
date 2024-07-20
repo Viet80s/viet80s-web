@@ -34,9 +34,9 @@ interface BlogContentProps {
 const Index = ({ params: { category } }: CategoryProps) => {
   return (
     <>
-      <div className="bg-black">
+      <div className="bg-[url('/pictures/bg1.svg')] bg-center bg-cover">
         <NavBar />
-        <div className="text-primary">
+        <div>
           <Suspense fallback={<div>Loading...</div>}>
             <BlogContent category={category} />
           </Suspense>
@@ -72,8 +72,8 @@ const BlogContent = ({ category }: BlogContentProps) => {
 
   return (
     <>
-      <div className="justify-center items-center px-10 mt-5 w-full bg-black">
-        <div className="my-3 sm:my-4 sm:ml-[100px] ml-0">
+      <div className="justify-center items-center px-10 mt-5 w-full">
+        <div className="my-3 sm:my-4 sm:ml-[100px] ml-0 text-xanh">
           {" "}
           <Breadcrumb>
             <BreadcrumbList>
@@ -96,7 +96,7 @@ const BlogContent = ({ category }: BlogContentProps) => {
         <Link href={`/blogs/${categoriesTitle}/`}>
           <div className="flex justify-center items-center h-full">
             <div className="relative flex justify-center items-center">
-              <div className="absolute z-10 w-full text-center flex-col p-2 text-lg sm:text-2xl text-primary">
+              <div className="absolute z-10 w-full text-center flex-col p-2 text-lg sm:text-2xl text-xanh">
                 <div className="sm:text-4xl text-2xl">{categoriesTitle}</div>
                 <div className="opacity-85 sm:text-lg text-md">
                   {categoriesDescription}

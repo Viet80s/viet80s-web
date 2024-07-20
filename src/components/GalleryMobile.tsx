@@ -100,7 +100,7 @@ const GalleryMobile = () => {
           <iframe
             width="350"
             height="400"
-            src="https://www.youtube-nocookie.com/embed/3vmvJyzr2GQ?si=tn0XNYY4mk42Lkxz&amp;start=3"
+            src="https://www.youtube.com/embed/cQ5VjmwIR5A?si=zbOyZzSfsRHifwhX"
             title="Viet80s in a glance"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen
@@ -110,7 +110,7 @@ const GalleryMobile = () => {
           <iframe
             width="1000"
             height="600"
-            src="https://www.youtube-nocookie.com/embed/3vmvJyzr2GQ?si=tn0XNYY4mk42Lkxz&amp;start=3"
+            src="https://www.youtube.com/embed/cQ5VjmwIR5A?si=zbOyZzSfsRHifwhX"
             title="Viet80s in a glance"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen

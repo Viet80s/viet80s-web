@@ -13,9 +13,9 @@ import { getCategoriesList } from "@/utils/getCategoriesList";
 const Index = () => {
   return (
     <>
-      <div className="bg-black">
+      <div className="bg-[url('/pictures/bg1.svg')] bg-center bg-cover">
         <NavBar />
-        <div className="text-primary">
+        <div className="text-xanh">
           <div className="flex flex-col justify-center items-center text-lg sm:text-2xl mt-7 mb-7">
             <h1>Welcome to Viet80s blog!</h1>
           </div>
@@ -65,7 +65,7 @@ const BlogContent = () => {
                     height={550}
                     alt={`post picture`}
                     priority={true}
-                    className="opacity-55 hover:opacity-80 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105 cursor-pointer"
+                    className="opacity-80 hover:opacity-100 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105 cursor-pointer"
                   />
                 </div>
               </div>

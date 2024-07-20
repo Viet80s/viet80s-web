@@ -59,7 +59,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     color: #F8C983;
-    font-size: 3em;
+    font-size: 2em;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     white-space: nowrap;
     text-align: center; /* Center align text */
@@ -75,7 +75,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     color: #F8C983;
-    font-size: 3em;
+    font-size: 1.8em;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     text-align: center;
 }
