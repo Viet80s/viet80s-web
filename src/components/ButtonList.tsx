@@ -27,12 +27,12 @@ const ButtonList = ({ location }: Props) => {
                 }}
               >
                 {" "}
-                Full Restaurant Menu{" "}
+                Restaurant Menu{" "}
               </Button>
             </div>
           </Link>
         )}
-        {location === "street-food" && (
+        {location === "coffee" && (
           <Link
             href="/docs/menugiaySF-pdf.pdf"
             target="_blank"
@@ -49,7 +49,7 @@ const ButtonList = ({ location }: Props) => {
                 }}
               >
                 {" "}
-                Full Street Food Menu{" "}
+                Street Food Menu{" "}
               </Button>
             </div>
           </Link>
@@ -71,7 +71,7 @@ const ButtonList = ({ location }: Props) => {
                 }}
               >
                 {" "}
-                Full Coffee Menu{" "}
+                Coffee Menu{" "}
               </Button>
             </div>
           </Link>

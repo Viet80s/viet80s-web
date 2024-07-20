@@ -89,10 +89,7 @@ const DetailsFooter = ({ location }: Props) => {
           {location === "restaurant" && (
             <>
               <li>
-                <Link href="/street-food">- Street Food</Link>
-              </li>
-              <li>
-                <Link href="/coffee">- Coffee</Link>
+                <Link href="/coffee-street-food">- Street Food</Link>
               </li>
             </>
           )}
@@ -102,14 +99,14 @@ const DetailsFooter = ({ location }: Props) => {
                 <Link href="/restaurant">- Restaurant</Link>
               </li>
               <li>
-                <Link href="/coffee">- Coffee</Link>
+                <Link href="/coffee-street-food">- Coffee</Link>
               </li>
             </>
           )}
           {location === "coffee" && (
             <>
               <li>
-                <Link href="/street-food">- Street Food</Link>
+                <Link href="/coffee-street-food">- Street Food</Link>
               </li>
               <li>
                 <Link href="/restaurant">- Restaurant</Link>
@@ -138,18 +135,9 @@ const DetailsFooter = ({ location }: Props) => {
             <p>11:30 AM - 10:30 PM</p>
           </>
         )}
-        {location === "street-food" && (
-          <>
-            <p style={{ textDecoration: "underline" }}>Street Food</p>
-            <p>Mondays - Fridays</p>
-            <p>8:30 AM - 6:00 PM</p>
-            <p>Saturdays - Sundays</p>
-            <p>9:00 AM - 6:00 PM</p>
-          </>
-        )}
         {location === "coffee" && (
           <>
-            <p style={{ textDecoration: "underline" }}>Coffee</p>
+            <p style={{ textDecoration: "underline" }}>Coffee - Street food</p>
             <p>Mondays - Fridays</p>
             <p>8:30 AM - 6:00 PM</p>
             <p>Saturdays - Sundays</p>

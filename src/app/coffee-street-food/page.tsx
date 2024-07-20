@@ -6,14 +6,15 @@ import AutoPlayLaptop from "@/components/AutoPlayLaptop";
 import Footer from "@/components/Footer";
 import DetailsFooter from "@/components/DetailsFooter";
 import NavBar from "@/components/NavBar";
-import FoodGalleryResto from "@/components/FoodGalleryResto";
 import ButtonList from "@/components/ButtonList";
 import Image from "next/image";
 import GalleryLaptop from "@/components/GalleryLaptop";
 import GalleryMobile from "@/components/GalleryMobile";
+import FoodGalleryCoffee from "@/components/FoodGalleryCoffee";
 
 export default function Home() {
   const isMobile = useMediaQuery({ maxWidth: 768 });
+
   return (
     <>
       <NavBar />
@@ -21,14 +22,14 @@ export default function Home() {
       <div className="bg-[url('/pictures/bg1.svg')] bg-center bg-cover">
         <div>
           {isMobile ? (
-            <AutoPlayMobile location="restaurant" />
+            <AutoPlayMobile location="coffee" />
           ) : (
-            <AutoPlayLaptop location="restaurant" />
+            <AutoPlayLaptop location="coffee" />
           )}
         </div>
 
         <div>
-          <ButtonList location="restaurant" />
+          <ButtonList location="coffee" />
         </div>
         <div className="rounded-lg border-solid border-xanh border-4 text-center justify-center font-bold p-[10px] mx-[10px] text-md my-[10px] sm:p-[20px] sm:mx-[200px] sm:text-xl sm:my-[20px]">
           <div className="sm:flex sm:flex-row sm:items-center sm:justify-center grid-cols-2 grid gap-4 sm:text-lg text-sm">
@@ -104,17 +105,17 @@ export default function Home() {
         </div>
         <div>
           {" "}
-          <FoodGalleryResto />
+          <FoodGalleryCoffee />
         </div>
         <div className="sm:mb-5">
-          <ButtonList location="restaurant" />
+          <ButtonList location="coffee" />
         </div>
         <div>
           {/* <GalleryLaptop /> */}
           <GalleryMobile />
         </div>
         <div>
-          <DetailsFooter location="restaurant" />
+          <DetailsFooter location="coffee" />
           <Footer />
         </div>
       </div>

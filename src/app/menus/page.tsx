@@ -20,7 +20,7 @@ export default function Home() {
     <>
       <NavBar />
 
-      <div className="bg-black">
+      <div className="bg-[url('/pictures/bg1.svg')] bg-center bg-cover">
         {/* <Link
           href="/docs/birthday.png"
           target="_blank"

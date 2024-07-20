@@ -1,15 +1,15 @@
 import type { Metadata } from "next";
-import { Baumans } from "next/font/google";
+import { EB_Garamond } from "next/font/google";
 import { Toaster } from "react-hot-toast";
 import { Analytics } from "@vercel/analytics/react";
 import Providers from "@/components/Providers";
 import localFont from "next/font/local";
 
-const baumans = Baumans({ subsets: ["latin"], weight: ["400"] });
+const garamond = EB_Garamond({ subsets: ["latin"], weight: ["400"] });
 
 export const metadata: Metadata = {
-  title: "Viet80s Coffee | Viet80s",
-  description: "Authentic Vietnamese Coffee",
+  title: "Viet80s Street Food | Viet80s",
+  description: "Authentic Vietnamese Street Food",
 };
 
 export default function RootLayout({
@@ -19,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <Providers>
-      <html lang="en" className={baumans.className}>
+      <html lang="en" className={garamond.className}>
         <body>
           {children}
           <Analytics />
