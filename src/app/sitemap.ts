@@ -17,13 +17,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     {
       url: 'https://viet80s.co.uk/restaurant',
       lastModified: new Date(),
-      changeFrequency: 'weekly',
+      changeFrequency: 'monthly',
       priority: 0.9,
     },
     {
         url: 'https://viet80s.co.uk/coffee-street-food',
         lastModified: new Date(),
-        changeFrequency: 'weekly',
+        changeFrequency: 'monthly',
         priority: 0.9,
       },
       {
@@ -35,13 +35,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       {
         url: 'https://viet80s.co.uk/contact',
         lastModified: new Date(),
-        changeFrequency: 'weekly',
+        changeFrequency: 'monthly',
         priority: 0.6,
       },
       {
         url: 'https://viet80s.co.uk/menus',
         lastModified: new Date(),
-        changeFrequency: 'weekly',
+        changeFrequency: 'monthly',
         priority: 0.9,
       },
   ]
