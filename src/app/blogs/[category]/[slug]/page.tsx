@@ -17,7 +17,7 @@ import {
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 
-// export const runtime = "edge";
+export const runtime = "edge";
 
 interface PostProps {
   params: {
