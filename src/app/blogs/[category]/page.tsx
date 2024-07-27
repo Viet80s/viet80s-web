@@ -68,7 +68,7 @@ const BlogContent = ({ category }: BlogContentProps) => {
     fetchPosts();
   }, [isMobile, category]);
 
-  const { categoriesTitle, categoriesDescription } = categoryData ?? {};
+  const { categoriesTitle } = categoryData ?? {};
 
   return (
     <>

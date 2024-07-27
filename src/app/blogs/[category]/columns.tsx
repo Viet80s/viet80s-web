@@ -25,14 +25,13 @@ export const columns: ColumnDef<Posts>[] = [
         _createdAt,
       } = row.original;
       const createDate = new Date(_createdAt);
-      console.log(postImage);
       return (
         <div className="sm:px-[120px] sm:flex sm:flex-row sm:gap-5 flex flex-col gap-2">
           {" "}
-          {/* <div>
+          <div>
             <div className="sm:w-[320px] w-full">
               <Link href={`/blogs/${categoriesTitle}/${slug?.current}`}>
-                {postImage.asset === null || postImage === null ? (
+                {postImage ? (
                   <Image
                     loader={({ width }) =>
                       urlFor(postImage)?.width(width)?.url() || ""
@@ -50,7 +49,7 @@ export const columns: ColumnDef<Posts>[] = [
                 )}
               </Link>
             </div>
-          </div> */}
+          </div>
           <div>
             {" "}
             <h1 className="sm:text-2xl text-lg">{title}</h1>
