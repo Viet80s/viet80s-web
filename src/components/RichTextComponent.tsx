@@ -23,10 +23,10 @@ export const RichTextComponent = {
   },
   block: {
     // Ex. 1: customizing common block types
-    h1: ({ children }: any) => <h1 className="text-5xl">{children}</h1>,
-    h2: ({ children }: any) => <h1 className="text-4xl">{children}</h1>,
-    h3: ({ children }: any) => <h1 className="text-3xl">{children}</h1>,
-    h4: ({ children }: any) => <h1 className="text-2xl">{children}</h1>,
+    h1: ({ children }: any) => <h1 className="text-5xl mt-2">{children}</h1>,
+    h2: ({ children }: any) => <h1 className="text-4xl mt-2">{children}</h1>,
+    h3: ({ children }: any) => <h1 className="text-3xl mt-2">{children}</h1>,
+    h4: ({ children }: any) => <h1 className="text-2xl mt-2">{children}</h1>,
     blockquote: ({ children }: any) => (
       <blockquote className="border-l-purple-500">{children}</blockquote>
     ),

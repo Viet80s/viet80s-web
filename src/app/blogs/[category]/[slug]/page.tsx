@@ -80,8 +80,7 @@ const Post = ({ params: { slug, category } }: PostProps) => {
         <div className="px-5 sm:text-lg text-md mb-5">
           <PortableText value={body} components={RichTextComponent} />
         </div>
-        <div className="flex items-center text-right gap-4 px-10">
-          Written By: {"  "}
+        <div className="flex items-center text-right gap-4 pl-5">
           {authorImage && (
             <div>
               <Image
