@@ -7,65 +7,84 @@ import { urlFor } from "@/client";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { PortableText } from "@portabletext/react";
+import { format } from "date-fns/format";
+import { Calendar } from "lucide-react";
 
 export const columns: ColumnDef<Posts>[] = [
-  {
-    accessorKey: "postImage",
-    header: "",
-    cell: ({ row }) => {
-      const { postImage, slug, isMobile, categoriesTitle } = row.original;
-      return (
-        <div className="flex justify-end">
-          {" "}
-          <Link href={`/blogs/${categoriesTitle}/${slug.current}`}>
-            <Image
-              loader={({ width }) => urlFor(postImage).width(width).url()}
-              src={urlFor(postImage).width(550).url()}
-              width={isMobile ? 800 : 400}
-              height={isMobile ? 800 : 400}
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-              alt={`post picture`}
-              priority={true}
-            />
-          </Link>
-        </div>
-      );
-    },
-  },
   {
     accessorKey: "details",
     header: "",
     cell: ({ row }) => {
-      const { title, body, slug, categoriesTitle } = row.original;
+      const {
+        title,
+        body,
+        slug,
+        categoriesTitle,
+        postImage,
+        isMobile,
+        _createdAt,
+      } = row.original;
+      const createDate = new Date(_createdAt);
+      console.log(postImage);
       return (
-        <div className="max-w-[600px]">
+        <div className="sm:px-[120px] sm:flex sm:flex-row sm:gap-5 flex flex-col gap-2">
           {" "}
-          {/* Limit the maximum width */}
-          <h1 className="sm:text-2xl text-lg">{title}</h1>
-          <div className="sm:text-lg text-md opacity-80 sm:my-5 my-1 overflow-hidden">
-            <div className="line-clamp-3">
-              {" "}
-              {/* Limit to 3 lines */}
-              <PortableText
-                value={body}
-                components={{
-                  types: {
-                    // Provide an empty component for "image" type blocks
-                    image: () => null,
-                  },
-                }}
-              />
+          {/* <div>
+            <div className="sm:w-[320px] w-full">
+              <Link href={`/blogs/${categoriesTitle}/${slug?.current}`}>
+                {postImage.asset === null || postImage === null ? (
+                  <Image
+                    loader={({ width }) =>
+                      urlFor(postImage)?.width(width)?.url() || ""
+                    }
+                    src={urlFor(postImage)?.width(550)?.url() || ""}
+                    width={isMobile ? 800 : 320}
+                    height={isMobile ? 800 : 320}
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    alt={`post picture`}
+                    priority={true}
+                    className="rounded-2xl"
+                  />
+                ) : (
+                  <div className="placeholder-image">Image not available</div>
+                )}
+              </Link>
             </div>
-          </div>
-          {/* <h3 className="sm:text-sm text-xs opacity-75">
-            Posted in: {categoriesTitle}
-          </h3> */}
+          </div> */}
           <div>
-            <Link href={`/blogs/${categoriesTitle}/${slug.current}`}>
-              <Button className="sm:text-lg text-sm sm:h-10 h-6 mt-2">
-                Read more
+            {" "}
+            <h1 className="sm:text-2xl text-lg">{title}</h1>
+            <div className="flex gap-3 items-center">
+              <h1 className="sm:text-xl text-md flex items-center">
+                <Calendar className="sm:mr-2 mr-1 size-4 sm:size-5 opacity-80" />
+                {format(createDate, "MMM dd, yyyy")}
+              </h1>
+              <Button
+                className="sm:text-lg text-sm h-5 sm:h-6"
+                variant={"secondary"}
+              >
+                {categoriesTitle}
               </Button>
-            </Link>
+            </div>
+            <div className="sm:text-lg text-md opacity-80 sm:my-2 my-1 overflow-hidden">
+              <div className="line-clamp-4">
+                <PortableText
+                  value={body}
+                  components={{
+                    types: {
+                      image: () => null,
+                    },
+                  }}
+                />
+              </div>
+            </div>
+            <div className="flex sm:justify-start justify-end">
+              <Link href={`/blogs/${categoriesTitle}/${slug.current}`}>
+                <Button className="sm:text-lg text-sm sm:h-10 h-6 mt-2">
+                  Read more
+                </Button>
+              </Link>
+            </div>
           </div>
         </div>
       );

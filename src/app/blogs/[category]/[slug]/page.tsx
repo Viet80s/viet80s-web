@@ -17,7 +17,7 @@ import {
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 
-export const runtime = "edge";
+// export const runtime = "edge";
 
 interface PostProps {
   params: {
@@ -68,7 +68,7 @@ const Post = ({ params: { slug, category } }: PostProps) => {
   return (
     <div className="bg-[url('/pictures/bg1.svg')] bg-center bg-cover">
       <NavBar />
-      <div className="mt-5 sm:my-4 sm:ml-[100px] ml-10">
+      <div className="mt-5 sm:my-4 sm:ml-[100px] ml-5">
         {" "}
         <Breadcrumb>
           <BreadcrumbList>
@@ -93,10 +93,10 @@ const Post = ({ params: { slug, category } }: PostProps) => {
         </Breadcrumb>
       </div>
       <div className="sm:px-[300px] px-0">
-        <div className="flex flex-col justify-center items-center text-2xl sm:text-4xl mt-3 mb-3">
+        <div className="flex flex-col justify-center items-center text-2xl sm:text-4xl mt-3 mb-3 px-5 font-semibold text-center">
           <h1>{title}</h1>
         </div>
-        <div className="px-10 sm:text-lg text-md mb-5">
+        <div className="px-5 sm:text-lg text-md mb-5">
           <PortableText value={body} components={ptComponents} />
         </div>
         <div className="flex items-center text-right gap-4 px-10">
