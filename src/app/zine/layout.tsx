@@ -7,8 +7,8 @@ import Providers from "@/components/Providers";
 const garamond = EB_Garamond({ subsets: ["latin"], weight: ["400"] });
 
 export const metadata: Metadata = {
-  title: "Viet80s Street Food and Coffee | Viet80s",
-  description: "Authentic Vietnamese Street Food and Coffee",
+  title: "Viet80s Zine | Viet80s",
+  description: "Zine about Vietnamese culture, food, and lifestyle.",
 };
 
 export default function RootLayout({

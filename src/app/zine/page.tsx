@@ -8,10 +8,19 @@ import Footer from "@/components/Footer";
 import Image from "next/image";
 import { useMediaQuery } from "react-responsive";
 import { getCategoriesList } from "@/utils/getCategoriesList";
+import Head from "next/head";
 
 const Index = () => {
   return (
     <>
+      <Head>
+        <title>Viet80s Zine | Viet80s</title>
+        <meta
+          name="Viet80s Zine"
+          content="Zine about Vietnamese culture, food, and lifestyle"
+        />
+        {/* Additional meta tags */}
+      </Head>
       <div className="bg-[url('/pictures/bg1.svg')] bg-center bg-cover">
         <NavBar />
         <div className="text-xanh">
