@@ -125,7 +125,7 @@ const Post = ({ params: { slug, category } }: PostProps) => {
         </div>
       </div>
 
-      <DetailsFooter location="street-food" />
+      <DetailsFooter location="restaurant" />
       <Footer />
     </div>
   );

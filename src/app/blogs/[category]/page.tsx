@@ -41,7 +41,7 @@ const Index = ({ params: { category } }: CategoryProps) => {
             <BlogContent category={category} />
           </Suspense>
         </div>
-        <DetailsFooter location="street-food" />
+        <DetailsFooter location="restaurant" />
         <Footer />
       </div>
     </>
