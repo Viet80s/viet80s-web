@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react"; // Ensure React is imported
 import { Posts } from "@/lib/types/posts";
 import { getPostContent } from "@/utils/getPostContent";
-import { PortableText } from "@portabletext/react";
+import { PortableText, PortableTextComponents } from "@portabletext/react";
 import Image from "next/image";
 import { urlFor } from "@/client";
 import NavBar from "@/components/NavBar";
@@ -16,6 +16,7 @@ import {
   BreadcrumbPage,
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
+import { RichTextComponent } from "@/components/RichTextComponent";
 
 export const runtime = "edge";
 
@@ -32,6 +33,7 @@ const Post = ({ params: { slug, category } }: PostProps) => {
   useEffect(() => {
     const fetchPosts = async () => {
       const content = await getPostContent(slug);
+      console.log(content);
       setPost(content);
     };
     fetchPosts();
@@ -43,27 +45,6 @@ const Post = ({ params: { slug, category } }: PostProps) => {
     authorImage,
     body = [],
   } = post ?? {}; // Destructure the post object
-  const ptComponents = {
-    types: {
-      image: ({ value }: { value: { asset: { _ref: string } } }) => {
-        if (!value?.asset?._ref) {
-          return null;
-        }
-        return (
-          <Image
-            loader={({ width }) => urlFor(value).width(width).url()}
-            src={urlFor(value).width(50).url()}
-            width="0"
-            height="0"
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-            style={{ width: "100%", height: "auto" }}
-            alt={`${authorName}'s picture`}
-            priority={true}
-          />
-        );
-      },
-    },
-  };
 
   return (
     <div className="bg-[url('/pictures/bg1.svg')] bg-center bg-cover">
@@ -97,17 +78,9 @@ const Post = ({ params: { slug, category } }: PostProps) => {
           <h1>{title}</h1>
         </div>
         <div className="px-5 sm:text-lg text-md mb-5">
-          <PortableText value={body} components={ptComponents} />
+          <PortableText value={body} components={RichTextComponent} />
         </div>
         <div className="flex items-center text-right gap-4 px-10">
-          {/* {categoriesTitle && (
-          <ul>
-            Posted in
-            {categoriesTitle.map((category) => (
-              <li key={category}>{category}</li>
-            ))}
-          </ul>
-        )} */}
           Written By: {"  "}
           {authorImage && (
             <div>
