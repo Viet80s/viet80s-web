@@ -32,8 +32,8 @@ export const routes = [
     // Icon: MdConnectWithoutContact,
   },
   {
-    title: "Join Us",
-    href: "/join-us",
+    title: "Blog",
+    href: "/blog",
     // Icon: MdConnectWithoutContact,
   },
 ];

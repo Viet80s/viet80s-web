@@ -21,6 +21,14 @@ export const RichTextComponent = {
       );
     },
   },
+  list: {
+    bullet: ({ children }: any) => (
+      <ul className="list-disc ml-5 space-y-5 py-3">{children}</ul>
+    ),
+    number: ({ children }: any) => (
+      <ol className="list-decimal ml-5 space-y-5 py-3">{children}</ol>
+    ),
+  },
   block: {
     // Ex. 1: customizing common block types
     h1: ({ children }: any) => <h1 className="text-5xl mt-2">{children}</h1>,
@@ -30,10 +38,31 @@ export const RichTextComponent = {
     blockquote: ({ children }: any) => (
       <blockquote className="border-l-purple-500">{children}</blockquote>
     ),
-
-    // Ex. 2: rendering custom styles
     customHeading: ({ children }: any) => (
-      <h2 className="text-lg text-primary">{children}</h2>
+      <h2 className="text-3xl mt-2">{children}</h2>
     ),
+  },
+  marks: {
+    strong: ({ children }: { children: any }) => (
+      <strong className="font-bold">{children}</strong>
+    ),
+    em: ({ children }: { children: any }) => (
+      <em className="italic">{children}</em>
+    ),
+    link: ({ value, children }: any) => {
+      const target = (value?.href || "").startsWith("http")
+        ? "_blank"
+        : undefined;
+      return (
+        <a
+          href={value?.href}
+          target={target}
+          rel={target === "_blank" ? "noopener noreferrer" : undefined}
+          className="text-blue-500 hover:underline"
+        >
+          {children}
+        </a>
+      );
+    },
   },
 };

@@ -1,7 +1,6 @@
 "use client";
 import React, { Suspense, useEffect, useState } from "react";
 import Link from "next/link";
-import { getPostList } from "@/utils/getPostList";
 import { Categories, Posts } from "@/lib/types/posts";
 import NavBar from "@/components/NavBar";
 import DetailsFooter from "@/components/DetailsFooter";
@@ -50,7 +49,7 @@ const BlogContent = () => {
           categories.map(({ categoriesDescription, categoriesTitle, _id }) => (
             <Link href={`/blogs/${categoriesTitle}`} key={_id}>
               <div className="flex justify-center items-center h-full">
-                <div className="relative flex justify-center items-center">
+                <div className="relative flex justify-center items-center group">
                   <div className="absolute z-10 w-full text-center flex-col p-2 text-lg sm:text-2xl text-primary">
                     <div className="sm:text-4xl text-2xl">
                       {categoriesTitle}
@@ -65,7 +64,7 @@ const BlogContent = () => {
                     height={550}
                     alt={`post picture`}
                     priority={true}
-                    className="opacity-80 hover:opacity-100 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105 cursor-pointer"
+                    className="opacity-80 group-hover:opacity-100 transition duration-500 ease-in-out transform group-hover:-translate-y-1 group-hover:scale-105 cursor-pointer"
                   />
                 </div>
               </div>

@@ -52,7 +52,9 @@ export const columns: ColumnDef<Posts>[] = [
           </div>
           <div>
             {" "}
-            <h1 className="sm:text-2xl text-lg">{title}</h1>
+            <Link href={`/blogs/${categoriesTitle}/${slug?.current}`}>
+              <h1 className="sm:text-2xl text-lg">{title}</h1>
+            </Link>
             <div className="flex gap-3 items-center">
               <h1 className="sm:text-xl text-md flex items-center">
                 <Calendar className="sm:mr-2 mr-1 size-4 sm:size-5 opacity-80" />
