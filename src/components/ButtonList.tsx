@@ -89,7 +89,7 @@ const ButtonList = ({ location }: Props) => {
                 }}
               >
                 {" "}
-                Book a table today{" "}
+                Book your table{" "}
               </Button>
             </div>
           </Link>

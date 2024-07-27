@@ -17,6 +17,11 @@ export const routes = [
     // Icon: MdConnectWithoutContact,
   },
   {
+    title: "Zine",
+    href: "/zine",
+    // Icon: MdConnectWithoutContact,
+  },
+  {
     title: "About Us",
     href: "/about-us",
     // Icon: MdConnectWithoutContact,
@@ -31,9 +36,5 @@ export const routes = [
     href: "/mobile-app",
     // Icon: MdConnectWithoutContact,
   },
-  {
-    title: "Blog",
-    href: "/blog",
-    // Icon: MdConnectWithoutContact,
-  },
+
 ];

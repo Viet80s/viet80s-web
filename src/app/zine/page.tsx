@@ -16,7 +16,7 @@ const Index = () => {
         <NavBar />
         <div className="text-xanh">
           <div className="flex flex-col justify-center items-center text-lg sm:text-2xl mt-7 mb-7">
-            <h1>Welcome to Viet80s blog!</h1>
+            <h1>Welcome to Viet80s zine!</h1>
           </div>
           <Suspense fallback={<div>Loading...</div>}>
             <BlogContent />
@@ -47,7 +47,7 @@ const BlogContent = () => {
       <div className="sm:grid sm:grid-cols-3 sm:gap-4 flex flex-col justify-center items-center px-10">
         {categories.length > 0 &&
           categories.map(({ categoriesDescription, categoriesTitle, _id }) => (
-            <Link href={`/blogs/${categoriesTitle}`} key={_id}>
+            <Link href={`/zine/${categoriesTitle}`} key={_id}>
               <div className="flex justify-center items-center h-full">
                 <div className="relative flex justify-center items-center group">
                   <div className="absolute z-10 w-full text-center flex-col p-2 text-lg sm:text-2xl text-primary">
@@ -64,7 +64,7 @@ const BlogContent = () => {
                     height={550}
                     alt={`post picture`}
                     priority={true}
-                    className="opacity-80 group-hover:opacity-100 transition duration-500 ease-in-out transform group-hover:-translate-y-1 group-hover:scale-105 cursor-pointer"
+                    className="transition duration-500 ease-in-out transform group-hover:-translate-y-1 group-hover:scale-105 cursor-pointer"
                   />
                 </div>
               </div>

@@ -58,11 +58,11 @@ const Post = ({ params: { slug, category } }: PostProps) => {
             </BreadcrumbItem>
             <BreadcrumbSeparator />
             <BreadcrumbItem>
-              <BreadcrumbLink href="/blogs">Blog</BreadcrumbLink>
+              <BreadcrumbLink href="/zine">Zine</BreadcrumbLink>
             </BreadcrumbItem>
             <BreadcrumbSeparator />
             <BreadcrumbItem>
-              <BreadcrumbLink href={`/blogs/${category}`}>
+              <BreadcrumbLink href={`/zine/${category}`}>
                 {category}
               </BreadcrumbLink>
             </BreadcrumbItem>

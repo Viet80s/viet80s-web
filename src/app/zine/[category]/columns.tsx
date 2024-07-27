@@ -30,7 +30,7 @@ export const columns: ColumnDef<Posts>[] = [
           {" "}
           <div>
             <div className="sm:w-[320px] w-full">
-              <Link href={`/blogs/${categoriesTitle}/${slug?.current}`}>
+              <Link href={`/zine/${categoriesTitle}/${slug?.current}`}>
                 {postImage ? (
                   <Image
                     loader={({ width }) =>
@@ -52,7 +52,7 @@ export const columns: ColumnDef<Posts>[] = [
           </div>
           <div>
             {" "}
-            <Link href={`/blogs/${categoriesTitle}/${slug?.current}`}>
+            <Link href={`/zine/${categoriesTitle}/${slug?.current}`}>
               <h1 className="sm:text-2xl text-lg">{title}</h1>
             </Link>
             <div className="flex gap-3 items-center">
@@ -80,7 +80,7 @@ export const columns: ColumnDef<Posts>[] = [
               </div>
             </div>
             <div className="flex sm:justify-start justify-end">
-              <Link href={`/blogs/${categoriesTitle}/${slug.current}`}>
+              <Link href={`/zine/${categoriesTitle}/${slug.current}`}>
                 <Button className="sm:text-lg text-sm sm:h-10 h-6 mt-2">
                   Read more
                 </Button>

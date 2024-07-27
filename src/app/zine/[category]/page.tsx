@@ -81,11 +81,11 @@ const BlogContent = ({ category }: BlogContentProps) => {
               </BreadcrumbItem>
               <BreadcrumbSeparator />
               <BreadcrumbItem>
-                <BreadcrumbLink href="/blogs">Blog</BreadcrumbLink>
+                <BreadcrumbLink href="/zine">Zine</BreadcrumbLink>
               </BreadcrumbItem>
               <BreadcrumbSeparator />
               <BreadcrumbItem>
-                <BreadcrumbLink href={`/blogs/${categoriesTitle}`}>
+                <BreadcrumbLink href={`/zine/${categoriesTitle}`}>
                   {categoriesTitle}
                 </BreadcrumbLink>
               </BreadcrumbItem>
