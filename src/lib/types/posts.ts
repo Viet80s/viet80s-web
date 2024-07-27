@@ -7,7 +7,7 @@ export interface Posts {
   categoriesDescription: string[];
   authorName: string;
   authorImage: {};
-  postImage: {};
+  postImage: {asset:{}};
   // Making the children array optional and allowing body to be an array of any objects
   body: [];
   isMobile: boolean;

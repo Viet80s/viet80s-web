@@ -23,7 +23,7 @@ const Index = () => {
             <BlogContent />
           </Suspense>
         </div>
-        <DetailsFooter location="street-food" />
+        <DetailsFooter location="restaurant" />
         <Footer />
       </div>
     </>

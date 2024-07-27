@@ -28,8 +28,8 @@ module.exports = {
           foreground: "#BA3026",
         },
         secondary: {
-          DEFAULT: "#BA3026",
-          foreground: "#F8C983",
+          DEFAULT: "#F8C983",
+          foreground: "#BA3026",
         },
         xanh:{
           DEFAULT: "#385930",

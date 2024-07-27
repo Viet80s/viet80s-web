@@ -7,6 +7,5 @@ export async function getCategory(category: string) {
 
   const params = { category };
   const content = await client.fetch(CONTENT_QUERY, params);
-  console.log(content)
   return content;
 }

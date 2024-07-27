@@ -19,7 +19,7 @@ import {
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 
-export const runtime = "edge";
+// export const runtime = "edge";
 
 interface CategoryProps {
   params: {
@@ -41,7 +41,7 @@ const Index = ({ params: { category } }: CategoryProps) => {
             <BlogContent category={category} />
           </Suspense>
         </div>
-        <DetailsFooter location="street-food" />
+        <DetailsFooter location="restaurant" />
         <Footer />
       </div>
     </>
@@ -68,13 +68,12 @@ const BlogContent = ({ category }: BlogContentProps) => {
     fetchPosts();
   }, [isMobile, category]);
 
-  const { categoriesTitle, categoriesDescription } = categoryData ?? {};
+  const { categoriesTitle } = categoryData ?? {};
 
   return (
     <>
-      <div className="justify-center items-center px-10 mt-5 w-full">
-        <div className="my-3 sm:my-4 sm:ml-[100px] ml-0 text-xanh">
-          {" "}
+      <div className="justify-center items-center mt-5 w-full my-3 sm:my-4 text-xanh px-2">
+        <div className="sm:pl-[130px] sm:mb-3 pl-2 mb-2">
           <Breadcrumb>
             <BreadcrumbList>
               <BreadcrumbItem>
@@ -93,32 +92,9 @@ const BlogContent = ({ category }: BlogContentProps) => {
             </BreadcrumbList>
           </Breadcrumb>
         </div>
-        <Link href={`/blogs/${categoriesTitle}/`}>
-          <div className="flex justify-center items-center h-full">
-            <div className="relative flex justify-center items-center">
-              <div className="absolute z-10 w-full text-center flex-col p-2 text-lg sm:text-2xl text-xanh">
-                <div className="sm:text-4xl text-2xl">{categoriesTitle}</div>
-                <div className="opacity-85 sm:text-lg text-md">
-                  {categoriesDescription}
-                </div>
-              </div>
-              {categoriesTitle && (
-                <Image
-                  src={`/pictures/categories/${categoriesTitle}.jpeg`}
-                  width={600}
-                  height={550}
-                  alt={`${categoriesTitle}'s picture`}
-                  priority={true}
-                  className="opacity-55 hover:opacity-80 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105 cursor-pointer"
-                />
-              )}
-            </div>
-          </div>
-        </Link>
-      </div>
-
-      <div className="container mx-auto">
-        <DataTable columns={columns} data={posts} />
+        <div>
+          <DataTable columns={columns} data={posts} />
+        </div>
       </div>
     </>
   );
