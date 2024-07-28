@@ -4,7 +4,7 @@ export async function getPostList(category: string ) {
   let CONTENT_QUERY;
   let params = {};
 
-    CONTENT_QUERY = `*[_type == "post" && $category in categories[]->title] {
+    CONTENT_QUERY = `*[_type == "post" && $category in categories[]->title] | order(_createdAt desc) {
       ...,
       author->,
       "categoriesTitle": categories[]->title,

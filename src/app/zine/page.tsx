@@ -59,11 +59,11 @@ const BlogContent = () => {
             <Link href={`/zine/${categoriesTitle}`} key={_id}>
               <div className="flex justify-center items-center h-full">
                 <div className="relative flex justify-center items-center group">
-                  <div className="absolute z-10 w-full text-center flex-col p-2 text-lg sm:text-2xl text-primary">
-                    <div className="sm:text-4xl text-2xl">
+                  <div className="absolute z-10 w-full text-center flex-col text-lg sm:text-2xl text-primary">
+                    <div className="sm:text-4xl text-2xl leading-none sm:leading-none">
                       {categoriesTitle}
                     </div>
-                    <div className="opacity-85 sm:text-lg text-md">
+                    <div className="opacity-85 sm:text-lg text-md leading-none sm:leading-none">
                       {categoriesDescription}
                     </div>
                   </div>
