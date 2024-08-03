@@ -37,7 +37,7 @@ export default function Home() {
               <div>
                 {" "}
                 <Image
-                  src="/pictures/homepage/sf1.png"
+                  src="/pictures/homepage/icon-05.webp"
                   width="300"
                   height="300"
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -54,7 +54,7 @@ export default function Home() {
               <div>
                 {" "}
                 <Image
-                  src="/pictures/homepage/sf2.png"
+                  src="/pictures/homepage/icon-06.webp"
                   width="300"
                   height="300"
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -70,7 +70,7 @@ export default function Home() {
               <div>
                 {" "}
                 <Image
-                  src="/pictures/homepage/sf3.png"
+                  src="/pictures/homepage/icon-07.webp"
                   width="300"
                   height="300"
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -87,7 +87,7 @@ export default function Home() {
               <div>
                 {" "}
                 <Image
-                  src="/pictures/homepage/sf4.png"
+                  src="/pictures/homepage/icon-08.webp"
                   width="300"
                   height="300"
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
