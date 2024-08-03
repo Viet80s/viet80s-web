@@ -18,14 +18,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <Providers>
-      <html lang="en" className={baumans.className}>
-        <body>
-          {children}
-          <Analytics />
-        </body>
-        <Toaster />
-      </html>
-    </Providers>
+    <html lang="en" className={baumans.className}>
+      <body>{children}</body>
+    </html>
   );
 }

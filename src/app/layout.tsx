@@ -3,7 +3,6 @@ import { EB_Garamond } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "react-hot-toast";
 import { Analytics } from "@vercel/analytics/react";
-import Providers from "@/components/Providers";
 
 const garamond = EB_Garamond({ subsets: ["latin"], weight: ["400"] });
 
@@ -19,14 +18,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <Providers>
-      <html lang="en" className={garamond.className}>
-        <body>
-          {children}
-          <Analytics />
-        </body>
-        <Toaster />
-      </html>
-    </Providers>
+    <html lang="en" className={garamond.className}>
+      <body>{children}</body>
+    </html>
   );
 }

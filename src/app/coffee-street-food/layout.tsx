@@ -17,14 +17,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <Providers>
-      <html lang="en" className={garamond.className}>
-        <body>
-          {children}
-          <Analytics />
-        </body>
-        <Toaster />
-      </html>
-    </Providers>
+    <html lang="en" className={garamond.className}>
+      <body>{children}</body>
+    </html>
   );
 }

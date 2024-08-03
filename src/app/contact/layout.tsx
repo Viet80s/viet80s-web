@@ -20,10 +20,7 @@ export default function RootLayout({
   return (
     <Providers>
       <html lang="en" className={baumans.className}>
-        <body>
-          {children}
-          <Analytics />
-        </body>
+        <body>{children}</body>
         <Toaster />
       </html>
     </Providers>
