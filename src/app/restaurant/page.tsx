@@ -11,6 +11,7 @@ import ButtonList from "@/components/ButtonList";
 import Image from "next/image";
 import GalleryLaptop from "@/components/GalleryLaptop";
 import GalleryMobile from "@/components/GalleryMobile";
+import { PopUp } from "@/components/PopUp";
 
 export default function Home() {
   const isMobile = useMediaQuery({ maxWidth: 768 });
@@ -19,6 +20,7 @@ export default function Home() {
       <NavBar />
 
       <div className="bg-[url('/pictures/bg2.svg')] bg-center bg-cover">
+        {/* <PopUp /> */}
         <div>
           {isMobile ? (
             <AutoPlayMobile location="restaurant" />
@@ -34,14 +36,15 @@ export default function Home() {
           <div className="sm:flex sm:flex-row sm:items-center sm:justify-center grid-cols-2 grid gap-4 sm:text-lg text-sm">
             <div className="flex flex-col items-center justify-center text-center text-xanh">
               <div>
-                {" "}
                 <Image
-                  src="/pictures/homepage/icon-01.svg"
-                  width="300"
-                  height="300"
+                  src="/pictures/homepage/icon-01.webp"
+                  width={300}
+                  height={300}
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   alt="USP 1"
-                  priority={true}
+                  priority
+                  placeholder="blur"
+                  blurDataURL="/pictures/homepage/icon-01-small.webp"
                 />
               </div>
               <div>
@@ -51,14 +54,15 @@ export default function Home() {
             </div>
             <div className="flex flex-col items-center justify-center text-center text-xanh">
               <div>
-                {" "}
                 <Image
-                  src="/pictures/homepage/icon-02.svg"
-                  width="300"
-                  height="300"
+                  src="/pictures/homepage/icon-02.webp"
+                  width={300}
+                  height={300}
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   alt="USP 2"
-                  priority={true}
+                  priority
+                  placeholder="blur"
+                  blurDataURL="/pictures/homepage/icon-02-small.webp"
                 />
               </div>
               <div>
@@ -68,14 +72,15 @@ export default function Home() {
             </div>
             <div className="flex flex-col items-center justify-center text-center text-xanh">
               <div>
-                {" "}
                 <Image
-                  src="/pictures/homepage/icon-03.svg"
-                  width="300"
-                  height="300"
+                  src="/pictures/homepage/icon-03.webp"
+                  width={300}
+                  height={300}
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   alt="USP 3"
-                  priority={true}
+                  priority
+                  placeholder="blur"
+                  blurDataURL="/pictures/homepage/icon-03-small.webp"
                 />
               </div>
               <div>
@@ -85,14 +90,15 @@ export default function Home() {
             </div>
             <div className="flex flex-col items-center justify-center text-center text-xanh">
               <div>
-                {" "}
                 <Image
-                  src="/pictures/homepage/icon-04.svg"
-                  width="300"
-                  height="300"
+                  src="/pictures/homepage/icon-04.webp"
+                  width={300}
+                  height={300}
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   alt="USP 4"
-                  priority={true}
+                  priority
+                  placeholder="blur"
+                  blurDataURL="/pictures/homepage/icon-04-small.webp"
                 />
               </div>
               <div>
@@ -117,7 +123,6 @@ export default function Home() {
           </div>
         </div>
         <div>
-          {" "}
           <FoodGalleryResto />
         </div>
         <div className="sm:mb-5">

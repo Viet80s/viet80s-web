@@ -16,7 +16,7 @@ export default function Home() {
           <Link href="/restaurant">
             <div className={styles.imageContainer}>
               <Image
-                src="/pictures/1.png"
+                src="/pictures/1.webp"
                 alt="Viet80s Restaurant"
                 fill
                 style={{ objectFit: "cover" }}
@@ -29,7 +29,7 @@ export default function Home() {
           <Link href="/coffee-street-food">
             <div className={styles.imageContainer1}>
               <Image
-                src="/pictures/2.png"
+                src="/pictures/2.webp"
                 alt="Viet80s Street Food"
                 fill
                 style={{ objectFit: "cover" }}

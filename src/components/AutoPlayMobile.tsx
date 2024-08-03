@@ -1,36 +1,50 @@
-import React, { Component } from "react";
+import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Link from "next/link";
 import Image from "next/image";
-import { FatherDay } from "./FatherDay";
 
 type Props = { location: string };
 
 const AutoPlayMobile = ({ location }: Props) => {
-  const images = [
+  const restaurantImages = [
     {
-      original: "/pictures/homepage/mo1.png",
-      thumbnail: "/pictures/gallery/1.png",
-      // description: "This is a description",
+      original: "/pictures/homepage/mo1.webp",
+      blurDataURL: "/pictures/homepage/mo1-small.webp",
     },
     {
-      original: "/pictures/homepage/mo2.png",
-      thumbnail: "/pictures/gallery/2.png",
-      // description: "This is a description",
+      original: "/pictures/homepage/mo2.webp",
+      blurDataURL: "/pictures/homepage/mo2-small.webp",
     },
     {
-      original: "/pictures/homepage/mo3.png",
-      thumbnail: "/pictures/gallery/3.png",
-      // description: "This is a description",
+      original: "/pictures/homepage/mo3.webp",
+      blurDataURL: "/pictures/homepage/mo3-small.webp",
     },
     {
-      original: "/pictures/homepage/mo4.png",
-      thumbnail: "/pictures/gallery/4.png",
-      // description: "This is a description",
+      original: "/pictures/homepage/mo4.webp",
+      blurDataURL: "/pictures/homepage/mo4-small.webp",
     },
   ];
+
+  const coffeeImages = [
+    {
+      original: "/pictures/homepage/mocf1.webp",
+      blurDataURL: "/pictures/homepage/mocf1-small.webp",
+    },
+    {
+      original: "/pictures/homepage/mocf2.webp",
+      blurDataURL: "/pictures/homepage/mocf2-small.webp",
+    },
+    {
+      original: "/pictures/homepage/mocf3.webp",
+      blurDataURL: "/pictures/homepage/mocf3-small.webp",
+    },
+    {
+      original: "/pictures/homepage/mocf4.webp",
+      blurDataURL: "/pictures/homepage/mocf4-small.webp",
+    },
+  ];
+
   const settings = {
     dots: false,
     infinite: true,
@@ -41,70 +55,30 @@ const AutoPlayMobile = ({ location }: Props) => {
     fade: true,
     pauseOnHover: false,
   };
+
+  const images = location === "restaurant" ? restaurantImages : coffeeImages;
+
   return (
     <div>
-      {location === "restaurant" && (
-        <>
-          <Slider {...settings}>
-            {images.map((image, index) => (
-              <div key={index}>
-                <Image
-                  src={image.original}
-                  alt="Viet80s Logo"
-                  width={1920}
-                  height={750}
-                />
-              </div>
-            ))}
-          </Slider>
-        </>
-      )}
-      {location === "coffee" && (
-        <>
-          <Slider {...settings}>
-            {/* <div>
-              <FatherDay />
-            </div> */}
-            <div>
-              <Image
-                src="/pictures/homepage/mocf1.png"
-                alt="Viet80s Logo"
-                width={1920}
-                height={500}
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-              />
-            </div>{" "}
-            <div>
-              <Image
-                src="/pictures/homepage/mocf2.png"
-                alt="Viet80s Logo"
-                width={1920}
-                height={500}
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-              />
-            </div>
-            <div>
-              <Image
-                src="/pictures/homepage/mocf3.png"
-                alt="Viet80s Logo"
-                width={1920}
-                height={500}
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-              />
-            </div>
-            <div>
-              <Image
-                src="/pictures/homepage/mocf4.png"
-                alt="Viet80s Logo"
-                width={1920}
-                height={500}
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-              />
-            </div>
-          </Slider>
-        </>
-      )}
+      <Slider {...settings}>
+        {images.map((image, index) => (
+          <div key={index}>
+            <Image
+              src={image.original}
+              alt={`Slide ${index + 1}`}
+              width={1920}
+              height={750}
+              placeholder="blur"
+              priority
+              fetchPriority="high"
+              blurDataURL={image.blurDataURL}
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            />
+          </div>
+        ))}
+      </Slider>
     </div>
   );
 };
+
 export default AutoPlayMobile;

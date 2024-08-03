@@ -31,8 +31,10 @@ const Index = () => {
             <BlogContent />
           </Suspense>
         </div>
-        <DetailsFooter location="restaurant" />
-        <Footer />
+        <div>
+          <DetailsFooter location="restaurant" />
+          <Footer />
+        </div>
       </div>
     </>
   );

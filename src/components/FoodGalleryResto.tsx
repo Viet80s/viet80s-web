@@ -33,7 +33,7 @@ const FoodGalleryResto = () => {
         <Slider {...settings}>
           <div>
             <Image
-              src="/pictures/food/1.png"
+              src="/pictures/food/1.webp"
               alt="food 1"
               width={imageSize}
               height={imageSize}
@@ -45,7 +45,7 @@ const FoodGalleryResto = () => {
           </div>
           <div>
             <Image
-              src="/pictures/food/2.png"
+              src="/pictures/food/2.webp"
               alt="food 1"
               width={imageSize}
               height={imageSize}
@@ -57,7 +57,7 @@ const FoodGalleryResto = () => {
           </div>
           <div>
             <Image
-              src="/pictures/food/3.png"
+              src="/pictures/food/3.webp"
               alt="food 1"
               width={imageSize}
               height={imageSize}
@@ -69,7 +69,7 @@ const FoodGalleryResto = () => {
           </div>
           <div>
             <Image
-              src="/pictures/food/4.png"
+              src="/pictures/food/4.webp"
               alt="food 1"
               width={imageSize}
               height={imageSize}
@@ -81,7 +81,7 @@ const FoodGalleryResto = () => {
           </div>
           <div>
             <Image
-              src="/pictures/food/5.png"
+              src="/pictures/food/5.webp"
               alt="food 1"
               width={imageSize}
               height={imageSize}
@@ -93,7 +93,7 @@ const FoodGalleryResto = () => {
           </div>
           <div>
             <Image
-              src="/pictures/food/6.png"
+              src="/pictures/food/6.webp"
               alt="food 1"
               width={imageSize}
               height={imageSize}
@@ -105,7 +105,7 @@ const FoodGalleryResto = () => {
           </div>
           <div>
             <Image
-              src="/pictures/food/7.png"
+              src="/pictures/food/7.webp"
               alt="food 1"
               width={imageSize}
               height={imageSize}
@@ -117,7 +117,7 @@ const FoodGalleryResto = () => {
           </div>
           <div>
             <Image
-              src="/pictures/food/8.png"
+              src="/pictures/food/8.webp"
               alt="food 1"
               width={imageSize}
               height={imageSize}
@@ -129,7 +129,7 @@ const FoodGalleryResto = () => {
           </div>
           <div>
             <Image
-              src="/pictures/food/9.png"
+              src="/pictures/food/9.webp"
               alt="food 1"
               width={imageSize}
               height={imageSize}

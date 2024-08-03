@@ -22,14 +22,14 @@ export function PopUp() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsOpen(true);
-    }, 1500);
+    }, 4000);
 
     return () => clearTimeout(timer);
   }, []);
   return (
     <Dialog open={isOpen} onOpenChange={setIsOpen}>
       <DialogContent
-        className="w-[350px] h-[350px] md:w-[500px] md:h-[500px]"
+        className="w-[300px] h-[300px] sm:w-[500px] sm:h-[500px]"
         style={{
           backgroundColor: "#F8C983",
           borderRadius: "10px",
