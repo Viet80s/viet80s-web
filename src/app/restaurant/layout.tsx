@@ -1,7 +1,4 @@
 import type { Metadata } from "next";
-import { Toaster } from "react-hot-toast";
-import { Analytics } from "@vercel/analytics/react";
-import Providers from "@/components/Providers";
 import { EB_Garamond } from "next/font/google";
 
 const garamond = EB_Garamond({ subsets: ["latin"], weight: ["400"] });

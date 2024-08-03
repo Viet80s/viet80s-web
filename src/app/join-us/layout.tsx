@@ -1,9 +1,5 @@
 import type { Metadata } from "next";
 import { Baumans, EB_Garamond } from "next/font/google";
-import { Toaster } from "react-hot-toast";
-import { Analytics } from "@vercel/analytics/react";
-import Providers from "@/components/Providers";
-import localFont from "next/font/local";
 
 const baumans = EB_Garamond({ subsets: ["latin"], weight: ["400"] });
 

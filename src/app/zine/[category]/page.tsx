@@ -1,12 +1,10 @@
 "use client";
 import React, { Suspense, useEffect, useState } from "react";
-import Link from "next/link";
 import { getPostList } from "@/utils/getPostList";
 import { Categories, Posts } from "@/lib/types/posts";
 import NavBar from "@/components/NavBar";
 import DetailsFooter from "@/components/DetailsFooter";
 import Footer from "@/components/Footer";
-import Image from "next/image";
 import { useMediaQuery } from "react-responsive";
 import { DataTable } from "./data-table";
 import { columns } from "./columns";

@@ -1,18 +1,12 @@
 "use client";
 
-import { useMediaQuery } from "react-responsive";
-import AutoPlayMobile from "@/components/AutoPlayMobile";
-import AutoPlayLaptop from "@/components/AutoPlayLaptop";
 import Footer from "@/components/Footer";
 import styles from "@/app/localHome.module.css";
 import DetailsFooter from "@/components/DetailsFooter";
 import NavBar from "@/components/NavBar";
-import FoodGalleryResto from "@/components/FoodGalleryResto";
 import Image from "next/image";
 
 export default function NotFound() {
-  const isMobile = useMediaQuery({ maxWidth: 768 });
-
   return (
     <>
       <div className="bg-black">

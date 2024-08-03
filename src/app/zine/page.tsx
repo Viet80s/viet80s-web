@@ -1,7 +1,7 @@
 "use client";
 import React, { Suspense, useEffect, useState } from "react";
 import Link from "next/link";
-import { Categories, Posts } from "@/lib/types/posts";
+import { Categories } from "@/lib/types/posts";
 import NavBar from "@/components/NavBar";
 import DetailsFooter from "@/components/DetailsFooter";
 import Footer from "@/components/Footer";
