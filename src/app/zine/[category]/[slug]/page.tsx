@@ -96,9 +96,10 @@ const Post = ({ params: { slug, category } }: PostProps) => {
           {authorName}
         </div>
       </div>
-
-      <DetailsFooter location="restaurant" />
-      <Footer />
+      <div>
+        <DetailsFooter location="restaurant" />
+        <Footer />
+      </div>
     </div>
   );
 };

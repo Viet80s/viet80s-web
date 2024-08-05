@@ -39,8 +39,6 @@ const Index = ({ params: { category } }: CategoryProps) => {
             <BlogContent category={category} />
           </Suspense>
         </div>
-        <DetailsFooter location="restaurant" />
-        <Footer />
       </div>
     </>
   );
@@ -92,6 +90,9 @@ const BlogContent = ({ category }: BlogContentProps) => {
         </div>
         <div>
           <DataTable columns={columns} data={posts} />
+        </div>
+        <div>
+          <Footer />
         </div>
       </div>
     </>

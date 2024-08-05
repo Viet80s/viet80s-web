@@ -11,6 +11,7 @@ import Image from "next/image";
 import GalleryLaptop from "@/components/GalleryLaptop";
 import GalleryMobile from "@/components/GalleryMobile";
 import FoodGalleryCoffee from "@/components/FoodGalleryCoffee";
+import { PopUp } from "@/components/PopUp";
 
 export default function Home() {
   const isMobile = useMediaQuery({ maxWidth: 768 });
@@ -18,7 +19,7 @@ export default function Home() {
   return (
     <>
       <NavBar />
-
+      <PopUp />
       <div className="bg-[url('/pictures/bg2.svg')] bg-center bg-cover">
         <div>
           {isMobile ? (

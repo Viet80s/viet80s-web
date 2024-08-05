@@ -9,45 +9,38 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import { CalendarCheck } from "lucide-react";
 import Link from "next/link";
-import { useMediaQuery } from "react-responsive";
+import Image from "next/image";
 
 export function PopUp() {
-  const isMobile = useMediaQuery({ maxWidth: 768 });
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsOpen(true);
-    }, 4000);
+    }, 2500);
 
     return () => clearTimeout(timer);
   }, []);
   return (
-    <Dialog open={isOpen} onOpenChange={setIsOpen}>
-      <DialogContent
-        className="w-[300px] h-[300px] sm:w-[500px] sm:h-[500px]"
-        style={{
-          backgroundColor: "#F8C983",
-          borderRadius: "10px",
-          color: "black",
-          backgroundImage: isMobile
-            ? "url('/pictures/pop-up-mobile.png')"
-            : "url('/pictures/pop-up-laptop.png')",
-        }}
-      >
-        <DialogFooter>
-          <Link href="https://book.squareup.com/appointments/exxl3axffjaiyu/location/L8SDJBMG1NZDQ/services/D4BVADM33TXM7SFXI2YKDQFZ">
-            {" "}
-            <Button style={{ backgroundColor: "#6B1A26", color: "#F8C982" }}>
-              Book a table today! <CalendarCheck className="ml-2" />
-            </Button>
+    <div>
+      <Dialog open={isOpen} onOpenChange={setIsOpen}>
+        <DialogContent className="bg-primary w-4/5 max-w-md flex sm:w-full sm:max-w-lg">
+          <Link
+            href={
+              "https://viet80s.co.uk/zine/People/viet80s-coffee-and-streetfood-temporary-closure"
+            }
+          >
+            <Image
+              src="/pictures/notice.jpeg"
+              alt="food 1"
+              width={500}
+              height={500}
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 70vw"
+            />
           </Link>
-        </DialogFooter>
-      </DialogContent>
-    </Dialog>
+        </DialogContent>
+      </Dialog>
+    </div>
   );
 }
