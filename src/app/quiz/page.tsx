@@ -252,10 +252,6 @@ export default function Page() {
   const startersCombo = filterCombo?.startersCombo;
   const mainCombo = filterCombo?.mainCombo;
   const drinkCombo = filterCombo?.drinkCombo;
-  console.log(filterCombo);
-  console.log(startersCombo);
-  console.log(mainCombo);
-  console.log(drinkCombo);
 
   return (
     <div>
