@@ -15,6 +15,9 @@ import { count } from "console";
 import NavBar from "@/components/NavBar";
 import DetailsFooter from "@/components/DetailsFooter";
 import Footer from "@/components/Footer";
+import { profiles, starters } from "./data";
+import { findProfileByCombination } from "./functions";
+import Image from "next/image";
 
 function LoadingPage() {
   return (
@@ -54,6 +57,7 @@ export default function Page() {
   const [selectedAnswerIndex, setSelectedAnswerIndex] = useState<number | null>(
     null
   );
+  const [selectedChoice, setSelectedChoice] = useState<number | null>(null);
   const [sumCat1, setSumCat1] = useState(0);
   const [sumCat2, setSumCat2] = useState(0);
   const [sumCat3, setSumCat3] = useState(0);
@@ -182,6 +186,7 @@ export default function Page() {
       }
       // Reset selected answer for the new question
       setSelectedAnswerIndex(null);
+      setSelectedChoice(null);
     } else {
       toast.error(
         "Please select an answer before moving to the next question."
@@ -190,7 +195,7 @@ export default function Page() {
   };
 
   const handleAnswerSelection = (index: number) => {
-    // Get the current question and its category
+    setSelectedChoice(index);
     setSelectedAnswerIndex(index);
   };
 
@@ -242,11 +247,17 @@ export default function Page() {
     }
   };
 
+  const combination = [exFactor, taFactor, moFactor, stFactor];
+  const filterCombo = findProfileByCombination(combination);
+  const startersCombo = filterCombo?.startersCombo;
+  const mainCombo = filterCombo?.mainCombo;
+  const drinkCombo = filterCombo?.drinkCombo;
+
   return (
     <div>
       <NavBar />
       <div className="w-screen min-h-screen bg-[url('/pictures/bg1.svg')] bg-center bg-cover px-5">
-        <div className="sm:absolute sm:top-1/2 sm:left-1/2 sm:-translate-x-1/2 sm:-translate-y-1/2 w-full pt-10">
+        <div className="w-full py-5">
           <div className="flex flex-col items-center text-center">
             {!showFinalPage ? (
               <>
@@ -260,21 +271,50 @@ export default function Page() {
                 <div className="text-2xl text-slate-950 gap-2 mb-5 ml-2">
                   <p>{currentQuestion.questions}</p>
                 </div>
-                <div className="text-xl text-slate-950 gap-2 mb-5 ml-2">
+                <div className="text-xl text-slate-950 gap-2 mb-5 ml-2 grid grid-cols-2">
                   {choices.length > 0 &&
                     currentChoices.map((choice, index) => (
-                      <div key={index} className="flex items-center mb-2">
-                        <input
-                          type="radio"
-                          id={`choice${index}`}
-                          name="choices"
-                          checked={selectedAnswerIndex === index}
-                          onChange={() => handleAnswerSelection(index)}
-                          style={{ transform: "scale(1.3)" }}
-                        />
-                        <label htmlFor={`choice${index}`} className="ml-2">
-                          {choice.choice} {choice.id}
-                        </label>
+                      <div key={index} className="flex items-center gap-2 mb-2">
+                        <div>
+                          <label
+                            htmlFor={`choice${index}`}
+                            className="cursor-pointer"
+                            onClick={() => handleAnswerSelection(index)}
+                          >
+                            {choice.id > 40 ? (
+                              <div className="flex items-center">
+                                <input
+                                  type="radio"
+                                  id={`choice${index}`}
+                                  name="choices"
+                                  checked={selectedChoice === index}
+                                  onChange={() => handleAnswerSelection(index)}
+                                  style={{ transform: "scale(1.3)" }}
+                                />
+                                <div className="ml-2">{choice.choice}</div>
+                              </div>
+                            ) : (
+                              <Image
+                                src={`/pictures/quiz/answers/${choice.id}.webp`}
+                                alt={`Slide ${index + 1}`}
+                                width={500}
+                                height={350}
+                                fetchPriority="high"
+                                priority
+                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                                className={
+                                  selectedChoice !== null &&
+                                  selectedChoice !== index
+                                    ? "opacity-50"
+                                    : ""
+                                }
+                              />
+                            )}
+                            {choice.id <= 40 && (
+                              <div className="ml-2">{choice.choice}</div>
+                            )}
+                          </label>
+                        </div>
                       </div>
                     ))}
                 </div>
@@ -316,13 +356,20 @@ export default function Page() {
               </>
             ) : (
               <div className="items-center text-xl gap-2 mb-5 ml-2">
-                <h1>Many thanks for answering my questionnaire</h1>
+                <h1>Many thanks for taking the quiz</h1>
+                <h2>Your result is as follows:</h2>
+                <h1>{filterCombo?.name}</h1>
+                <h3>{filterCombo?.description}</h3>
+                <h1>
+                  Starters:{" "}
+                  {startersCombo
+                    ?.map((starter) => starters[starter].name)
+                    .join(", ")}
+                </h1>
                 <h1>
                   Please click Submit button to send your answer. Otherwise, you
                   can re-do the questionnaire again
-                  <div className="flex flex-col">
-                    custom factors: {exFactor} {taFactor} {moFactor} {stFactor}
-                  </div>
+                  <div className="flex flex-col">custom factors:</div>
                 </h1>
                 <div className="flex mt-5 gap-5 justify-center">
                   {submitted ? (

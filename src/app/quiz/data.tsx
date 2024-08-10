@@ -1,9 +1,9 @@
-interface Item {
+export interface Item {
   id: number;
   name: string;
 }
 
-interface Profile {
+export interface Profile {
   id: number;
   combination: number[];
   name: string;
