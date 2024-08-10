@@ -115,7 +115,7 @@ export const profiles: Profile[] = [
     combination: [0, 0, 1, 0],
     name: "Thầy Giáo Làng (Village Teacher)",
     description:
-      "A cheerful mix of summer rolls and beef pho with refreshing coffee, reminiscent of simple school lunches.",
+      "The cheerful village teacher who always has a smile and a banh mi for lunch, spreading joy with every bite of his simple, nostalgic meals.",
     startersCombo: [7, 8, 9],
     mainCombo: [7, 8, 9],
     drinkCombo: [6, 4, 2],
@@ -125,7 +125,7 @@ export const profiles: Profile[] = [
     combination: [0, 0, 1, 1],
     name: "Phượt Thủ Xịn (Pro Backpacker)",
     description:
-      "A variety of chicken dishes with noodles and a fruity drink, perfect for refueling after a long journey.",
+      "The seasoned backpacker who’s been everywhere from Sapa to the Mekong, never afraid to try new dishes, but always comes back to a bowl of phở.",
     startersCombo: [10, 11, 12],
     mainCombo: [10, 11, 3],
     drinkCombo: [7, 8, 9],
@@ -135,7 +135,7 @@ export const profiles: Profile[] = [
     combination: [0, 1, 0, 0],
     name: "Nhà Thám Hiểm Cần Thơ (Cần Thơ Explorer)",
     description:
-      "An adventurous mix of chicken, seafood, and beef pho with a zesty citrus drink, exploring diverse flavors.",
+      "The explorer who’s always looking for the next big food trend in Vietnam, from street vendors to hidden countryside gems, enjoying the flavorful journey.",
     startersCombo: [13, 14, 30],
     mainCombo: [5, 12, 13],
     drinkCombo: [5, 9, 2],
@@ -145,7 +145,7 @@ export const profiles: Profile[] = [
     combination: [0, 1, 0, 1],
     name: "Đầu Bếp Đỉnh (Master Chef)",
     description:
-      "A sophisticated combo of beef and pork with grilled options and beer, pushing culinary boundaries.",
+      "The chef who’s always pushing the boundaries of Vietnamese cuisine, creating complex dishes that make even his grandma ask for the recipe.",
     startersCombo: [6, 12, 15],
     mainCombo: [12, 1, 14],
     drinkCombo: [6, 4, 2],
@@ -155,7 +155,7 @@ export const profiles: Profile[] = [
     combination: [0, 1, 1, 0],
     name: "Tín Đồ Ăn Vặt (Street Food Fanatic)",
     description:
-      "A street food lover's dream with various beef dishes, pho, and coffee, perfect for a food crawl.",
+      "The street food enthusiast who knows all the best spots for bánh tráng nướng and is always the first to suggest trying something new and tasty.",
     startersCombo: [16, 17, 18],
     mainCombo: [15, 8, 17],
     drinkCombo: [7, 8, 9],
@@ -165,7 +165,7 @@ export const profiles: Profile[] = [
     combination: [0, 1, 1, 1],
     name: "Blogger Ẩm Thực (Food Blogger)",
     description:
-      "A refined selection of spicy chicken, beef, and salmon dishes with wine, ideal for a drool-worthy post.",
+      "The food blogger with a refined palate, always in search of the most joyful and flavorful experiences, making followers drool over every post.",
     startersCombo: [17, 19, 20],
     mainCombo: [18, 19, 20],
     drinkCombo: [9, 10, 8],
@@ -175,7 +175,7 @@ export const profiles: Profile[] = [
     combination: [1, 0, 0, 0],
     name: "Nhà Sư Thanh Tịnh (Zen Monk)",
     description:
-      "A balanced mix of tofu and seafood with pho and beer, offering both simplicity and flavor.",
+      "The peaceful monk who sticks to simple, calming vegetarian meals, but is open to exploring a new tea flavor during his morning meditation.",
     startersCombo: [21, 2, 8],
     mainCombo: [13, 3, 1],
     drinkCombo: [9, 10, 8],
@@ -185,7 +185,7 @@ export const profiles: Profile[] = [
     combination: [1, 0, 0, 1],
     name: "Chủ Quán Trà Chanh (Lemon Tea Shop Owner)",
     description:
-      "A creative duo of pork and chicken with duck and an avocado drink, perfect for a trendy tea shop menu.",
+      "The young entrepreneur who’s always coming up with new twists on traditional drinks, keeping things simple but with a surprising kick.",
     startersCombo: [3, 4, 15],
     mainCombo: [16, 15, 21],
     drinkCombo: [11, 12, 2],
@@ -195,7 +195,7 @@ export const profiles: Profile[] = [
     combination: [1, 0, 1, 0],
     name: "Nghệ Sĩ Hài (Comedian)",
     description:
-      "A lively platter of various chicken dishes with specialty noodles and coffee, bringing joy to every bite.",
+      "The comedian who brings joy and laughter to every meal, preferring simple, feel-good foods that match his lively personality.",
     startersCombo: [3, 9, 13],
     mainCombo: [22, 4, 9],
     drinkCombo: [3, 9, 4],
@@ -205,7 +205,7 @@ export const profiles: Profile[] = [
     combination: [1, 0, 1, 1],
     name: "Nhà Khoa Học Điên (Mad Scientist)",
     description:
-      "An experimental combination of exotic meats with salmon and fruity drinks, a true culinary adventure.",
+      "The 'mad scientist' of the kitchen, always experimenting with weird food combos that somehow work, leaving friends wondering, 'How did you come up with that?'",
     startersCombo: [22, 19, 23],
     mainCombo: [18, 1, 23],
     drinkCombo: [8, 9, 1],
@@ -215,7 +215,7 @@ export const profiles: Profile[] = [
     combination: [1, 1, 0, 0],
     name: "Chị Chủ Vườn (Garden Enthusiast)",
     description:
-      "Fresh seafood dishes with prawn rice and coconut coffee, inspired by homegrown ingredients.",
+      "The garden-loving sister who whips up fresh, calming meals straight from her backyard, always in harmony with nature and flavor.",
     startersCombo: [24, 25, 11],
     mainCombo: [5, 12, 13],
     drinkCombo: [4, 7, 13],
@@ -225,7 +225,7 @@ export const profiles: Profile[] = [
     combination: [1, 1, 0, 1],
     name: "Ông Trùm Cafe (Coffee Connoisseur)",
     description:
-      "A harmonious blend of vegetables and beef with salmon, paired with berry-infused drinks for complex flavors.",
+      "The coffee shop owner who knows everything about the art of brewing, appreciating the complex layers of flavor in both his drinks and his life.",
     startersCombo: [26, 6, 15],
     mainCombo: [18, 5, 17],
     drinkCombo: [8, 9, 1],
@@ -235,7 +235,7 @@ export const profiles: Profile[] = [
     combination: [1, 1, 1, 0],
     name: "Cậu Ấm Sài Gòn (Saigon Socialite)",
     description:
-      "A trendy medley of chicken and seafood with pho and citrus drinks, perfect for the high-end foodie.",
+      "The trendy Saigon socialite who enjoys the finer things in life, from high-end dining to the latest food trends, living each day with flavor and flair.",
     startersCombo: [19, 27, 28],
     mainCombo: [18, 3, 23],
     drinkCombo: [2, 9, 8],
@@ -245,7 +245,7 @@ export const profiles: Profile[] = [
     combination: [1, 1, 1, 1],
     name: "Nhạc Sĩ Phố Cổ (Old Quarter Musician)",
     description:
-      "An eclectic mix of seafood and meat with beer, blending traditional and modern flavors like a well-composed song.",
+      "The iconic musician from Hanoi’s Old Quarter who mixes traditional sounds with modern beats, just like he loves blending complex, joyful flavors in his meals.",
     startersCombo: [20, 28, 29],
     mainCombo: [18, 24, 15],
     drinkCombo: [5, 8, 9],
