@@ -362,24 +362,30 @@ export default function Page() {
               <div className="items-center text-xl gap-2 mb-5 ml-2">
                 <h1>Many thanks for taking the quiz</h1>
                 <h2>Your result is as follows:</h2>
-                <h1 className="text-md font-bold">
-                  You are: {filterCombo?.name}
-                </h1>
-                <h3>Description: {filterCombo?.description}</h3>
-                <h1 className="text-md">
-                  - Recommended Starters:{" "}
-                  {startersCombo
-                    ?.map((starter) => starters[starter].name)
-                    .join(", ")}
-                </h1>
-                <h1 className="text-md">
-                  - Recommended Main Courses:{" "}
-                  {mainCombo?.map((main) => mainCourses[main].name).join(", ")}
-                </h1>
-                <h1 className="text-md">
-                  - Recommended Drinks:{" "}
-                  {drinkCombo?.map((drink) => drinks[drink].name).join(", ")}
-                </h1>
+                {filterCombo ? (
+                  <>
+                    <h1 className="text-md">
+                      - Recommended Starters:{" "}
+                      {startersCombo
+                        ?.map((starter) => starters[starter]?.name)
+                        .join(", ")}
+                    </h1>
+                    <h1 className="text-md">
+                      - Recommended Main Courses:{" "}
+                      {mainCombo
+                        ?.map((main) => mainCourses[main]?.name)
+                        .join(", ")}
+                    </h1>
+                    <h1 className="text-md">
+                      - Recommended Drinks:{" "}
+                      {drinkCombo
+                        ?.map((drink) => drinks[drink]?.name)
+                        .join(", ")}
+                    </h1>
+                  </>
+                ) : (
+                  <p>No profile found for the combination.</p>
+                )}
                 <div className="flex mt-5 gap-5 justify-center">
                   {submitted ? (
                     // Render the "Home" button after submission
