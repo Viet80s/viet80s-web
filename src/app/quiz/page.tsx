@@ -360,6 +360,12 @@ export default function Page() {
                 <h2>Your result is as follows:</h2>
                 {filterCombo ? (
                   <>
+                    <h1 className="text-lg font-bold">
+                      - Your nickname: {filterCombo?.name}
+                    </h1>
+                    <h1 className="text-md font-serif">
+                      Description: {filterCombo?.description}
+                    </h1>
                     <h1 className="text-md">
                       - Recommended Starters:{" "}
                       {startersCombo
