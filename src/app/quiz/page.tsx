@@ -11,10 +11,15 @@ import {
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import toast from "react-hot-toast";
+import { count } from "console";
+import NavBar from "@/components/NavBar";
+import DetailsFooter from "@/components/DetailsFooter";
+import Footer from "@/components/Footer";
 
 function LoadingPage() {
   return (
     <div>
+      <NavBar />
       <div className="w-screen min-h-screen bg-[url('/pictures/bg1.svg')] bg-center bg-cover">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
           <div className="flex flex-col items-center text-center">
@@ -34,6 +39,7 @@ export default function Page() {
     question_id: number;
     choice: string;
     score: number;
+    id: number;
   }
   interface Question {
     id: number;
@@ -51,17 +57,25 @@ export default function Page() {
   const [sumCat1, setSumCat1] = useState(0);
   const [sumCat2, setSumCat2] = useState(0);
   const [sumCat3, setSumCat3] = useState(0);
+  const [sumCat4, setSumCat4] = useState(0);
   const [countCat1, setCountCat1] = useState(0);
   const [countCat2, setCountCat2] = useState(0);
+  const [countCat4, setCountCat4] = useState(0);
   const [countCat3, setCountCat3] = useState(0);
   const [avgCat1, setAvgCat1] = useState(0);
   const [avgCat2, setAvgCat2] = useState(0);
+  const [avgCat4, setAvgCat4] = useState(0);
   const [avgCat3, setAvgCat3] = useState(0);
   const [answeredScore, setSelectedAnswerScore] = useState(0);
 
   const [showFinalPage, setShowFinalPage] = useState(false);
   const [insertData, setInsertData] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+
+  const [exFactor, setExFactor] = useState(0);
+  const [taFactor, setTaFactor] = useState(0);
+  const [moFactor, setMoFactor] = useState(0);
+  const [stFactor, setStFactor] = useState(0);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -92,6 +106,19 @@ export default function Page() {
       setAvgCat1(sumCat1 / countCat1 || 0);
       setAvgCat2(sumCat2 / countCat2 || 0);
       setAvgCat3(sumCat3 / countCat3 || 0);
+      setAvgCat4(sumCat4 / countCat4 || 0);
+      if (avgCat1 >= 2) {
+        setExFactor(1);
+      }
+      if (avgCat2 >= 2) {
+        setTaFactor(1);
+      }
+      if (avgCat3 >= 2) {
+        setMoFactor(1);
+      }
+      if (avgCat4 >= 2) {
+        setStFactor(1);
+      }
     }
   }, [
     activeQuestion,
@@ -103,6 +130,12 @@ export default function Page() {
     sumCat3,
     countCat3,
     showFinalPage,
+    sumCat4,
+    countCat4,
+    avgCat1,
+    avgCat2,
+    avgCat3,
+    avgCat4,
   ]);
 
   if (loading) {
@@ -134,6 +167,10 @@ export default function Page() {
         setSumCat3((prevSum) => Number(prevSum) + Number(selectedChoice.score));
         setSelectedAnswerScore((prevScore) => selectedChoice.score);
         setCountCat3((prevCount) => Number(prevCount) + 1);
+      } else if (currentCategory === 4) {
+        setSumCat4((prevSum) => Number(prevSum) + Number(selectedChoice.score));
+        setSelectedAnswerScore((prevScore) => selectedChoice.score);
+        setCountCat4((prevCount) => Number(prevCount) + 1);
       }
       // Update state to move to the next question
       if (activeQuestion !== questions.length - 1) {
@@ -172,12 +209,14 @@ export default function Page() {
       } else if (currentCategory === 3) {
         setSumCat3((prevSum) => Number(prevSum) - Number(answeredScore));
         setCountCat3((prevCount) => Number(prevCount) - 1);
+      } else if (currentCategory === 4) {
+        setSumCat4((prevSum) => Number(prevSum) - Number(answeredScore));
+        setCountCat4((prevCount) => Number(prevCount) - 1);
       }
     } else {
       toast.error("Cannot go back further. This is the first question.");
     }
   };
-
   const insertDataToDatabase = async () => {
     try {
       const response = await fetch("/api/insertData", {
@@ -186,9 +225,10 @@ export default function Page() {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          avgCat1: avgCat1,
-          avgCat2: avgCat2,
-          avgCat3: avgCat3,
+          exFactor,
+          taFactor,
+          moFactor,
+          stFactor,
         }),
       });
 
@@ -204,13 +244,14 @@ export default function Page() {
 
   return (
     <div>
-      <div className="w-screen min-h-screen bg-[url('/pictures/bg1.svg')] bg-center bg-cover">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+      <NavBar />
+      <div className="w-screen min-h-screen bg-[url('/pictures/bg1.svg')] bg-center bg-cover px-5">
+        <div className="sm:absolute sm:top-1/2 sm:left-1/2 sm:-translate-x-1/2 sm:-translate-y-1/2 w-full pt-10">
           <div className="flex flex-col items-center text-center">
             {!showFinalPage ? (
               <>
                 <div className="items-center text-xl gap-2 mb-5 ml-2">
-                  <h1 className="underline text-2xl">Research Questionnaire</h1>
+                  <h1 className="underline text-2xl">Viet80s Fun Quiz</h1>
                   <h2>
                     Question: {activeQuestion + 1}
                     <span>/{questions.length}</span>
@@ -232,35 +273,44 @@ export default function Page() {
                           style={{ transform: "scale(1.3)" }}
                         />
                         <label htmlFor={`choice${index}`} className="ml-2">
-                          {choice.choice}
+                          {choice.choice} {choice.id}
                         </label>
                       </div>
                     ))}
                 </div>
                 <div>
-                  <div className="flex ml-5 gap-1 mb-3">
-                    <Button onClick={handlePreviousQuestion}>
+                  <div className="flex gap-1 mb-3 items-center">
+                    <Button
+                      onClick={handlePreviousQuestion}
+                      className="flex items-center"
+                    >
                       {" "}
-                      <ArrowBigLeftDash className="mr-2" /> Previous{" "}
+                      <ArrowBigLeftDash
+                        className="mr-2"
+                        size={20}
+                      /> Previous{" "}
                     </Button>
                     <Button
                       onClick={() => handleNextQuestion(selectedAnswerIndex)}
+                      className="flex items-center"
                     >
-                      Next <ArrowBigRightDash className="ml-2" />
+                      Next <ArrowBigRightDash size={20} className="ml-2" />
                     </Button>
                   </div>
-                  <div>
+                  <div className="items-center">
                     <Link href="/">
-                      <Button className="mr-1">
-                        Home <Home className="ml-2" />
+                      <Button className="mr-1" size={"sm"}>
+                        Home <Home className="ml-2" size={15} />
                       </Button>
                     </Link>
-                    <Link href="questionaire">
-                      <Button>
-                        {" "}
-                        Restart <RotateCcw className="ml-2" />
-                      </Button>
-                    </Link>
+
+                    <Button
+                      onClick={() => (window.location.href = "/quiz")}
+                      size={"sm"}
+                    >
+                      {" "}
+                      Restart <RotateCcw className="ml-2" size={15} />
+                    </Button>
                   </div>
                 </div>
               </>
@@ -270,6 +320,9 @@ export default function Page() {
                 <h1>
                   Please click Submit button to send your answer. Otherwise, you
                   can re-do the questionnaire again
+                  <div className="flex flex-col">
+                    custom factors: {exFactor} {taFactor} {moFactor} {stFactor}
+                  </div>
                 </h1>
                 <div className="flex mt-5 gap-5 justify-center">
                   {submitted ? (
@@ -281,12 +334,11 @@ export default function Page() {
                     </Link>
                   ) : (
                     <>
-                      <Link href="questionaire">
-                        <Button>
-                          {" "}
-                          Restart <RotateCcw className="ml-2" />
-                        </Button>
-                      </Link>
+                      <Button onClick={() => (window.location.href = "/quiz")}>
+                        {" "}
+                        Restart <RotateCcw className="ml-2" />
+                      </Button>
+
                       <Button onClick={insertDataToDatabase}>
                         Submit <Send className="ml-2" />
                       </Button>
@@ -297,6 +349,9 @@ export default function Page() {
             )}
           </div>
         </div>
+      </div>
+      <div>
+        <Footer />
       </div>
     </div>
   );

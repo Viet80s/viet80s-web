@@ -4,7 +4,6 @@ import {integer, pgTable, serial, text, timestamp, varchar, decimal } from "driz
 export const users = pgTable("users", {
   id: serial("id").primaryKey(),
   created_at: timestamp("created_at").notNull().defaultNow(),
-  user_id: varchar("user_id", {length:256}),
   explorative: decimal("1-explorative", {precision: 3, scale: 2}).notNull(),
   taste: decimal("2-taste", {precision: 3, scale: 2}).notNull(),
   mood: decimal("3-mood", {precision: 3, scale: 2}).notNull(),
