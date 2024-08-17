@@ -7,6 +7,7 @@ export async function getPostContent(slug: string) {
   "categoriesTitle": categories[]->title,
   "categoriesDescription": categories[]->description,
   "authorImage": author->image,
+  "postImage": mainImage,
   body
 }`;
   const params = { slug };
