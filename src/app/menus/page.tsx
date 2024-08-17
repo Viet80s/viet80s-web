@@ -133,8 +133,10 @@ export default function Home() {
             </a>
           </p>
         </div>
-        <DetailsFooter location="restaurant" />
-        <Footer />
+        <div>
+          <DetailsFooter location="restaurant" />
+          <Footer />
+        </div>
       </div>
     </>
   );
