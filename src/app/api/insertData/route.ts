@@ -8,10 +8,7 @@ export const runtime = 'edge';
 export const POST = async (req: Request) => {
   try {
     const body = await req.json();
-    // const { userId }: { userId: any } = await auth();
-
     const {exFactor, taFactor, moFactor, stFactor}: { exFactor: any, taFactor: any, moFactor: any, stFactor: any  } = body;
-    console.log(body)
     // Insert the values into the "users" table
     const exFactorsubmit = exFactor !== null ? exFactor : 0;  
     const taFactorsubmit = taFactor !== null ? taFactor : 0;  
