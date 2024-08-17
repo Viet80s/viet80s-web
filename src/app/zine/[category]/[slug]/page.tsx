@@ -17,6 +17,7 @@ import {
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 import { RichTextComponent } from "@/components/RichTextComponent";
+import type { Metadata, ResolvingMetadata } from "next";
 
 export const runtime = "edge";
 
@@ -27,13 +28,48 @@ interface PostProps {
   };
 }
 
+export async function generateMetadata(
+  { params }: PostProps,
+  parent: ResolvingMetadata
+): Promise<Metadata> {
+  // read route params
+  const slug = params.slug;
+  const content = await getPostContent(slug);
+
+  return {
+    title: content.title,
+    // description: 'The React Framework for the Web',
+    openGraph: {
+      images: [
+        {
+          url: urlFor(content.postImage)?.width(800)?.url(), // Must be an absolute URL
+          width: 800,
+          height: 600,
+        },
+      ],
+    },
+    robots: {
+      index: false,
+      follow: true,
+      nocache: true,
+      googleBot: {
+        index: true,
+        follow: false,
+        noimageindex: true,
+        "max-video-preview": -1,
+        "max-image-preview": "large",
+        "max-snippet": -1,
+      },
+    },
+  };
+}
+
 const Post = ({ params: { slug, category } }: PostProps) => {
   const [post, setPost] = useState<Posts>();
 
   useEffect(() => {
     const fetchPosts = async () => {
       const content = await getPostContent(slug);
-      console.log(content);
       setPost(content);
     };
     fetchPosts();
