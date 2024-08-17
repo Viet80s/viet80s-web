@@ -4,20 +4,19 @@ import {
   Home,
   RotateCcw,
   Loader2,
-  Send,
   ArrowBigLeftDash,
   ArrowBigRightDash,
+  BookOpenText,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import toast from "react-hot-toast";
-import { count } from "console";
 import NavBar from "@/components/NavBar";
-import DetailsFooter from "@/components/DetailsFooter";
 import Footer from "@/components/Footer";
 import { drinks, mainCourses, profiles, starters } from "./data";
 import { findProfileByCombination } from "./functions";
 import Image from "next/image";
+import { handleEffect2 } from "./effect-2";
 
 function LoadingPage() {
   return (
@@ -27,7 +26,7 @@ function LoadingPage() {
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
           <div className="flex flex-col items-center text-center">
             <div className="flex items-center text-2xl">
-              <h1>Questions are loading ...</h1>
+              <h1>Loading questions...</h1>
               <Loader2 className="h-10 w-10 animate-spin ml-2" />
             </div>
           </div>
@@ -183,6 +182,7 @@ export default function Page() {
 
       if (activeQuestion === questions.length - 1) {
         setShowFinalPage(true);
+        handleEffect2();
       }
       // Reset selected answer for the new question
       setSelectedAnswerIndex(null);
@@ -355,59 +355,117 @@ export default function Page() {
                 </div>
               </>
             ) : (
-              <div className="items-center text-xl gap-2 mb-5 ml-2">
-                <h1>Many thanks for taking the quiz</h1>
-                <h2>Your result is as follows:</h2>
+              <div className="gap-2 mb-5">
+                <div className="items-center lg:text-2xl text-xl">
+                  <h1>Many thanks for taking the quiz!</h1>
+                  <h2>Your result is as follows:</h2>
+                </div>
+
                 {filterCombo ? (
                   <>
-                    <h1 className="text-lg font-bold">
-                      - Your nickname: {filterCombo?.name}
+                    <h1 className="text-xanh text-xl lg:text-3xl font-bold text-pretty mt-2">
+                      Your nickname: {filterCombo?.name}
                     </h1>
-                    <h1 className="text-md font-serif">
-                      Description: {filterCombo?.description}
+                    <h1 className=" text-primary-foreground text-md lg:text-2xl lg:px-44 lg:text-center text-pretty mb-2">
+                      What does it mean? {filterCombo?.description}
                     </h1>
-                    <h1 className="text-md">
-                      - Recommended Starters:{" "}
-                      {startersCombo
-                        ?.map((starter) => starters[starter]?.name)
-                        .join(", ")}
+                    {/* Starters */}
+                    <h1 className="text-2xl lg:text-4xl underline underline-offset-2 mb-2">
+                      Recommended Starters:
                     </h1>
-                    <h1 className="text-md">
-                      - Recommended Main Courses:{" "}
-                      {mainCombo
-                        ?.map((main) => mainCourses[main]?.name)
-                        .join(", ")}
+                    <div className="flex justify-center gap-2 mb-2">
+                      {startersCombo?.map((starter) => (
+                        <div
+                          key={starter}
+                          className="flex flex-col items-center sm:w-1/3"
+                        >
+                          <Image
+                            src={`/pictures/quiz/result/${starter}.webp`}
+                            alt={`Slide ${starter}`}
+                            width={250}
+                            height={250}
+                            fetchPriority="high"
+                            priority
+                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                            className=""
+                          />
+                          <p className="text-center text-sm lg:text-lg">
+                            {starters[starter - 1]?.name}
+                          </p>
+                        </div>
+                      ))}
+                    </div>
+                    {/* Mains */}
+                    <h1 className="text-2xl lg:text-4xl underline underline-offset-2 mb-2">
+                      Recommended Main Courses:
                     </h1>
-                    <h1 className="text-md">
-                      - Recommended Drinks:{" "}
-                      {drinkCombo
-                        ?.map((drink) => drinks[drink]?.name)
-                        .join(", ")}
+                    <div className="flex justify-center gap-2 mb-2">
+                      {mainCombo?.map((main) => (
+                        <div
+                          key={main}
+                          className="flex flex-col items-center sm:w-1/3"
+                        >
+                          <Image
+                            src={`/pictures/quiz/result/m${main}.webp`}
+                            alt={`Slide ${main}`}
+                            width={250}
+                            height={250}
+                            fetchPriority="high"
+                            priority
+                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                            className=""
+                          />
+                          <p className="text-center text-sm lg:text-lg">
+                            {mainCourses[main - 1]?.name}
+                          </p>
+                        </div>
+                      ))}
+                    </div>
+                    {/* Drinks */}
+                    <h1 className="text-2xl lg:text-4xl underline underline-offset-2 mb-2">
+                      Recommended Drinks:
                     </h1>
+                    <div className="flex justify-center gap-2 mb-2">
+                      {drinkCombo?.map((drink) => (
+                        <div
+                          key={drink}
+                          className="flex flex-col items-center sm:w-1/3"
+                        >
+                          <Image
+                            src={`/pictures/quiz/result/d${drink}.webp`}
+                            alt={`Slide ${drink}`}
+                            width={250}
+                            height={250}
+                            fetchPriority="high"
+                            priority
+                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                            className=""
+                          />
+                          <p className="text-center text-sm lg:text-lg">
+                            {drinks[drink - 1]?.name}
+                          </p>
+                        </div>
+                      ))}
+                    </div>
                   </>
                 ) : (
-                  <p>No profile found for the combination.</p>
+                  <p>Sorry! No profile found for your answers.</p>
                 )}
                 <div className="flex mt-5 gap-5 justify-center">
-                  {submitted ? (
-                    // Render the "Home" button after submission
-                    <Link href="/">
-                      <Button>
-                        Home <Home className="ml-2" />
-                      </Button>
-                    </Link>
-                  ) : (
-                    <>
-                      <Button onClick={() => (window.location.href = "/quiz")}>
-                        {" "}
-                        Restart <RotateCcw className="ml-2" />
-                      </Button>
-
-                      <Button onClick={insertDataToDatabase}>
-                        Submit <Send className="ml-2" />
-                      </Button>
-                    </>
-                  )}
+                  <Link href="/">
+                    <Button>
+                      Home <Home className="ml-2" />
+                    </Button>
+                  </Link>
+                  <Button onClick={() => (window.location.href = "/quiz")}>
+                    {" "}
+                    Restart <RotateCcw className="ml-2" />
+                  </Button>
+                  <Link href="https://www.viet80sonline.co.uk/">
+                    <Button>
+                      Full Menu <BookOpenText className="ml-2" />
+                    </Button>
+                  </Link>
                 </div>
               </div>
             )}

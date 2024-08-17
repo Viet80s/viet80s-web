@@ -27,23 +27,20 @@ export const starters: Item[] = [
   { id: 11, name: "Belly Pork" },
   { id: 12, name: "Spring rolls" },
   { id: 13, name: "Chicken wings" },
-  { id: 14, name: "King prawns salt" },
+  { id: 14, name: "King Grilled Prawns" },
   { id: 15, name: "Side Pork sesame" },
   { id: 16, name: "Stir fried Beef" },
   { id: 17, name: "Beef Pepper" },
   { id: 18, name: "Water Spinach" },
   { id: 19, name: "Chicken Mac Khen" },
   { id: 20, name: "Golden prawns" },
-  { id: 21, name: "Steamed Rice" },
+  { id: 21, name: "Steamed Rice rolls" },
   { id: 22, name: "Beef tongue" },
   { id: 23, name: "Mushroom tofu salted" },
   { id: 24, name: "Shaking Beef" },
-  { id: 25, name: "King Grilled Prawns" },
-  { id: 26, name: "Water Spinach" },
-  { id: 27, name: "Stir fried Whelk" },
-  { id: 28, name: "Stir fried Goat" },
-  { id: 29, name: "Pork cartilage" },
-  { id: 30, name: "Steamed Rice rolls" },
+  { id: 25, name: "Stir fried Whelk" },
+  { id: 26, name: "Stir fried Goat" },
+  { id: 27, name: "Pork cartilage" },
 ];
 
 export const drinks: Item[] = [
@@ -136,7 +133,7 @@ export const profiles: Profile[] = [
     name: "Nhà Thám Hiểm Cần Thơ (Cần Thơ Explorer)",
     description:
       "The explorer who’s always looking for the next big food trend in Vietnam, from street vendors to hidden countryside gems, enjoying the flavorful journey.",
-    startersCombo: [13, 14, 30],
+    startersCombo: [13, 14, 21],
     mainCombo: [5, 12, 13],
     drinkCombo: [5, 9, 2],
   },
@@ -216,7 +213,7 @@ export const profiles: Profile[] = [
     name: "Chị Chủ Vườn (Garden Enthusiast)",
     description:
       "The garden-loving sister who whips up fresh, calming meals straight from her backyard, always in harmony with nature and flavor.",
-    startersCombo: [24, 25, 11],
+    startersCombo: [24, 14, 11],
     mainCombo: [5, 12, 13],
     drinkCombo: [4, 7, 13],
   },
@@ -226,7 +223,7 @@ export const profiles: Profile[] = [
     name: "Ông Trùm Cafe (Coffee Connoisseur)",
     description:
       "The coffee shop owner who knows everything about the art of brewing, appreciating the complex layers of flavor in both his drinks and his life.",
-    startersCombo: [26, 6, 15],
+    startersCombo: [18, 6, 15],
     mainCombo: [18, 5, 17],
     drinkCombo: [8, 9, 1],
   },
@@ -236,7 +233,7 @@ export const profiles: Profile[] = [
     name: "Cậu Ấm Sài Gòn (Saigon Socialite)",
     description:
       "The trendy Saigon socialite who enjoys the finer things in life, from high-end dining to the latest food trends, living each day with flavor and flair.",
-    startersCombo: [19, 27, 28],
+    startersCombo: [19, 27, 26],
     mainCombo: [18, 3, 23],
     drinkCombo: [2, 9, 8],
   },
@@ -246,7 +243,7 @@ export const profiles: Profile[] = [
     name: "Nhạc Sĩ Phố Cổ (Old Quarter Musician)",
     description:
       "The iconic musician from Hanoi’s Old Quarter who mixes traditional sounds with modern beats, just like he loves blending complex, joyful flavors in his meals.",
-    startersCombo: [20, 28, 29],
+    startersCombo: [20, 26, 27],
     mainCombo: [18, 24, 15],
     drinkCombo: [5, 8, 9],
   },
