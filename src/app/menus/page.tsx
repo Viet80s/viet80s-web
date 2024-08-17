@@ -1,21 +1,14 @@
 "use client";
-import { useMediaQuery } from "react-responsive";
+
 import Footer from "@/components/Footer";
 import DetailsFooter from "@/components/DetailsFooter";
-import ContactForm from "@/components/ContactForm";
 import NavBar from "@/components/NavBar";
 import Link from "next/link";
 import Image from "next/image";
 import styles from "@/app/menu.module.css";
 import styles1 from "@/app/localHome.module.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faStar } from "@fortawesome/free-solid-svg-icons";
-import { PopUp } from "@/components/PopUp";
-import { FatherDay } from "@/components/FatherDay";
 
 export default function Home() {
-  const isMobile = useMediaQuery({ maxWidth: 768 });
-
   return (
     <>
       <NavBar />
