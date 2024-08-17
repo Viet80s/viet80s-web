@@ -73,7 +73,7 @@ export function FinalPage({ filterCombo }: { filterCombo: Profile }) {
           </div>
           {/* Drinks */}
           <h1 className="text-2xl lg:text-4xl mb-2">Recommended Drinks</h1>
-          <div className="flex justify-center gap-2 mb-2">
+          <div className="flex justify-center gap-2 mb-2 items-end">
             {drinkCombo?.map((drink) => (
               <div key={drink} className="flex flex-col items-center sm:w-1/3">
                 <Image
