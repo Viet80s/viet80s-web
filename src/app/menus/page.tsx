@@ -126,10 +126,10 @@ export default function Menus() {
             </a>
           </p>
         </div>
-        <div>
-          <DetailsFooter location="restaurant" />
-          <Footer />
-        </div>
+      </div>
+      <div>
+        <DetailsFooter location="restaurant" />
+        <Footer />
       </div>
     </>
   );
