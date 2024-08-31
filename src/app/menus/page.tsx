@@ -8,7 +8,7 @@ import Image from "next/image";
 import styles from "@/app/menu.module.css";
 import styles1 from "@/app/localHome.module.css";
 
-export default function Home() {
+export default function Menus() {
   return (
     <>
       <NavBar />
