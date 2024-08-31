@@ -4,6 +4,7 @@ import NavBar from "@/components/NavBar";
 import DetailsFooter from "@/components/DetailsFooter";
 import Footer from "@/components/Footer";
 import { PostContent } from "./postContent";
+import ReadMore from "@/components/ReadMore";
 
 export const runtime = "edge";
 
@@ -19,8 +20,8 @@ const Post = ({ params: { slug, category } }: PostProps) => {
     <div className="bg-[url('/pictures/bg1.svg')] bg-center bg-cover">
       <NavBar />
       <PostContent slug={slug} category={category} />
-      <div>
-        <DetailsFooter location="restaurant" />
+      <ReadMore slug={slug} />
+      <div className="mt-7">
         <Footer />
       </div>
     </div>

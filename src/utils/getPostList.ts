@@ -17,3 +17,20 @@ export async function getPostList(category: string ) {
   const content = await client.fetch(CONTENT_QUERY, params);
   return content;
 }
+
+export async function getPostReadMore(slug: string) {
+  const CONTENT_QUERY = `
+    *[_type == "post" && slug.current != $slug] | order(_createdAt desc) [0...4] {
+      ...,
+      author->,
+      "categoriesTitle": categories[]->title,
+      "categoriesDescription": categories[]->description,
+      "postImage": mainImage, 
+      body
+    }
+  `;
+  const params = { slug };
+
+  const content = await client.fetch(CONTENT_QUERY, params);
+  return content;
+}

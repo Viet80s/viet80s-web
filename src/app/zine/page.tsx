@@ -42,9 +42,11 @@ const BlogContent = () => {
     };
     fetchCategories();
   }, [isMobile]);
+
   if (loading) {
     return <LoadingPage />;
   }
+
   return (
     <>
       {/* category section */}

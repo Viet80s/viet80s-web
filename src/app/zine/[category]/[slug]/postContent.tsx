@@ -14,6 +14,7 @@ import {
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 import { RichTextComponent } from "@/components/RichTextComponent";
+import { LoadingPage } from "@/app/quiz/LoadingPage";
 
 export const PostContent = ({
   slug,
@@ -23,11 +24,13 @@ export const PostContent = ({
   category: string;
 }) => {
   const [post, setPost] = useState<Posts>();
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const fetchPosts = async () => {
       const content = await getPostContent(slug);
       setPost(content);
+      setLoading(false);
     };
     fetchPosts();
   }, [slug]);
@@ -37,6 +40,11 @@ export const PostContent = ({
     authorImage,
     body = [],
   } = post ?? {}; // Destructure the post object
+
+  if (loading) {
+    return <LoadingPage />;
+  }
+
   return (
     <>
       <div className="mt-5 sm:my-4 sm:ml-[100px] ml-5">
