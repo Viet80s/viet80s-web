@@ -21,6 +21,7 @@ export async function generateMetadata(
   return {
     title: content.title,
     // description: 'The React Framework for the Web',
+    keywords: ["Next.js", "React", "JavaScript"],
     openGraph: {
       images: [
         {
@@ -31,16 +32,16 @@ export async function generateMetadata(
       ],
     },
     robots: {
-      index: false,
+      index: true,
       follow: true,
       nocache: true,
       googleBot: {
         index: true,
-        follow: false,
-        noimageindex: true,
+        follow: true,
+        noimageindex: false,
         "max-video-preview": -1,
         "max-image-preview": "large",
-        "max-snippet": -1,
+        "max-snippet": 160,
       },
     },
   };

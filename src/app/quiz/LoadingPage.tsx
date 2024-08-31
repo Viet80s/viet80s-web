@@ -7,7 +7,7 @@ export function LoadingPage() {
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
         <div className="flex flex-col items-center text-center">
           <div className="flex items-center text-2xl">
-            <h1>Loading questions...</h1>
+            <h1>Loading...</h1>
             <Loader2 className="h-10 w-10 animate-spin ml-2" />
           </div>
         </div>
