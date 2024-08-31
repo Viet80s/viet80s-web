@@ -21,7 +21,20 @@ export async function generateMetadata(
   return {
     title: content.title,
     // description: 'The React Framework for the Web',
-    keywords: ["Next.js", "React", "JavaScript"],
+    keywords: [
+      "zine",
+      "blog",
+      "blog about Vietnam",
+      "Vietnam",
+      "Vietnamese",
+      "Vietnamese culture",
+      "Vietnamese food",
+      "Vietnamese history",
+      "Vietnamese people",
+      "Vietnamese travel",
+      "Vietnamese zine",
+      "Vietnamese zine about Vietnam",
+    ],
     openGraph: {
       images: [
         {
@@ -33,11 +46,11 @@ export async function generateMetadata(
     },
     robots: {
       index: true,
-      follow: true,
+      follow: false,
       nocache: true,
       googleBot: {
         index: true,
-        follow: true,
+        follow: false,
         noimageindex: false,
         "max-video-preview": -1,
         "max-image-preview": "large",

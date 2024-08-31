@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     },
   },
   description:
-    "Casual and cozy traditional Vietnamese restaurant in Nottingham City Center. Serving authentic fine cuisines, street food and Robusta coffee",
+    "Casual and cozy traditional Vietnamese restaurant in Nottingham City Center. Serving authentic fine cuisines, street food and Robusta coffee.",
 };
 
 export default function RootLayout({
