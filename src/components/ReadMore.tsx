@@ -25,8 +25,8 @@ const ReadMore = ({ slug }: { slug: string }) => {
     <div className="mt-10 sm:px-[300px] px-5">
       <div>
         <h3 className="flex text-center items-center justify-center mb-5 bg-primary-foreground text-primary sm:text-3xl text-xl font-bold sm:p-4 p-2">
-          <CornerLeftDown size={24} className="mr-2 animate-bounce" /> More
-          posts you may like{" "}
+          <CornerLeftDown size={24} className="mr-2 animate-bounce" /> More from
+          Viet80s Zine{" "}
           <CornerRightDown size={24} className="ml-2 animate-bounce" />
         </h3>
       </div>
