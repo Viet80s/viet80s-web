@@ -13,30 +13,30 @@ const AutoPlayLaptop = ({ location }: Props) => {
   const restaurantImages = [
     {
       original: "/pictures/homepage/banner1.webp",
-      blurDataURL: "/pictures/homepage/banner1-small.webp",
+      blurDataURL: "/pictures/homepage/banner1.webp",
     },
     {
       original: "/pictures/homepage/banner2.webp",
-      blurDataURL: "/pictures/homepage/banner2-small.webp",
+      blurDataURL: "/pictures/homepage/banner2.webp",
     },
     {
       original: "/pictures/homepage/banner3.webp",
-      blurDataURL: "/pictures/homepage/banner3-small.webp",
+      blurDataURL: "/pictures/homepage/banner3.webp",
     },
     {
       original: "/pictures/homepage/banner4.webp",
-      blurDataURL: "/pictures/homepage/banner4-small.webp",
+      blurDataURL: "/pictures/homepage/banner4.webp",
     },
   ];
 
   const coffeeImages = [
     {
       original: "/pictures/homepage/banner5.webp",
-      blurDataURL: "/pictures/homepage/banner5-small.webp",
+      blurDataURL: "/pictures/homepage/banner5.webp",
     },
     {
       original: "/pictures/homepage/banner6.webp",
-      blurDataURL: "/pictures/homepage/banner6-small.webp",
+      blurDataURL: "/pictures/homepage/banner6.webp",
     },
   ];
 

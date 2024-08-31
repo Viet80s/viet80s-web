@@ -10,38 +10,38 @@ const AutoPlayMobile = ({ location }: Props) => {
   const restaurantImages = [
     {
       original: "/pictures/homepage/mo1.webp",
-      blurDataURL: "/pictures/homepage/mo1-small.webp",
+      blurDataURL: "/pictures/homepage/mo1.webp",
     },
     {
       original: "/pictures/homepage/mo2.webp",
-      blurDataURL: "/pictures/homepage/mo2-small.webp",
+      blurDataURL: "/pictures/homepage/mo2.webp",
     },
     {
       original: "/pictures/homepage/mo3.webp",
-      blurDataURL: "/pictures/homepage/mo3-small.webp",
+      blurDataURL: "/pictures/homepage/mo3.webp",
     },
     {
       original: "/pictures/homepage/mo4.webp",
-      blurDataURL: "/pictures/homepage/mo4-small.webp",
+      blurDataURL: "/pictures/homepage/mo4.webp",
     },
   ];
 
   const coffeeImages = [
     {
       original: "/pictures/homepage/mocf1.webp",
-      blurDataURL: "/pictures/homepage/mocf1-small.webp",
+      blurDataURL: "/pictures/homepage/mocf1.webp",
     },
     {
       original: "/pictures/homepage/mocf2.webp",
-      blurDataURL: "/pictures/homepage/mocf2-small.webp",
+      blurDataURL: "/pictures/homepage/mocf2.webp",
     },
     {
       original: "/pictures/homepage/mocf3.webp",
-      blurDataURL: "/pictures/homepage/mocf3-small.webp",
+      blurDataURL: "/pictures/homepage/mocf3.webp",
     },
     {
       original: "/pictures/homepage/mocf4.webp",
-      blurDataURL: "/pictures/homepage/mocf4-small.webp",
+      blurDataURL: "/pictures/homepage/mocf4.webp",
     },
   ];
 

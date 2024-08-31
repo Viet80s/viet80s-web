@@ -12,6 +12,7 @@ import Image from "next/image";
 import GalleryLaptop from "@/components/GalleryLaptop";
 import GalleryMobile from "@/components/GalleryMobile";
 import { PopUp } from "@/components/PopUp";
+import NewsLetter from "@/components/Newletter";
 
 export default function Home() {
   const isMobile = useMediaQuery({ maxWidth: 768 });
@@ -44,7 +45,7 @@ export default function Home() {
                   alt="USP 1"
                   priority
                   placeholder="blur"
-                  blurDataURL="/pictures/homepage/icon-01-small.webp"
+                  blurDataURL="/pictures/homepage/icon-01.webp"
                 />
               </div>
               <div>
@@ -62,7 +63,7 @@ export default function Home() {
                   alt="USP 2"
                   priority
                   placeholder="blur"
-                  blurDataURL="/pictures/homepage/icon-02-small.webp"
+                  blurDataURL="/pictures/homepage/icon-02.webp"
                 />
               </div>
               <div>
@@ -80,7 +81,7 @@ export default function Home() {
                   alt="USP 3"
                   priority
                   placeholder="blur"
-                  blurDataURL="/pictures/homepage/icon-03-small.webp"
+                  blurDataURL="/pictures/homepage/icon-03.webp"
                 />
               </div>
               <div>
@@ -98,7 +99,7 @@ export default function Home() {
                   alt="USP 4"
                   priority
                   placeholder="blur"
-                  blurDataURL="/pictures/homepage/icon-04-small.webp"
+                  blurDataURL="/pictures/homepage/icon-04.webp"
                 />
               </div>
               <div>
@@ -132,6 +133,9 @@ export default function Home() {
           {/* <GalleryLaptop /> */}
           <GalleryMobile />
         </div>
+        {/* <div>
+          <NewsLetter />
+        </div> */}
         <div>
           <DetailsFooter location="restaurant" />
           <Footer />
