@@ -127,8 +127,7 @@ export default function Menus() {
           </p>
         </div>
       </div>
-      <div>
-        <DetailsFooter location="restaurant" />
+      <div className="mt-7">
         <Footer />
       </div>
     </>
