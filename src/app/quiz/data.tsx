@@ -52,7 +52,7 @@ export const drinks: Item[] = [
   { id: 6, name: "Hanoi Beer" },
   { id: 7, name: "Coffee" },
   { id: 8, name: "Red Berry" },
-  { id: 9, name: "Beer" },
+  { id: 9, name: "Vietnamese Beer" },
   { id: 10, name: "Red Wine" },
   { id: 11, name: "Avocado" },
   { id: 12, name: "Salted Coffee" },
