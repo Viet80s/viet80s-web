@@ -33,7 +33,6 @@ const NewsLetter = () => {
       if (alreadySubed) {
         toast.error("You are already subscribed!");
         setSubmitting(false);
-        setShowInitialText(true);
       } else {
         const response = await fetch("/api/newsletter", {
           method: "POST",
