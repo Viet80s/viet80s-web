@@ -1,19 +1,68 @@
 import { Input } from "./ui/input";
 import { Label } from "./ui/label";
-import { Mail } from "lucide-react";
+import { CheckCheck, Loader2, Mail, X } from "lucide-react";
 import { Button } from "./ui/button";
 import { useState } from "react";
-
+import toast from "react-hot-toast";
+interface Subscribers {
+  id: number;
+  email: string;
+}
 const NewsLetter = () => {
   const [email, setEmail] = useState("");
   const [submitting, setSubmitting] = useState(false);
-  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+  const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState(false);
+  const [showInitialText, setShowInitialText] = useState(true);
+
+  const baseUrl =
+    process.env.NEXT_PUBLIC_API_BASE_URL || "http://localhost:3000/";
+
+  const checkEmail = async (email: string) => {
+    const subscribers: Subscribers[] = await fetch(
+      `${baseUrl}api/subscriber/`
+    ).then((res) => res.json());
+    const subscribered = subscribers.map((subscriber) => subscriber.email);
+    const alreadySubed = subscribered.includes(email || "");
+    return alreadySubed;
+  };
+
+  const insertEmailToDatabase = async (email: string) => {
+    try {
+      const response = await fetch("/api/newsletter", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          email,
+        }),
+      });
+
+      if (response.ok) {
+        setSubmitting(false);
+        setShowInitialText(false);
+        setSubmitted(true);
+      }
+    } catch (error: any) {
+      console.error("Error inserting data:", error.message);
+      setError(true);
+      setShowInitialText(false);
+    }
+  };
+
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     // Handle form submission logic here
-    console.log("Email submitted:", email);
-
-    setEmail("");
-    // You can add your API call here to submit the email
+    const alreadySubed = await checkEmail(email);
+    if (alreadySubed) {
+      toast.error("You are already subscribed!");
+    } else {
+      setShowInitialText(false);
+      setSubmitting(true);
+      insertEmailToDatabase(email);
+      setEmail("");
+    }
   };
 
   return (
@@ -52,7 +101,25 @@ const NewsLetter = () => {
                     type="submit"
                     className="py-3 px-5 w-full bg-primary text-md font-semibold text-center text-primary-foreground rounded-lg border cursor-pointer border-primary-600 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
                   >
-                    Subscribe, cancel anytime
+                    {showInitialText && <>Subscribe, cancel anytime</>}
+                    {submitting && (
+                      <>
+                        <Loader2 className="size-4 mr-2 animate-spin" />{" "}
+                        Subscribing ...
+                      </>
+                    )}
+                    {submitted && (
+                      <>
+                        <CheckCheck className="size-4 mr-2 animate-pulse" /> All
+                        set! Thanks for signing up!
+                      </>
+                    )}
+                    {error && (
+                      <>
+                        <X className="size-4 mr-2 animate-pulse" /> An error has
+                        occured ...
+                      </>
+                    )}
                   </Button>
                 </div>
               </div>

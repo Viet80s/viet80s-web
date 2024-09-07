@@ -26,3 +26,9 @@ export const choices = pgTable("choices", {
     choice: text("choice").notNull(),
     score: decimal("score", {precision: 3, scale: 2}).notNull(),
 })
+
+export const subscribers = pgTable("subscribers", {
+  id: serial("id").primaryKey(),
+  subscribe_at: timestamp("created_at").notNull().defaultNow(),
+  email: text("email").notNull(),
+})
