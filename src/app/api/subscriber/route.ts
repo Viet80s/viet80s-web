@@ -7,7 +7,6 @@ export const runtime = "edge";
 export const GET = async (req: Request) => {
 
   try {
-
     const _subscribers = await db
     .select()
     .from(subscribers);

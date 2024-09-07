@@ -23,7 +23,6 @@ const NewsLetter = () => {
     const subscribers: Subscribers[] = await fetch(
       `${baseUrl}api/subscriber/`
     ).then((res) => res.json());
-    console.log(subscribers);
     const subscribered = subscribers.map((subscriber) => subscriber.email);
     const alreadySubed = subscribered.includes(email || "");
     return alreadySubed;
