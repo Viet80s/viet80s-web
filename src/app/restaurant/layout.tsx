@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { EB_Garamond } from "next/font/google";
+import { Toaster } from "react-hot-toast";
 
 const garamond = EB_Garamond({ subsets: ["latin"], weight: ["400"] });
 
@@ -72,6 +73,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={garamond.className}>
       <body>{children}</body>
+      <Toaster />
     </html>
   );
 }

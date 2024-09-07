@@ -3,15 +3,12 @@ import React, { useState, useEffect } from "react";
 import {
   Home,
   RotateCcw,
-  Loader2,
   ArrowBigLeftDash,
   ArrowBigRightDash,
-  BookOpenText,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import toast from "react-hot-toast";
-import { drinks, mainCourses, profiles, starters } from "./data";
 import { findProfileByCombination } from "./functions";
 import Image from "next/image";
 import { handleEffect2 } from "./effect-2";

@@ -2,22 +2,34 @@ import { Input } from "./ui/input";
 import { Label } from "./ui/label";
 import { Mail } from "lucide-react";
 import { Button } from "./ui/button";
+import { useState } from "react";
 
 const NewsLetter = () => {
+  const [email, setEmail] = useState("");
+  const [submitting, setSubmitting] = useState(false);
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    // Handle form submission logic here
+    console.log("Email submitted:", email);
+
+    setEmail("");
+    // You can add your API call here to submit the email
+  };
+
   return (
     <>
-      <section className="bg-white dark:bg-gray-900">
-        <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
-          <div className="mx-auto max-w-screen-md sm:text-center">
-            <h2 className="mb-4 text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl dark:text-white">
+      <section className="bg-xanh lg:bg-transparent lg:w-[400px] w-full dark:bg-gray-900">
+        <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-4 lg:px-6">
+          <div className="mx-auto max-w-screen-md">
+            <h2 className="mb-4 text-3xl tracking-tight font-extrabold sm:text-gray-900 text-primary dark:text-white">
               Sign up for our newsletter
             </h2>
-            <p className="mx-auto mb-8 max-w-2xl font-light text-gray-500 md:mb-12 sm:text-xl dark:text-gray-400">
+            <p className="mx-auto mb-8 max-w-2xl font-light sm:text-gray-500 text-white md:mb-12 sm:text-xl dark:text-gray-400 sm:hidden block">
               Stay up to date with the roadmap progress, announcements and
               exclusive discounts feel free to sign up with your email.
             </p>
-            <form action="#">
-              <div className="items-center mx-auto mb-3 space-y-4 max-w-screen-sm sm:flex sm:space-y-0">
+            <form onSubmit={handleSubmit}>
+              <div className="items-center mx-auto mb-3 space-y-4 max-w-screen-sm">
                 <div className="relative w-full">
                   <Label className="hidden mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
                     Email address
@@ -30,16 +42,21 @@ const NewsLetter = () => {
                     placeholder="Enter your email"
                     type="email"
                     id="email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
                     required
                   />
                 </div>
                 <div>
-                  <Button className="py-3 px-5 w-full bg-primary text-sm font-medium text-center text-primary-foreground rounded-lg border cursor-pointer border-primary-600 sm:rounded-none sm:rounded-r-lg hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
-                    Subscribe
+                  <Button
+                    type="submit"
+                    className="py-3 px-5 w-full bg-primary text-md font-semibold text-center text-primary-foreground rounded-lg border cursor-pointer border-primary-600 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+                  >
+                    Subscribe, cancel anytime
                   </Button>
                 </div>
               </div>
-              <div className="mx-auto max-w-screen-sm text-sm text-left text-gray-500 newsletter-form-footer dark:text-gray-300">
+              <div className="mx-auto max-w-screen-sm text-sm text-left sm:text-gray-500 text-white newsletter-form-footer dark:text-gray-300">
                 We care about the protection of your data.{" "}
                 <a
                   href="/terms-and-policies"

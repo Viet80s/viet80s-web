@@ -133,9 +133,9 @@ export default function Home() {
           {/* <GalleryLaptop /> */}
           <GalleryMobile />
         </div>
-        {/* <div>
+        <div className="lg:hidden block">
           <NewsLetter />
-        </div> */}
+        </div>
         <div>
           <DetailsFooter location="restaurant" />
           <Footer />

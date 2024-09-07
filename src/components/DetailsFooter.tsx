@@ -7,6 +7,7 @@ import {
   faInstagram,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
+import NewsLetter from "./Newletter";
 
 type Props = { location: string };
 
@@ -144,6 +145,9 @@ const DetailsFooter = ({ location }: Props) => {
             <p>9:00 AM - 6:00 PM</p>
           </>
         )}
+      </div>
+      <div className="lg:block hidden">
+        <NewsLetter />
       </div>
     </div>
   );
