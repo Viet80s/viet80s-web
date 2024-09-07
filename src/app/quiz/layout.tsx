@@ -22,6 +22,11 @@ export const metadata: Metadata = {
     "Vietnamese zine",
     "Vietnamese zine about Vietnam",
   ],
+  openGraph: {
+    title: "Viet80s-quiz",
+    images: ["/pictures/quiz/quizLayout.webp"],
+    siteName: "Viet80s",
+  },
 };
 
 export default function RootLayout({
