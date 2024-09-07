@@ -29,20 +29,26 @@ const NewsLetter = () => {
 
   const insertEmailToDatabase = async (email: string) => {
     try {
-      const response = await fetch("/api/newsletter", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          email,
-        }),
-      });
-
-      if (response.ok) {
+      const alreadySubed = await checkEmail(email);
+      if (alreadySubed) {
+        toast.error("You are already subscribed!");
         setSubmitting(false);
-        setShowInitialText(false);
-        setSubmitted(true);
+        setShowInitialText(true);
+      } else {
+        const response = await fetch("/api/newsletter", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            email,
+          }),
+        });
+        if (response.ok) {
+          setSubmitting(false);
+          setShowInitialText(false);
+          setSubmitted(true);
+        }
       }
     } catch (error: any) {
       console.error("Error inserting data:", error.message);
@@ -54,15 +60,10 @@ const NewsLetter = () => {
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     // Handle form submission logic here
-    const alreadySubed = await checkEmail(email);
-    if (alreadySubed) {
-      toast.error("You are already subscribed!");
-    } else {
-      setShowInitialText(false);
-      setSubmitting(true);
-      insertEmailToDatabase(email);
-      setEmail("");
-    }
+    setShowInitialText(false);
+    setSubmitting(true);
+    insertEmailToDatabase(email);
+    setEmail("");
   };
 
   return (

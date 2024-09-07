@@ -12,6 +12,7 @@ import GalleryLaptop from "@/components/GalleryLaptop";
 import GalleryMobile from "@/components/GalleryMobile";
 import FoodGalleryCoffee from "@/components/FoodGalleryCoffee";
 import { PopUp } from "@/components/PopUp";
+import NewsLetter from "@/components/Newletter";
 
 export default function Home() {
   const isMobile = useMediaQuery({ maxWidth: 768 });
@@ -113,6 +114,9 @@ export default function Home() {
         <div>
           {/* <GalleryLaptop /> */}
           <GalleryMobile />
+        </div>
+        <div className="lg:hidden block">
+          <NewsLetter />
         </div>
         <div>
           <DetailsFooter location="coffee" />
