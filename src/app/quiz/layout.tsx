@@ -22,15 +22,6 @@ export const metadata: Metadata = {
     "Vietnamese zine",
     "Vietnamese zine about Vietnam",
   ],
-  openGraph: {
-    images: [
-      {
-        url: "https://viet80s.co.uk/_next/image?url=%2Fpictures%2Fquiz%2FquizLayout.webp&w=800", // Must be an absolute URL
-        width: 800,
-        height: 600,
-      },
-    ],
-  },
 };
 
 export default function RootLayout({
