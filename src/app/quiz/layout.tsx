@@ -24,7 +24,7 @@ export async function generateMetadata(): Promise<Metadata> {
       "Vietnamese zine about Vietnam",
     ],
     openGraph: {
-      images: ["/pictures/quiz/quizLayout.webp"],
+      images: ["https://viet80s.co.uk/pictures/quiz/quizLayout.webp"],
     },
   };
 }

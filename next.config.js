@@ -8,6 +8,12 @@ const nextConfig = {
         port: '',
         pathname: '/images/kzazn5mp/production/',
       },
+      {
+        protocol: 'https',
+        hostname: 'viet80s.co.uk',
+        port: '',
+        pathname: '/pictures/quiz/',
+      },
     ],
   },
 }
