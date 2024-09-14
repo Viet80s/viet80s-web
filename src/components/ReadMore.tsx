@@ -66,7 +66,7 @@ const ReadMore = ({ slug }: { slug: string }) => {
                     />
                   </div>
                 </div>
-                <div className="flex gap-3 items-center justify-between">
+                <div className="flex gap-3 items-center justify-between lg:justify-start lg:gap-5">
                   <h1 className="lg:text-lg text-xs flex items-center">
                     <Calendar className="lg:mr-2 mr-1 size-4 lg:size-5 opacity-80" />
                     {format(new Date(post._createdAt), "MMM dd, yyyy")}

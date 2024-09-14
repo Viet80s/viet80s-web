@@ -5,12 +5,13 @@ import styles from "@/app/home.module.css";
 import Footer from "@/components/Footer";
 import { FatherDay } from "@/components/FatherDay";
 import { PopUp } from "@/components/PopUp";
+import { PopUpMain } from "@/components/PopUpMain";
 
 export default function Home() {
   return (
     <>
       <div className="bg-black">
-        {/* <PopUp /> */}
+        <PopUpMain />
         {/* <FatherDay /> */}
         <div className={styles.container}>
           <Link href="/restaurant">
