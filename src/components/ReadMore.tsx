@@ -39,17 +39,24 @@ const ReadMore = ({ slug }: { slug: string }) => {
                   href={`/zine/${post.categoriesTitle}/${post.slug?.current}`}
                   key={post._id}
                 >
-                  <Image
-                    loader={({ width }) =>
-                      urlFor(post.postImage).width(width).url()
-                    }
-                    src={urlFor(post.postImage).width(500).url()}
-                    width={500}
-                    height={500}
-                    alt={`picture`}
-                    priority={true}
-                    className="lg:rounded-3xl rounded-2xl"
-                  />
+                  {post.postImage !== null ? (
+                    <Image
+                      loader={({ width }) =>
+                        urlFor(post.postImage).width(width).url()
+                      }
+                      src={urlFor(post.postImage).width(500).url()}
+                      width={500}
+                      height={500}
+                      alt={`picture`}
+                      priority={true}
+                      className="lg:rounded-3xl rounded-2xl"
+                    />
+                  ) : (
+                    <>
+                      <h1>Image not available</h1>
+                    </>
+                  )}
+
                   <p className="text-left font-semibold text-pretty lg:text-xl text-sm">
                     {post.title}
                   </p>
