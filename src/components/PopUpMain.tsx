@@ -26,11 +26,13 @@ export function PopUpMain() {
     <div>
       <Dialog open={isOpen} onOpenChange={setIsOpen}>
         <DialogContent className="bg-primary w-4/5 max-w-md flex sm:w-full sm:max-w-lg">
+          {/* thay link o day */}
           <Link
             href={
               "https://viet80s.co.uk/zine/People/fundraising-to-support-the-people-of-northern-vietnam-in-overcoming-the-typhoon-yagi"
             }
           >
+            {/* thay hinh o day */}
             <Image
               src="/pictures/Yagi.jpg"
               alt="food 1"
