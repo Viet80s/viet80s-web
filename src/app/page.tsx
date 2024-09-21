@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <>
       <div className="bg-black">
-        {/* <PopUpMain /> */}
+        <PopUpMain />
         {/* <FatherDay /> */}
         <div className={styles.container}>
           <Link href="/restaurant">

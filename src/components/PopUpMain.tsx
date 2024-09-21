@@ -34,7 +34,7 @@ export function PopUpMain() {
           >
             {/* thay hinh o day */}
             <Image
-              src="/pictures/Yagi.jpg"
+              src="/pictures/menu123.png"
               alt="food 1"
               width={500}
               height={500}
