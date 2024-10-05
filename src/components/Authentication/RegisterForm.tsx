@@ -7,7 +7,7 @@ import { Form, Formik, ErrorMessage } from "formik";
 import { useState } from "react";
 import toast from "react-hot-toast";
 import signUp from "@/firebase/signup";
-import addNewUser from "@/firebase/functions";
+import { addNewUser } from "@/firebase/storeFunctions";
 import * as Yup from "yup";
 import YupPassword from "yup-password";
 YupPassword(Yup);
@@ -64,6 +64,7 @@ export function RegisterForm({
 
       if (addUserCall.error) {
         toast.error("Add new user failed");
+        console.error(addUserCall.error);
       } else {
         console.log("Add new user successfully");
       }
