@@ -6,8 +6,8 @@ import Providers from "@/components/Providers";
 const baumans = EB_Garamond({ subsets: ["latin"], weight: ["400"] });
 
 export const metadata: Metadata = {
-  title: "Contact Us | Viet80s",
-  description: "Contact Viet80s",
+  title: "Loyalty | Viet80s",
+  description: "Viet80s",
 };
 
 export default function RootLayout({

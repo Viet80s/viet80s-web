@@ -8,14 +8,15 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 
-import { LogIn, Plus } from "lucide-react";
+import { Rocket } from "lucide-react";
 
 import { DialogDescription } from "@radix-ui/react-dialog";
 import { useState } from "react";
 import { Button } from "../ui/button";
 import { LoginForm } from "./LoginForm";
+import { RegisterForm } from "./RegisterForm";
 
-export function Login({}: {}) {
+export function Register({}: {}) {
   const [dialogOpened, setDialogOpened] = useState(false);
 
   return (
@@ -23,14 +24,14 @@ export function Login({}: {}) {
       <DialogTrigger asChild>
         <div className="justify-center flex">
           <Button className="justify-center text-center items-center border-double border-primary border-4 flex">
-            Log in <LogIn className="ml-2 h-4 w-4" />
+            Sign up <Rocket className="ml-2 h-4 w-4" />
           </Button>
         </div>
       </DialogTrigger>
       <DialogContent className="w-full">
         <DialogHeader>
           <DialogTitle className="text-center">
-            Login to Viet80s Dashboard
+            Register to Viet80s Dashboard
           </DialogTitle>
         </DialogHeader>
         {/* {description && (
@@ -40,7 +41,7 @@ export function Login({}: {}) {
             previous form.
           </DialogDescription>
         )} */}
-        <LoginForm setDialogOpened={setDialogOpened} />
+        <RegisterForm setDialogOpened={setDialogOpened} />
       </DialogContent>
     </Dialog>
   );

@@ -14,26 +14,44 @@ import GalleryMobile from "@/components/GalleryMobile";
 import { PopUp } from "@/components/PopUp";
 import NewsLetter from "@/components/Newletter";
 import { Login } from "@/components/Authentication/LoginDialog";
+import { getAuth, signOut } from "firebase/auth";
+import firebase_app from "@/firebase/firebaseConfig";
+import { useAuthState } from "react-firebase-hooks/auth";
+import { Button } from "@/components/ui/button";
+import { Register } from "@/components/Authentication/RegisterDialog";
 
 export default function Loyalty() {
-  const isMobile = useMediaQuery({ maxWidth: 768 });
+  const auth = getAuth(firebase_app);
+  const [user, loading, error] = useAuthState(auth);
+
   return (
     <>
       <NavBar />
 
       <div className="bg-[url('/pictures/bg2.svg')] bg-center bg-cover">
         {/* <PopUp /> */}
-        <div>
+        {/* <div>
           {isMobile ? (
             <AutoPlayMobile location="restaurant" />
           ) : (
             <AutoPlayLaptop location="restaurant" />
           )}
+        </div> */}
+        <div className="flex gap-3 justify-center">
+          <div>
+            <Login />
+          </div>
+          <div>
+            <Register />
+          </div>
         </div>
 
         <div>
-          <Login />
+          <Button onClick={() => signOut(auth)}>Log out</Button>
         </div>
+        {user && <div>hello {user.email}</div>}
+
+        {/* 
         <div className="rounded-lg border-solid border-xanh border-4 text-center justify-center font-bold p-[10px] mx-[10px] text-md my-[10px] sm:p-[20px] sm:mx-[200px] sm:text-xl sm:my-[20px]">
           <div className="sm:flex sm:flex-row sm:items-center sm:justify-center grid-cols-2 grid gap-4 sm:text-lg text-sm">
             <div className="flex flex-col items-center justify-center text-center text-xanh">
@@ -129,14 +147,14 @@ export default function Loyalty() {
         </div>
         <div className="sm:mb-5">
           <ButtonList location="restaurant" />
-        </div>
+        </div> */}
         <div>
           {/* <GalleryLaptop /> */}
-          <GalleryMobile />
+          {/* <GalleryMobile /> */}
         </div>
-        <div className="lg:hidden block">
+        {/* <div className="lg:hidden block">
           <NewsLetter />
-        </div>
+        </div> */}
         <div>
           <DetailsFooter location="restaurant" />
           <Footer />
