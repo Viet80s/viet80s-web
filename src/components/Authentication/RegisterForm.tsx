@@ -37,6 +37,7 @@ export function RegisterForm({
       .minLowercase(1, "Password must contain at least 1 lowercase letter")
       .minUppercase(1, "Password must contain at least 1 uppercase letter")
       .minNumbers(1, "Password must contain at least 1 number")
+      .minSymbols(0)
       .required("Password is required"),
   });
 
@@ -47,7 +48,9 @@ export function RegisterForm({
       toast.error(`Register failed.`);
       console.error(signUpCall.error);
     } else {
-      toast.success("Register successfully. Signed in automatically.");
+      toast.success(
+        "Register successfully. Please verify your email to log in"
+      );
 
       const addUserCall = await addNewUser(
         signUpCall.result?.user.uid ?? "",

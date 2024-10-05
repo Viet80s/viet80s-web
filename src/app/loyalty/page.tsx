@@ -29,14 +29,6 @@ export default function Loyalty() {
       <NavBar />
 
       <div className="bg-[url('/pictures/bg2.svg')] bg-center bg-cover">
-        {/* <PopUp /> */}
-        {/* <div>
-          {isMobile ? (
-            <AutoPlayMobile location="restaurant" />
-          ) : (
-            <AutoPlayLaptop location="restaurant" />
-          )}
-        </div> */}
         <div className="flex gap-3 justify-center">
           <div>
             <Login />
@@ -49,6 +41,8 @@ export default function Loyalty() {
         <div>
           <Button onClick={() => signOut(auth)}>Log out</Button>
         </div>
+        {!user?.emailVerified && <div>please verify your email</div>}
+        {user?.emailVerified && <div>email verified</div>}
         {user && <div>hello {user.email}</div>}
 
         {/* 
@@ -156,7 +150,6 @@ export default function Loyalty() {
           <NewsLetter />
         </div> */}
         <div>
-          <DetailsFooter location="restaurant" />
           <Footer />
         </div>
       </div>
