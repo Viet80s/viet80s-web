@@ -94,6 +94,24 @@ const ButtonList = ({ location }: Props) => {
             </div>
           </Link>
         )}
+        {location === "loyalty" && (
+          <Link href="https://www.viet80sonline.co.uk/s/appointments">
+            <div>
+              <Button
+                style={{
+                  textAlign: "center",
+                  border: "double",
+                  borderWidth: "6px",
+                  padding: paddingButton,
+                  fontSize: fontSize,
+                }}
+              >
+                {" "}
+                Login{" "}
+              </Button>
+            </div>
+          </Link>
+        )}
       </div>
     </>
   );
