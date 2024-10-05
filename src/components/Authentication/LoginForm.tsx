@@ -81,13 +81,14 @@ export function LoginForm({
                 />
               </div>
               <div className="flex flex-col gap-2">
-                <div className="flex justify-between">
+                <div className="flex justify-between items-center">
                   {" "}
-                  <h3>Password</h3>{" "}
-                  <div>
+                  <div className="flex items-center">Password</div>{" "}
+                  <div className="flex items-center">
                     <Button
                       size="icon"
                       variant={"outline"}
+                      type="button"
                       onClick={() => setShowPassword(!showPassword)}
                     >
                       {showPassword ? (

@@ -5,7 +5,7 @@ import firebase_app from "./firebaseConfig";
 const auth = getAuth(firebase_app);
 
 
-export default async function signUp({email, password}: {email: string, password: string}) {
+export default async function signUp(email: string, password: string) {
     let result = null,
         error = null;
     try {

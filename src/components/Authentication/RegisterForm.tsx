@@ -2,18 +2,23 @@
 
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { AlertCircle, Eye, EyeOff, LogIn, Rocket } from "lucide-react";
-import { Label } from "@/components/ui/label";
-import { Form, Formik } from "formik";
-// import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
+import { Eye, EyeOff, Rocket } from "lucide-react";
+import { Form, Formik, ErrorMessage } from "formik";
 import { useState } from "react";
-// import { createDataset } from "@/api/datasets";
 import toast from "react-hot-toast";
-import logIn from "@/firebase/login";
+import signUp from "@/firebase/signup";
+import addNewUser from "@/firebase/functions";
+import * as Yup from "yup";
+import YupPassword from "yup-password";
+YupPassword(Yup);
 
 interface FormData {
   email: string;
   password: string;
+  firstName: string;
+  lastName: string;
+  birthMonth: number;
+  birthDay: number;
 }
 
 export function RegisterForm({
@@ -24,15 +29,42 @@ export function RegisterForm({
   const [error, setError] = useState<string | null>(null);
   const [showPassword, setShowPassword] = useState<boolean>(false);
 
-  const handleSubmit = async (data: FormData) => {
-    const response = await logIn(data.email, data.password);
+  const validationSchema = Yup.object().shape({
+    email: Yup.string().email("Invalid email").required("Email is required"),
+    password: Yup.string()
+      .password()
+      .min(8, "Password must be at least 8 characters")
+      .minLowercase(1, "Password must contain at least 1 lowercase letter")
+      .minUppercase(1, "Password must contain at least 1 uppercase letter")
+      .minNumbers(1, "Password must contain at least 1 number")
+      .required("Password is required"),
+  });
 
-    if (response.error) {
-      console.error(response.error);
-      toast.error("Login failed");
+  const handleSubmit = async (data: FormData) => {
+    const signUpCall = await signUp(data.email ?? "", data.password ?? "");
+
+    if (signUpCall.error) {
+      toast.error(`Register failed.`);
+      console.error(signUpCall.error);
     } else {
-      toast.success("Login successfully");
-      console.log(response.result);
+      toast.success("Register successfully. Signed in automatically.");
+
+      const addUserCall = await addNewUser(
+        signUpCall.result?.user.uid ?? "",
+        data.email ?? "",
+        data.password ?? "",
+        data.firstName ?? "",
+        data.lastName ?? "",
+        data.birthMonth ?? 0,
+        data.birthDay ?? 0
+      );
+
+      if (addUserCall.error) {
+        toast.error("Add new user failed");
+      } else {
+        console.log("Add new user successfully");
+      }
+
       setDialogOpened(false);
     }
   };
@@ -44,16 +76,41 @@ export function RegisterForm({
           email: "",
           password: "",
           showPassword: false,
+          firstName: "",
+          lastName: "",
+          birthMonth: 0,
+          birthDay: 0,
         }}
         onSubmit={(data) => {
           handleSubmit(data);
         }}
+        validationSchema={validationSchema}
       >
         {({ values, handleChange, handleSubmit }) => (
           <Form className="w-full" onSubmit={handleSubmit}>
             <div className="flex flex-col gap-3 text-lg">
               <div className="flex flex-col gap-2">
-                <h3 className="flex">Email</h3>
+                <h3 className="flex">First name*</h3>
+                <Input
+                  onChange={handleChange}
+                  name="firstName"
+                  className="text-lg text-carrot"
+                  type="text"
+                  required
+                />
+              </div>
+              <div className="flex flex-col gap-2">
+                <h3 className="flex">Last name*</h3>
+                <Input
+                  onChange={handleChange}
+                  name="lastName"
+                  className="text-lg text-carrot"
+                  type="text"
+                  required
+                />
+              </div>
+              <div className="flex flex-col gap-2">
+                <h3 className="flex">Email*</h3>
                 <Input
                   onChange={handleChange}
                   name="email"
@@ -61,15 +118,27 @@ export function RegisterForm({
                   type="email"
                   required
                 />
+                <ErrorMessage
+                  name="email"
+                  component="div"
+                  className="text-red-500"
+                />
               </div>
               <div className="flex flex-col gap-2">
-                <div className="flex justify-between">
+                <div className="flex items-center justify-between">
                   {" "}
-                  <h3>Password</h3>{" "}
+                  <div className="flex flex-col">
+                    <h3>Password*</h3>{" "}
+                    <h4 className="text-sm">
+                      Password must contain at least 8 characters, 1 uppercase,
+                      1 lowercase and 1 number
+                    </h4>
+                  </div>
                   <div>
                     <Button
                       size="icon"
                       variant={"outline"}
+                      type="button"
                       onClick={() => setShowPassword(!showPassword)}
                     >
                       {showPassword ? (
@@ -86,6 +155,11 @@ export function RegisterForm({
                   type={showPassword ? "text" : "password"}
                   className="text-lg text-carrot"
                   required
+                />
+                <ErrorMessage
+                  name="password"
+                  component="div"
+                  className="text-red-500"
                 />
               </div>
               <div className="mb-5">
