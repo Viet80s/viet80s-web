@@ -51,6 +51,7 @@
     "react-responsive": "^9.0.2",
     "react-slick": "^0.29.0",
     "react-use": "^17.5.0",
+    "react-wallets": "^1.0.0",
     "resend": "^3.0.0",
     "sass": "^1.77.1",
     "slick-carousel": "^1.8.1",

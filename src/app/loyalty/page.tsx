@@ -11,6 +11,7 @@ import { Register } from "@/components/Authentication/RegisterDialog";
 import { useQRCode } from "next-qrcode";
 import { addNewTransaction } from "@/firebase/storeFunctions";
 import { Timestamp } from "firebase/firestore";
+import { MyWalletComponent } from "@/components/Pass";
 
 export default function Loyalty() {
   const auth = getAuth(firebase_app);
@@ -66,6 +67,24 @@ export default function Loyalty() {
             </Button>
           </div>
         )}
+        {/* <div>
+          <MyWalletComponent />
+        </div> */}
+        <div>
+          <form
+            method="get"
+            action="https://www.passsource.com/pass/create.php"
+          >
+            <input
+              type="hidden"
+              name="templateHash"
+              value="eNortjIysVIqLA00jIiyyC0pMXKOcPYqyrIozC4ItLVVsgZcMKPxCfk,"
+            />
+            <label>Enter your member number:</label>
+            <input type="text" name="barcode_message" />
+            <input type="submit" value="Get Pass" />
+          </form>
+        </div>
         <div>
           <Footer />
         </div>
