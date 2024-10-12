@@ -28,19 +28,12 @@ export function Register({}: {}) {
           </Button>
         </div>
       </DialogTrigger>
-      <DialogContent className="w-full">
+      <DialogContent className="w-full rounded-lg">
         <DialogHeader>
           <DialogTitle className="text-center">
             Register to Viet80s Dashboard
           </DialogTitle>
         </DialogHeader>
-        {/* {description && (
-          <DialogDescription className="justify-center items-center text-center">
-            {" "}
-            Notice: Data Partner is set as the chosen Data Partner in the
-            previous form.
-          </DialogDescription>
-        )} */}
         <RegisterForm setDialogOpened={setDialogOpened} />
       </DialogContent>
     </Dialog>

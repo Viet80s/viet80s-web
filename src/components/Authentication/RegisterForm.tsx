@@ -89,7 +89,7 @@ export function RegisterForm({
       >
         {({ values, handleChange, handleSubmit }) => (
           <Form className="w-full" onSubmit={handleSubmit}>
-            <div className="flex flex-col gap-3 text-lg">
+            <div className="flex flex-col gap-3 text-lg px-4">
               <div className="flex flex-col gap-2">
                 <h3 className="flex">Display name*</h3>
                 <Input
@@ -153,7 +153,7 @@ export function RegisterForm({
                   className="text-red-500"
                 />
               </div>
-              <div className="mb-5">
+              <div className="mb-5 flex items-center justify-center">
                 <Button
                   type="submit"
                   className="px-4 py-2 mt-3 bg-carrot text-xanh rounded text-lg"

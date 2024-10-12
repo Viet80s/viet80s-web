@@ -50,7 +50,7 @@ export function LoginForm({
       >
         {({ values, handleChange, handleSubmit }) => (
           <Form className="w-full" onSubmit={handleSubmit}>
-            <div className="flex flex-col gap-3 text-lg">
+            <div className="flex flex-col gap-3 text-lg px-4">
               <div className="flex flex-col gap-2">
                 <h3 className="flex">Email</h3>
                 <Input
@@ -88,10 +88,10 @@ export function LoginForm({
                   required
                 />
               </div>
-              <div className="mb-5">
+              <div className="mb-2 flex items-center justify-center">
                 <Button
                   type="submit"
-                  className="px-4 py-2 mt-3 bg-carrot text-xanh rounded text-lg"
+                  className="px-4 mt-3 bg-carrot text-xanh rounded text-lg"
                   disabled={values.email === "" || values.password === ""}
                 >
                   Login

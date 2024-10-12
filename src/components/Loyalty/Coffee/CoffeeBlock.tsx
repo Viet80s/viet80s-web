@@ -43,10 +43,10 @@ export function CoffeeBlock({ stamps, uid }: { stamps: number; uid: string }) {
           </div>
         </div>
       </DialogTrigger>
-      <DialogContent className="w-full rounded-lg h-[700px] overflow-y-auto">
+      <DialogContent className="w-full rounded-lg h-[700px] overflow-y-auto py-5">
         <DialogHeader>
           <DialogTitle className="text-center mb-2">
-            COFFEE & STREETFOOD
+            VIET80S COFFEE & STREETFOOD
           </DialogTitle>
           <div className="text-justify text-pretty mx-3">
             How it works: For every drink item purchased, 1 stamp earned. Choose

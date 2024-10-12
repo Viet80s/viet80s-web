@@ -48,17 +48,21 @@ export function Login({}: {}) {
           </Button>
         </div>
       </DialogTrigger>
-      <DialogContent className="w-full">
+      <DialogContent className="w-full rounded-lg">
         <DialogHeader>
-          <DialogTitle className="text-center">
-            Login to Viet80s Dashboard
+          <DialogTitle className="text-center pt-4">
+            Login to Viet80s Loyalty
           </DialogTitle>
         </DialogHeader>
         <LoginForm setDialogOpened={setDialogOpened} />
-        <Register />
+
         <DialogFooter>
           {!lostPassword && (
-            <Button variant={"outline"} onClick={() => setLostPassword(true)}>
+            <Button
+              className="mb-5"
+              variant={"outline"}
+              onClick={() => setLostPassword(true)}
+            >
               Lost your password?
             </Button>
           )}

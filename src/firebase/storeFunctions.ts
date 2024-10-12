@@ -8,7 +8,7 @@ export async function addNewUser(uid: string, email: string, password: string, d
         error = null;
         
     try {
-        result = await setDoc(doc(db, "users", uid), {email, password, display_name, birthDay, birthMonth}, {
+        result = await setDoc(doc(db, "users", uid), {email, password, display_name, birthDay, birthMonth, uid}, {
             merge: true,
         });
     } catch (e) {
@@ -38,7 +38,7 @@ export async function getUser(uid: string) {
     let docRef = doc(db, "users", uid);
     try {
         result = result = await getDoc(docRef);
-        console.log("Get User successfully");
+
     } catch (e) {
         error = e;
     }

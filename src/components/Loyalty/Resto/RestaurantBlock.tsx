@@ -35,10 +35,10 @@ export function RestaurantBlock({
           </div>
         </div>
       </DialogTrigger>
-      <DialogContent className="w-full rounded-lg h-[700px] overflow-y-auto">
+      <DialogContent className="w-full rounded-lg h-[700px] overflow-y-auto py-5">
         <DialogHeader>
           <DialogTitle className="text-center mb-2">
-            RESTAURANT LOYALTY PROGRAM
+            VIET80S RESTAURANT
           </DialogTitle>
           <div className="text-justify text-pretty mx-3">
             How it works: For every £1 spent, 1 point earned. Choose the reward

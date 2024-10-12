@@ -61,9 +61,9 @@ export default function Loyalty() {
         )}
         {/* MAKE the notificaiton nicer */}
         {user && !user?.emailVerified && (
-          <div>
+          <div className="text-center text-pretty text-xl my-5 px-5 mx-5 border-double border-primary border-4">
             Thanks for registering. Please verify your email to continue using
-            our services
+            our services.
           </div>
         )}
 
