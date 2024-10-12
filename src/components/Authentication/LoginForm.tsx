@@ -32,7 +32,6 @@ export function LoginForm({
       toast.error("Login failed");
     } else {
       toast.success("Login successfully");
-      console.log(response.result);
       setDialogOpened(false);
     }
   };

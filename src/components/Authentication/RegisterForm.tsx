@@ -15,8 +15,7 @@ YupPassword(Yup);
 interface FormData {
   email: string;
   password: string;
-  firstName: string;
-  lastName: string;
+  displayName: string;
   birthMonth: number;
   birthDay: number;
 }
@@ -56,8 +55,7 @@ export function RegisterForm({
         signUpCall.result?.user.uid ?? "",
         data.email ?? "",
         data.password ?? "",
-        data.firstName ?? "",
-        data.lastName ?? "",
+        data.displayName ?? "",
         data.birthMonth ?? 0,
         data.birthDay ?? 0
       );
@@ -80,8 +78,7 @@ export function RegisterForm({
           email: "",
           password: "",
           showPassword: false,
-          firstName: "",
-          lastName: "",
+          displayName: "",
           birthMonth: 0,
           birthDay: 0,
         }}
@@ -94,20 +91,10 @@ export function RegisterForm({
           <Form className="w-full" onSubmit={handleSubmit}>
             <div className="flex flex-col gap-3 text-lg">
               <div className="flex flex-col gap-2">
-                <h3 className="flex">First name*</h3>
+                <h3 className="flex">Display name*</h3>
                 <Input
                   onChange={handleChange}
-                  name="firstName"
-                  className="text-lg text-carrot"
-                  type="text"
-                  required
-                />
-              </div>
-              <div className="flex flex-col gap-2">
-                <h3 className="flex">Last name*</h3>
-                <Input
-                  onChange={handleChange}
-                  name="lastName"
+                  name="displayName"
                   className="text-lg text-carrot"
                   type="text"
                   required

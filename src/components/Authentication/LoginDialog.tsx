@@ -19,6 +19,7 @@ import { Input } from "../ui/input";
 import { Form, Formik } from "formik";
 import { sendResetEmail } from "@/firebase/login";
 import toast from "react-hot-toast";
+import { Register } from "./RegisterDialog";
 
 interface FormData {
   email: string;
@@ -61,6 +62,7 @@ export function Login({}: {}) {
           </DialogDescription>
         )} */}
         <LoginForm setDialogOpened={setDialogOpened} />
+        <Register />
         <DialogFooter>
           {!lostPassword && (
             <Button variant={"outline"} onClick={() => setLostPassword(true)}>
