@@ -54,13 +54,6 @@ export function Login({}: {}) {
             Login to Viet80s Dashboard
           </DialogTitle>
         </DialogHeader>
-        {/* {description && (
-          <DialogDescription className="justify-center items-center text-center">
-            {" "}
-            Notice: Data Partner is set as the chosen Data Partner in the
-            previous form.
-          </DialogDescription>
-        )} */}
         <LoginForm setDialogOpened={setDialogOpened} />
         <Register />
         <DialogFooter>

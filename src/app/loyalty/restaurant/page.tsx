@@ -14,9 +14,8 @@ import { Timestamp, DocumentSnapshot } from "firebase/firestore";
 import { useEffect, useState } from "react";
 import { RestaurantBlock } from "@/components/Loyalty/RestaurantBlock";
 import { CoffeeBlock } from "@/components/Loyalty/CoffeeBlock";
-import { LogOut } from "lucide-react";
 
-export default function Loyalty() {
+export default function LoyaltyResto() {
   const auth = getAuth(firebase_app);
   const [user, loading, error] = useAuthState(auth);
   const { Canvas } = useQRCode();
@@ -60,13 +59,13 @@ export default function Loyalty() {
           </div>
         </div>
         {user && (
-          <div className="flex justify-between items-center px-5 text-xl text-xanh">
-            Hello, {loggedUser?.get("display_name") || "Viet80s Customer"}!
+          <div className="flex justify-between items-center px-5">
+            Hello, {loggedUser?.get("display_name") || "Viet80s Customer"}
             <Button
               className="justify-center text-center items-center border-double border-primary border-4 flex"
               onClick={() => signOut(auth)}
             >
-              Log out <LogOut className="ml-2 size-4" />
+              Log out
             </Button>
           </div>
         )}

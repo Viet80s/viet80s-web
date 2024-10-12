@@ -2,7 +2,7 @@ import { getFirestore, doc, setDoc, collection, addDoc, Timestamp, getDoc } from
 import firebase_app from "./firebaseConfig";
 
 const db = getFirestore(firebase_app)
-
+// TODO: add defauld values for Point, Stamp, and Transactions
 export async function addNewUser(uid: string, email: string, password: string, display_name: string, birthMonth: number, birthDay: number) {
     let result = null,
         error = null;
