@@ -12,14 +12,14 @@ import { useQRCode } from "next-qrcode";
 import { addNewTransaction, getUser } from "@/firebase/storeFunctions";
 import { Timestamp, DocumentSnapshot } from "firebase/firestore";
 import { useEffect, useState } from "react";
-import { RestaurantBlock } from "@/components/Loyalty/RestaurantBlock";
-import { CoffeeBlock } from "@/components/Loyalty/CoffeeBlock";
+import { RestaurantBlock } from "@/components/Loyalty/Resto/RestaurantBlock";
+import { CoffeeBlock } from "@/components/Loyalty/Coffee/CoffeeBlock";
 import { LogOut } from "lucide-react";
+import { StaffForm } from "@/components/Loyalty/Staff/StaffForm";
 
 export default function Loyalty() {
   const auth = getAuth(firebase_app);
   const [user, loading, error] = useAuthState(auth);
-  const { Canvas } = useQRCode();
   const [loggedUser, setLoggedUser] = useState<DocumentSnapshot | null>(null);
 
   useEffect(() => {
@@ -31,17 +31,6 @@ export default function Loyalty() {
     };
     fetchUser();
   }, [user]);
-
-  const handleAddTransaction = async () => {
-    if (user) {
-      await addNewTransaction(
-        user.uid,
-        89,
-        "card",
-        Timestamp.fromDate(new Date())
-      );
-    }
-  };
 
   return (
     <>
@@ -78,15 +67,28 @@ export default function Loyalty() {
           </div>
         )}
 
-        {user && user?.emailVerified && (
-          <div className="flex flex-col">
-            <RestaurantBlock points={loggedUser?.get("Point") || 0} />
-            <CoffeeBlock stamps={loggedUser?.get("Stamp") || 0} />
-          </div>
-        )}
-        {/* <div>
-          <MyWalletComponent />
-        </div> */}
+        {user &&
+          user?.emailVerified &&
+          loggedUser?.get("email") !== "viet80s.vn@gmail.com" && (
+            <div className="flex flex-col">
+              <RestaurantBlock
+                points={loggedUser?.get("Point") || 0}
+                uid={loggedUser?.get("uid")}
+              />
+              <CoffeeBlock
+                stamps={loggedUser?.get("Stamp") || 0}
+                uid={loggedUser?.get("uid")}
+              />
+            </div>
+          )}
+
+        {user &&
+          user?.emailVerified &&
+          loggedUser?.get("email") === "viet80s.vn@gmail.com" && (
+            <div className="flex flex-col">
+              <StaffForm />
+            </div>
+          )}
         <div>
           <Footer />
         </div>

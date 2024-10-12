@@ -38,24 +38,6 @@ export function LoginForm({
 
   return (
     <>
-      {/* {error && (
-        <Alert variant="destructive" className="mb-3">
-          <div>
-            <AlertTitle className="flex items-center">
-              <AlertCircle className="h-4 w-4 mr-2" />
-              Add New Dataset Failed. Error:
-            </AlertTitle>
-            <AlertDescription>
-              <ul>
-                {error.split(" * ").map((err, index) => (
-                  <li key={index}>* {err}</li>
-                ))}
-                <li>* Notice: The name of dataset should be unique *</li>
-              </ul>
-            </AlertDescription>
-          </div>
-        </Alert>
-      )} */}
       <Formik
         initialValues={{
           email: "",
